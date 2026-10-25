@@ -1,0 +1,128 @@
+[
+ {
+  "slug": "modern-organic",
+  "total": 119923.4,
+  "by_cat": {
+   "drzwi": 14045.7,
+   "farby": 2754.82,
+   "kuchnia": 8831.0,
+   "meble": 38750.0,
+   "oświetlenie": 3537.8,
+   "podłogi": 29213.67,
+   "płytki": 5779.41,
+   "łazienki": 17011.0
+  },
+  "verified": 61,
+  "unverified": 1,
+  "kitchen_est": [
+   40000,
+   60000
+  ],
+  "budget": 400000
+ },
+ {
+  "slug": "japandi",
+  "total": 119892.74,
+  "by_cat": {
+   "drzwi": 14135.7,
+   "farby": 3054.82,
+   "kuchnia": 8831.0,
+   "meble": 32139.0,
+   "oświetlenie": 1582.71,
+   "podłogi": 29220.92,
+   "płytki": 12404.16,
+   "łazienki": 18524.43
+  },
+  "verified": 61,
+  "unverified": 1,
+  "kitchen_est": [
+   40000,
+   60000
+  ],
+  "budget": 400000
+ },
+ {
+  "slug": "skandynawski-jasny",
+  "total": 93156.52,
+  "by_cat": {
+   "drzwi": 12149.7,
+   "farby": 1938.82,
+   "kuchnia": 8831.0,
+   "meble": 29150.0,
+   "oświetlenie": 2315.77,
+   "podłogi": 15424.22,
+   "płytki": 6305.01,
+   "łazienki": 17042.0
+  },
+  "verified": 62,
+  "unverified": 1,
+  "kitchen_est": [
+   40000,
+   60000
+  ],
+  "budget": 400000
+ },
+ {
+  "slug": "cieply-minimalizm",
+  "total": 122970.37,
+  "by_cat": {
+   "drzwi": 17455.7,
+   "farby": 2754.82,
+   "kuchnia": 8812.0,
+   "meble": 34761.0,
+   "oświetlenie": 3011.18,
+   "podłogi": 27969.06,
+   "płytki": 9458.61,
+   "łazienki": 18748.0
+  },
+  "verified": 59,
+  "unverified": 1,
+  "kitchen_est": [
+   40000,
+   60000
+  ],
+  "budget": 400000
+ },
+ {
+  "slug": "industrialny-loft",
+  "total": 115040.06,
+  "by_cat": {
+   "drzwi": 14145.7,
+   "farby": 1938.82,
+   "kuchnia": 8941.0,
+   "meble": 36929.0,
+   "oświetlenie": 3005.98,
+   "podłogi": 24145.7,
+   "płytki": 7102.86,
+   "łazienki": 18831.0
+  },
+  "verified": 62,
+  "unverified": 1,
+  "kitchen_est": [
+   40000,
+   60000
+  ],
+  "budget": 400000
+ },
+ {
+  "slug": "nowoczesna-klasyka",
+  "total": 129604.98,
+  "by_cat": {
+   "drzwi": 15289.7,
+   "farby": 2297.82,
+   "kuchnia": 8812.0,
+   "meble": 38220.0,
+   "oświetlenie": 3652.8,
+   "podłogi": 30918.5,
+   "płytki": 12404.16,
+   "łazienki": 18010.0
+  },
+  "verified": 60,
+  "unverified": 1,
+  "kitchen_est": [
+   40000,
+   60000
+  ],
+  "budget": 400000
+ }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "room": "1/01",
+    "file": "1-01.jpg",
+    "title_pl": "Wiatrołap",
+    "opis_pl": "Wejście z drzwiami zewnętrznymi i zabudową na okrycia, widok od strony przedpokoju.",
+    "odstepstwa_pl": "Drzwi wejściowe bardziej centralnie niż w narożniku wg rzutu."
+  },
+  {
+    "room": "1/02",
+    "file": "1-02.jpg",
+    "title_pl": "Salon – strefa TV i narożnik",
+    "opis_pl": "Narożnik w kształcie L zwrócony do ściany TV, HST 326 (geo wschód) i HST 180 z oknem narożnym (geo południe) wolne od mebli.",
+    "odstepstwa_pl": "Orientacja narożnika niejednoznaczna (częściowo zwrócony do kamery)."
+  },
+  {
+    "room": "1/02",
+    "file": "1-02_b.jpg",
+    "title_pl": "Salon – jadalnia",
+    "opis_pl": "Strefa jadalni ze stołem przy przeszkleniach, w tle zamknięty bieg schodów między ścianami.",
+    "odstepstwa_pl": "Krzesła jadalni blisko HST 180 – w realizacji zachować przejście."
+  },
+  {
+    "room": "1/03",
+    "file": "1-03.jpg",
+    "title_pl": "Kuchnia z wyspą",
+    "opis_pl": "Kuchnia z wyspą, okno (parapet 90, okno 140) na geo wschód z porannym światłem, zabudowa wysoka z wejściem do spiżarni.",
+    "odstepstwa_pl": "Głębokość wnęki kuchennej słabo czytelna; dodatkowe elementy słupowe."
+  },
+  {
+    "room": "1/06",
+    "file": "1-06.jpg",
+    "title_pl": "Przedpokój ze schodami",
+    "opis_pl": "Przedpokój z prostymi schodami 96 cm (16 stopni 18,5 cm, dębowe stopnice) w zamkniętym biegu między ścianami.",
+    "odstepstwa_pl": "Przedpokój wygląda szerzej niż ~1,2 m."
+  },
+  {
+    "room": "1/07",
+    "file": "1-07.jpg",
+    "title_pl": "Pokój gościnny",
+    "opis_pl": "Pokój gościnny z szafą na całą ścianę, jednym wysokim oknem z balustradą francuską i łóżkiem przy ścianie bocznej.",
+    "odstepstwa_pl": "Okno wygląda szerzej niż 100 cm; uskok ściany 57 cm tylko zasugerowany."
+  },
+  {
+    "room": "1/08",
+    "file": "1-08.jpg",
+    "title_pl": "Łazienka parter",
+    "opis_pl": "Łazienka bez okna: WC podwieszane naprzeciw drzwi, umywalka po prawej, prysznic walk-in ~90×120 po lewej.",
+    "odstepstwa_pl": "Brak istotnych."
+  },
+  {
+    "room": "2/01",
+    "file": "2-01.jpg",
+    "title_pl": "Hol poddasza",
+    "opis_pl": "Hol 2,4 × 9,4 m z sufitem 2,76 m, otworem schodowym z balustradą i drzwiami balkonowymi 180/230 na końcu.",
+    "odstepstwa_pl": "Wyłaz na strych pominięty; wejście do przedsionka pokazane jako otwór z widocznymi dalej drzwiami; schody kończą się tuż przy wejściu do przedsionka."
+  },
+  {
+    "room": "2/02",
+    "file": "2-02.jpg",
+    "title_pl": "Sypialnia główna",
+    "opis_pl": "Sypialnia pod sklepieniem do ~3,45 m, ścianki kolankowe 1,18 m, przeszklenie szczytowe w 3 polach na geo zachód (zachód słońca), okno dachowe 78/140 w lewej połaci.",
+    "odstepstwa_pl": "Okno szczytowe z parapetem ~40–50 cm zamiast od podłogi; wymiary okna Z/2 nieznane."
+  },
+  {
+    "room": "2/05",
+    "file": "2-05.jpg",
+    "title_pl": "Łazienka poddasze",
+    "opis_pl": "Mała łazienka 2,96 × 2,69 m widziana od drzwi: kabina walk-in w prawym bliższym narożniku, wanna wzdłuż prawej ściany, dwie umywalki na lewej ścianie, WC i bidet na wprost pod jedynym oknem dachowym 94/118; płaski sufit 2,76 m przy wejściu i jeden skos do ścianki kolankowej ~1,18 m.",
+    "odstepstwa_pl": "Głębokość pomieszczenia i szerokość obiektywu sprawiają, że łazienka wygląda nieco głębiej niż 2,69 m; płaski fragment sufitu widoczny tylko wąskim pasem u góry kadru."
+  },
+  {
+    "room": "2/06",
+    "file": "2-06.jpg",
+    "title_pl": "Pokój rodzinny – strefa TV i sofa",
+    "opis_pl": "Strefa TV do grania na konsoli, sofa pod skosem z oknem dachowym, drzwi balkonowe 160/230 na taras (geo południe) wolne.",
+    "odstepstwa_pl": "Brak istotnych."
+  },
+  {
+    "room": "2/06",
+    "file": "2-06_b.jpg",
+    "title_pl": "Pokój rodzinny – biurko i gitary",
+    "opis_pl": "Widok od balkonu: biurko we wnęce 60 cm, ściana z prawdziwymi gitarami i wzmacniaczem, drzwi z holu w narożniku.",
+    "odstepstwa_pl": "Brak istotnych."
+  },
+  {
+    "room": "2/07",
+    "file": "2-07.jpg",
+    "title_pl": "Pokój 2/07",
+    "opis_pl": "Pokój 3,59 × 4,01 m: łóżko pod skosem 38° z oknem dachowym 94/118, drzwi balkonowe 160/230 na taras (geo południe).",
+    "odstepstwa_pl": "Brak istotnych."
+  },
+  {
+    "room": "2/08",
+    "file": "2-08.jpg",
+    "title_pl": "Pokój z lukarną 2/08",
+    "opis_pl": "Pokój 4,40 × 2,83 m z lukarną 3,2 m: dwa okna po 153 cm ze słupkiem 14 cm, bez szprosów, siedzisko w lukarnie, dwa okna dachowe w połaciach.",
+    "odstepstwa_pl": "Wysokość okien lukarny przyjęta ~150 cm (nieznana)."
+  }
+]

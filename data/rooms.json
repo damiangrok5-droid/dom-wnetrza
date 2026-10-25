@@ -1,0 +1,360 @@
+[
+ {
+  "id": "1/01",
+  "slug": "1-01",
+  "name": "Wiatrołap",
+  "floor": "parter",
+  "area": 6.11,
+  "dims": "239 × 264 cm (szer. W–E × głęb. N–S); w tym szafa wnękowa 68 cm przy ścianie E",
+  "h": "2,68 m w świetle",
+  "shape": "prostokąt",
+  "slopes": "brak (parter)",
+  "windows": [],
+  "doors": [
+   "90/200 do przedpokoju 1/06",
+   "80/200 EI30 do garażu 1/10 (ppoż., samozamykacz)",
+   "150/210 drzwi wejściowe (wym. ościeżnicy; podział skrzydło+doświetle niepotwierdzony)"
+  ],
+  "plan": "plany/1-01.png"
+ },
+ {
+  "id": "1/02",
+  "slug": "1-02",
+  "name": "Salon + jadalnia",
+  "floor": "parter",
+  "area": 36.3,
+  "dims": "kształt L: pas główny 346 × 810 (szer. W–E × N–S), + strefa jadalni/przejścia ok. 284 × 187 przy kuchni, + wnęka 88 × 263 przy wiatrołapie",
+  "h": "2,68 m w świetle",
+  "shape": "L / otwarta przestrzeń połączona z kuchnią 1/03 i przedpokojem 1/06",
+  "slopes": "brak",
+  "windows": [
+   "HST 326/230 (przesuwne podnoszone) na taras pod pergolą 626×300",
+   "HST 180/230 (pierwotnie drzwi 2-skrzydłowe – przekreślone na czerwono, zamiana na przesuwne)",
+   "okno narożne SE (h=80 = parapet 80 cm), ramiona ok. 112 (E) i 227 (S) – długości niskiej pewności"
+  ],
+  "doors": [
+   "otwarte przejście do przedpokoju 1/06 i kuchni (bez drzwi)"
+  ],
+  "plan": "plany/1-02.png"
+ },
+ {
+  "id": "1/03",
+  "slug": "1-03",
+  "name": "Kuchnia",
+  "floor": "parter",
+  "area": 10.99,
+  "dims": "szer. 257 (czerwony wymiar, w wykuszu) × ok. 410 (od lica wykusza N do linii słupa); wykusz N głęb. 80",
+  "h": "2,68 m w świetle",
+  "shape": "prostokąt z wykuszem 80 cm na N; strona E otwarta na jadalnię",
+  "slopes": "brak",
+  "windows": [
+   "250/140, parapet h=90 (blat), w wykuszu; nadproże 2×14×35"
+  ],
+  "doors": [
+   "drzwi 70/200 do spiżarki 1/04 (skrzydło rysowane pod 45° – otwierane do kuchni)",
+   "„drzwi w zabudowie meblowej” do przedpokoju 1/06 (ukryte w frontach)"
+  ],
+  "plan": "plany/1-03.png"
+ },
+ {
+  "id": "1/04",
+  "slug": "1-04",
+  "name": "Spiżarka (nowa)",
+  "floor": "parter",
+  "area": 1.51,
+  "dims": "113 × ok. 134 (113 czerwony; 28+70+45 przy ścianie E)",
+  "h": "2,68 m w świetle",
+  "shape": "prostokąt (wydzielony z pokoju 1/07, ścianki 12)",
+  "slopes": "brak",
+  "windows": [],
+  "doors": [
+   "70/200 do kuchni"
+  ],
+  "plan": "plany/1-04.png"
+ },
+ {
+  "id": "1/05",
+  "slug": "1-05",
+  "name": "Schody",
+  "floor": "parter",
+  "area": 3.81,
+  "dims": "bieg prosty szer. 96 (w świetle ścian), dł. ok. 378–405; 16 × 18,5 × 27 (16 podstopni 18,5 cm = 296 ✓, 15 stopni po 27)",
+  "h": "bieg ±0,00 → +2,96",
+  "shape": "wąski pas między ścianą garażu (S) a przedpokojem/łazienką",
+  "slopes": "—",
+  "windows": [],
+  "doors": [],
+  "plan": "plany/1-05.png"
+ },
+ {
+  "id": "1/06",
+  "slug": "1-06",
+  "name": "Przedpokój / hol parteru",
+  "floor": "parter",
+  "area": 6.34,
+  "dims": "pas N–S 117 (między zabudową kuchni a schodami) + przejście 96 przy schodach; długość W–E ok. 340 (od łazienki do salonu)",
+  "h": "2,68 m w świetle",
+  "shape": "nieregularny, otwarty na salon",
+  "slopes": "—",
+  "windows": [],
+  "doors": [
+   "90/200 do wiatrołapu",
+   "80/200 do pokoju 1/07",
+   "80/200 do łazienki 1/08",
+   "drzwi w zabudowie meblowej do kuchni"
+  ],
+  "plan": "plany/1-06.png"
+ },
+ {
+  "id": "1/07",
+  "slug": "1-07",
+  "name": "Pokój gościnny",
+  "floor": "parter",
+  "area": 9.38,
+  "dims": "L: część N 315 szer. (czerwony), część S 372 szer.; głęb. 283 (N–S)",
+  "h": "2,68 m w świetle",
+  "shape": "L (narożnik NE odcięty spiżarką 1/04)",
+  "slopes": "brak",
+  "windows": [
+   "100/230 (drzwiowe, od podłogi)"
+  ],
+  "doors": [
+   "80/200"
+  ],
+  "plan": "plany/1-07.png"
+ },
+ {
+  "id": "1/08",
+  "slug": "1-08",
+  "name": "Łazienka parter",
+  "floor": "parter",
+  "area": 3.71,
+  "dims": "ok. 160 × 226 (226 – wymiar N–S; szer. łańcuch 15/120 + część przy drzwiach) – kształt L",
+  "h": "2,68 m w świetle",
+  "shape": "L (dolna część węższa ok. 135 – przy biegu schodów)",
+  "slopes": "brak",
+  "windows": [],
+  "doors": [
+   "80/200 (świetlo 90)"
+  ],
+  "plan": "plany/1-08.png"
+ },
+ {
+  "id": "1/09",
+  "slug": "1-09",
+  "name": "Kotłownia / pom. techniczne",
+  "floor": "parter",
+  "area": 9.33,
+  "dims": "L: część N 217 × 246, pas S 155 × 238",
+  "h": "2,68 m w świetle",
+  "shape": "L",
+  "slopes": "—",
+  "windows": [
+   "100/230",
+   "NOWE okno (czerwone), parapet h=100 – wymiar ucięty na zdjęciu"
+  ],
+  "doors": [
+   "90/200 z garażu"
+  ],
+  "plan": "plany/1-09.png"
+ },
+ {
+  "id": "1/10",
+  "slug": "1-10",
+  "name": "Garaż 2-stanowiskowy",
+  "floor": "parter",
+  "area": 44.2,
+  "dims": "595 × 743 (599 pierwotnie + przedłużenie ok. 150 – czerwone)",
+  "h": "2,68 m w świetle wg przekroju dla parteru",
+  "shape": "prostokąt",
+  "slopes": "—",
+  "windows": [
+   "okno, parapet h=100 (rozmiar ucięty)"
+  ],
+  "doors": [
+   "brama 500/238 (przeniesiona do nowej ściany czołowej)",
+   "80/200 EI30 do wiatrołapu",
+   "90/200 do kotłowni"
+  ],
+  "plan": "plany/1-10.png"
+ },
+ {
+  "id": "2/01",
+  "slug": "2-01",
+  "name": "Hol poddasza",
+  "floor": "poddasze",
+  "area": 16.96,
+  "dims": "pas W–E ok. 940 × 238 (130+12+96), poszerzony przy schodach; łańcuch 280/378/281",
+  "h": "sufit płaski +5,72 → 2,76 m w świetle",
+  "shape": "długi korytarz z otworem schodowym 378 × 96 + przedsionek 113 do 2/02-2/04",
+  "slopes": "brak (środek bryły)",
+  "windows": [],
+  "doors": [
+   "180/230 drzwi balkonowe z balustradą (balkon francuski)",
+   "80/200 ×3 do 2/10, 2/09, 2/08",
+   "80/200 ×2 do 2/07, 2/06",
+   "80/200 do 2/05; przedsionek 113 → 2/03, 2/04, 2/02"
+  ],
+  "plan": "plany/2-01.png"
+ },
+ {
+  "id": "2/02",
+  "slug": "2-02",
+  "name": "Sypialnia główna (skrzydło nad garażem)",
+  "floor": "poddasze",
+  "area": 31.45,
+  "dims": "584 (W–E, między ściankami kolankowymi 33) × ok. 515–540 (pomiar pikselowy 513, z pola tabeli 538; po przesunięciu szczytu ok. 150 na S – czerwone; pierwotnie ok. 366)",
+  "h": "ścianki kolankowe ≈1,18 m",
+  "shape": "prostokąt, dach dwuspadowy z kalenicą N–S (wzdłuż pokoju); sufit sklepiony do kalenicy (decyzja – oryginalnie płaski „obrys sufitu”)",
+  "slopes": "pasy wzdłuż ścian W i E: <1,40 m ~25 cm, 1,40–2,20 m ~103 cm, >2,20 m środek ok. 330 cm",
+  "windows": [
+   "OKNO SZCZYTOWE „Z/2” – wypełnia cały trójkąt szczytu, 3 pola, szer. ok. 5,6 m przy podłodze? – wymiary NIEZNANE",
+   "okno dachowe 78/140"
+  ],
+  "doors": [
+   "80/200 z przedsionka"
+  ],
+  "plan": "plany/2-02.png"
+ },
+ {
+  "id": "2/03",
+  "slug": "2-03",
+  "name": "Garderoba (przy sypialni)",
+  "floor": "poddasze",
+  "area": 4.26,
+  "dims": "160 × ok. 266",
+  "h": "wg tabeli całość >2,20",
+  "shape": "prostokąt",
+  "slopes": "wg tabeli brak",
+  "windows": [],
+  "doors": [
+   "80/200 z przedsionka 113"
+  ],
+  "plan": "plany/2-03.png"
+ },
+ {
+  "id": "2/04",
+  "slug": "2-04",
+  "name": "Garderoba (ex-łazienka)",
+  "floor": "poddasze",
+  "area": 7.01,
+  "dims": "273 × 278 (129+90+59, czerwone) – wnęka w ścianie N",
+  "h": "sufit płaski 2,76 m; mały pas przy S <2,20",
+  "shape": "prostokąt z wnęką N",
+  "slopes": "wąski pas S (0,7 m² 50%)",
+  "windows": [],
+  "doors": [
+   "80/200 z przedsionka"
+  ],
+  "plan": "plany/2-04.png"
+ },
+ {
+  "id": "2/05",
+  "slug": "2-05",
+  "name": "Łazienka poddasze",
+  "floor": "poddasze",
+  "area": 7.97,
+  "dims": "296 (W–E) × ok. 269",
+  "h": "ścianka kolankowa S ≈1,18 m; H=140 ok. 0,3 m, H=220 ok. 1,3 m od ściany; dalej sufit płaski 2,76 m",
+  "shape": "prostokąt; S strona pod skosem",
+  "slopes": "pas S (WC/bidet) 1,4–2,2 m; reszta pełna wysokość",
+  "windows": [
+   "okno dachowe 94/118"
+  ],
+  "doors": [
+   "80/200 z holu (świetlo 90)"
+  ],
+  "plan": "plany/2-05.png"
+ },
+ {
+  "id": "2/06",
+  "slug": "2-06",
+  "name": "Pokój (biuro + gitary + sofa/TV)",
+  "floor": "poddasze",
+  "area": 15.59,
+  "dims": "359 × 397 + przedłużenie W 60 × 207,5 (łącznie 419 przy ścianie S)",
+  "h": "ścianka kolankowa S ≈1,18 m; H=140 ok. 0,3 m, H=220 ok. 1,3 m od ściany; sufit płaski 2,76 m",
+  "shape": "prostokąt z występem W przy ścianie S",
+  "slopes": "pas S ok. 1,3 m pod skosem",
+  "windows": [
+   "okno dachowe 94/118"
+  ],
+  "doors": [
+   "80/200 z holu",
+   "160/230 drzwi balkonowe 2-skrzydłowe na taras +2,96"
+  ],
+  "plan": "plany/2-06.png"
+ },
+ {
+  "id": "2/07",
+  "slug": "2-07",
+  "name": "Pokój",
+  "floor": "poddasze",
+  "area": 14.09,
+  "dims": "359 × 401",
+  "h": "ścianka kolankowa N ≈1,18 m; H=140 ok. 0,3 m, H=220 ok. 1,3 m; sufit płaski 2,76 m",
+  "shape": "prostokąt",
+  "slopes": "pas N ok. 1,3 m pod skosem; obrys sufitu ~2,0 m od ściany N",
+  "windows": [
+   "okno dachowe 94/118"
+  ],
+  "doors": [
+   "80/200 z holu",
+   "160/230 drzwi balkonowe na taras"
+  ],
+  "plan": "plany/2-07.png"
+ },
+ {
+  "id": "2/08",
+  "slug": "2-08",
+  "name": "Pokój z lukarną",
+  "floor": "poddasze",
+  "area": 14.37,
+  "dims": "440 × 283 + lukarna 320 × 80 (2 okna 153 + słupek 14×14)",
+  "h": "ścianka kolankowa N ≈1,18 m → skos 38° → sufit płaski 2,76 m",
+  "shape": "prostokąt z lukarną na N",
+  "slopes": "pas N poza lukarną",
+  "windows": [
+   "2 × okno w lukarnie szer. 153 (wys. nieznana), słupek 14×14 pośrodku – BEZ szprosów",
+   "2 × okno dachowe 94/118"
+  ],
+  "doors": [
+   "80/200 z holu"
+  ],
+  "plan": "plany/2-08.png"
+ },
+ {
+  "id": "2/09",
+  "slug": "2-09",
+  "name": "Garderoba",
+  "floor": "poddasze",
+  "area": 6.25,
+  "dims": "228 × 283",
+  "h": "ścianka kolankowa N ≈1,18 m → skos 38° → sufit płaski 2,76 m",
+  "shape": "prostokąt",
+  "slopes": "pas N",
+  "windows": [],
+  "doors": [
+   "80/200"
+  ],
+  "plan": "plany/2-09.png"
+ },
+ {
+  "id": "2/10",
+  "slug": "2-10",
+  "name": "Pom. gospodarcze / pralnia",
+  "floor": "poddasze",
+  "area": 6.46,
+  "dims": "247 × 283",
+  "h": "ścianka kolankowa N ≈1,18 m → skos 38° → sufit płaski 2,76 m",
+  "shape": "prostokąt",
+  "slopes": "pas N",
+  "windows": [
+   "okno dachowe 78/118"
+  ],
+  "doors": [
+   "80/200"
+  ],
+  "plan": "plany/2-10.png"
+ }
+]

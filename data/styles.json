@@ -1,0 +1,183 @@
+[
+ {
+  "slug": "modern-organic",
+  "name": "Modern organic",
+  "desc": "Ciepła, naturalna nowoczesność: jasny dąb, trawertyn, ściany w beżowym lime-washu, miękkie bouclé, zaokrąglone formy, czarne cienkie ramy i akcenty z brązu. Spokojnie, przytulnie, ale nie rustykalnie – obecny kierunek projektu.",
+  "palette": {
+   "lime-wash beż": "#E6DCCD",
+   "ciepła biel": "#F4EFE7",
+   "jasny dąb": "#C9A77C",
+   "trawertyn": "#D8C7AE",
+   "glina/terakota": "#B9805E",
+   "oliwka": "#7D7A5B",
+   "czerń ram": "#1E1E1E",
+   "brąz/patyna": "#8C6A43"
+  },
+  "materials": [
+   "deska/panel dąb naturalny, matowy olej (szeroka deska)",
+   "trawertyn lub gres trawertynopodobny (łazienki, kuchnia)",
+   "farba z efektem lime-wash / matowa w odcieniach piasku",
+   "tkaniny bouclé, len, wełna",
+   "fronty fornir dębowy + mikro-zaokrąglenia",
+   "armatura szczotkowany brąz / czarna",
+   "ceramika i lampy z papieru ryżowego, rattan"
+  ],
+  "mood": [
+   "ciepły",
+   "spokojny",
+   "miękki",
+   "naturalny",
+   "zaokrąglony"
+  ]
+ },
+ {
+  "slug": "japandi",
+  "name": "Japandi",
+  "desc": "Połączenie japońskiego minimalizmu i skandynawskiej funkcjonalności: niskie meble, lamele, dąb i ciemniejszy jesion, papier, len, dużo pustej przestrzeni i stonowane szarości ciepłe.",
+  "palette": {
+   "ryżowy papier": "#EFEAE0",
+   "ciepła szarość": "#CFC8BC",
+   "jasny dąb": "#BF9F78",
+   "ciemny jesion": "#5A4636",
+   "szałwia": "#9AA38C",
+   "grafit": "#3A3A38",
+   "czerń matowa": "#1A1A1A"
+  },
+  "materials": [
+   "deska dąb naturalny / lekko szczotkowany",
+   "lamele drewniane (ściany TV, zagłówki)",
+   "mikrocement lub gres kamienny w ciepłej szarości",
+   "papierowe lampy (washi), len, wełna",
+   "niskie łóżka na ramie, futony",
+   "armatura czarna matowa",
+   "ceramika rękodzielnicza, bonsai, bambus"
+  ],
+  "mood": [
+   "wyciszony",
+   "uporządkowany",
+   "naturalny",
+   "niski",
+   "zen"
+  ]
+ },
+ {
+  "slug": "skandynawski-jasny",
+  "name": "Skandynawski jasny",
+  "desc": "Jasno, prosto i budżetowo: białe ściany, bielony dąb, jasne szarości, proste meble na drewnianych nogach, tekstylia w pastelach. Najbardziej uniwersalny i najłatwiejszy do kupienia w sieciówkach.",
+  "palette": {
+   "biel": "#FAFAF8",
+   "jasna szarość": "#E3E3E0",
+   "bielony dąb": "#DCC9A9",
+   "pudrowy błękit": "#B7C7D3",
+   "szałwia": "#B5BFA8",
+   "mokka": "#8A7563",
+   "czerń akcent": "#222222"
+  },
+  "materials": [
+   "panel laminowany/winylowy bielony dąb",
+   "białe płytki 'cegiełka' / duży gres jasny",
+   "farby białe i jasnoszare (mat)",
+   "meble z płyty w bieli + drewno sosna/dąb",
+   "tekstylia bawełna, wełna, dzianina",
+   "armatura chrom/biel",
+   "lampy białe metalowe, drewno"
+  ],
+  "mood": [
+   "jasny",
+   "przewiewny",
+   "prosty",
+   "przytulny (hygge)",
+   "praktyczny"
+  ]
+ },
+ {
+  "slug": "cieply-minimalizm",
+  "name": "Ciepły minimalizm",
+  "desc": "Minimalizm bez chłodu: bezspoinowe powierzchnie (mikrocement lub wielkoformatowy gres), orzech amerykański, ukryte uchwyty, liniowe światło LED, kaszmirowe beże i taupe. Mało rzeczy, wysoka jakość.",
+  "palette": {
+   "kaszmir": "#E8E0D5",
+   "taupe": "#A89A8A",
+   "mikrocement": "#C9C1B6",
+   "orzech": "#6B4A33",
+   "karmel": "#A6764A",
+   "ciepła czerń": "#2B2724",
+   "kremowa biel": "#F5F1EA"
+  },
+  "materials": [
+   "mikrocement / gres wielkoformatowy 120×120 w ciepłej szarości",
+   "fornir orzech amerykański (fronty, drzwi, panele)",
+   "deska dąb lub orzech, szeroka, matowa",
+   "bezuchwytowe fronty, linie LED w profilach",
+   "drzwi bezprzylgowe z ukrytymi zawiasami",
+   "armatura szczotkowana stal / gunmetal",
+   "tkaniny wełna, zamsz, len w tonacji taupe"
+  ],
+  "mood": [
+   "elegancki",
+   "cichy",
+   "bezspoinowy",
+   "ciepły",
+   "architektoniczny"
+  ]
+ },
+ {
+  "slug": "industrialny-loft",
+  "name": "Industrialny loft",
+  "desc": "Ciemniej i bardziej surowo: beton architektoniczny, czarna stal, przeszklenia w czarnych ramach (loft), skóra koniakowa, stare drewno, cegła/ grafit. Dobrze pasuje do gabinetu-gamingu i garażowych klimatów.",
+  "palette": {
+   "beton": "#9A9893",
+   "grafit": "#3C3D3F",
+   "czarna stal": "#151515",
+   "koniak (skóra)": "#8B4A22",
+   "stare drewno": "#6E5440",
+   "cegła": "#8E4B36",
+   "złamana biel": "#ECE8E1"
+  },
+  "materials": [
+   "gres betonopodobny duży format / beton dekoracyjny na ścianach",
+   "panel/deska dąb dymiony, szczotkowany",
+   "ściany loftowe szkło + czarna stal",
+   "skóra naturalna / ekoskóra koniakowa",
+   "farby grafitowe i betonowe, cegła lub płytki cegłopodobne",
+   "armatura czarna, widoczne szyny oświetleniowe",
+   "lampy industrialne, żarówki filament"
+  ],
+  "mood": [
+   "surowy",
+   "męski",
+   "ciemny",
+   "miejski",
+   "charakterny"
+  ]
+ },
+ {
+  "slug": "nowoczesna-klasyka",
+  "name": "Nowoczesna klasyka / Hampton-lite",
+  "desc": "Jasna elegancja z nutą klasyki: sztukaterie i panele ścienne (boazeria), drzwi frezowane, marmur Calacatta, mosiądz, jodełka dębowa, granat lub szałwia jako akcent. Odświętnie, ale nadal nowocześnie.",
+  "palette": {
+   "biel złamana": "#F6F3EE",
+   "greige": "#D9D2C6",
+   "marmur Calacatta": "#EDEAE4",
+   "dąb jodełka": "#B88F5E",
+   "granat": "#2E3A52",
+   "szałwia": "#A3AE9A",
+   "mosiądz": "#B08D57"
+  },
+  "materials": [
+   "jodełka dębowa (deska lub panel)",
+   "listwy sztukateryjne / boazeria ramowa malowana",
+   "marmur / gres marmuropodobny Calacatta",
+   "drzwi frezowane białe/greige",
+   "armatura mosiądz szczotkowany / złoto",
+   "tkaniny len, aksamit, pasy",
+   "lampy z kloszami tkaninowymi, kinkiety mosiężne"
+  ],
+  "mood": [
+   "elegancki",
+   "jasny",
+   "klasyczny",
+   "świeży",
+   "rodzinny"
+  ]
+ }
+]

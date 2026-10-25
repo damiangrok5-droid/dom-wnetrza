@@ -1,0 +1,249 @@
+/* Dom – wybór stylu wnętrz. Statyczna strona, bez build stepu. */
+(()=>{
+'use strict';
+const $=s=>document.querySelector(s);
+const app=$('#app');
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const zl=n=>n==null?'—':new Intl.NumberFormat('pl-PL',{maximumFractionDigits:0}).format(Math.round(n))+' zł';
+const rng=(a,b)=>{const f=new Intl.NumberFormat('pl-PL',{maximumFractionDigits:0});return f.format(Math.round(a))+'–'+f.format(Math.round(b))+' zł';};
+const pl=(n,a,b,c)=>n===1?a:(n%10>=2&&n%10<=4&&(n%100<10||n%100>=20))?b:c;
+const zl2=n=>n==null?'—':new Intl.NumberFormat('pl-PL',{minimumFractionDigits:2,maximumFractionDigits:2}).format(n)+' zł';
+const CAT_COL={'podłogi':'#C9A77C','płytki':'#D8C7AE','farby':'#E6DCCD','drzwi':'#8C6A43','łazienki':'#7D7A5B','oświetlenie':'#E3B65A','kuchnia':'#B9805E','meble':'#4E4A43'};
+const cache={};
+const getJSON=(u,opt)=>(cache[u]??=fetch(u,opt).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}));
+const S={styles:[],rooms:[],gaps:[],cmp:[]};
+
+/* ---------- manifesty wizualizacji (tolerancyjny parser) ---------- */
+const roomKey=v=>{const m=String(v??'').match(/(\d)\s*[\/\-_ .]?\s*(\d{2})/);return m?`${m[1]}-${m[2]}`:null;};
+const FILE_KEYS=['file','src','path','img','image','url','plik','name','filename'];
+const ROOM_KEYS=['room','room_id','roomId','pomieszczenie','id','pokoj','slug'];
+const pick=(o,ks)=>{for(const k of ks)if(o&&o[k]!=null&&o[k]!=='')return o[k];return null;};
+function imgPath(slug,f){f=String(f).trim();if(/^(https?:)?\/\//.test(f)||f.startsWith('img/'))return f;return `img/${slug}/${f.replace(/^\.?\//,'')}`;}
+const rejected=o=>o&&typeof o==='object'&&(o.rejected||o.ok===false||o.hidden||/odrzu|reject/i.test(o.status||''));
+function normManifest(m,slug){
+  const rooms={};let cover=null;
+  const add=(rk,e)=>{
+    if(e==null||rejected(e))return;
+    if(Array.isArray(e)){e.forEach(x=>add(rk,x));return;}
+    if(typeof e==='object'&&!pick(e,FILE_KEYS)){const inner=e.files||e.images||e.imgs||e.warianty;if(inner){add(rk,inner);}return;}
+    const f=typeof e==='string'?e:pick(e,FILE_KEYS);if(!f||!/\.(jpe?g|png|webp|avif)(\?|$)/i.test(f))return;
+    if(/_rej\b|_rej\./i.test(f))return;
+    const k=rk||roomKey(typeof e==='object'&&pick(e,ROOM_KEYS))||roomKey(String(f).split('/').pop());
+    if(!k)return;
+    let cap=null;
+    if(typeof e==='object'){const t=pick(e,['title_pl','title','tytul']),o=pick(e,['opis_pl','caption','opis','desc','description','alt','label','podpis','view','widok']),x=pick(e,['odstepstwa_pl','odstepstwa','deviations']);
+      cap=[t,o].filter(Boolean).join(' – ')+(x?` (odstępstwa od rzutu: ${x})`:'')||null;}
+    (rooms[k]??=[]).push({src:imgPath(slug,f),cap,title:typeof e==='object'?pick(e,['title_pl','title']):null});
+  };
+  if(!m)return null;
+  if(Array.isArray(m))add(null,m);
+  else if(typeof m==='object'){
+    cover=m.cover||m.okladka||null;
+    const list=m.images||m.files||m.items||m.wizualizacje||m.renders;
+    if(list)add(null,list);
+    const rm=m.rooms||m.pomieszczenia;
+    if(rm&&typeof rm==='object'&&!Array.isArray(rm))for(const[k,v]of Object.entries(rm))add(roomKey(k),v);
+    else if(Array.isArray(rm))rm.forEach(r=>add(roomKey(pick(r,ROOM_KEYS)),r.files||r.images||r));
+    if(!list&&!rm)for(const[k,v]of Object.entries(m)){const rk=roomKey(k);if(rk&&/^\s*\d\s*[\/\-_ .]?\s*\d{2}\s*$/.test(k))add(rk,v);}
+  }
+  for(const k in rooms){const seen=new Set();rooms[k]=rooms[k].filter(x=>!seen.has(x.src)&&seen.add(x.src));}
+  if(cover)cover=typeof cover==='string'?imgPath(slug,cover):imgPath(slug,pick(cover,FILE_KEYS));
+  return {rooms,cover};
+}
+const imgOk=src=>new Promise(res=>{const i=new Image();i.onload=()=>res(i.naturalWidth>0);i.onerror=()=>res(false);i.src=src;});
+const manifests={};
+function loadManifest(slug){
+  return manifests[slug]??=fetch(`img/${slug}/manifest.json`,{cache:'no-cache'})
+    .then(r=>r.ok?r.json():null).then(m=>normManifest(m,slug)).catch(()=>null);
+}
+/* bez manifestu: sprawdzamy konwencję nazw img/<styl>/<pokój>.jpg, _b, _c… */
+const probes={};
+function probeRoom(slug,rk){
+  return probes[slug+rk]??=(async()=>{
+    const out=[];
+    for(const suf of ['','_b','_c','_d','_e']){
+      const src=`img/${slug}/${rk}${suf}.jpg`;
+      if(await imgOk(src))out.push({src,cap:null});else if(suf)break;else break;
+    }
+    return out;
+  })();
+}
+async function styleCover(st){
+  const m=await loadManifest(st.slug);
+  if(m){if(m.cover)return m.cover;const f=(m.rooms['1-02']||Object.values(m.rooms)[0]||[])[0];if(f)return f.src;}
+  for(const rk of ['1-02','2-02','1-03']){const src=`img/${st.slug}/${rk}.jpg`;if(await imgOk(src))return src;}
+  return null;
+}
+
+/* ---------- lightbox ---------- */
+const lb={list:[],i:0};
+function openLB(list,i){lb.list=list;lb.i=i;showLB();$('#lb').hidden=false;document.body.style.overflow='hidden';}
+function showLB(){const x=lb.list[lb.i];if(!x)return;$('#lb-img').src=x.src;$('#lb-img').alt=x.cap||'';$('#lb-cap').textContent=(x.cap||'')+(lb.list.length>1?`  (${lb.i+1}/${lb.list.length})`:'');}
+function closeLB(){$('#lb').hidden=true;document.body.style.overflow='';$('#lb-img').removeAttribute('src');}
+const step=d=>{if(lb.list.length<2)return;lb.i=(lb.i+d+lb.list.length)%lb.list.length;showLB();};
+$('#lb').addEventListener('click',e=>{const a=e.target.dataset.lb;if(a==='close'||e.target.id==='lb'||e.target.tagName==='FIGURE')closeLB();else if(a==='prev')step(-1);else if(a==='next')step(1);});
+document.addEventListener('keydown',e=>{if($('#lb').hidden)return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1);});
+let tx=null;$('#lb').addEventListener('touchstart',e=>{tx=e.touches[0].clientX;},{passive:true});
+$('#lb').addEventListener('touchend',e=>{if(tx==null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)step(dx<0?1:-1);tx=null;});
+
+/* ---------- routing ---------- */
+const cur=()=>localStorage.getItem('styl')||S.styles[0]?.slug;
+function route(){
+  const [,tab='',slug]=location.hash.split('/');
+  if(slug&&S.styles.some(s=>s.slug===slug))localStorage.setItem('styl',slug);
+  const t=tab||'style';
+  document.querySelectorAll('#tabs a').forEach(a=>{a.classList.toggle('on',a.dataset.tab===t);
+    if(['pokoje','zakupy'].includes(a.dataset.tab))a.href=`#/${a.dataset.tab}/${cur()}`;});
+  const sb=$('#stylebar');sb.hidden=!['pokoje','zakupy'].includes(t);
+  if(!sb.hidden)renderStylebar(t);
+  document.documentElement.style.setProperty('--stick',($('.top').offsetHeight+(sb.hidden?0:sb.offsetHeight))+'px');
+  window.scrollTo(0,0);
+  ({style:viewStyles,pokoje:viewRooms,zakupy:viewShop,porownanie:viewCompare}[t]||viewStyles)();
+}
+function renderStylebar(t){
+  const c=cur();
+  $('#stylebar').innerHTML=S.styles.map(s=>`<a class="chip${s.slug===c?' on':''}" href="#/${t}/${s.slug}"><i style="background:${esc(Object.values(s.palette)[2]||'#ccc')}"></i>${esc(s.name)}</a>`).join('');
+  const on=$('#stylebar .on');if(on)on.scrollIntoView({inline:'center',block:'nearest'});
+}
+const styleBy=slug=>S.styles.find(s=>s.slug===slug)||S.styles[0];
+const cmpBy=slug=>S.cmp.find(c=>c.slug===slug);
+
+/* ---------- widok: style ---------- */
+function viewStyles(){
+  app.innerHTML=`<h1>Wybierz styl wnętrz</h1>
+  <p class="lead">6 kierunków dla tego samego domu (rzut parteru i poddasza bez zmian). Po wyborze zobaczysz każde pomieszczenie w danym stylu i listę zakupów z cenami.</p>
+  <div class="grid s3">${S.styles.map(s=>{const c=cmpBy(s.slug);const pal=Object.entries(s.palette);
+    return `<a class="card style-card" href="#/pokoje/${s.slug}">
+    <div class="cover" data-cover="${s.slug}" style="background-image:linear-gradient(135deg,${pal.slice(0,4).map(p=>esc(p[1])).join(',')})"><span class="tag" data-cnt="${s.slug}">wizualizacje: …</span></div>
+    <div class="b"><h3>${esc(s.name)}</h3><p>${esc(s.desc)}</p>
+    <div class="sw" title="Paleta">${pal.map(([n,h])=>`<span style="background:${esc(h)}" title="${esc(n)} ${esc(h)}"></span>`).join('')}</div>
+    <div class="meta"><span>Zakupy: <b>${zl(c?.total)}</b> + kuchnia</span><span class="btn">Zobacz</span></div></div></a>`;}).join('')}</div>
+  <p class="capt" style="padding:12px 0">Wizualizacje nastrojowe (AI), proporcje wg rzutów, nie 1:1.</p>`;
+  S.styles.forEach(async s=>{
+    const [cv,m]=await Promise.all([styleCover(s),loadManifest(s.slug)]);
+    const el=app.querySelector(`[data-cover="${s.slug}"]`);if(!el)return;
+    if(cv)el.style.backgroundImage=`url("${cv}")`;
+    const n=m?Object.values(m.rooms).reduce((a,b)=>a+b.length,0):null;
+    const tag=app.querySelector(`[data-cnt="${s.slug}"]`);
+    tag.textContent=n?`${n} ${pl(n,'wizualizacja','wizualizacje','wizualizacji')} · ${Object.keys(m.rooms).length} pom.`:cv?'wizualizacje: częściowo':'wizualizacje w przygotowaniu';
+  });
+}
+
+/* ---------- widok: pokoje ---------- */
+function roomCard(r){
+  const rows=[['Wymiary',r.dims],['Wysokość',r.h],['Kształt',r.shape],r.slopes&&r.slopes!=='brak'&&r.slopes!=='brak (parter)'?['Skosy',r.slopes]:null].filter(x=>x&&x[1]);
+  return `<article class="card room" id="r-${r.slug}">
+   <div class="imgwrap" data-room="${r.slug}"><div class="ph"><b>W przygotowaniu</b><span>wizualizacja tego pomieszczenia jest jeszcze generowana</span></div></div>
+   <div class="b"><div class="hd"><h3>${esc(r.name)}</h3><span class="area">${r.area!=null?esc(String(r.area).replace('.',','))+' m²':''}</span></div>
+   <div class="id">${esc(r.id)} · ${esc(r.floor)}</div>
+   <dl>${rows.map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
+   <details><summary>Rzut z góry, okna i drzwi</summary>
+    ${r.plan?`<img class="plan" loading="lazy" src="${esc(r.plan)}" alt="Rzut pomieszczenia ${esc(r.id)}" data-plan="${esc(r.plan)}" data-cap="${esc(r.id+' '+r.name+' – rzut')}">`:''}
+    ${r.windows.length?`<p><b>Okna:</b> ${r.windows.map(esc).join('; ')}</p>`:''}
+    ${r.doors.length?`<p><b>Drzwi:</b> ${r.doors.map(esc).join('; ')}</p>`:''}
+   </details></div></article>`;
+}
+function fillImgs(wrap,list,r){
+  if(!list.length)return;
+  const L=list.map((x,i)=>({src:x.src,cap:x.cap&&x.title?x.cap:`${r.id} ${r.name}`+(x.cap?` – ${x.cap}`:'')}));
+  wrap.innerHTML=`<div class="imgs">${L.map((x,i)=>`<button data-i="${i}" aria-label="Powiększ"><img loading="lazy" decoding="async" src="${esc(x.src)}" alt="${esc(x.cap)}"></button>`).join('')}</div>${L.length>1?`<div class="dots">${L.map(()=>'<i></i>').join('')}</div><div class="capt">${L.length} ujęcia – przesuń palcem</div>`:''}`;
+  wrap.querySelectorAll('button').forEach(b=>b.onclick=()=>openLB(L.filter(x=>!x.bad),+b.dataset.i));
+  wrap.querySelectorAll('img').forEach((im,i)=>im.onerror=()=>{L[i].bad=true;im.parentElement.remove();
+    if(!wrap.querySelector('img'))wrap.innerHTML='<div class="ph"><b>W przygotowaniu</b><span>plik wizualizacji jeszcze niedostępny</span></div>';});
+}
+async function viewRooms(){
+  const st=styleBy(cur());
+  const floors=[['parter','Parter'],['poddasze','Poddasze']];
+  app.innerHTML=`<h1>${esc(st.name)}</h1><p class="lead">${esc(st.desc)}</p>
+   <p class="note" style="border-left-color:var(--acc2)">Wizualizacje nastrojowe (AI), proporcje wg rzutów, nie 1:1. Wymiary i rzut każdego pomieszczenia – pod zdjęciem. Dotknij zdjęcia, aby powiększyć.</p>
+   ${floors.map(([f,l])=>{const rs=S.rooms.filter(r=>r.floor===f);return `<h2 class="floorh">${l} <small>${rs.length} pomieszczeń · ${rs.reduce((a,r)=>a+(+r.area||0),0).toFixed(1).replace('.',',')} m²</small></h2><div class="grid s3">${rs.map(roomCard).join('')}</div>`;}).join('')}
+   <p style="margin-top:24px"><a class="btn" href="#/zakupy/${st.slug}">Lista zakupów – ${esc(st.name)} →</a></p>`;
+  app.querySelectorAll('img.plan').forEach(im=>im.onclick=()=>openLB([{src:im.dataset.plan,cap:im.dataset.cap}],0));
+  const m=await loadManifest(st.slug);
+  if(cur()!==st.slug)return;
+  for(const r of S.rooms){
+    const wrap=app.querySelector(`[data-room="${r.slug}"]`);if(!wrap)continue;
+    if(m&&m.rooms[r.slug]?.length)fillImgs(wrap,m.rooms[r.slug],r);
+    else probeRoom(st.slug,r.slug).then(l=>{if(cur()===st.slug)fillImgs(wrap,l,r);});
+  }
+}
+
+/* ---------- widok: zakupy ---------- */
+async function viewShop(){
+  const st=styleBy(cur());
+  app.innerHTML='<p class="loading">Ładowanie listy…</p>';
+  let d;try{d=await getJSON(`data/zakupy-${st.slug}.json`);}catch(e){app.innerHTML=`<div class="empty">Brak listy zakupów dla stylu ${esc(st.name)}.</div>`;return;}
+  if(cur()!==st.slug)return;
+  const [kMin,kMax]=d.kitchen_est,B=d.budget;
+  const roomName=id=>S.rooms.find(r=>r.id===id)?.name||'';
+  const ids=[...new Set(d.items.flatMap(i=>i.room.match(/\d\/\d{2}/g)||[]))].sort();
+  const gen=d.items.some(i=>!/\d\/\d{2}/.test(i.room));
+  const cats=Object.entries(d.by_cat);
+  app.innerHTML=`<h1>Lista zakupów – ${esc(st.name)}</h1>
+  <div class="kpis">
+   <div class="kpi"><small>Suma zweryfikowana (${d.verified} poz.)</small><b>${zl(d.total)}</b></div>
+   <div class="kpi"><small>+ kuchnia na wymiar (szacunek)</small><b>${rng(kMin,kMax)}</b></div>
+   <div class="kpi"><small>Razem z kuchnią</small><b>${rng(d.total+kMin,d.total+kMax)}</b></div>
+   <div class="kpi"><small>Budżet 400 tys. – zostaje</small><b style="color:var(--ok)">${rng(B-d.total-kMax,B-d.total-kMin)}</b></div>
+  </div>
+  <div class="bar" title="Udział w budżecie 400 000 zł">${cats.map(([c,v])=>`<span style="width:${v/B*100}%;background:${CAT_COL[c]||'#999'}" title="${esc(c)} ${zl(v)}"></span>`).join('')}<span style="width:${kMin/B*100}%;background:repeating-linear-gradient(45deg,#B9805E 0 4px,#d9b49b 4px 8px)" title="kuchnia na wymiar (min.)"></span></div>
+  <div class="legend">${cats.map(([c,v])=>`<span><i style="background:${CAT_COL[c]||'#999'}"></i>${esc(c)} ${zl(v)}</span>`).join('')}<span><i style="background:#B9805E"></i>kuchnia na wymiar (szac.)</span><span>tło = budżet 400 000 zł</span></div>
+  <details class="note"><summary><b>Czego nie ma w sumie (${S.gaps.length} uwag)</b> – kuchnia na wymiar, okap wyspowy, robocizna…</summary><ul>${S.gaps.map(g=>`<li>${esc(g)}</li>`).join('')}</ul></details>
+  <div class="filters">
+   <select id="f-room" aria-label="Pomieszczenie"><option value="">Wszystkie pomieszczenia</option>${ids.map(id=>`<option value="${id}">${id} ${esc(roomName(id))}</option>`).join('')}${gen?'<option value="_og">Ogólne / cały dom</option>':''}</select>
+   <select id="f-grp" aria-label="Grupowanie"><option value="cat">wg kategorii</option><option value="room">wg pomieszczenia</option></select>
+   <input type="search" id="f-q" placeholder="Szukaj produktu / sklepu" aria-label="Szukaj">
+  </div>
+  <div id="list"></div>`;
+  const draw=()=>{
+    const fr=$('#f-room').value,g=$('#f-grp').value,q=$('#f-q').value.trim().toLowerCase();
+    let it=d.items.filter(i=>!fr||(fr==='_og'?!/\d\/\d{2}/.test(i.room):i.room.includes(fr)));
+    if(q)it=it.filter(i=>(i.product+' '+i.shop+' '+i.cat+' '+i.room).toLowerCase().includes(q));
+    const key=i=>g==='cat'?i.cat.split(' –')[0]:i.room;
+    const groups={};it.forEach(i=>(groups[key(i)]??=[]).push(i));
+    const order=Object.keys(groups).sort((a,b)=>g==='cat'?Object.keys(CAT_COL).indexOf(a)-Object.keys(CAT_COL).indexOf(b):a.localeCompare(b,'pl',{numeric:true}));
+    const tot=it.reduce((a,i)=>a+(i.sum||0),0);
+    $('#list').innerHTML=(it.length?`<p class="capt" style="padding:0">${it.length} pozycji · suma widocznych: <b>${zl2(tot)}</b>${fr?' (pozycje „cały dom” liczone w filtrze „Ogólne”)':''}</p>`:'<div class="empty">Brak pozycji dla tego filtra.</div>')+
+     order.map(k=>{const L=groups[k];const s=L.reduce((a,i)=>a+(i.sum||0),0);
+      return `<div class="cat"><h3>${esc(g==='room'&&/^\d\/\d{2}$/.test(k)?k+' '+roomName(k):k)}</h3><span>${zl2(s)}</span></div>
+      <table class="shop"><thead><tr><th>Produkt</th><th>Sklep</th><th class="n">Cena</th><th class="n">Ilość</th><th class="n">Suma</th><th>Sprawdzono</th></tr></thead><tbody>
+      ${L.map(i=>`<tr><td class="pn"><div class="pname"><a href="${esc(i.url)}" target="_blank" rel="noopener nofollow">${esc(i.product)} ↗</a><small>${esc(g==='cat'?i.room:i.cat)}${i.formula?' · '+esc(i.formula):''}</small></div></td>
+       <td data-l="Sklep">${esc(i.shop)}</td>
+       <td class="n" data-l="Cena">${i.price!=null?zl2(i.price)+' / '+esc(i.unit):'<span class="unv">niezweryfikowana</span>'}</td>
+       <td class="n" data-l="Ilość">${esc(String(i.qty).replace('.',','))} ${esc(i.unit)}</td>
+       <td class="n" data-l="Suma">${i.sum!=null?'<b>'+zl2(i.sum)+'</b>':'<span class="unv">poza sumą</span>'}</td>
+       <td data-l="Sprawdzono">${esc(i.date)}</td></tr>`).join('')}</tbody></table>`;}).join('');
+  };
+  ['f-room','f-grp','f-q'].forEach(id=>$('#'+id).addEventListener('input',draw));
+  draw();
+}
+
+/* ---------- widok: porównanie ---------- */
+function viewCompare(){
+  const C=S.styles.map(s=>({s,c:cmpBy(s.slug)})).filter(x=>x.c);
+  const cats=Object.keys(CAT_COL).filter(k=>C.some(x=>x.c.by_cat[k]!=null));
+  const min=k=>Math.min(...C.map(x=>k?x.c.by_cat[k]??Infinity:x.c.total));
+  const B=C[0]?.c.budget||400000,[kMin,kMax]=C[0]?.c.kitchen_est||[0,0];
+  const maxT=Math.max(...C.map(x=>x.c.total+kMax));
+  app.innerHTML=`<h1>Porównanie stylów</h1>
+  <p class="lead">Sumy zweryfikowanych cen materiałów i mebli (bez robocizny). Do każdej doliczyć kuchnię na wymiar: ${rng(kMin,kMax)}. Budżet: ${zl(B)}.</p>
+  <div class="grid s3" style="margin-bottom:18px">${C.sort((a,b)=>a.c.total-b.c.total).map(({s,c})=>`<a class="card" href="#/zakupy/${s.slug}" style="padding:12px 14px;text-decoration:none;color:inherit">
+    <div class="hd" style="display:flex;justify-content:space-between"><b>${esc(s.name)}</b><b>${zl(c.total)}</b></div>
+    <div class="bar" style="height:12px">${cats.map(k=>`<span style="width:${(c.by_cat[k]||0)/maxT*100}%;background:${CAT_COL[k]}"></span>`).join('')}<span style="width:${kMin/maxT*100}%;background:repeating-linear-gradient(45deg,#B9805E 0 4px,#d9b49b 4px 8px)"></span></div>
+    <small style="color:var(--mut)">z kuchnią ${rng(c.total+kMin,c.total+kMax)} · ${Math.round((c.total+kMax)/B*100)}% budżetu (max)</small></a>`).join('')}</div>
+  <div class="legend" style="margin-bottom:10px">${cats.map(k=>`<span><i style="background:${CAT_COL[k]}"></i>${esc(k)}</span>`).join('')}<span><i style="background:#B9805E"></i>kuchnia na wymiar (min.)</span></div>
+  <div class="scroll"><table class="cmp"><thead><tr><th>Kategoria</th>${S.styles.map(s=>`<th><a href="#/zakupy/${s.slug}">${esc(s.name)}</a></th>`).join('')}</tr></thead><tbody>
+  ${cats.map(k=>`<tr><td>${esc(k)}</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.by_cat[k];return `<td class="${v===min(k)?'best':''}">${zl(v)}</td>`;}).join('')}</tr>`).join('')}
+  <tr class="tot"><td>Razem zweryfikowane</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.total;return `<td class="${v===min()?'best':''}">${zl(v)}</td>`;}).join('')}</tr>
+  <tr><td>+ kuchnia (zakres)</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.total;return `<td>${rng(v+kMin,v+kMax)}</td>`;}).join('')}</tr>
+  <tr><td>Zostaje z 400 tys. (min.)</td>${S.styles.map(s=>`<td>${zl(B-cmpBy(s.slug).total-kMax)}</td>`).join('')}</tr>
+  <tr><td>Pozycje zweryf. / niezweryf.</td>${S.styles.map(s=>{const c=cmpBy(s.slug);return `<td>${c.verified} / ${c.unverified}</td>`;}).join('')}</tr>
+  </tbody></table></div>
+  <p class="capt" style="padding:8px 0">Najtańsza wartość w wierszu – na zielono. Szczegóły i luki w zakładce „Zakupy”.</p>`;
+}
+
+/* ---------- start ---------- */
+Promise.all([getJSON('data/styles.json'),getJSON('data/rooms.json'),getJSON('data/porownanie.json'),getJSON('data/luki.json').catch(()=>[])])
+ .then(([st,rm,cmp,gaps])=>{Object.assign(S,{styles:st,rooms:rm,cmp,gaps});addEventListener('hashchange',route);route();})
+ .catch(e=>{app.innerHTML=`<div class="empty">Nie udało się wczytać danych (${esc(e.message)}). Otwórz stronę przez serwer HTTP (np. GitHub Pages), nie jako plik.</div>`;});
+})();
