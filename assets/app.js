@@ -8,7 +8,24 @@ const zl=n=>n==null?'—':new Intl.NumberFormat('pl-PL',{maximumFractionDigits:0
 const rng=(a,b)=>{const f=new Intl.NumberFormat('pl-PL',{maximumFractionDigits:0});return f.format(Math.round(a))+'–'+f.format(Math.round(b))+' zł';};
 const pl=(n,a,b,c)=>n===1?a:(n%10>=2&&n%10<=4&&(n%100<10||n%100>=20))?b:c;
 const zl2=n=>n==null?'—':new Intl.NumberFormat('pl-PL',{minimumFractionDigits:2,maximumFractionDigits:2}).format(n)+' zł';
-const CAT_COL={'podłogi':'#C9A77C','płytki':'#D8C7AE','farby':'#E6DCCD','drzwi':'#8C6A43','łazienki':'#7D7A5B','oświetlenie':'#E3B65A','kuchnia':'#B9805E','meble':'#4E4A43'};
+const CAT_COL={'podłogi':'#C9A77C','płytki':'#D8C7AE','farby':'#E6DCCD','drzwi':'#8C6A43','łazienki':'#7D7A5B','oświetlenie':'#E3B65A','kuchnia':'#B9805E','meble':'#4E4A43','drzwi zewnętrzne / EI30':'#6B5137','tekstylia':'#D9B8A0','kominek':'#9B5F45','schody i balustrady':'#A8865F','wykończenie ścian':'#BFB5A3','Dodatki i dekoracje':'#8FA37E','materiały pomocnicze':'#A39E93','robocizna':'#5F7F8C'};
+const isLab=i=>i.cat.startsWith('robocizna');
+/* rozbicie sumy: produkty + materiały + robocizna (+ kuchnia) vs budżet */
+const brk=d=>{const b=d.breakdown||{},m=b.materials||d.by_cat?.['materiały pomocnicze']||0,l=b.labour||d.by_cat?.['robocizna']||0;
+  return {p:b.products??(d.total-m-l),m,l,lmin:b.labour_min,lmax:b.labour_max,t:d.total};};
+const left=(B,t,kMin,kMax)=>{const a=B-t-kMax,b=B-t-kMin;
+  if(a>=0)return `<b style="color:var(--ok)">zostaje ${rng(a,b)}</b>`;
+  if(b<0)return `<b style="color:var(--bad)">brakuje ${rng(-b,-a)}</b>`;
+  return `<b style="color:var(--warn)">od −${zl(-a)} do +${zl(b)}</b>`;};
+const sumCard=(d,kMin,kMax,B)=>{const x=brk(d);
+  return `<div class="sumcard" aria-label="Podsumowanie kosztów">
+   <div class="sr"><span><i style="background:#4E4A43"></i>Produkty <small>wykończenie, wyposażenie, meble</small></span><b>${zl(x.p)}</b></div>
+   <div class="sr"><span>+ <i style="background:${CAT_COL['materiały pomocnicze']}"></i>Materiały pomocnicze</span><b>${zl(x.m)}</b></div>
+   <div class="sr"><span>+ <i style="background:${CAT_COL['robocizna']}"></i>Robocizna <small>średnie stawki rynkowe${x.lmin!=null?' · widełki '+rng(x.lmin,x.lmax):''}</small></span><b>${zl(x.l)}</b></div>
+   <div class="sr"><span>+ <i style="background:#B9805E"></i>Kuchnia na wymiar <small>szacunek</small></span><b>${rng(kMin,kMax)}</b></div>
+   <div class="sr tot"><span>= Razem</span><b>${rng(x.t+kMin,x.t+kMax)}</b></div>
+   <div class="sr"><span>Budżet ${zl(B)} (z meblami)</span>${left(B,x.t,kMin,kMax)}</div>
+  </div>`;};
 const cache={};
 const getJSON=(u,opt)=>(cache[u]??=fetch(u,opt).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();}));
 const S={styles:[],rooms:[],gaps:[],cmp:[]};
@@ -150,7 +167,7 @@ function roomCard(r){
 const fname=src=>String(src).split('/').pop().split('?')[0];
 const OC={ok:'zgodny',partial:'częściowo',generic:'ogólnikowy',mismatch:'niezgodny',luka_csv:'brak w CSV',nieczytelne:'nieczytelny'};
 const wTag=b=>{const m=String(b).match(/^\[([^\]]+)\]\s*(.*)$/);if(!m)return ['',b];let t=m[1],x=m[2];if(t==='auto'){t='kontrola';x=x.replace(/^znak_wodny:.*/,'brak znaku wodnego „wizualizacja nastrojowa (AI)”').replace(/^[a-z_]+:\s*/,'');}return [t,x];};
-function wBadge(v){if(!v)return '';const ok=v.status==='zgodne';return `<span class="wbadge ${ok?'ok':'bad'}">${ok?'✓ zgodne':'✕ do poprawy'}</span>`;}
+function wBadge(v){if(!v)return '';const st=String(v.status||'');if(st==='zgodne')return '<span class="wbadge ok">✓ zgodne</span>';if(st.startsWith('niezweryfikowane'))return '<span class="wbadge neu" title="obraz nie był jeszcze sprawdzony przez testera">do weryfikacji</span>';return '<span class="wbadge bad">✕ do poprawy</span>';}
 function wPrice(p){const c=p.cena!=null?zl2(p.cena):(p.cena_txt||'cena niezweryfikowana');const q=p.ilosc!=null?` × ${String(p.ilosc).replace('.',',')} ${esc(p.jednostka||'')}`:'';const su=p.suma!=null?` = <b>${zl2(p.suma)}</b>`:(p.suma_txt?` = <b>${esc(p.suma_txt)} zł</b>`:'');return `${esc(c)}${q}${su}`;}
 function wBlock(v,i,n){
   if(!v)return '';
@@ -169,9 +186,17 @@ function fillImgs(wrap,list,r,W){
   if(!list.length)return;
   const L=list.map((x,i)=>({src:x.src,note:x.note,cap:x.cap&&x.title?x.cap:`${r.id} ${r.name}`+(x.cap?` – ${x.cap}`:'')}));
   const wv=L.map(x=>W?.widoki?.[fname(x.src)]);
-  wrap.innerHTML=`<div class="imgs">${L.map((x,i)=>`<button data-i="${i}" aria-label="Powiększ"><img loading="lazy" decoding="async" src="${esc(x.src)}" alt="${esc(x.cap)}">${wBadge(wv[i])}</button>`).join('')}</div>${L.length>1?`<div class="dots">${L.map(()=>'<i></i>').join('')}</div><div class="capt">${L.length} ujęcia – przesuń palcem</div>`:''}`;
-  wrap.querySelectorAll('button').forEach(b=>b.onclick=()=>openLB(L.filter(x=>!x.bad),+b.dataset.i));
-  wrap.querySelectorAll('img').forEach((im,i)=>im.onerror=()=>{L[i].bad=true;im.parentElement.remove();
+  const n=L.length;
+  wrap.innerHTML=`<div class="imgs">${L.map((x,i)=>`<button data-i="${i}" aria-label="Powiększ ujęcie ${i+1}"><img loading="${i?'lazy':'eager'}" decoding="async" src="${esc(x.src)}" alt="${esc(x.cap)}">${wBadge(wv[i])}${n>1?`<span class="vcnt">${i+1}/${n}</span>`:''}</button>`).join('')}</div>${n>1?`<div class="thumbs" role="tablist">${L.map((x,i)=>`<button type="button" role="tab" data-t="${i}" class="${i?'':'on'}" aria-label="Ujęcie ${i+1}"><img loading="lazy" decoding="async" src="${esc(x.src)}" alt=""></button>`).join('')}</div><div class="capt vcap">${n} ${pl(n,'ujęcie','ujęcia','ujęć')} z różnych stron – przesuń palcem lub dotknij miniatury</div>`:''}`;
+  const sc=wrap.querySelector('.imgs');
+  wrap.querySelectorAll('.imgs button').forEach(b=>b.onclick=()=>{const ok=L.filter(x=>!x.bad);openLB(ok,Math.max(0,ok.indexOf(L[+b.dataset.i])));});
+  if(n>1){
+    const th=[...wrap.querySelectorAll('.thumbs button')];
+    const mark=i=>th.forEach((t,j)=>t.classList.toggle('on',j===i));
+    th.forEach(t=>t.onclick=()=>{const i=+t.dataset.t;sc.scrollTo({left:i*sc.clientWidth,behavior:'smooth'});mark(i);});
+    let raf=0;sc.addEventListener('scroll',()=>{cancelAnimationFrame(raf);raf=requestAnimationFrame(()=>mark(Math.round(sc.scrollLeft/Math.max(1,sc.clientWidth))));},{passive:true});
+  }
+  wrap.querySelectorAll('img').forEach((im,i)=>im.onerror=()=>{L[i].bad=true;im.parentElement.remove();wrap.querySelector(`.thumbs [data-t="${i}"]`)?.remove();
     if(!wrap.querySelector('img'))wrap.innerHTML='<div class="ph"><b>W przygotowaniu</b><span>plik wizualizacji jeszcze niedostępny</span></div>';});
   const box=wrap.closest('.room')?.querySelector('.wal');
   const notes=[...new Set(L.map(x=>x.note).filter(Boolean))].map(n=>`<p class="note vnote">⚠ ${esc(n)}</p>`).join('');
@@ -185,6 +210,7 @@ async function viewRooms(){
    ${floors.map(([f,l])=>{const rs=S.rooms.filter(r=>r.floor===f);return `<h2 class="floorh">${l} <small>${rs.length} pomieszczeń · ${rs.reduce((a,r)=>a+(+r.area||0),0).toFixed(1).replace('.',',')} m²</small></h2><div class="grid s3">${rs.map(roomCard).join('')}</div>`;}).join('')}
    <p style="margin-top:24px"><a class="btn" href="#/zakupy/${st.slug}">Lista zakupów – ${esc(st.name)} →</a></p>`;
   app.querySelectorAll('img.plan').forEach(im=>im.onclick=()=>openLB([{src:im.dataset.plan,cap:im.dataset.cap}],0));
+  spacerLinks(st.slug);
   const [m,W]=await Promise.all([loadManifest(st.slug),getJSON(`data/walidacja-${st.slug}.json`).catch(()=>null)]);
   if(cur()!==st.slug)return;
   for(const r of S.rooms){
@@ -194,8 +220,61 @@ async function viewRooms(){
     else probeRoom(st.slug,r.slug).then(l=>{if(cur()===st.slug)fillImgs(wrap,l,r,W);});
   }
 }
+/* spacer 3D/360° – link na karcie pokoju tylko gdy dla stylu i pokoju są gotowe pliki (data/spacer.json) */
+async function spacerLinks(slug){
+  let M;try{M=await getJSON('data/spacer.json');}catch(e){return;}
+  const k=Object.keys(M.style||{}).find(k=>M.style[k].slug===slug);if(!k||cur()!==slug)return;
+  for(const r of S.rooms){if(!(M.pokoje||[]).includes(r.id))continue;
+    const b=app.querySelector(`#r-${r.slug} .b`);if(!b||b.querySelector('.sp3d'))continue;
+    b.insertAdjacentHTML('beforeend',`<p class="sp3d" style="margin:10px 0 0"><a class="btn" href="spacer.html?styl=${encodeURIComponent(slug)}&pokoj=${encodeURIComponent(r.id.replace('/','-'))}">Spacer 3D / 360° →</a></p>`);}
+}
+
+/* robocizna: opis ilości + widełki + linki do źródeł stawek */
+const labInfo=i=>{const f=String(i.formula||''),[a,src='']=f.split('; źródła: ');
+  const links=[...src.matchAll(/([^;(]+?)\s*\((https?:\/\/[^)\s]+)\)/g)].map(m=>`<a href="${esc(m[2])}" target="_blank" rel="noopener nofollow">${esc(m[1].trim())}</a>`);
+  const rest=src.replace(/\s*\(https?:\/\/[^)\s]+\)/g,'').split(';').map(x=>x.trim()).filter(Boolean);
+  return `<small>${esc(a)}</small><small class="src">Źródła stawek: ${links.length?links.join(' · '):esc(rest.join('; '))}</small>${/SZACUNEK/.test(i.status)?`<small class="est">${esc(i.status)}</small>`:''}`;};
 
 /* ---------- widok: zakupy ---------- */
+/* oceny i opinie (audyt jakości, zakupy/opinie.py) */
+function opInfo(i){const o=i.op;if(!o)return'';
+  const cls=o.v==='wymień'?'bad':o.v==='uwaga'?'mid':'ok';
+  const st=o.r!=null?`★ ${String(o.r).replace('.',',')} <i>(${o.c} op.)</i>`:'brak opinii';
+  const xs=(o.x||[]).map((u,k)=>`<a href="${esc(u)}" target="_blank" rel="noopener nofollow">źródło${o.x.length>1?' '+(k+1):''}</a>`).join(' ');
+  return `<div class="op"><span class="opb ${cls}">${st} · ${esc(o.v)}</span>${o.dec?'<span class="opb dec">do decyzji – wymaga zmiany wizualizacji</span>':''}<small>${esc(o.n)}${o.alt?' Propozycja: '+esc(o.alt)+'.':''} ${xs} <span class="opd">(${esc(o.d)})</span></small></div>`;}
+/* ---------- warianty wykończenia (Podstawowy / Wyższy / Premium) ---------- */
+async function wariantyCard(slug){
+  const box=$('#warianty');if(!box)return;
+  let W;try{W=await getJSON('data/warianty.json');}catch(e){box.remove();return;}
+  const S0=W.style?.[slug];if(!S0){box.remove();return;}
+  let sel=localStorage.getItem('wariant')||'podstawowy';if(!S0.warianty[sel])sel='podstawowy';
+  const sgn=n=>(n>0?'+':n<0?'−':'')+zl(Math.abs(n));
+  const draw=()=>{
+    const w=S0.warianty[sel],b=S0.warianty.podstawowy;
+    const seg=W.kolejnosc.map(k=>{const x=S0.warianty[k];return `<button type="button" role="tab" aria-selected="${k===sel}" data-w="${k}" class="${k===sel?'on':''}"><b>${esc(W.nazwy[k])}</b><small>${zl(x.razem_avg)}</small></button>`;}).join('');
+    const lim=w.razem_avg>W.limit?`<b style="color:var(--bad)">ponad limit ${zl(W.limit)}</b>`:`<b style="color:var(--ok)">w limicie ${zl(W.limit)} (zostaje ${zl(W.limit-w.razem_avg)})</b>`;
+    const mx=w.ponad_limit_max?` · <span style="color:var(--warn)">scenariusz max ${zl(w.razem_max)} &gt; limit</span>`:'';
+    const R=(w.roznice||[]).filter(r=>Math.abs(r.delta)>=1);
+    const rows=R.map(r=>`<tr><td>${esc(r.kat)}${r.pom?` <small>${esc(r.pom)}</small>`:''}</td><td><small>${esc(r.z||'—')}</small></td><td>${r.url&&r.typ!=='kuchnia'?`<a href="${esc(r.url)}" target="_blank" rel="noopener nofollow">${esc(r.na||'—')} ↗</a>`:esc(r.na||'—')}${r.dlaczego?`<small>${esc(r.dlaczego)}</small>`:''}</td><td class="n"><b>${sgn(r.delta)}</b></td></tr>`).join('');
+    box.innerHTML=`<div class="wcard"><h2>Wariant wykończenia</h2>
+     <div class="wseg" role="tablist" aria-label="Wariant wykończenia">${seg}</div>
+     <div class="sumcard">
+      <div class="sr"><span>Produkty</span><b>${zl(w.prod)}</b></div>
+      <div class="sr"><span>+ Materiały pomocnicze</span><b>${zl(w.aux)}</b></div>
+      <div class="sr"><span>+ Robocizna <small>min–max ${rng(w.lab_min,w.lab_max)}</small></span><b>${zl(w.lab_avg)}</b></div>
+      <div class="sr"><span>+ Kuchnia na wymiar <small>${esc(w.kuchnia)}</small></span><b>${zl(w.k_avg)}</b></div>
+      <div class="sr tot"><span>= Razem (scenariusz średni)</span><b>${zl(w.razem_avg)}</b></div>
+      <div class="sr"><span>Zakres min–max ${rng(w.razem_min,w.razem_max)}${mx}</span>${lim}</div>
+     </div>
+     ${sel==='podstawowy'?'<p class="capt">Wariant podstawowy = lista poniżej. Wybierz „Wyższy” lub „Premium”, aby zobaczyć różnice pozycja po pozycji.</p>':
+      `<p class="capt">Różnica względem podstawowego: <b>${sgn(w.razem_avg-b.razem_avg)}</b> · ${R.length} zmian · pełna lista: <code>${esc(w.plik)}</code></p>
+      <div class="wkey">${(w.kluczowe||[]).map(k=>`<span><b>${sgn(k.delta)}</b> ${esc(k.na)}</span>`).join('')}</div>
+      <details class="note"><summary><b>Różnice pozycja po pozycji (${R.length})</b></summary><table class="shop wdiff"><thead><tr><th>Kategoria</th><th>Było</th><th>Jest</th><th class="n">Δ</th></tr></thead><tbody>${rows}</tbody></table></details>`}
+    </div>`;
+    box.querySelectorAll('[data-w]').forEach(btn=>btn.addEventListener('click',()=>{sel=btn.dataset.w;localStorage.setItem('wariant',sel);draw();}));
+  };
+  draw();
+}
 async function viewShop(){
   const st=styleBy(cur());
   app.innerHTML='<p class="loading">Ładowanie listy…</p>';
@@ -208,14 +287,16 @@ async function viewShop(){
   const cats=Object.entries(d.by_cat);
   app.innerHTML=`<h1>Lista zakupów – ${esc(st.name)}</h1>
   <div class="kpis">
-   <div class="kpi"><small>Suma zweryfikowana (${d.verified} poz.)</small><b>${zl(d.total)}</b></div>
+   <div class="kpi"><small>Produkty + materiały + robocizna (${d.verified} poz.)</small><b>${zl(d.total)}</b></div>
    <div class="kpi"><small>+ kuchnia na wymiar (szacunek)</small><b>${rng(kMin,kMax)}</b></div>
    <div class="kpi"><small>Razem z kuchnią</small><b>${rng(d.total+kMin,d.total+kMax)}</b></div>
-   <div class="kpi"><small>Budżet 400 tys. – zostaje</small><b style="color:var(--ok)">${rng(B-d.total-kMax,B-d.total-kMin)}</b></div>
+   <div class="kpi"><small>Budżet 400 tys.</small>${left(B,d.total,kMin,kMax)}</div>
   </div>
+  ${sumCard(d,kMin,kMax,B)}
+  <div id="warianty"></div>
   <div class="bar" title="Udział w budżecie 400 000 zł">${cats.map(([c,v])=>`<span style="width:${v/B*100}%;background:${CAT_COL[c]||'#999'}" title="${esc(c)} ${zl(v)}"></span>`).join('')}<span style="width:${kMin/B*100}%;background:repeating-linear-gradient(45deg,#B9805E 0 4px,#d9b49b 4px 8px)" title="kuchnia na wymiar (min.)"></span></div>
   <div class="legend">${cats.map(([c,v])=>`<span><i style="background:${CAT_COL[c]||'#999'}"></i>${esc(c)} ${zl(v)}</span>`).join('')}<span><i style="background:#B9805E"></i>kuchnia na wymiar (szac.)</span><span>tło = budżet 400 000 zł</span></div>
-  <details class="note"><summary><b>Czego nie ma w sumie (${S.gaps.length} uwag)</b> – kuchnia na wymiar, okap wyspowy, robocizna…</summary><ul>${S.gaps.map(g=>`<li>${esc(g)}</li>`).join('')}</ul></details>
+  <details class="note"><summary><b>Czego nie ma w sumie (${S.gaps.length} uwag)</b> – kuchnia na wymiar, zakres GW, szacunki…</summary><ul>${S.gaps.map(g=>`<li>${esc(g)}</li>`).join('')}</ul></details>
   <div class="filters">
    <select id="f-room" aria-label="Pomieszczenie"><option value="">Wszystkie pomieszczenia</option>${ids.map(id=>`<option value="${id}">${id} ${esc(roomName(id))}</option>`).join('')}${gen?'<option value="_og">Ogólne / cały dom</option>':''}</select>
    <select id="f-grp" aria-label="Grupowanie"><option value="cat">wg kategorii</option><option value="room">wg pomieszczenia</option></select>
@@ -234,15 +315,16 @@ async function viewShop(){
      order.map(k=>{const L=groups[k];const s=L.reduce((a,i)=>a+(i.sum||0),0);
       return `<div class="cat"><h3>${esc(g==='room'&&/^\d\/\d{2}$/.test(k)?k+' '+roomName(k):k)}</h3><span>${zl2(s)}</span></div>
       <table class="shop"><thead><tr><th>Produkt</th><th>Sklep</th><th class="n">Cena</th><th class="n">Ilość</th><th class="n">Suma</th><th>Sprawdzono</th></tr></thead><tbody>
-      ${L.map(i=>`<tr><td class="pn"><div class="pname"><a href="${esc(i.url)}" target="_blank" rel="noopener nofollow">${esc(i.product)} ↗</a><small>${esc(g==='cat'?i.room:i.cat)}${i.formula?' · '+esc(i.formula):''}</small></div></td>
-       <td data-l="Sklep">${esc(i.shop)}</td>
-       <td class="n" data-l="Cena">${i.price!=null?zl2(i.price)+' / '+esc(i.unit):'<span class="unv">niezweryfikowana</span>'}</td>
+      ${L.map(i=>`<tr><td class="pn"><div class="pname"><a href="${esc(i.url)}" target="_blank" rel="noopener nofollow">${esc(i.product)} ↗</a>${isLab(i)?labInfo(i):`<small>${esc(g==='cat'?i.room:i.cat)}${i.formula?' · '+esc(i.formula):''}</small>`}${opInfo(i)}</div></td>
+       <td data-l="${isLab(i)?'Źródło stawki':'Sklep'}">${isLab(i)?`<a href="${esc(i.url)}" target="_blank" rel="noopener nofollow">${esc(i.shop)} ↗</a>`:esc(i.shop)}</td>
+       <td class="n" data-l="${isLab(i)?'Stawka (średnia)':'Cena'}">${i.price!=null?zl2(i.price)+' / '+esc(i.unit):'<span class="unv">niezweryfikowana</span>'}</td>
        <td class="n" data-l="Ilość">${esc(String(i.qty).replace('.',','))} ${esc(i.unit)}</td>
        <td class="n" data-l="Suma">${i.sum!=null?'<b>'+zl2(i.sum)+'</b>':'<span class="unv">poza sumą</span>'}</td>
        <td data-l="Sprawdzono">${esc(i.date)}</td></tr>`).join('')}</tbody></table>`;}).join('');
   };
   ['f-room','f-grp','f-q'].forEach(id=>$('#'+id).addEventListener('input',draw));
   draw();
+  wariantyCard(st.slug);
 }
 
 /* ---------- widok: porównanie ---------- */
@@ -253,20 +335,23 @@ function viewCompare(){
   const B=C[0]?.c.budget||400000,[kMin,kMax]=C[0]?.c.kitchen_est||[0,0];
   const maxT=Math.max(...C.map(x=>x.c.total+kMax));
   app.innerHTML=`<h1>Porównanie stylów</h1>
-  <p class="lead">Sumy zweryfikowanych cen materiałów i mebli (bez robocizny). Do każdej doliczyć kuchnię na wymiar: ${rng(kMin,kMax)}. Budżet: ${zl(B)}.</p>
+  <p class="lead">Produkty (ceny zweryfikowane) + materiały pomocnicze + robocizna (szacunek wg średnich stawek rynkowych). Do każdej sumy doliczyć kuchnię na wymiar: ${rng(kMin,kMax)}. Budżet: ${zl(B)} (z meblami).</p>
   <div class="grid s3" style="margin-bottom:18px">${C.sort((a,b)=>a.c.total-b.c.total).map(({s,c})=>`<a class="card" href="#/zakupy/${s.slug}" style="padding:12px 14px;text-decoration:none;color:inherit">
     <div class="hd" style="display:flex;justify-content:space-between"><b>${esc(s.name)}</b><b>${zl(c.total)}</b></div>
     <div class="bar" style="height:12px">${cats.map(k=>`<span style="width:${(c.by_cat[k]||0)/maxT*100}%;background:${CAT_COL[k]}"></span>`).join('')}<span style="width:${kMin/maxT*100}%;background:repeating-linear-gradient(45deg,#B9805E 0 4px,#d9b49b 4px 8px)"></span></div>
-    <small style="color:var(--mut)">z kuchnią ${rng(c.total+kMin,c.total+kMax)} · ${Math.round((c.total+kMax)/B*100)}% budżetu (max)</small></a>`).join('')}</div>
+    <small style="color:var(--mut);display:block">produkty ${zl(brk(c).p)} + materiały ${zl(brk(c).m)} + robocizna ${zl(brk(c).l)} + kuchnia ${rng(kMin,kMax)}</small>
+    <small style="color:var(--mut)">= ${rng(c.total+kMin,c.total+kMax)} · ${Math.round((c.total+kMax)/B*100)}% budżetu (max) · ${left(B,c.total,kMin,kMax)}</small></a>`).join('')}</div>
   <div class="legend" style="margin-bottom:10px">${cats.map(k=>`<span><i style="background:${CAT_COL[k]}"></i>${esc(k)}</span>`).join('')}<span><i style="background:#B9805E"></i>kuchnia na wymiar (min.)</span></div>
   <div class="scroll"><table class="cmp"><thead><tr><th>Kategoria</th>${S.styles.map(s=>`<th><a href="#/zakupy/${s.slug}">${esc(s.name)}</a></th>`).join('')}</tr></thead><tbody>
   ${cats.map(k=>`<tr><td>${esc(k)}</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.by_cat[k];return `<td class="${v===min(k)?'best':''}">${zl(v)}</td>`;}).join('')}</tr>`).join('')}
-  <tr class="tot"><td>Razem zweryfikowane</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.total;return `<td class="${v===min()?'best':''}">${zl(v)}</td>`;}).join('')}</tr>
+  <tr><td>w tym produkty</td>${S.styles.map(s=>`<td>${zl(brk(cmpBy(s.slug)).p)}</td>`).join('')}</tr>
+  <tr><td>Robocizna – widełki min–max</td>${S.styles.map(s=>{const x=brk(cmpBy(s.slug));return `<td>${x.lmin!=null?rng(x.lmin,x.lmax):'—'}</td>`;}).join('')}</tr>
+  <tr class="tot"><td>Razem produkty + materiały + robocizna</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.total;return `<td class="${v===min()?'best':''}">${zl(v)}</td>`;}).join('')}</tr>
   <tr><td>+ kuchnia (zakres)</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.total;return `<td>${rng(v+kMin,v+kMax)}</td>`;}).join('')}</tr>
-  <tr><td>Zostaje z 400 tys. (min.)</td>${S.styles.map(s=>`<td>${zl(B-cmpBy(s.slug).total-kMax)}</td>`).join('')}</tr>
+  <tr><td>Zostaje z 400 tys. (min.; minus = przekroczenie)</td>${S.styles.map(s=>{const v=B-cmpBy(s.slug).total-kMax;return `<td style="color:var(${v<0?'--bad':'--ok'})">${zl(v)}</td>`;}).join('')}</tr>
   <tr><td>Pozycje zweryf. / niezweryf.</td>${S.styles.map(s=>{const c=cmpBy(s.slug);return `<td>${c.verified} / ${c.unverified}</td>`;}).join('')}</tr>
   </tbody></table></div>
-  <p class="capt" style="padding:8px 0">Najtańsza wartość w wierszu – na zielono. Szczegóły i luki w zakładce „Zakupy”.</p>`;
+  <p class="capt" style="padding:8px 0">Najtańsza wartość w wierszu – na zielono. Robocizna to szacunek (średnia z cenników firm, Warszawa 2026) – źródła stawek przy każdej pozycji w zakładce „Zakupy”.</p>`;
 }
 
 /* ---------- start ---------- */

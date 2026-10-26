@@ -1,4 +1,4 @@
-:root{--bg:#F4EFE7;--card:#FFFDF9;--ink:#2B2723;--mut:#7A7166;--line:#E4DBCE;--acc:#8C6A43;--acc2:#7D7A5B;--ok:#4F7A4A;--warn:#B9805E;--r:16px;--sh:0 1px 2px rgba(43,39,35,.06),0 6px 20px rgba(43,39,35,.06)}
+:root{--bg:#F4EFE7;--card:#FFFDF9;--ink:#2B2723;--mut:#7A7166;--line:#E4DBCE;--acc:#8C6A43;--acc2:#7D7A5B;--ok:#4F7A4A;--warn:#B9805E;--bad:#A8432F;--r:16px;--sh:0 1px 2px rgba(43,39,35,.06),0 6px 20px rgba(43,39,35,.06)}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;padding-bottom:env(safe-area-inset-bottom)}
@@ -36,7 +36,7 @@ main{max-width:1180px;margin:0 auto;padding:16px}
 .btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
 .room .imgs{display:grid;grid-auto-flow:column;grid-auto-columns:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;background:#EAE3D8}
 .room .imgs::-webkit-scrollbar{display:none}
-.room .imgs button{all:unset;cursor:zoom-in;scroll-snap-align:start;aspect-ratio:16/10;display:block}
+.room .imgs button{all:unset;cursor:zoom-in;scroll-snap-align:start;scroll-snap-stop:always;aspect-ratio:16/9;display:block}
 .room .imgs img{width:100%;height:100%;object-fit:cover;display:block}
 .room .ph{aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;color:var(--mut);font-size:.9rem;background:repeating-linear-gradient(135deg,#EFE8DD 0 12px,#EAE2D6 12px 24px)}
 .room .ph b{font-weight:600;color:var(--ink)}
@@ -107,7 +107,7 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 /* autowalidacja */
 .room .imgs button{position:relative}
 .wbadge{display:inline-block;border-radius:999px;padding:2px 9px;font-size:.74rem;font-weight:600;line-height:1.5;white-space:nowrap;vertical-align:1px}
-.wbadge.ok{background:#E3EEDF;color:var(--ok)}.wbadge.bad{background:#F6E3D8;color:#9A4A26}
+.wbadge.ok{background:#E3EEDF;color:var(--ok)}.wbadge.bad{background:#F6E3D8;color:#9A4A26}.wbadge.neu{background:#ECEAE6;color:#5E5A55}
 .room .imgs .wbadge{position:absolute;left:10px;top:10px;box-shadow:0 1px 3px rgba(0,0,0,.15)}
 .room .wal details.walv{margin-top:10px;border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:#FFFCF7}
 .room .wal details.walv.bad{border-left:4px solid #C9764F}.room .wal details.walv.ok{border-left:4px solid var(--ok)}
@@ -125,3 +125,41 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .wu{font-size:.8rem;color:#9A4A26;margin-top:2px}
 .wluki{font-size:.8rem;color:var(--mut);margin:8px 0 0}
 .vnote{margin:8px 0;font-weight:600;color:var(--ink)}
+
+/* podsumowanie kosztów: produkty + materiały + robocizna + kuchnia vs budżet */
+.sumcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:6px 12px;margin:0 0 14px;font-size:.92rem}
+.sumcard .sr{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:6px 0;border-bottom:1px solid var(--line)}
+.sumcard .sr:last-child{border-bottom:0}
+.sumcard .sr b{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+.sumcard .sr span{flex:1 1 auto;min-width:0}.sumcard .sr small{color:var(--mut);font-size:.78rem;display:block}
+.sumcard .sr i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;vertical-align:0}
+.sumcard .sr.tot{font-weight:700;font-size:1rem}
+.pname small{overflow-wrap:anywhere}
+.pname small.src a{color:var(--acc)}.pname small.est{color:var(--warn)}
+
+/* wiele ujęć pokoju: licznik + miniatury (iPhone: przewijanie palcem, scroll-snap) */
+.room .imgs{-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.room .imgs .vcnt{position:absolute;right:10px;top:10px;background:rgba(0,0,0,.55);color:#fff;font-size:.75rem;padding:2px 8px;border-radius:10px}
+.room .thumbs{display:flex;gap:6px;padding:8px 10px 0;overflow-x:auto;scrollbar-width:none}
+.room .thumbs::-webkit-scrollbar{display:none}
+.room .thumbs button{all:unset;flex:0 0 auto;width:64px;aspect-ratio:16/9;border-radius:6px;overflow:hidden;cursor:pointer;opacity:.55;outline:2px solid transparent;outline-offset:1px;transition:opacity .15s}
+.room .thumbs button.on{opacity:1;outline-color:var(--acc,#8a6d4b)}
+.room .thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+@media (min-width:700px){.room .thumbs button{width:80px}}
+
+/* oceny/opinie produktów */
+.op{margin-top:3px;font-weight:400}.op small{display:block;color:var(--mut);font-size:.75rem;line-height:1.3}
+.opb{display:inline-block;font-size:.72rem;line-height:1.5;padding:0 6px;border-radius:9px;margin:1px 4px 1px 0;white-space:nowrap;border:1px solid currentColor}
+.opb i{font-style:normal;opacity:.8}.opb.ok{color:#2e7d4f}.opb.mid{color:#a86b00}.opb.bad{color:#b3261e}.opb.dec{color:#6a3fa0}
+.op a{color:var(--acc)}.opd{opacity:.7}
+
+/* warianty wykończenia */
+.wcard{margin:1rem 0}
+.wcard h2{margin:.2rem 0 .6rem;font-size:1.1rem}
+.wseg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:4px;border-radius:14px;background:rgba(127,127,127,.15);margin-bottom:.6rem}
+.wseg button{border:0;border-radius:10px;padding:.5rem .4rem;background:transparent;color:inherit;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px}
+.wseg button small{opacity:.75;font-size:.78rem}
+.wseg button.on{background:var(--card,#fff);box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.wkey{display:flex;flex-wrap:wrap;gap:6px;margin:.4rem 0}
+.wkey span{font-size:.82rem;padding:.25rem .55rem;border-radius:999px;background:rgba(127,127,127,.13)}
+.wdiff td small{display:block;opacity:.7}

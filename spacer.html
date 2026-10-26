@@ -70,6 +70,8 @@ body.sp main{max-width:1180px;padding:10px 12px 12px}
     <a href="index.html#/pokoje">Pokoje</a>
     <a href="index.html#/zakupy">Zakupy</a>
     <a href="index.html#/porownanie">Porównanie</a>
+    <a href="harmonogram.html">Harmonogram</a>
+    <a href="3d.html">3D</a>
     <a href="spacer.html" class="on" aria-current="page">Spacer</a>
   </nav>
 </header>
@@ -123,7 +125,7 @@ async function init() {
   const pk = (q.get('pokoj') || '').replace('-', '/');
   const ptq = q.get('punkt');
   st.pt = m.punkty[ptq] ? ptq : (Object.entries(m.punkty).find(([, p]) => p.pokoj === pk)?.[0] || Object.keys(m.punkty)[0]);
-  st.yaw = 0;
+  st.yaw = m.punkty[st.pt].yaw0 ?? 0;
   buildControls(); drawPlan(); fitStage();
   if (q.get('tryb') === 'spacer') setMode('walk'); else setMode('pano');
 }
@@ -167,7 +169,7 @@ async function startPano() {
   if (W()?.pano && !W().pano[st.pt]) { st.pt = panoPt(st.pt); syncRoomSeg(); syncUrl(); }
   if (!psv) {
     psv = new Viewer({ container: $('#pano'), panorama: W().pano[st.pt] ? W().pano[st.pt] : Object.values(W().pano)[0], navbar: false,
-      defaultYaw: st.yaw, defaultPitch: -0.08, defaultZoomLvl: 10, minFov: 40, maxFov: 100, loadingTxt: '', mousewheelCtrlKey: false,
+      defaultYaw: st.yaw, defaultPitch: -0.08, defaultZoomLvl: zl(st.pt), minFov: 40, maxFov: 100, loadingTxt: '', mousewheelCtrlKey: false,
       touchmoveTwoFingers: false, moveInertia: true, lang: { loadError: 'Nie udało się wczytać panoramy' },
       plugins: [[MarkersPlugin, {}], [GyroscopePlugin, { touchmove: true, absolutePosition: false }]] });
     markers = psv.getPlugin(MarkersPlugin); gyro = psv.getPlugin(GyroscopePlugin);
@@ -177,7 +179,7 @@ async function startPano() {
     Promise.resolve(gyro.isSupported()).then(ok => { $('#bGyro').hidden = !ok; });
     $('#bGyro').onclick = () => { gyro.toggle(); setTimeout(() => $('#bGyro').classList.toggle('on', gyro.isEnabled()), 400); };
   } else {
-    await psv.setPanorama(W().pano[st.pt], { transition: false, position: { yaw: st.yaw, pitch: -0.08 }, showLoader: false });
+    await psv.setPanorama(W().pano[st.pt], { transition: false, position: { yaw: st.yaw, pitch: -0.08 }, zoom: zl(st.pt), showLoader: false });
     setMarkers();
   }
   hint('Przesuń palcem, aby się rozejrzeć. Okrągłe punkty na podłodze przenoszą dalej.');
@@ -199,15 +201,17 @@ function panoPt(pt) {
   for (const k of Object.keys(P)) { const r = st.m.punkty[k]?.xy; if (!r) continue; const d = Math.hypot(r[0] - q[0], r[1] - q[1]); if (d < bd) { bd = d; best = k; } }
   return best;
 }
+// F1: punkt może mieć własne pionowe FOV (punkty.json 'fov'); minFov 40 / maxFov 100 -> poziom zoomu PSV
+const zl = pt => { const f = st.m.punkty[pt]?.fov; return f ? Math.round((100 - f) / 0.6) : 10; };
 async function goPoint(pt, yaw) {
   if (!st.m.punkty[pt]) return;
   if (st.mode !== 'walk') pt = panoPt(pt);
-  if (yaw != null) st.yaw = yaw;
+  if (yaw != null) st.yaw = yaw; else if (st.m.punkty[pt].yaw0 != null) st.yaw = st.m.punkty[pt].yaw0;
   st.pt = pt; syncRoomSeg(); syncUrl();
   if (st.mode === 'walk') { walk?.teleport(st.m.punkty[pt].xy, st.yaw); return; }
   if (!psv) return startPano();
   markers.clearMarkers(); showLoad(true);
-  try { await psv.setPanorama(W().pano[pt], { transition: 650, position: { yaw: st.yaw, pitch: -0.08 }, showLoader: false }); } finally { showLoad(false); }
+  try { await psv.setPanorama(W().pano[pt], { transition: 650, position: { yaw: st.yaw, pitch: -0.08 }, zoom: zl(pt), showLoader: false }); } finally { showLoad(false); }
   setMarkers();
 }
 
@@ -307,7 +311,7 @@ async function createWalk(host, joyEl, M, cb) {
         if (d.map) jobs.push(tex(base + d.map, true).then(t => { m.map = t; m.needsUpdate = true; }));
         if (d.normal) jobs.push(tex(base + d.normal, false).then(t => { m.normalMap = t; m.normalScale.set(0.6, 0.6); m.needsUpdate = true; }));
         if (d.odbicia > 0) { m.envMap = envTex; m.envMapIntensity = d.odbicia; m.onBeforeCompile = noIblDiffuse; }
-        if (slot === 'firanka') { m.transparent = true; m.opacity = 0.72; m.side = THREE.DoubleSide; m.depthWrite = false; }
+        if (slot === 'firanka') { m.transparent = true; m.opacity = 0.72; m.side = THREE.DoubleSide; m.depthWrite = false; m.lightMap = null; m.emissive = new THREE.Color(d.kolor || '#EDE6DA'); m.emissiveIntensity = 0.85; } // F1 16:50: firana podświetlona dniem, bez LM (plamy w LM 2048)
       }
       m.name = slot; return (cache[slot] = m);
     };

@@ -25,7 +25,8 @@
   "file": "1-03.jpg",
   "title_pl": "Kuchnia z wyspą",
   "opis_pl": "Kuchnia 2,57 m: kremowe fronty ramowe, blat i fartuch Calacatta, okno 250 bez szprosów, wyspa z płytą indukcyjną i okapem wyspowym Franke Tale, 3 kule Bollique, jodełka.",
-  "odstepstwa_pl": "W tle jasne drewniane krzesła jadalni."
+  "odstepstwa_pl": "W tle jasne drewniane krzesła jadalni.",
+  "uwaga_pl": "Wizualizacja sprzed korekty układu kuchni (26.10): obecnie blat L w wykuszu, półwysep 90×198 i 2 lampy, wejście z korytarza otworem 111 cm do sufitu. Aktualny układ: rzut poniżej i Spacer 3D (styl Modern organic)."
  },
  {
   "room": "1/06",
@@ -40,7 +41,7 @@
   "title_pl": "Pokój gościnny",
   "opis_pl": "Pokój gościnny (kadr z blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 ściana-ściana, okno balkonowe 100/230 z balustradą francuską i granatowymi zasłonami SANELA, stolik TONSTAD z lampą ÅRSTID, łóżko GLAMBERGET 80×200, pilaster w prawym dalszym narożniku, dywan JÄRNVÄG, jodełka Barlinek.",
   "odstepstwa_pl": "Zasłona częściowo zasłania lewą część szyby; łóżko 80×200 tymczasowo, do decyzji; plafon poza kadrem.",
-  "uwaga_pl": "Łóżko 80×200 jest tymczasowe – czeka na decyzję inwestora (140, 160, 80 albo sofa rozkładana); po decyzji wizualizacja i lista zakupów zostaną zaktualizowane."
+  "uwaga_pl": "Wizualizacja sprzed zmiany aranżacji (26.10): obecnie szafa PAX i sofa rozkładana LYCKSELE zamiast łóżka; obraz zostanie przerenderowany. Aktualny układ: rzut poniżej."
  },
  {
   "room": "1/08",
@@ -90,12 +91,5 @@
   "title_pl": "Pokój 2/07",
   "opis_pl": "Pokój na poddaszu: drzwi balkonowe 160 (~45% ściany) z granatowymi zasłonami SANELA, sztukateria pod skosem, łóżko TARVA białe 140, biurko MICKE białe, jodełka.",
   "odstepstwa_pl": "Plafon Yonnet poza kadrem."
- },
- {
-  "room": "2/08",
-  "file": "2-08.jpg",
-  "title_pl": "Pokój z lukarną 2/08",
-  "opis_pl": "Pokój z lukarną: lukarna z 2 oknami na prawie całą ścianę, gładki biały sufit, siedzisko z 2× BESTÅ 120 dąb bielony, sztukateria QUEST, dywan JÄRNVÄG, jodełka.",
-  "odstepstwa_pl": "Plafonu Yonnet (pozycja z listy zakupów) nie widać na wizualizacji – sufit prawie poza kadrem, lampy nie dorysowano (próby poprawki sufitu przebudowywały pokój); w realizacji plafon Yonnet wg listy zakupów."
  }
 ]

@@ -2,6 +2,1181 @@
  "slug": "japandi",
  "items": [
   {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/01",
+   "product": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+   "price": 19.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 19.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – mała roślina na komodzie / półce w holu",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 50,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/01",
+   "product": "PERSILLADE Osłonka doniczki - ciemnoszary 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 9.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – osłonka do rośliny małej",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 213,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/02",
+   "product": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+   "price": 149.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 298.0,
+   "date": "2026-10-26",
+   "formula": "2 szt. – duże rośliny: przy przeszkleniu i przy sofie",
+   "status": "zweryfikowana 2026-10-26 – roślina żywa – sprzedaż tylko w sklepie stacjonarnym IKEA (brak dostawy online)",
+   "op": {
+    "r": 4.7,
+    "c": 23,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/02",
+   "product": "RÅGKORN Osłonka doniczki - do wewnątrz/na zewnątrz ciemnoszary/beżowy 32 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/ragkorn-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemnoszary-bezowy-40407559/",
+   "price": 149.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 298.0,
+   "date": "2026-10-26",
+   "formula": "2 szt. – osłonki do roślin dużych",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.8,
+    "c": 71,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/ragkorn-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemnoszary-bezowy-40407559/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/02",
+   "product": "PJÄTTERYD Obraz - światło księżyca 50x70 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-swiatlo-ksiezyca-50554502/",
+   "price": 79.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 79.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – obraz nad sofą",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-swiatlo-ksiezyca-50554502/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/02",
+   "product": "GURLI Poszewka - naturalny 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "4",
+   "sum": 39.96,
+   "date": "2026-10-26",
+   "formula": "4 szt. – 4 poduszki na sofie narożnej",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 56,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/02",
+   "product": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+   "price": 10.0,
+   "unit": "szt.",
+   "qty": "4",
+   "sum": 40.0,
+   "date": "2026-10-26",
+   "formula": "4 szt. – wkłady do poszewek",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.7,
+    "c": 1643,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/02",
+   "product": "LAPPKATTFOT Pled - brązowy/czarny 130x170 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/lappkattfot-pled-brazowy-czarny-70598661/",
+   "price": 49.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 49.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – pled na sofie",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 2,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.ikea.com/pl/pl/p/lappkattfot-pled-brazowy-czarny-70598661/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/02",
+   "product": "PELARBJÖRK Wazon - szarozielony 20 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/pelarbjoerk-wazon-szarozielony-00607310/",
+   "price": 69.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 69.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – wazon na stole / stoliku",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/pelarbjoerk-wazon-szarozielony-00607310/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/03",
+   "product": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+   "price": 19.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 39.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – zioła / małe rośliny przy oknie kuchni",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 50,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/03",
+   "product": "PERSILLADE Osłonka doniczki - ciemnoszary 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 19.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – osłonki do roślin małych",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 213,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/06",
+   "product": "PJÄTTERYD Obraz - mglisty świt 30x40 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+   "price": 59.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 119.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – 2 obrazy w gabinecie/pokoju",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/08",
+   "product": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+   "price": 19.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 19.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – mała roślina w łazience",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 50,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "1/08",
+   "product": "PERSILLADE Osłonka doniczki - ciemnoszary 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 9.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – osłonka do rośliny małej",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 213,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/01",
+   "product": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+   "price": 149.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 149.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – duża roślina w holu poddasza",
+   "status": "zweryfikowana 2026-10-26 – roślina żywa – sprzedaż tylko w sklepie stacjonarnym IKEA (brak dostawy online)",
+   "op": {
+    "r": 4.7,
+    "c": 23,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/01",
+   "product": "RÅGKORN Osłonka doniczki - do wewnątrz/na zewnątrz ciemnoszary/beżowy 32 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/ragkorn-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemnoszary-bezowy-40407559/",
+   "price": 149.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 149.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – osłonka",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.8,
+    "c": 71,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/ragkorn-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemnoszary-bezowy-40407559/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/01",
+   "product": "PJÄTTERYD Obraz - mglisty świt 30x40 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+   "price": 59.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 119.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – 2 obrazy na ścianie holu",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/02",
+   "product": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+   "price": 149.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 149.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – duża roślina przy oknie szczytowym (ściana W)",
+   "status": "zweryfikowana 2026-10-26 – roślina żywa – sprzedaż tylko w sklepie stacjonarnym IKEA (brak dostawy online)",
+   "op": {
+    "r": 4.7,
+    "c": 23,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/02",
+   "product": "RÅGKORN Osłonka doniczki - do wewnątrz/na zewnątrz ciemnoszary/beżowy 32 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/ragkorn-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemnoszary-bezowy-40407559/",
+   "price": 149.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 149.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – osłonka",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.8,
+    "c": 71,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/ragkorn-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemnoszary-bezowy-40407559/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/02",
+   "product": "PJÄTTERYD Obraz - światło księżyca 50x70 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-swiatlo-ksiezyca-50554502/",
+   "price": 79.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 79.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – obraz nad wezgłowiem",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-swiatlo-ksiezyca-50554502/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/02",
+   "product": "GURLI Poszewka - naturalny 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 19.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – 2 poduszki dekoracyjne na łóżku",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 56,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/02",
+   "product": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+   "price": 10.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 20.0,
+   "date": "2026-10-26",
+   "formula": "2 szt. – wkłady",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.7,
+    "c": 1643,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/02",
+   "product": "LAPPKATTFOT Pled - brązowy/czarny 130x170 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/lappkattfot-pled-brazowy-czarny-70598661/",
+   "price": 49.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 49.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – pled w nogach łóżka",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 2,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.ikea.com/pl/pl/p/lappkattfot-pled-brazowy-czarny-70598661/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/02",
+   "product": "PELARBJÖRK Wazon - szarozielony 20 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/pelarbjoerk-wazon-szarozielony-00607310/",
+   "price": 69.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 69.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – wazon na komodzie / stoliku nocnym",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/pelarbjoerk-wazon-szarozielony-00607310/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/03",
+   "product": "NISSEDAL Lustro - czarny 65x150 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/nissedal-lustro-czarny-70320319/",
+   "price": 199.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 199.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – lustro stojące przy ścianie S",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 898,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/nissedal-lustro-czarny-70320319/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/04",
+   "product": "NISSEDAL Lustro - czarny 65x150 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/nissedal-lustro-czarny-70320319/",
+   "price": 199.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 199.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – lustro stojące przy ścianie N",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 898,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/nissedal-lustro-czarny-70320319/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/04",
+   "product": "FEJKA Sztuczna roślina doniczkowa - do wewnątrz/na zewnątrz/bambus 21 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/fejka-sztuczna-roslina-doniczkowa-do-wewnatrz-na-zewnatrz-bambus-40610607/",
+   "price": 199.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 199.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – sztuczna roślina (garderoba bez okna)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 5,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/fejka-sztuczna-roslina-doniczkowa-do-wewnatrz-na-zewnatrz-bambus-40610607/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/04",
+   "product": "FRÄKENVÄXT Osłonka doniczki - do wewnątrz/na zewnątrz/ciemny szarobeżowy 24 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/fraekenvaext-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemny-szarobezowy-00610609/",
+   "price": 24.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 24.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – osłonka",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 2,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.ikea.com/pl/pl/p/fraekenvaext-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemny-szarobezowy-00610609/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/05",
+   "product": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+   "price": 19.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 19.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – mała roślina przy umywalkach",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 50,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/05",
+   "product": "PERSILLADE Osłonka doniczki - ciemnoszary 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 9.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – osłonka",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 213,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/05",
+   "product": "ALSTERN Dywanik łazienkowy - ciemnoszary 50x80 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/alstern-dywanik-lazienkowy-ciemnoszary-60447347/",
+   "price": 24.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 49.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – dywaniki przy wannie i przy umywalkach",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.8,
+    "c": 138,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/alstern-dywanik-lazienkowy-ciemnoszary-60447347/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/06",
+   "product": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+   "price": 149.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 149.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – duża roślina",
+   "status": "zweryfikowana 2026-10-26 – roślina żywa – sprzedaż tylko w sklepie stacjonarnym IKEA (brak dostawy online)",
+   "op": {
+    "r": 4.7,
+    "c": 23,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/06",
+   "product": "RÅGKORN Osłonka doniczki - do wewnątrz/na zewnątrz ciemnoszary/beżowy 32 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/ragkorn-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemnoszary-bezowy-40407559/",
+   "price": 149.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 149.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – osłonka",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.8,
+    "c": 71,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/ragkorn-oslonka-doniczki-do-wewnatrz-na-zewnatrz-ciemnoszary-bezowy-40407559/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/06",
+   "product": "PJÄTTERYD Obraz - mglisty świt 30x40 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+   "price": 59.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 119.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – 2 obrazy",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/06",
+   "product": "GURLI Poszewka - naturalny 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 19.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – poduszki na sofie",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 56,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/06",
+   "product": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+   "price": 10.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 20.0,
+   "date": "2026-10-26",
+   "formula": "2 szt. – wkłady",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.7,
+    "c": 1643,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/06",
+   "product": "LAPPKATTFOT Pled - brązowy/czarny 130x170 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/lappkattfot-pled-brazowy-czarny-70598661/",
+   "price": 49.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 49.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – pled na sofie",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 2,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.ikea.com/pl/pl/p/lappkattfot-pled-brazowy-czarny-70598661/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/07",
+   "product": "PJÄTTERYD Obraz - mglisty świt 30x40 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+   "price": 59.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 59.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – obraz nad biurkiem (ściana S)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/07",
+   "product": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+   "price": 19.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 19.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – mała roślina na biurku",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 50,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/07",
+   "product": "PERSILLADE Osłonka doniczki - ciemnoszary 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 9.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – osłonka",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 213,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/07",
+   "product": "GURLI Poszewka - naturalny 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 19.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – poduszki na łóżku",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 56,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/07",
+   "product": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+   "price": 10.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 20.0,
+   "date": "2026-10-26",
+   "formula": "2 szt. – wkłady",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.7,
+    "c": 1643,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/08",
+   "product": "PJÄTTERYD Obraz - mglisty świt 30x40 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+   "price": 59.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 59.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – obraz",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-mglisty-swit-90623867/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/08",
+   "product": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+   "price": 19.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 19.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – mała roślina na stoliku bocznym",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 50,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/08",
+   "product": "PERSILLADE Osłonka doniczki - ciemnoszary 12 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 9.99,
+   "date": "2026-10-26",
+   "formula": "1 szt. – osłonka",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 213,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/persillade-oslonka-doniczki-ciemnoszary-00315726/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/08",
+   "product": "GURLI Poszewka - naturalny 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+   "price": 9.99,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 19.98,
+   "date": "2026-10-26",
+   "formula": "2 szt. – poduszki na kanapie",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 56,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/gurli-poszewka-naturalny-80598731/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "Dodatki i dekoracje",
+   "room": "2/08",
+   "product": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+   "price": 10.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 20.0,
+   "date": "2026-10-26",
+   "formula": "2 szt. – wkłady",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.7,
+    "c": 1643,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
    "cat": "drzwi",
    "room": "całość",
    "product": "Drzwi bezprzylgowe pełne Fortia Exmoor 80 kaszmir",
@@ -13,7 +1188,20 @@
    "sum": 4378.0,
    "date": "2026-10-25",
    "formula": "14 szt. wewn. wg rzutów (analiza/*.md, geometria.json): 80 cm ×11 (1/07, 1/08, 2/02–2/10 ×9)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "uwaga",
+    "n": "Brak opinii produktu; marka Classen – na portalach: cienka okleina, słabsze zawiasy, wypełnienie plaster miodu.",
+    "s": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-fortia-exmoor-80-kaszmir/5063022651402_CAPL.prd",
+    "x": [
+     "https://domalux.pl/drzwi-panele-classen-opinie-co-to-za-firma/"
+    ],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "drzwi",
@@ -27,21 +1215,70 @@
    "sum": 796.0,
    "date": "2026-10-26",
    "formula": "90 cm ×2: 1/01→1/06 (wiatrołap–hol) i garaż→1/09 (kotłownia)",
-   "status": "zweryfikowana 2026-10-26"
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "uwaga",
+    "n": "Brak opinii produktu; marka Classen – na portalach: cienka okleina, słabsze zawiasy, wypełnienie plaster miodu.",
+    "s": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-fortia-exmoor-90-kaszmir/5063022800688_CAPL.prd",
+    "x": [
+     "https://domalux.pl/drzwi-panele-classen-opinie-co-to-za-firma/"
+    ],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "drzwi",
    "room": "całość",
-   "product": "Drzwi bezprzylgowe pełne Fortia Exmoor 70 kaszmir",
+   "product": "Drzwi pełne ukryte do zewnątrz 70 prawe",
    "shop": "castorama.pl",
-   "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-fortia-exmoor-70-kaszmir/5063022651426_CAPL.prd",
-   "price": 398.0,
+   "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+   "price": 348.0,
    "unit": "szt.",
    "qty": "1",
-   "sum": 398.0,
+   "sum": 348.0,
    "date": "2026-10-26",
-   "formula": "70 cm ×1: 1/03→1/04 (spiżarnia)",
-   "status": "zweryfikowana 2026-10-26"
+   "formula": "70 cm ×1: 1/03→1/04 (spiżarnia) – F1: drzwi ukryte, PRAWE, otwierane do kuchni, licowane z zabudową, front jak szafki (decyzja inwestora) – skrzydło Stira Door 40 mm pod malowanie; lakier w kolorze frontów kuchni – stolarz kuchni",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w Castoramie (stan 26.10). Skrzydło systemowe do ościeżnicy ERKADO; lakier w kolorze frontów kuchni – stolarz.",
+    "s": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "drzwi",
+   "room": "całość",
+   "product": "Ościeżnica ukryta do zewnątrz 70 prawa aluminiowa",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/oscieznica-ukryta-do-zewnatrz-70-prawa-aluminiowa/5900378219408_CAPL.prd",
+   "price": 800.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 800.0,
+   "date": "2026-10-26",
+   "formula": "ościeżnica ukryta aluminiowa ERKADO 70 PRAWA do zewnątrz (zawiasy ukryte; wymaga ściany ≥53 mm mur./≥75 mm GK – sprawdzić z wykonawcą) – kompletna, bez belki/bazy Classen",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w Castoramie (stan 26.10). Wybrana zamiast Rodimax NAWADOOR (29 opinii o cechach wygenerowanych/jednolitych – niewiarygodne). Sprawdzić u wykonawcy grubość ściany spiżarni.",
+    "s": "https://www.castorama.pl/oscieznica-ukryta-do-zewnatrz-70-prawa-aluminiowa/5900378219408_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "drzwi",
@@ -54,8 +1291,21 @@
    "qty": "6",
    "sum": 2328.0,
    "date": "2026-10-26",
-   "formula": "ościeżnica – baza PRAWA ×6 (wg kierunków otwierania na rzutach: 1/07, 2/10, 2/07, 2/06, 2/04, wiatrołap–hol) (kolor dobrać do kaszmiru)",
-   "status": "zweryfikowana 2026-10-26"
+   "formula": "ościeżnica – baza PRAWA ×6 (wg kierunków otwierania na rzutach, skany v2: 2/10, 2/06, 2/04, 2/05, 2/09, wiatrołap–hol) (kolor dobrać do kaszmiru)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "uwaga",
+    "n": "Brak opinii; ościeżnica do drzwi Classen – sprawdzić okleinę przy odbiorze.",
+    "s": "https://www.castorama.pl/baza-oscieznicy-regulowana-classen-100-140-mm-prawa-biala/5063022524331_CAPL.prd",
+    "x": [
+     "https://domalux.pl/drzwi-panele-classen-opinie-co-to-za-firma/"
+    ],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "drzwi",
@@ -65,11 +1315,24 @@
    "url": "https://www.castorama.pl/baza-oscieznicy-regulowana-classen-100-140-mm-lewa-biala/5063022524799_CAPL.prd",
    "price": 388.0,
    "unit": "szt.",
-   "qty": "8",
-   "sum": 3104.0,
+   "qty": "7",
+   "sum": 2716.0,
    "date": "2026-10-26",
-   "formula": "ościeżnica – baza LEWA ×8 (1/08, 2/09, 2/08, 2/03, 2/05, 2/02, garaż→1/09, spiżarnia) (kolor dobrać do kaszmiru)",
-   "status": "zweryfikowana 2026-10-26"
+   "formula": "ościeżnica – baza LEWA ×7 (skany v2: 1/08, 2/08, 2/07, 2/03, 2/02, garaż→1/09, 1/07 – F1: zawias E, otwierane do 1/07) (kolor dobrać do kaszmiru)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "uwaga",
+    "n": "Brak opinii; ościeżnica do drzwi Classen – sprawdzić okleinę przy odbiorze.",
+    "s": "https://www.castorama.pl/baza-oscieznicy-regulowana-classen-100-140-mm-lewa-biala/5063022524799_CAPL.prd",
+    "x": [
+     "https://domalux.pl/drzwi-panele-classen-opinie-co-to-za-firma/"
+    ],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "drzwi",
@@ -83,7 +1346,20 @@
    "sum": 1518.0,
    "date": "2026-10-25",
    "formula": "ościeżnica – belka 80 (11 drzwi 80)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "uwaga",
+    "n": "Brak opinii; ościeżnica do drzwi Classen – sprawdzić okleinę przy odbiorze.",
+    "s": "https://www.castorama.pl/belka-oscieznicy-regulowana-classen-100-140-mm-80-biala/5063022525048_CAPL.prd",
+    "x": [
+     "https://domalux.pl/drzwi-panele-classen-opinie-co-to-za-firma/"
+    ],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "drzwi",
@@ -97,21 +1373,20 @@
    "sum": 276.0,
    "date": "2026-10-26",
    "formula": "ościeżnica – belka 90 (2 drzwi 90)",
-   "status": "zweryfikowana 2026-10-26"
-  },
-  {
-   "cat": "drzwi",
-   "room": "całość",
-   "product": "Belka ościeżnicy regulowana Classen 100-140 mm 70 biała",
-   "shop": "castorama.pl",
-   "url": "https://www.castorama.pl/belka-oscieznicy-regulowana-classen-100-140-mm-70-biala/5063022525062_CAPL.prd",
-   "price": 138.0,
-   "unit": "szt.",
-   "qty": "1",
-   "sum": 138.0,
-   "date": "2026-10-26",
-   "formula": "ościeżnica – belka 70 (1 drzwi 70)",
-   "status": "zweryfikowana 2026-10-26"
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "uwaga",
+    "n": "Brak opinii; ościeżnica do drzwi Classen – sprawdzić okleinę przy odbiorze.",
+    "s": "https://www.castorama.pl/belka-oscieznicy-regulowana-classen-100-140-mm-90-biala/5063022524485_CAPL.prd",
+    "x": [
+     "https://domalux.pl/drzwi-panele-classen-opinie-co-to-za-firma/"
+    ],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "drzwi",
@@ -125,7 +1400,18 @@
    "sum": 1199.7,
    "date": "2026-10-25",
    "formula": "klamki 14 + EI30",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/klamka-na-rozecie-kuchinox-kuba-ii-czarna/5905358218280_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "drzwi zewnętrzne / EI30",
@@ -139,11 +1425,24 @@
    "sum": 8499.0,
    "date": "2026-10-26",
    "formula": "drzwi wejściowe ze skrzydłem 100 + doświetle boczne szklane (prawe, do środka), kolor orzech ciemny; otwór 150 cm → doświetle 370 mm (500 mm daje ~163 cm ramy – za szeroko) – prawdopodobnie w zakresie GW (SSZ) – do potwierdzenia",
-   "status": "zweryfikowana 2026-10-26 – cena regularna wariantu: 7 599 zł + skrzydło 100E 300 zł + doświetle 370 mm 600 zł (promocja do 26.10.2026: 7 143,06 zł bazowo); doświetle 500 mm = 8 799 zł"
+   "status": "zweryfikowana 2026-10-26 – cena regularna wariantu: 7 599 zł + skrzydło 100E 300 zł + doświetle 370 mm 600 zł (promocja do 26.10.2026: 7 143,06 zł bazowo); doświetle 500 mm = 8 799 zł",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii produktu; sklep: 4,8/5 (279) na stronie, 4,3/5 (25) Trustpilot.",
+    "s": "https://inspiro.online/pl/p/Iguana-Black-Premium-drzwi-zewnetrzne-z-doswietlem-bocznym-czarna-klamka/412",
+    "x": [
+     "https://pl.trustpilot.com/review/inspiro.expert"
+    ],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "drzwi zewnętrzne / EI30",
-   "room": "1/09 → 1/01",
+   "room": "1/10 → 1/01",
    "product": "Hörmann Drzwi Ppoż EI30 Jasno Szary 800x2000",
    "shop": "obi.pl",
    "url": "https://www.obi.pl/p/7348253/hoermann-drzwi-ppoz-ei30-jasno-szary-800x2000",
@@ -152,8 +1451,19 @@
    "qty": "1",
    "sum": 1299.0,
    "date": "2026-10-25",
-   "formula": "drzwi garaż–dom 80/200 EI30, stalowe, samozamykacz",
-   "status": "zweryfikowana 2026-10-25"
+   "formula": "drzwi garaż–dom 80/200 EI30, stalowe, samozamykacz – PRAWE (otwierane do garażu, zawias od pd. – skany v2, wybrać wersję prawą)",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.obi.pl/p/7348253/hoermann-drzwi-ppoz-ei30-jasno-szary-800x2000",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "farby",
@@ -167,21 +1477,43 @@
    "sum": 474.9,
    "date": "2026-10-25",
    "formula": "grunt pod całość ~590 m² / ~12 m²/l ≈ 50 l → 5 op. 11,5 l",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.castorama.pl/grunt-sniezka-10-l-15-bialy/5903973222415_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "farby",
    "room": "sufity",
-   "product": "Farba akrylowa do wnętrz Dekoral Ściany i Sufity śnieżnobiała mat 10 l + 20% gratis",
+   "product": "Farba lateksowa Śnieżka Eko Plus biała 10 l",
    "shop": "castorama.pl",
-   "url": "https://www.castorama.pl/farba-akrylowa-do-wnetrz-dekoral-sciany-i-sufity-snieznobiala-mat-10-l-20-gratis/5904000030492_CAPL.prd",
-   "price": 89.98,
+   "url": "https://www.castorama.pl/farba-lateksowa-sniezka-eko-plus-biala-10-l/5903973205982_CAPL.prd",
+   "price": 108.0,
    "unit": "szt.",
-   "qty": "4",
-   "sum": 359.92,
-   "date": "2026-10-25",
-   "formula": "sufity ~230 m² × 2 warstwy / 10 m²/l ≈ 46 l → 4 op. 12 l",
-   "status": "zweryfikowana 2026-10-25"
+   "qty": "5",
+   "sum": 540.0,
+   "date": "2026-10-26",
+   "formula": "sufity ~230 m² × 2 warstwy / 10 m²/l ≈ 46 l → 4 op. 12 l | ZAMIANA po audycie opinii 2026-10-26: Dekoral Ściany i Sufity 12 l (2,1/5, 28 opinii; słabe krycie – fora) → Śnieżka Eko Plus 10 l (5/5, 3 op.); 4×12 l → 5×10 l",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 3,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.castorama.pl/farba-lateksowa-sniezka-eko-plus-biala-10-l/5903973205982_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "farby",
@@ -195,7 +1527,18 @@
    "sum": 2220.0,
    "date": "2026-10-25",
    "formula": "ściany ~360 m² × 2 warstwy / 10 m²/l ≈ 72 l → 15 op. 5 l (kolor wg wzornika Beckers)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/farba-lateksowa-beckers-vaggfarg-colour-inspiration-5-l/5902829038224_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kominek",
@@ -209,7 +1552,20 @@
    "sum": 2498.0,
    "date": "2026-10-25",
    "formula": "1 wkład kominkowy 14 kW (salon)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 2.0,
+    "c": 1,
+    "v": "uwaga",
+    "n": "Tylko 1 opinia; relacje z budów ogólnie OK, zdarza się złe spasowanie/domykanie drzwiczek – sprawdzić przy odbiorze.",
+    "s": "https://www.castorama.pl/wklad-kominkowy-nordflam-torn-lux-14-kw/5904341518710_CAPL.prd",
+    "x": [
+     "https://mojabudowa.pl/dom-pod-acerola/tag/nordflam"
+    ],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kominek",
@@ -223,7 +1579,18 @@
    "sum": 236.0,
    "date": "2026-10-25",
    "formula": "2 kratki wylotu ciepła w obudowie",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.castorama.pl/kratka-kominkowa-nordflam-aero-6-x-78-cm-czarna/5904341516631_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kominek",
@@ -237,7 +1604,18 @@
    "sum": 3150.0,
    "date": "2026-10-25",
    "formula": "montaż obudowy kominka (robocizna, cena regionalna: 2 900–3 150 zł, przyjęto górną granicę); materiały obudowy wg wykonawcy",
-   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – widełki 2 900–3 150 zł, przyjęto górną; serwis z cennikiem rynkowym, nie oferta firmy – potwierdzić u zduna"
+   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – widełki 2 900–3 150 zł, przyjęto górną; serwis z cennikiem rynkowym, nie oferta firmy – potwierdzić u zduna",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://tani-komin.pl/cennik-zabudowy-kominka#montaz-obudowy",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kominek",
@@ -251,7 +1629,18 @@
    "sum": 1210.0,
    "date": "2026-10-25",
    "formula": "podłączenie wkładu do komina (cena regionalna: 1 050–1 210 zł, przyjęto górną granicę)",
-   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – widełki 1 050–1 210 zł, przyjęto górną; potwierdzić u zduna"
+   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – widełki 1 050–1 210 zł, przyjęto górną; potwierdzić u zduna",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://tani-komin.pl/cennik-zabudowy-kominka#podlaczenie-wkladu",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kuchnia – AGD",
@@ -265,7 +1654,18 @@
    "sum": 1599.0,
    "date": "2026-10-25",
    "formula": "1 piekarnik",
-   "status": "zweryfikowana 2026-10-25 – cena z tekstu strony MediaMarkt"
+   "status": "zweryfikowana 2026-10-25 – cena z tekstu strony MediaMarkt",
+   "op": {
+    "r": 5.0,
+    "c": 105,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://mediamarkt.pl/pl/product/_piekarnik-bosch-hba534eb3-czarny-serie-4-1486804.html",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kuchnia – AGD",
@@ -279,7 +1679,18 @@
    "sum": 1259.0,
    "date": "2026-10-25",
    "formula": "1 płyta (wyspa)",
-   "status": "zweryfikowana 2026-10-25 – cena z tekstu strony MediaMarkt"
+   "status": "zweryfikowana 2026-10-25 – cena z tekstu strony MediaMarkt",
+   "op": {
+    "r": 4.9,
+    "c": 180,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://mediamarkt.pl/pl/product/_plyta-indukcyjna-do-zabudowy-bosch-pie631hb1e-series-6-czarny-1482932.html",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kuchnia – AGD",
@@ -293,7 +1704,18 @@
    "sum": 1959.0,
    "date": "2026-10-25",
    "formula": "1 zmywarka 60",
-   "status": "zweryfikowana 2026-10-25 – cena z tekstu strony MediaMarkt"
+   "status": "zweryfikowana 2026-10-25 – cena z tekstu strony MediaMarkt",
+   "op": {
+    "r": 4.9,
+    "c": 496,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://mediamarkt.pl/pl/product/_zmywarka-do-zabudowy-bosch-smv4evx00e-serie-4-60cm-1478551.html",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kuchnia – AGD",
@@ -307,7 +1729,18 @@
    "sum": 2649.0,
    "date": "2026-10-25",
    "formula": "1 lodówka do zabudowy",
-   "status": "zweryfikowana 2026-10-25 – cena z tekstu strony MediaMarkt"
+   "status": "zweryfikowana 2026-10-25 – cena z tekstu strony MediaMarkt",
+   "op": {
+    "r": 5.0,
+    "c": 43,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://mediamarkt.pl/pl/product/_chlodziarko-zamrazarka-bosch-kin86nse0-bialy-1501651.html",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kuchnia – AGD",
@@ -321,7 +1754,18 @@
    "sum": 2488.0,
    "date": "2026-10-25",
    "formula": "1 okap wyspowy nad płytą na wyspie (zastępuje okap teleskopowy)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/okap-wyspowy-franke-tale-905-i-xs/7612985566803_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kuchnia – blat",
@@ -331,11 +1775,22 @@
    "url": "https://gresdesign.com/cennik/#konglomerat-standard-2cm",
    "price": 1400.0,
    "unit": "szt.",
-   "qty": "7",
-   "sum": 9800.0,
+   "qty": "6.2",
+   "sum": 8680.0,
    "date": "2026-10-25",
-   "formula": "blat kamienny ≈7,0 mb ekwiw. (cennik za mb przy gł. 60 cm): wykusz 2,6 + ciąg W 0,7 + wyspa 2,46×0,9 m ≈ 3,7 mb ekwiw.; wycięcia doliczane osobno",
-   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – cennik firmy „od” (lipiec 2026), z montażem; wycięcia i transport spoza Śląska osobno"
+   "formula": "blat kamienny ≈6,2 mb ekwiw. (cennik za mb przy gł. 60 cm), kuchnia F1 (rzut v2): blat pod oknem 3,19 mb + półwysep 1,98×0,90 m ≈ 3,0 mb ekwiw.; wycięcia doliczane osobno",
+   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – cennik firmy „od” (lipiec 2026), z montażem; wycięcia i transport spoza Śląska osobno",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://gresdesign.com/cennik/#konglomerat-standard-2cm",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kuchnia – zlew",
@@ -349,7 +1804,18 @@
    "sum": 468.0,
    "date": "2026-10-25",
    "formula": "1 zlew pod oknem w wykuszu",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.14,
+    "c": 7,
+    "v": "uwaga",
+    "n": "Oceny przeciętne.",
+    "s": "https://www.castorama.pl/zlewozmywak-tectonite-franke-sirius-s2d-611-78-1-komorowy-z-ociekaczem-onyx/7612985817905_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "kuchnia – zlew",
@@ -363,7 +1829,1118 @@
    "sum": 268.0,
    "date": "2026-10-25",
    "formula": "bateria kuchenna",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/bateria-kuchenna-franke-pola-2-0-onyx/7612986498615_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "1/03",
+   "product": "Zawór kombinowany Schell z pokrętłem 1/2\" x 3/8\" x 3/4\"",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/zawor-kombinowany-schell-z-pokretlem-1-2-x-3-8-x-3-4-/4021163129977_CAPL.prd",
+   "price": 108.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 108.0,
+   "date": "2026-10-26",
+   "formula": "zawór kombinowany pod zmywarkę: 1 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/zawor-kombinowany-schell-z-pokretlem-1-2-x-3-8-x-3-4-/4021163129977_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "1/03",
+   "product": "Syfon zlewozmywakowy McAlpine 1 1/2\" x 50 mm z podłączeniem zmywarki/pralki 1 szt.",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/departments/syfon-zlewozmywakowy-mcalpine-1-1-2-x-50-mm-z-pod-czeniem-zmywarki-pralki-1-szt-/5036484047175_CAPL.prd",
+   "price": 69.63,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 69.63,
+   "date": "2026-10-26",
+   "formula": "syfon zlewozmywakowy z podłączeniem zmywarki: 1 szt. (jeśli nie ma go w komplecie zlewu)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/syfon-zlewozmywakowy-mcalpine-1-1-2-x-50-mm-z-pod-czeniem-zmywarki-pralki-1-szt-/5036484047175_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "1/08, 2/05",
+   "product": "Syfon umywalkowy butelkowy Viega tworzywo sztuczne z wentylacją",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/syfon-umywalkowy-butelkowy-viega-tworzywo-sztuczne-z-wentylacja/4015211703110_CAPL.prd",
+   "price": 45.98,
+   "unit": "szt.",
+   "qty": "3",
+   "sum": 137.94,
+   "date": "2026-10-26",
+   "formula": "syfon umywalkowy butelkowy (ukryty w szafce): 3 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/syfon-umywalkowy-butelkowy-viega-tworzywo-sztuczne-z-wentylacja/4015211703110_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "1/08, 2/05",
+   "product": "Korek klik-klak do umywalek z przelewem Jano",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/korek-klik-klak-do-umywalek-z-przelewem-jano/5908289685626_CAPL.prd",
+   "price": 39.98,
+   "unit": "szt.",
+   "qty": "3",
+   "sum": 119.94,
+   "date": "2026-10-26",
+   "formula": "korek klik-klak do umywalek nablatowych: 3 szt. (kolor chrom – w stylach złotych/czarnych do podmiany na kolor baterii) | ZAMIANA po audycie opinii 2026-10-26: Flomasta (1,36/5, 22 op.) → Jano z przelewem (4,25/5, 4 op.), taniej",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.25,
+    "c": 4,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.castorama.pl/korek-klik-klak-do-umywalek-z-przelewem-jano/5908289685626_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "1/09",
+   "product": "Syfon Pralkowy Podtynkowy Chromowany SPp/t-CH Granitan 1 szt.",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/departments/syfon-pralkowy-podtynkowy-chromowany-spp-t-ch-granitan-1-szt-/5907558295559_CAPL.prd",
+   "price": 35.09,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 35.09,
+   "date": "2026-10-26",
+   "formula": "syfon pralkowy podtynkowy: 1 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/syfon-pralkowy-podtynkowy-chromowany-spp-t-ch-granitan-1-szt-/5907558295559_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "2/05",
+   "product": "Syfon automatyczny do wanny Hytti Fluxio chrom",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/syfon-automatyczny-do-wanny-hytti-fluxio-chrom/5905951591681_CAPL.prd",
+   "price": 128.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 128.0,
+   "date": "2026-10-26",
+   "formula": "syfon automatyczny wanny Hytti Fluxio: 1 szt. (brak wersji czarnej w Castoramie – chrom)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii tego wariantu; Fluxio 70 chrom w Castoramie 3/5 (1 op.).",
+    "s": "https://www.castorama.pl/syfon-automatyczny-do-wanny-hytti-fluxio-chrom/5905951591681_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "zabudowy stelaży/wanny",
+   "product": "Płyta gipsowo-kartonowa impregnowana Norgips 1200 x 2600 x 12,5 mm zielona GKBI typ H2",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/plyta-gipsowo-kartonowa-impregnowana-norgips-1200-x-2600-x-12-5-mm-zielona-gkbi-typ-h2/5907651691616_CAPL.prd",
+   "price": 46.99,
+   "unit": "szt.",
+   "qty": "5",
+   "sum": 234.95,
+   "date": "2026-10-26",
+   "formula": "płyty GK H2 1200×2600: zabudowa 2 stelaży WC + stelaża bidetu (~5 m²) + obudowa wanny 170×75 (~2 m²) + odpad → 5 płyt",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.45,
+    "c": 11,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.castorama.pl/plyta-gipsowo-kartonowa-impregnowana-norgips-1200-x-2600-x-12-5-mm-zielona-gkbi-typ-h2/5907651691616_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "zabudowy stelaży/wanny",
+   "product": "Profil ścienny Budmat CW50 0,5 mm 3 m",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/profil-scienny-budmat-cw50-0-5-mm-3-m/5907738940019_CAPL.prd",
+   "price": 14.84,
+   "unit": "szt.",
+   "qty": "6",
+   "sum": 89.04,
+   "date": "2026-10-26",
+   "formula": "profile CW50 3 m: ruszt zabudów – 6 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/profil-scienny-budmat-cw50-0-5-mm-3-m/5907738940019_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "zabudowy stelaży/wanny",
+   "product": "Profil Steela Profil UW50 3 m 0.6 mm",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/profil-steela-profil-uw50-3-m-0-6-mm/5906750280608_CAPL.prd",
+   "price": 14.98,
+   "unit": "szt.",
+   "qty": "4",
+   "sum": 59.92,
+   "date": "2026-10-26",
+   "formula": "profile UW50 3 m: 4 szt. | ZAMIANA po audycie opinii 2026-10-26: Budmat UW50 0,5 mm (3/5, 3 op.) → Steela UW50 0,6 mm (grubsza blacha, +0,40 zł/szt., brak opinii)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/profil-steela-profil-uw50-3-m-0-6-mm/5906750280608_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "zabudowy stelaży/wanny",
+   "product": "Wkręty do płyt GK do podłoży metalowych 3,5x25mm 1000 szt. Wkręt-met",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/departments/wkr-ty-do-p-yt-gk-do-pod-o-y-metalowych-3-5x25mm-1000-szt-wkr-t-met/5907704419112_CAPL.prd",
+   "price": 25.95,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 25.95,
+   "date": "2026-10-26",
+   "formula": "wkręty do GK 3,5×25 (200 szt.): 2 op. | ZAMIANA po audycie opinii 2026-10-26: Diall 3,5×25 200 szt. (1,3/5, 10 op.) → Wkręt-Met 3,5×25 1000 szt. (polski producent, brak opinii); 2×200 → 1×1000",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/wkr-ty-do-p-yt-gk-do-pod-o-y-metalowych-3-5x25mm-1000-szt-wkr-t-met/5907704419112_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "zabudowy stelaży/wanny",
+   "product": "Taśma fizelinowa perforowana antyrysowa SCLEY seria 236 48mm x 25m 1 szt.",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/departments/ta-ma-fizelinowa-perforowana-antyrysowa-scley-seria-236-48mm-x-25m-1-szt-/5905061984182_CAPL.prd",
+   "price": 8.98,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 8.98,
+   "date": "2026-10-26",
+   "formula": "taśma fizelinowa do spoin GK: 1 rolka 25 mb | ZAMIANA po audycie opinii 2026-10-26: Fola Vlies (1,5/5, 4 op.) → SCLEY 236 perforowana (brak opinii; Castorama nie ma lepiej ocenianej taśmy fizelinowej)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/ta-ma-fizelinowa-perforowana-antyrysowa-scley-seria-236-48mm-x-25m-1-szt-/5905061984182_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – biały montaż",
+   "room": "łazienki + kuchnia",
+   "product": "Zawór kątowy Schell 1/2\" x 3/8\"",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/zawor-katowy-schell-1-2-x-3-8-/4021163107579_CAPL.prd",
+   "price": 39.98,
+   "unit": "szt.",
+   "qty": "8",
+   "sum": 319.84,
+   "date": "2026-10-26",
+   "formula": "zawory kątowe 1/2\"×3/8\": 3 umywalki × 2 + bateria kuchenna × 2 = 8 szt. (WC/bidet/prysznic/wanna – armatura podtynkowa w zestawach)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/zawor-katowy-schell-1-2-x-3-8-/4021163107579_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – drzwi",
+   "room": "14 wewn. + wejściowe + EI30",
+   "product": "Pianka montażowa Soudal pistoletowa 750 ml",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/pianka-montazowa-soudal-pistoletowa-750-ml/5411183098145_CAPL.prd",
+   "price": 34.48,
+   "unit": "szt.",
+   "qty": "9",
+   "sum": 310.32,
+   "date": "2026-10-26",
+   "formula": "pianka montażowa 750 ml: 14 ościeżnic wewn. × ½ puszki + drzwi wejściowe 1 + EI30 1 = 9 szt. (płyty GK / tynk ościeży – zakres GW)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.5,
+    "c": 2,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.castorama.pl/pianka-montazowa-soudal-pistoletowa-750-ml/5411183098145_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – eksploatacyjne",
+   "room": "całość",
+   "product": "Worek Fola Big Bag 91 x 91 x 120 cm",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/worek-fola-big-bag-91-x-91-x-120-cm/5906725233165_CAPL.prd",
+   "price": 41.98,
+   "unit": "szt.",
+   "qty": "4",
+   "sum": 167.92,
+   "date": "2026-10-26",
+   "formula": "worki big-bag na odpady (opakowania, docinki płytek/desek, GK) – 4 szt. (uzupełnienie kontenera)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 2.6,
+    "c": 5,
+    "v": "uwaga",
+    "n": "Niska ocena (5 op.); materiał eksploatacyjny, brak lepiej ocenianej alternatywy – zostaje.",
+    "s": "https://www.castorama.pl/worek-fola-big-bag-91-x-91-x-120-cm/5906725233165_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – eksploatacyjne",
+   "room": "całość",
+   "product": "Worki na gruz Paclan 120 l 20 szt.",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/worki-na-gruz-paclan-120-l-20-szt-/5900942340293_CAPL.prd",
+   "price": 38.98,
+   "unit": "szt.",
+   "qty": "3",
+   "sum": 116.94,
+   "date": "2026-10-26",
+   "formula": "worki na gruz 120 l (20 szt.) – 3 op.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/worki-na-gruz-paclan-120-l-20-szt-/5900942340293_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – hydroizolacja",
+   "room": "1/08, 2/05, 1/09",
+   "product": "Folia izolacyjna w płynie Ceresit CL 51 15 kg",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/folia-izolacyjna-w-plynie-ceresit-cl-51-15-kg/5900089151172_CAPL.prd",
+   "price": 298.0,
+   "unit": "szt.",
+   "qty": "4",
+   "sum": 1192.0,
+   "date": "2026-10-26",
+   "formula": "folia w płynie 2 warstwy ~1,5 kg/m²: 31,49 m² (podłogi łazienek 11,68 + strefy prysznica 2×(1,0+0,9)×2,1 + przy wannie 2,5 + 1/09 9,33) ×1,10 = 51,96 kg / 15 kg = 4 op. | ZAMIANA po audycie opinii 2026-10-26: Atlas szybkoschnąca 15 kg (3,5/5, 4 op.) → Ceresit CL 51 15 kg (5/5, 1 op.; standard rynkowy pod płytki)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.castorama.pl/folia-izolacyjna-w-plynie-ceresit-cl-51-15-kg/5900089151172_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – hydroizolacja",
+   "room": "1/08, 2/05, 1/09",
+   "product": "Taśma uszczelniająca Ceresit CL 152 5 m",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/tasma-uszczelniajaca-ceresit-cl-152-5-m/5900089222247_CAPL.prd",
+   "price": 69.98,
+   "unit": "szt.",
+   "qty": "9",
+   "sum": 629.82,
+   "date": "2026-10-26",
+   "formula": "taśma uszczelniająca w narożach: obwody 1/08 7,7 + 2/05 11,5 + 1/09 12,4 + naroża pryszniców 8,4 = 40,00 mb ×1,10 / 5 m = 9 rolek",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/tasma-uszczelniajaca-ceresit-cl-152-5-m/5900089222247_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – osprzęt elektryczny",
+   "room": "1/06, 2/01, 2/02",
+   "product": "Łącznik schodowy Jacobsen Espen czarny",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/lacznik-schodowy-jacobsen-espen-czarny/5059340407005_CAPL.prd",
+   "price": 18.98,
+   "unit": "szt.",
+   "qty": "6",
+   "sum": 113.88,
+   "date": "2026-10-26",
+   "formula": "łączniki schodowe (klatka schodowa ×2 kondygnacje, sypialnia 2/02) = 6",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/lacznik-schodowy-jacobsen-espen-czarny/5059340407005_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – osprzęt elektryczny",
+   "room": "1/08, 2/05",
+   "product": "Gniazdo pojedyncze Jacobsen Espen IP44 z uziemieniem czarne",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/gniazdo-pojedyncze-jacobsen-espen-ip44-z-uziemieniem-czarne/5059340407111_CAPL.prd",
+   "price": 23.78,
+   "unit": "szt.",
+   "qty": "3",
+   "sum": 71.34,
+   "date": "2026-10-26",
+   "formula": "gniazda IP44 w łazienkach = 3",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/gniazdo-pojedyncze-jacobsen-espen-ip44-z-uziemieniem-czarne/5059340407111_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – osprzęt elektryczny",
+   "room": "całość",
+   "product": "Gniazdo podwójne Jacobsen Espen z uziemieniem czarne",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/gniazdo-podwojne-jacobsen-espen-z-uziemieniem-czarne/5059340407098_CAPL.prd",
+   "price": 23.68,
+   "unit": "szt.",
+   "qty": "27",
+   "sum": 639.36,
+   "date": "2026-10-26",
+   "formula": "gniazda podwójne (czarny) – plan przyjęty (brak projektu elektrycznego), pom: podw./poj./IP44/łączn./schod. – 1/01: 0/1/0/2/0, 1/02: 5/2/0/3/0, 1/03: 4/4/0/1/0, 1/04: 0/0/0/1/0, 1/06: 0/1/0/0/2, 1/07: 2/1/0/1/0, 1/08: 0/0/1/1/0, 1/09: 1/2/0/1/0, 1/10: 1/1/0/1/0, 2/01: 0/1/0/1/2, 2/02: 3/1/0/1/2, 2/03: 0/0/0/1/0, 2/04: 1/0/0/1/0, 2/05: 0/0/2/1/0, 2/06: 3/1/0/1/0, 2/07: 3/1/0/1/0, 2/08: 3/1/0/1/0, 2/09: 0/1/0/1/0, 2/10: 1/0/0/1/0; razem 27",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 3.66,
+    "c": 3,
+    "v": "uwaga",
+    "n": "Niska ocena przy małej liczbie opinii – obserwować.",
+    "s": "https://www.castorama.pl/gniazdo-podwojne-jacobsen-espen-z-uziemieniem-czarne/5059340407098_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – osprzęt elektryczny",
+   "room": "całość",
+   "product": "Gniazdo pojedyncze Jacobsen Espen z uziemieniem czarne",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/gniazdo-pojedyncze-jacobsen-espen-z-uziemieniem-czarne/5059340407081_CAPL.prd",
+   "price": 23.68,
+   "unit": "szt.",
+   "qty": "18",
+   "sum": 426.24,
+   "date": "2026-10-26",
+   "formula": "gniazda pojedyncze (AGD, nocne, hol) = 18",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/gniazdo-pojedyncze-jacobsen-espen-z-uziemieniem-czarne/5059340407081_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – osprzęt elektryczny",
+   "room": "całość",
+   "product": "Łącznik pojedynczy Jacobsen Espen czarny",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/lacznik-pojedynczy-jacobsen-espen-czarny/5059340406992_CAPL.prd",
+   "price": 16.68,
+   "unit": "szt.",
+   "qty": "21",
+   "sum": 350.28,
+   "date": "2026-10-26",
+   "formula": "łączniki pojedyncze = 21",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/lacznik-pojedynczy-jacobsen-espen-czarny/5059340406992_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – osprzęt elektryczny",
+   "room": "całość",
+   "product": "Ramka podwójna Jacobsen Espen czarna",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/ramka-podwojna-jacobsen-espen-czarna/5059340406046_CAPL.prd",
+   "price": 12.98,
+   "unit": "szt.",
+   "qty": "27",
+   "sum": 350.46,
+   "date": "2026-10-26",
+   "formula": "ramki podwójne pod gniazda podwójne (mechanizm 2-modułowy) = 27",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/ramka-podwojna-jacobsen-espen-czarna/5059340406046_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – osprzęt elektryczny",
+   "room": "całość",
+   "product": "Ramka pojedyncza Jacobsen Espen czarna",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/ramka-pojedyncza-jacobsen-espen-czarna/5059340406039_CAPL.prd",
+   "price": 7.68,
+   "unit": "szt.",
+   "qty": "48",
+   "sum": 368.64,
+   "date": "2026-10-26",
+   "formula": "ramki pojedyncze: 18 gniazd + 3 IP44 + 21 łączników + 6 schodowych = 48",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/ramka-pojedyncza-jacobsen-espen-czarna/5059340406039_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – podłogi",
+   "room": "1/06 schody",
+   "product": "Klej Sika SikaBond T52 600 ml",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/klej-sika-sikabond-t52-600-ml/7612894887549_CAPL.prd",
+   "price": 65.98,
+   "unit": "szt.",
+   "qty": "4",
+   "sum": 263.92,
+   "date": "2026-10-26",
+   "formula": "klej elastyczny do stopni i podstopnic dębowych na beton: 16 + 16 elementów, ~8 elementów z kartusza = 4 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 2,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.castorama.pl/klej-sika-sikabond-t52-600-ml/7612894887549_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – podłogi",
+   "room": "listwy przypodłogowe",
+   "product": "Klej montażowy do listew i profili Soudal 280 ml",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/klej-montazowy-do-listew-i-profili-soudal-280-ml/5411183157507_CAPL.prd",
+   "price": 20.98,
+   "unit": "szt.",
+   "qty": "17",
+   "sum": 356.66,
+   "date": "2026-10-26",
+   "formula": "klej montażowy do listew: 150,00 mb ×1,10 / ~10 mb z kartusza = 17 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.castorama.pl/klej-montazowy-do-listew-i-profili-soudal-280-ml/5411183157507_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – podłogi",
+   "room": "lokalnie, ~25 % posadzek",
+   "product": "Wylewka samopoziomująca Weber Saint-Gobain Nivelo 25 kg",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/wylewka-samopoziomujaca-weber-saint-gobain-nivelo-25-kg/5900350193795_CAPL.prd",
+   "price": 39.98,
+   "unit": "szt.",
+   "qty": "11",
+   "sum": 439.78,
+   "date": "2026-10-26",
+   "formula": "masa samopoziomująca: 25 % × 208,08 m² = 52,02 m² × 3 mm × 1,6 kg/m²/mm ×1,10 = 274,67 kg / 25 kg = 11 worków",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.44,
+    "c": 45,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.castorama.pl/wylewka-samopoziomujaca-weber-saint-gobain-nivelo-25-kg/5900350193795_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – podłogi",
+   "room": "lokalnie, ~25 % posadzek",
+   "product": "Grunt głęboko penetrujący Mapei M-Grunt 10 l",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/grunt-gleboko-penetrujacy-mapei-m-grunt-10-l/8022452241024_CAPL.prd",
+   "price": 59.98,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 59.98,
+   "date": "2026-10-26",
+   "formula": "grunt pod masę samopoziomującą: 1 op. 10 l",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/grunt-gleboko-penetrujacy-mapei-m-grunt-10-l/8022452241024_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – podłogi",
+   "room": "parter+poddasze",
+   "product": "Klej do parkietu Uzin MK 90 10 kg",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/klej-do-parkietu-uzin-mk-90-10-kg/4047571373221_CAPL.prd",
+   "price": 298.0,
+   "unit": "szt.",
+   "qty": "19",
+   "sum": 5662.0,
+   "date": "2026-10-26",
+   "formula": "klej do deski (MS-polimer, 1,0–1,2 kg/m²): 155,66 m² ×1,10 × 1,1 kg/m² = 188,35 kg / 10 kg = 19 wiader",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.5,
+    "c": 2,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.castorama.pl/klej-do-parkietu-uzin-mk-90-10-kg/4047571373221_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – podłogi",
+   "room": "progi (drzwi)",
+   "product": "Profil aluminiowy dylatacyjny GoodHome 30 x 930 mm dąb brighton nr 13",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/profil-aluminiowy-dylatacyjny-goodhome-30-x-930-mm-dab-brighton-nr-13/5059340174525_CAPL.prd",
+   "price": 34.98,
+   "unit": "szt.",
+   "qty": "8",
+   "sum": 279.84,
+   "date": "2026-10-26",
+   "formula": "profil progowy/dylatacyjny 0,93 m w kolorze dębu – 8 przejść płytki/deska i w drzwiach",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/profil-aluminiowy-dylatacyjny-goodhome-30-x-930-mm-dab-brighton-nr-13/5059340174525_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – płytki",
+   "room": "naroża, wnęki, fartuch",
+   "product": "Profil krawędziowy aluminiowy szczotkowany 1000 x 18 x 3 x 1 mm czarny",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/profil-krawedziowy-aluminiowy-szczotkowany-1000-x-18-x-3-x-1-mm-czarny/5059340936543_CAPL.prd",
+   "price": 10.48,
+   "unit": "szt.",
+   "qty": "17",
+   "sum": 178.16,
+   "date": "2026-10-26",
+   "formula": "profil krawędziowy aluminiowy na naroża zewnętrzne płytek i krawędzie fartucha ~15 mb ×1,10 / 1 m = 17 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/profil-krawedziowy-aluminiowy-szczotkowany-1000-x-18-x-3-x-1-mm-czarny/5059340936543_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – płytki",
+   "room": "podłoża pod płytki/hydroizolację",
+   "product": "Grunt głęboko penetrujący Mapei M-Grunt 10 l",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/grunt-gleboko-penetrujacy-mapei-m-grunt-10-l/8022452241024_CAPL.prd",
+   "price": 59.98,
+   "unit": "szt.",
+   "qty": "3",
+   "sum": 179.94,
+   "date": "2026-10-26",
+   "formula": "grunt: (92,72 + 31,49) m² ×1,10 × 0,15 l/m² = 20,49 l / 10 l = 3 op.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/grunt-gleboko-penetrujacy-mapei-m-grunt-10-l/8022452241024_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – płytki",
+   "room": "wszystkie płytki",
+   "product": "Wysokoelastyczny klej żelowy Atlas Geoflex C2TE 22,5 kg",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/wysokoelastyczny-klej-zelowy-atlas-geoflex-c2te-22-5-kg/5905400358414_CAPL.prd",
+   "price": 49.98,
+   "unit": "szt.",
+   "qty": "28",
+   "sum": 1399.44,
+   "date": "2026-10-26",
+   "formula": "klej C2TE do 60×120: 92,72 m² (podł. poza łaz. 40,74 + łaz. podł. 11,68 + łaz. ściany 37,00 + fartuch 3,30) ×1,10 × 6 kg/m² = 611,95 kg / 22,5 kg = 28 worków",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.12,
+    "c": 31,
+    "v": "uwaga",
+    "n": "Oceny przeciętne.",
+    "s": "https://www.castorama.pl/wysokoelastyczny-klej-zelowy-atlas-geoflex-c2te-22-5-kg/5905400358414_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – płytki",
+   "room": "wszystkie płytki",
+   "product": "Fuga elastyczna Sopro Saphir beżowy jura 33 2 kg",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/fuga-elastyczna-sopro-saphir-bezowy-jura-33-2-kg/5901740951209_CAPL.prd",
+   "price": 40.98,
+   "unit": "szt.",
+   "qty": "7",
+   "sum": 286.86,
+   "date": "2026-10-26",
+   "formula": "fuga: zużycie (a+b)/(a·b)·szer. 3 mm·gr. 10 mm·1,6 = 0,12 kg/m² × 92,72 m² ×1,10 = 12,24 kg / 2 kg = 7 op. (kolor do płytek)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/fuga-elastyczna-sopro-saphir-bezowy-jura-33-2-kg/5901740951209_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – płytki",
+   "room": "wszystkie płytki",
+   "product": "Klipsy Kubala Smart Level 2,0 mm paczka 500 sztuk",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/klipsy-kubala-smart-level-2-0-mm-paczka-500-sztuk/5907798318193_CAPL.prd",
+   "price": 148.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 296.0,
+   "date": "2026-10-26",
+   "formula": "system poziomowania 60×120: ~5 klipsów/m² × 92,72 m² ×1,10 = 509,96 szt. / 500 = 2 op.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/klipsy-kubala-smart-level-2-0-mm-paczka-500-sztuk/5907798318193_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – płytki",
+   "room": "wszystkie płytki",
+   "product": "Kliny Kubala Smart Level wiadro 100 sztuk",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/kliny-kubala-smart-level-wiadro-100-sztuk/5907798318964_CAPL.prd",
+   "price": 59.98,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 119.96,
+   "date": "2026-10-26",
+   "formula": "kliny wielokrotnego użytku – 2 × 100 szt. (praca na 2 frontach)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/kliny-kubala-smart-level-wiadro-100-sztuk/5907798318964_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – płytki",
+   "room": "łazienki, kuchnia",
+   "product": "Silikon sanitarny Soudal 280 ml bezbarwny",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/silikon-sanitarny-soudal-280-ml-bezbarwny/5411183157576_CAPL.prd",
+   "price": 19.98,
+   "unit": "szt.",
+   "qty": "7",
+   "sum": 139.86,
+   "date": "2026-10-26",
+   "formula": "silikon sanitarny: ~40 mb spoin (brodziki, wanna, naroża, blat/fartuch) ×1,10 / ~7 mb z kartusza = 7 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/silikon-sanitarny-soudal-280-ml-bezbarwny/5411183157576_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – ściany i sufity",
+   "room": "całość",
+   "product": "Akryl Soudal 280 ml biały",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/akryl-soudal-280-ml-bialy/5411183157538_CAPL.prd",
+   "price": 9.98,
+   "unit": "szt.",
+   "qty": "20",
+   "sum": 199.6,
+   "date": "2026-10-26",
+   "formula": "akryl do naroży ściana/sufit, ościeży i listew: ~160 mb spoin / ~8 mb z kartusza = 20 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 2.25,
+    "c": 4,
+    "v": "uwaga",
+    "n": "Niska ocena (4 op.), ale inne akryle w Castoramie oceniane gorzej (Ceresit 1/5, Volden 2/5) lub bez opinii – zostaje.",
+    "s": "https://www.castorama.pl/akryl-soudal-280-ml-bialy/5411183157538_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – ściany i sufity",
+   "room": "całość",
+   "product": "Narożnik aluminiowy Budmat moletowany 30 x 30 mm 2,5 m",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/naroznik-aluminiowy-budmat-moletowany-30-x-30-mm-2-5-m/5901323035098_CAPL.prd",
+   "price": 16.98,
+   "unit": "szt.",
+   "qty": "4",
+   "sum": 67.92,
+   "date": "2026-10-26",
+   "formula": "narożniki aluminiowe 2,5 m na krawędzie zabudów GK stelaży/wanny i wnęk: 4 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 3.66,
+    "c": 3,
+    "v": "uwaga",
+    "n": "Mało opinii; inne narożniki Budmat podobnie (2–3,3/5) – zostaje.",
+    "s": "https://www.castorama.pl/naroznik-aluminiowy-budmat-moletowany-30-x-30-mm-2-5-m/5901323035098_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – ściany i sufity",
+   "room": "całość",
+   "product": "Taśma malarska Diall równe linie 48 mm x 50 m 3 szt.",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/tasma-malarska-diall-rowne-linie-48-mm-x-50-m-3-szt-/5036581094133_CAPL.prd",
+   "price": 39.98,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 79.96,
+   "date": "2026-10-26",
+   "formula": "taśma malarska 48 mm × 50 m – oklejanie stolarki, sufitów, listew: 6 rolek | ZAMIANA po audycie opinii 2026-10-26: Diall 48 mm pojedyncza (3,86/5, 191 op.) → ta sama taśma w opak. 3 szt. (4,16/5, 65 op.), taniej za rolkę; 6 rolek → 2 op.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.16,
+    "c": 65,
+    "v": "uwaga",
+    "n": "Oceny przeciętne.",
+    "s": "https://www.castorama.pl/tasma-malarska-diall-rowne-linie-48-mm-x-50-m-3-szt-/5036581094133_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – ściany i sufity",
+   "room": "całość",
+   "product": "Folia malarska ochronna Scley 4x5 m gr. 0.04 mm Eco Strong 1 szt.",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/departments/folia-malarska-ochronna-scley-4x5-m-gr-0-04-mm-eco-strong-1-szt-/5905061985769_CAPL.prd",
+   "price": 12.98,
+   "unit": "szt.",
+   "qty": "12",
+   "sum": 155.76,
+   "date": "2026-10-26",
+   "formula": "folia ochronna 4×5 m (20 m²) na posadzki i stolarkę w trakcie malowania: ~208,08 m² × ~1,2 (zakłady, wymiana) / 20 m² ≈ 12 szt.",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/folia-malarska-ochronna-scley-4x5-m-gr-0-04-mm-eco-strong-1-szt-/5905061985769_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – ściany i sufity",
+   "room": "całość (tynki c-w)",
+   "product": "Gładź pod wałek Kreisel GW180 gotowa polimerowa 20 kg",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/gladz-pod-walek-kreisel-gw180-gotowa-polimerowa-20-kg/5907418038791_CAPL.prd",
+   "price": 38.48,
+   "unit": "szt.",
+   "qty": "35",
+   "sum": 1346.8,
+   "date": "2026-10-26",
+   "formula": "gładź polimerowa 2 warstwy ~1,5 kg/m²: 420,00 m² (ściany+sufity na tynku; GK poddasza w zakresie GW) ×1,10 = 693,00 kg / 20 kg = 35 worków",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.2,
+    "c": 10,
+    "v": "uwaga",
+    "n": "Oceny przeciętne.",
+    "s": "https://www.castorama.pl/gladz-pod-walek-kreisel-gw180-gotowa-polimerowa-20-kg/5907418038791_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – ściany i sufity",
+   "room": "całość (tynki c-w)",
+   "product": "Grunt głęboko penetrujący Mapei M-Grunt 10 l",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/grunt-gleboko-penetrujacy-mapei-m-grunt-10-l/8022452241024_CAPL.prd",
+   "price": 59.98,
+   "unit": "szt.",
+   "qty": "5",
+   "sum": 299.9,
+   "date": "2026-10-26",
+   "formula": "grunt pod gładź: 420,00 m² ×1,10 × 0,1 l/m² = 46,20 l / 10 l = 5 op. (grunt pod farbę jest w kat. farby)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/grunt-gleboko-penetrujacy-mapei-m-grunt-10-l/8022452241024_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "materiały pomocnicze – ściany i sufity",
+   "room": "okładziny ścienne",
+   "product": "Klej montażowy do listew i profili Soudal 280 ml",
+   "shop": "castorama.pl",
+   "url": "https://www.castorama.pl/klej-montazowy-do-listew-i-profili-soudal-280-ml/5411183157507_CAPL.prd",
+   "price": 20.98,
+   "unit": "szt.",
+   "qty": "15",
+   "sum": 314.7,
+   "date": "2026-10-26",
+   "formula": "klej montażowy do okładzin: lamele Radex 10 + Stegu Linea 10 (½ kartusza/szt.) = 15 kartuszy",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.castorama.pl/klej-montazowy-do-listew-i-profili-soudal-280-ml/5411183157507_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -377,7 +2954,18 @@
    "sum": 249.0,
    "date": "2026-10-25",
    "formula": "lustro",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/edsgarn-lustro-orzech-80635314/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -391,7 +2979,18 @@
    "sum": 69.99,
    "date": "2026-10-25",
    "formula": "półka",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.8,
+    "c": 563,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/lack-polka-scienna-brazowy-orzech-70653327/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -405,7 +3004,18 @@
    "sum": 4198.0,
    "date": "2026-10-25",
    "formula": "narożnik",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.3,
+    "c": 6,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/soederhamn-sofa-narozna-4-osobowa-z-otwartym-koncem-fridtuna-jasnobezowy-s79449662/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -419,7 +3029,18 @@
    "sum": 699.0,
    "date": "2026-10-25",
    "formula": "stolik kawowy",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.ikea.com/pl/pl/p/tonstad-stolik-kawowy-kremowy-90491560/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -433,7 +3054,18 @@
    "sum": 1030.0,
    "date": "2026-10-25",
    "formula": "szafka RTV",
-   "status": "zweryfikowana 2026-10-25 – cena regularna; 945 zł dla IKEA Family"
+   "status": "zweryfikowana 2026-10-25 – cena regularna; 945 zł dla IKEA Family",
+   "op": {
+    "r": 4.5,
+    "c": 17,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/besta-lawa-tv-z-drzwiami-bialy-bjoerkoeviken-okl-deb-s59622912/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -447,7 +3079,18 @@
    "sum": 2749.0,
    "date": "2026-10-25",
    "formula": "stół",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 2.0,
+    "c": 1,
+    "v": "uwaga",
+    "n": "2/5, tylko 1 opinia.",
+    "s": "https://www.agatameble.pl/meble/stoly-stoliki-i-krzesla/stoly/elio-stol-rozkladany-dab-naturalny-160-220-cm",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -461,7 +3104,18 @@
    "sum": 774.0,
    "date": "2026-10-25",
    "formula": "6 krzeseł",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.8,
+    "c": 24,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/pinntorp-krzeslo-bejcowane-na-czarno-sosna-00635167/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -475,7 +3129,18 @@
    "sum": 399.0,
    "date": "2026-10-25",
    "formula": "dywan pod narożnik",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.8,
+    "c": 348,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/stoense-dywan-z-krotkim-wlosiem-kremowy-20426808/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -489,20 +3154,81 @@
    "sum": 837.0,
    "date": "2026-10-25",
    "formula": "3 hokery przy wyspie",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 5,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/rosentorp-stolek-barowy-z-oparciem-wysokosc-blatu-czarny-10619930/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "meble",
+   "room": "1/04",
+   "product": "OMAR Regał, 46x36x181 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/omar-regal-s89297192/",
+   "price": 308.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 616.0,
+   "date": "2026-10-26",
+   "formula": "2 szt. – regał OMAR 46×36×181 ocynk. – 2 szt. na ścianie S (590–682 / 272–308) wg rzutu v2 (spiżarka wg oryginalnego projektu, decyzja inwestora 26.10); półki na ścianie W pominięte (IVAR odrzucony: 2,9/5 z 128 opinii IKEA)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.ikea.com/pl/pl/p/omar-regal-s89297192/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "meble",
+   "room": "1/04",
+   "product": "BAGGEBO Regał, biały, 50x25x160 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/baggebo-regal-bialy-20436713/",
+   "price": 99.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 198.0,
+   "date": "2026-10-26",
+   "formula": "2 szt. – regał BAGGEBO 50×25×160 biały – 2 szt. na ścianie N (590–690 / 171–196) zamiast OMAR 36 cm, który wchodził w strefę drzwi ukrytych (F1; 4,8/5 z 39 opinii IKEA)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.8,
+    "c": 39,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/baggebo-regal-bialy-20436713/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
    "room": "1/07",
-   "product": "GLAMBERGET Rozsuw łóżko z pojemnikami/2 mater - sosna/Ågotnes twardy 80x200 cm",
+   "product": "LYCKSELE LÖVÅS Sofa 2-osobowa, rozkładana/Knisa jasnoszary",
    "shop": "ikea.com",
-   "url": "https://www.ikea.com/pl/pl/p/glamberget-rozsuw-lozko-z-pojemnikami-2-mater-sosna-agotnes-twardy-s89568386/",
-   "price": 1817.0,
+   "url": "https://www.ikea.com/pl/pl/p/lycksele-loevas-sofa-2-osobowa-rozkladana-knisa-jasnoszary-s09387035/",
+   "price": 1299.0,
    "unit": "szt.",
    "qty": "1",
-   "sum": 1817.0,
+   "sum": 1299.0,
    "date": "2026-10-25",
-   "formula": "łóżko rozsuwane z 2 materacami (80×200 → 160×200) – brak wersji 90 z wysuwem w IKEA",
+   "formula": "1 sofa rozkładana LYCKSELE LÖVÅS 2-os. (pokój gościnny): 142×100×87, spanie 140×188 wysuwane do przodu – oparciem do ściany pn. (x430–572), po rozłożeniu gł. 188; nie wchodzi w strefę drzwi 1/07, skrzydła okna francuskiego ani szafy PAX",
    "status": "zweryfikowana 2026-10-25"
   },
   {
@@ -516,8 +3242,19 @@
    "qty": "1",
    "sum": 499.0,
    "date": "2026-10-25",
-   "formula": "1 szafka nocna (jak w 2/02)",
-   "status": "zweryfikowana 2026-10-25"
+   "formula": "1 szafka nocna – we wnęce 57×134 obok sofy (poza strefą drzwi i rozłożonym spaniem)",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.6,
+    "c": 17,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/tonstad-stolik-nocny-brazowy-bejcowana-okleina-debowa-40489319/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -531,7 +3268,18 @@
    "sum": 199.0,
    "date": "2026-10-25",
    "formula": "dywan 133×195",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.8,
+    "c": 122,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/lohals-dywan-tkany-na-plasko-naturalny-30511288/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -545,7 +3293,18 @@
    "sum": 298.0,
    "date": "2026-10-25",
    "formula": "chodniki 80×150",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 3,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/tidtabell-dywan-tkany-na-plasko-bezowy-10561868/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -559,7 +3318,18 @@
    "sum": 749.0,
    "date": "2026-10-25",
    "formula": "łóżko 160 z dnem (zamiast MALM – niedostępny w PL)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.9,
+    "c": 34,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/tarva-rama-lozka-sosna-luroey-s69002426/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -573,7 +3343,18 @@
    "sum": 2299.0,
    "date": "2026-10-25",
    "formula": "materac 160",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.7,
+    "c": 245,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/vagstranda-materac-sprezyny-kieszeniowe-srednio-twardy-jasnoniebieski-70450754/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -587,7 +3368,18 @@
    "sum": 998.0,
    "date": "2026-10-25",
    "formula": "stoliki nocne",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.6,
+    "c": 17,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/tonstad-stolik-nocny-brazowy-bejcowana-okleina-debowa-40489319/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -601,7 +3393,18 @@
    "sum": 399.0,
    "date": "2026-10-25",
    "formula": "dywan 170×240",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.3,
+    "c": 3,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/tidtabell-dywan-tkany-na-plasko-bezowy-30555282/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -615,7 +3418,18 @@
    "sum": 999.0,
    "date": "2026-10-25",
    "formula": "biurko 160×80",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 5,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/mittzon-biurko-okl-deb-czarny-s59529122/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -629,7 +3443,18 @@
    "sum": 899.0,
    "date": "2026-10-25",
    "formula": "sofa 2-os.",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.ikea.com/pl/pl/p/gullvalla-sofa-2-osobowa-silkeryd-ciemny-szarobezowy-30618500/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -643,7 +3468,18 @@
    "sum": 999.0,
    "date": "2026-10-25",
    "formula": "krzesło gamingowe",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.7,
+    "c": 21,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/styrspel-krzeslo-gamingowe-czerwony-30613055/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -657,7 +3493,18 @@
    "sum": 355.0,
    "date": "2026-10-25",
    "formula": "5 wieszaków na gitary (midi.pl – link nieaktywny, zastąpiony Gear4music)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.gear4music.pl/en/Guitar-and-Bass/KandM-16240-Guitar-Wall-Mount-Black/1YWP",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -671,7 +3518,18 @@
    "sum": 299.0,
    "date": "2026-10-25",
    "formula": "szafka RTV w biurze",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 8,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/kallax-szafka-pod-tv-imitacja-debu-bejcowanego-na-bialo-80562096/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -685,7 +3543,18 @@
    "sum": 399.0,
    "date": "2026-10-25",
    "formula": "dywan 170×240",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.3,
+    "c": 3,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/tidtabell-dywan-tkany-na-plasko-bezowy-30555282/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -699,7 +3568,68 @@
    "sum": 99.99,
    "date": "2026-10-25",
    "formula": "stolik kawowy",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.7,
+    "c": 541,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/lack-stolik-kawowy-czarnobraz-40104294/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "meble",
+   "room": "2/07",
+   "product": "NEIDEN Rama łóżka - sosna 140x200 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/neiden-rama-lozka-sosna-70395239/",
+   "price": 249.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 249.0,
+   "date": "2026-10-25",
+   "formula": "łóżko 140 – tylko 2/07 (2/08: kanapa rozkładana, decyzja 2026-10-26)",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.7,
+    "c": 23,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/neiden-rama-lozka-sosna-70395239/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "meble",
+   "room": "2/07",
+   "product": "ÅBYGDA Materac piankowy - średnio twardy/biały 140x200 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/abygda-materac-piankowy-srednio-twardy-bialy-10481466/",
+   "price": 999.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 999.0,
+   "date": "2026-10-25",
+   "formula": "materac 140 – tylko 2/07 (2/08: kanapa rozkładana)",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.7,
+    "c": 99,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/abygda-materac-piankowy-srednio-twardy-bialy-10481466/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -713,7 +3643,18 @@
    "sum": 998.0,
    "date": "2026-10-25",
    "formula": "2 szafki nocne",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.6,
+    "c": 17,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/tonstad-stolik-nocny-brazowy-bejcowana-okleina-debowa-40489319/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -727,35 +3668,68 @@
    "sum": 799.0,
    "date": "2026-10-25",
    "formula": "komoda ciemna",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.7,
+    "c": 3,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/storklinta-komoda-6-szuflad-ciemnobrazowy-imit-debu-80627559/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
-   "room": "2/07, 2/08",
-   "product": "NEIDEN Rama łóżka - sosna 140x200 cm",
+   "room": "2/07",
+   "product": "MICKE Biurko - imit. dębu 105x50 cm",
    "shop": "ikea.com",
-   "url": "https://www.ikea.com/pl/pl/p/neiden-rama-lozka-sosna-70395239/",
-   "price": 249.0,
+   "url": "https://www.ikea.com/pl/pl/p/micke-biurko-imit-debu-40351741/",
+   "price": 399.0,
    "unit": "szt.",
-   "qty": "2",
-   "sum": 498.0,
+   "qty": "1",
+   "sum": 399.0,
    "date": "2026-10-25",
-   "formula": "łóżka 140",
-   "status": "zweryfikowana 2026-10-25"
+   "formula": "1 szt. – biurko przy ścianie S wg rzutu v2 (1100–1220 / 366–426); komoda na miejscu szafy (ściana W)",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.7,
+    "c": 643,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/micke-biurko-imit-debu-40351741/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
-   "room": "2/07, 2/08",
-   "product": "ÅBYGDA Materac piankowy - średnio twardy/biały 140x200 cm",
+   "room": "2/08",
+   "product": "NYHAMN Sofa 3-osobowa, rozkładana - materac ze sprężynami kieszeniowymi/Knisa szary/beż",
    "shop": "ikea.com",
-   "url": "https://www.ikea.com/pl/pl/p/abygda-materac-piankowy-srednio-twardy-bialy-10481466/",
-   "price": 999.0,
+   "url": "https://www.ikea.com/pl/pl/p/nyhamn-sofa-3-osobowa-rozkladana-materac-ze-sprezynami-kieszeniowymi-knisa-szary-bez-s89306361/",
+   "price": 1149.0,
    "unit": "szt.",
-   "qty": "2",
-   "sum": 1998.0,
-   "date": "2026-10-25",
-   "formula": "materace 140",
-   "status": "zweryfikowana 2026-10-25"
+   "qty": "1",
+   "sum": 1149.0,
+   "date": "2026-10-26",
+   "formula": "1 kanapa rozkładana (pokój gościnny, zamiast łóżka): NYHAMN 3-os. rozkładana 200×97, sprężyny kieszeniowe, spanie 140×200 wzdłuż kanapy (klik-klak) – przy ścianie zach. (pełna ściana), cała w strefie H≥200; po rozłożeniu dostęp ≥70 cm z boku",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.6,
+    "c": 14,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/nyhamn-sofa-3-osobowa-rozkladana-materac-ze-sprezynami-kieszeniowymi-knisa-szary-bez-s89306361/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble",
@@ -768,22 +3742,47 @@
    "qty": "1",
    "sum": 499.0,
    "date": "2026-10-25",
-   "formula": "1 szafka nocna (łóżko przy ścianie skośnej)",
+   "formula": "1 stolik boczny przy kanapie (pn. koniec, pod skosem) – na lampkę",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.6,
+    "c": 17,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/tonstad-stolik-nocny-brazowy-bejcowana-okleina-debowa-40489319/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "meble",
+   "room": "2/08",
+   "product": "MULIG Wieszak na ubrania - biały 99x152 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/mulig-wieszak-na-ubrania-bialy-60179434/",
+   "price": 39.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 39.0,
+   "date": "2026-10-25",
+   "formula": "wieszak na ubrania dla gości: MULIG 99×46×152 – ściana wsch.",
    "status": "zweryfikowana 2026-10-25"
   },
   {
    "cat": "meble",
    "room": "2/08",
-   "product": "BESTÅ Obudowa, imitacja dębu bejcowanego na biało, 120x40x38 cm",
+   "product": "STEGESUND Ławka - jasny bambus 79x34 cm",
    "shop": "ikea.com",
-   "url": "https://www.ikea.com/pl/pl/p/besta-obudowa-imitacja-debu-bejcowanego-na-bialo-40247373/",
-   "price": 185.0,
+   "url": "https://www.ikea.com/pl/pl/p/stegesund-lawka-jasny-bambus-60632019/",
+   "price": 199.0,
    "unit": "szt.",
    "qty": "1",
-   "sum": 185.0,
+   "sum": 199.0,
    "date": "2026-10-25",
-   "formula": "siedzisko pod skosem pod oknem dachowym: 1 × korpus BESTÅ 120×40×38 = 120 cm (poducha siedziska do dobrania)",
-   "status": "zweryfikowana 2026-10-25 – cena regularna; promocja 155 zł"
+   "formula": "ławka na walizkę/bagaż pod skosem: STEGESUND bambus 79×34×47",
+   "status": "zweryfikowana 2026-10-25"
   },
   {
    "cat": "meble",
@@ -797,7 +3796,43 @@
    "sum": 199.0,
    "date": "2026-10-25",
    "formula": "dywan 133×195",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.8,
+    "c": 122,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/lohals-dywan-tkany-na-plasko-naturalny-30511288/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "meble",
+   "room": "2/10",
+   "product": "ENHET Rama szafki wiszącej z półkami, antracyt, 60x30x75 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/enhet-rama-szafki-wiszacej-z-polkami-antracyt-00448972/",
+   "price": 220.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 440.0,
+   "date": "2026-10-26",
+   "formula": "2 szt. – otwarte szafki ENHET (rama z półkami, antracyt) nad pralką i suszarką, ściana W (szafka z drzwiczkami odrzucona: 3,3/5 z 6 opinii)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 144,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/enhet-rama-szafki-wiszacej-z-polkami-antracyt-00448972/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble – szafy",
@@ -811,7 +3846,18 @@
    "sum": 2195.0,
    "date": "2026-10-25",
    "formula": "zabudowa wiatrołapu 264 cm → PAX 250",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 4,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/pax-forsand-szafa-bialy-bialy-s29478082/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble – szafy",
@@ -825,7 +3871,18 @@
    "sum": 1580.0,
    "date": "2026-10-26",
    "formula": "szafa 1/07 na całą ścianę 283 cm, jeden kolor (biały/biały), wys. 236 cm (sufit 268): 2 × PAX/BERGSBO 100×60×236",
-   "status": "zweryfikowana 2026-10-26"
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.8,
+    "c": 142,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/pax-bergsbo-szafa-2-drzwi-bialy-bialy-s49904634/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble – szafy",
@@ -839,7 +3896,18 @@
    "sum": 525.0,
    "date": "2026-10-26",
    "formula": "szafa 1/07 (cd.): moduł 50×60×236 – razem 100+100+50 = 250 cm",
-   "status": "zweryfikowana 2026-10-26"
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 42,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/pax-bergsbo-szafa-i-drzwi-bialy-bialy-s29904630/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble – szafy",
@@ -853,7 +3921,18 @@
    "sum": 335.0,
    "date": "2026-10-26",
    "formula": "szafa 1/07 (cd.): otwarty segment boczny 20×58×236 na końcu zabudowy → 270 cm",
-   "status": "zweryfikowana 2026-10-26"
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.6,
+    "c": 11,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/pax-dodatkowy-segment-boczny-bialy-10603854/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble – szafy",
@@ -867,7 +3946,18 @@
    "sum": 285.0,
    "date": "2026-10-26",
    "formula": "szafa 1/07 (cd.): maskownica 13 cm × 236 cm docięta z panelu 62×240 (przy ścianie) → 283 cm, bez szczeliny",
-   "status": "zweryfikowana 2026-10-26"
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.9,
+    "c": 82,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/foerbaettra-panel-maskujacy-bialy-60297885/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble – szafy",
@@ -881,7 +3971,18 @@
    "sum": 2355.0,
    "date": "2026-10-25",
    "formula": "garderoba 160×266 – 1 ciąg 200",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.8,
+    "c": 13,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/pax-flisberget-szafa-bialy-jasnobezowy-s49304340/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble – szafy",
@@ -895,7 +3996,18 @@
    "sum": 2195.0,
    "date": "2026-10-25",
    "formula": "garderoba 273×278 – ciąg 250",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 4,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/pax-forsand-szafa-bialy-bialy-s29478082/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "meble – szafy",
@@ -909,7 +4021,18 @@
    "sum": 2195.0,
    "date": "2026-10-25",
    "formula": "garderoba 228×283 – ciąg 250",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 4,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/pax-forsand-szafa-bialy-bialy-s29478082/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "oświetlenie",
@@ -923,7 +4046,18 @@
    "sum": 139.98,
    "date": "2026-10-25",
    "formula": "lampa wisząca (papierowa): 1/01 + strefa sofy 1/02",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.ikea.com/pl/pl/p/blastang-havsdjup-lampa-wiszaca-bezowy-bialy-s19620340/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "oświetlenie",
@@ -937,7 +4071,18 @@
    "sum": 249.0,
    "date": "2026-10-25",
    "formula": "lampa podłogowa",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.9,
+    "c": 192,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/lauters-lampa-podlogowa-brazowy-jesion-bialy-80405073/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "oświetlenie",
@@ -951,7 +4096,18 @@
    "sum": 204.0,
    "date": "2026-10-25",
    "formula": "lampa nad stołem",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.lampy.pl/p/lampa-wiszaca-magali-biala-papierowa-o-45-cm-e27-10020287.html",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "oświetlenie",
@@ -961,11 +4117,22 @@
    "url": "https://www.ikea.com/pl/pl/p/blastang-havsdjup-lampa-wiszaca-bezowy-bialy-s19620340/",
    "price": 69.99,
    "unit": "szt.",
-   "qty": "3",
-   "sum": 209.97,
+   "qty": "2",
+   "sum": 139.98,
    "date": "2026-10-25",
-   "formula": "3 lampy nad wyspą",
-   "status": "zweryfikowana 2026-10-25"
+   "formula": "2 lampy nad półwyspem 90×198 (kuchnia F1 – decyzja inwestora: 2 zamiast 3)",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.ikea.com/pl/pl/p/blastang-havsdjup-lampa-wiszaca-bezowy-bialy-s19620340/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "oświetlenie",
@@ -979,7 +4146,18 @@
    "sum": 99.98,
    "date": "2026-10-25",
    "formula": "kinkiety przy schodach",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.9,
+    "c": 70,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/nymane-kinkiet-dwustronny-inst-stala-bialy-60397861/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "oświetlenie",
@@ -993,7 +4171,18 @@
    "sum": 79.99,
    "date": "2026-10-25",
    "formula": "lampka nocna",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.8,
+    "c": 159,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/taernaby-lampa-stolowa-mozna-przyciemniac-bezowy-60508072/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "oświetlenie",
@@ -1007,7 +4196,43 @@
    "sum": 300.0,
    "date": "2026-10-25",
    "formula": "downlighty IP44 w łazienkach: 2 + 2",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/oprawa-wpuszczana-3000k-ip44-slim-9-az2831-azzardo-1-szt-/5901238428312_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "oświetlenie",
+   "room": "2/08",
+   "product": "TÄRNABY Lampa stołowa - można przyciemniać beżowy 25 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/taernaby-lampa-stolowa-mozna-przyciemniac-bezowy-60508072/",
+   "price": 79.99,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 79.99,
+   "date": "2026-10-25",
+   "formula": "lampka przy kanapie (na stoliku bocznym)",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.8,
+    "c": 159,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/taernaby-lampa-stolowa-mozna-przyciemniac-bezowy-60508072/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "oświetlenie",
@@ -1021,7 +4246,18 @@
    "sum": 319.8,
    "date": "2026-10-25",
    "formula": "downlighty: salon/kuchnia/hole ~20 szt. (rozstaw ~1,2 m)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.obi.pl/p/7141096/philips-oprawa-podtynkowa-meson-biala-sr-9-7-cm-3000k-5-5w-500lm",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "oświetlenie",
@@ -1035,7 +4271,18 @@
    "sum": 299.94,
    "date": "2026-10-25",
    "formula": "lampy papierowe w pokojach",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 3,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/gullsudare-havsdjup-lampa-wiszaca-bialy-s89613303/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "podłogi",
@@ -1049,7 +4296,18 @@
    "sum": 25082.3,
    "date": "2026-10-25",
    "formula": "podłogi drewniane/panele 155.66 m² (1/02 36.3+1/07 9.38+2/01 16.96+2/02 31.45+2/03 4.26+2/04 7.01+2/06 15.59+2/07 14.09+2/08 14.37+2/09 6.25) ×1,08 zapas = 168,11 m² → ⌈168,11 / 0,91⌉ = 185 op.",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.obi.pl/p/6972889/barlinek-deska-podlogowa-dab-country-1l-14-x-180-x-725-mm",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "podłogi",
@@ -1063,7 +4321,118 @@
    "sum": 4138.62,
    "date": "2026-10-25",
    "formula": "listwy ≈150 mb (obwody pomieszczeń z podłogą drewnianą minus otwory) / 2,2 m = 69 szt.",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/listwa-przypodlogowa-barlinek-p50-2200-mm-dab/5906737924563_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "pralnia – AGD",
+   "room": "2/10",
+   "product": "Pralka ładowana od frontu BOSCH WAN2827LPL Biały z czarnymi drzwiami",
+   "shop": "mediamarkt.pl",
+   "url": "https://mediamarkt.pl/pl/product/_pralka-ladowana-od-frontu-bosch-bosch-wan2827lpl-bialy-z-czarnymi-drzwiami-1501540.html",
+   "price": 1999.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 1999.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – pralka Bosch Serie 4 WAN2827LPL 8 kg, klasa A, przy ścianie W (UDDARP odrzucona: 1 opinia, klasa C)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 27,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://mediamarkt.pl/pl/product/_pralka-ladowana-od-frontu-bosch-bosch-wan2827lpl-bialy-z-czarnymi-drzwiami-1501540.html",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "pralnia – AGD",
+   "room": "2/10",
+   "product": "Suszarka Kondensacyjna z pompą ciepła BOSCH WTH85V9FPL Biały, Czarna ramka drzwi",
+   "shop": "mediamarkt.pl",
+   "url": "https://mediamarkt.pl/pl/product/_suszarka-kondensacyjna-z-pompa-ciepla-bosch-wth85v9fpl-bialy-czarna-ramka-drzwi-1491194.html",
+   "price": 2649.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 2649.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – suszarka z pompą ciepła 60 cm obok pralki (ściana W)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 5.0,
+    "c": 300,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://mediamarkt.pl/pl/product/_suszarka-kondensacyjna-z-pompa-ciepla-bosch-wth85v9fpl-bialy-czarna-ramka-drzwi-1491194.html",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "pralnia – umywalka",
+   "room": "2/10",
+   "product": "ENHET / TVÄLLEN Szafka pod umyw z drzwiami/umywalka, biały, 64x33x65 cm",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/enhet-tvaellen-szafka-pod-umyw-z-drzwiami-umywalka-bialy-s79613346/",
+   "price": 679.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 679.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – szafka z umywalką 64 cm przy ścianie N (rzut v2: blat + zlew 90–210 / 25–85)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.ikea.com/pl/pl/p/enhet-tvaellen-szafka-pod-umyw-z-drzwiami-umywalka-bialy-s79613346/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "pralnia – umywalka",
+   "room": "2/10",
+   "product": "SALJEN Bateria umywalkowa, czarny",
+   "shop": "ikea.com",
+   "url": "https://www.ikea.com/pl/pl/p/saljen-bateria-umywalkowa-czarny-40385492/",
+   "price": 100.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 100.0,
+   "date": "2026-10-26",
+   "formula": "1 szt. – bateria SALJEN do umywalki pralni (SALLSJÖN odrzucona: 3,7/5 z 10 opinii)",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": 4.8,
+    "c": 6,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/saljen-bateria-umywalkowa-czarny-40385492/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "płytki",
@@ -1077,7 +4446,18 @@
    "sum": 5437.44,
    "date": "2026-10-25",
    "formula": "płytki podłogowe poza łaz. 40.74 m² (1/01 6.11, 1/03 10.99, 1/04 1.51, 1/06 6.34, 1/09 9.33, 2/10 6.46) ×1,10 = 44,81 m² → ⌈44,81 / 1,44⌉ = 32 op.",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/gres-mrozoodporny-lora-euroceramika-60-x-120-cm-crema-mat-carving-1-44-m2/5902767925402_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "płytki",
@@ -1091,7 +4471,18 @@
    "sum": 509.76,
    "date": "2026-10-25",
    "formula": "pas nad blatem kuchni ~5,5 mb × 0,6 m = 3,3 m² ×1,10 = 3,63 m² → ⌈3,63 / 1,44⌉ = 3 op.",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/gres-mrozoodporny-lora-euroceramika-60-x-120-cm-crema-mat-carving-1-44-m2/5902767925402_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "płytki",
@@ -1105,7 +4496,18 @@
    "sum": 1529.28,
    "date": "2026-10-25",
    "formula": "podłogi łazienek 1/08 3,71 + 2/05 7,97 = 11.68 m² ×1,10 = 12,85 m² → ⌈12,85 / 1,44⌉ = 9 op.",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/gres-mrozoodporny-lora-euroceramika-60-x-120-cm-crema-mat-carving-1-44-m2/5902767925402_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "płytki",
@@ -1119,7 +4521,18 @@
    "sum": 4927.68,
    "date": "2026-10-25",
    "formula": "ściany łazienek ~37 m² (1/08: obwód 7,7 m × 2,5 m − drzwi ≈ 17,7; 2/05: obwód 11,3 m × śr. 2,0 m (skos) − drzwi ≈ 19,3) ×1,10 = 40,70 m² → ⌈40,70 / 1,44⌉ = 29 op.",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/gres-mrozoodporny-lora-euroceramika-60-x-120-cm-crema-mat-carving-1-44-m2/5902767925402_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "schody i balustrady",
@@ -1133,7 +4546,18 @@
    "sum": 3040.0,
    "date": "2026-10-25",
    "formula": "16 stopni dębowych na beton (klasa Natur A/B, materiał bez montażu)",
-   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – cennik na stronie producenta; materiał bez montażu"
+   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – cennik na stronie producenta; materiał bez montażu",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://gildiadrzew.pl/schody-blaty#stopien-debowy-na-beton-natur-ab",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "schody i balustrady",
@@ -1147,7 +4571,18 @@
    "sum": 1440.0,
    "date": "2026-10-25",
    "formula": "16 podstopnic dębowych",
-   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – cennik na stronie producenta; materiał bez montażu"
+   "status": "SZACUNEK – cennik firmy, sprawdzono 2026-10-25 – cennik na stronie producenta; materiał bez montażu",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://gildiadrzew.pl/schody-blaty#podstopnica-debowa",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "schody i balustrady",
@@ -1161,7 +4596,18 @@
    "sum": 456.0,
    "date": "2026-10-25",
    "formula": "poręcz przyścienna dębowa ~5 mb → 2 × 270 cm",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 3.0,
+    "c": 2,
+    "v": "uwaga",
+    "n": "Niska ocena przy małej liczbie opinii – obserwować.",
+    "s": "https://www.castorama.pl/porecz-debowa-kornik-50-x-60-x-2700-mm/5905156080317_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "schody i balustrady",
@@ -1175,7 +4621,18 @@
    "sum": 75.0,
    "date": "2026-10-25",
    "formula": "6 wsporników poręczy (co ~90 cm)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/wspornik-uchwyt-avis-podpora-por-czy-ciennej-schodowej-monta-do-powierzchni-p-askiej-czarny-1-zestaw/5907264142314_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "schody i balustrady",
@@ -1189,7 +4646,18 @@
    "sum": 999.2,
    "date": "2026-10-25",
    "formula": "balustrada ze szczeblami ~4,74 mb: szczeble dębowe 22×22 co ~12 cm",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/tralka-debowa-kornik-22-x-22-x-1000-mm/5905156094277_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "schody i balustrady",
@@ -1203,7 +4671,18 @@
    "sum": 456.0,
    "date": "2026-10-25",
    "formula": "pochwyt balustrady 2 × 270 cm (słupki/listwa dolna – do dobrania przez stolarza)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 3.0,
+    "c": 2,
+    "v": "uwaga",
+    "n": "Niska ocena przy małej liczbie opinii – obserwować.",
+    "s": "https://www.castorama.pl/porecz-debowa-kornik-50-x-60-x-2700-mm/5905156080317_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "tekstylia",
@@ -1213,11 +4692,22 @@
    "url": "https://www.ikea.com/pl/pl/p/silverloenn-firanki-2-szt-bezowy-na-tasmie-10493978/",
    "price": 99.99,
    "unit": "szt.",
-   "qty": "4",
-   "sum": 399.96,
+   "qty": "5",
+   "sum": 499.95,
    "date": "2026-10-25",
-   "formula": "firany: HST 326 cm (2 kpl.) + 2 okna (2 kpl.)",
-   "status": "zweryfikowana 2026-10-25"
+   "formula": "firany (SILVERLÖNN 2×145 cm/kpl.): HST 326 cm (2 kpl.) + HST wsch. 300 cm (2 kpl. – skany v2, było 180/1 kpl.) + okno narożne (1 kpl.)",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.5,
+    "c": 86,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/silverloenn-firanki-2-szt-bezowy-na-tasmie-10493978/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "tekstylia",
@@ -1227,11 +4717,22 @@
    "url": "https://www.ikea.com/pl/pl/p/bekraefta-komplet-karniszy-bialy-30489536/",
    "price": 50.0,
    "unit": "szt.",
-   "qty": "4",
-   "sum": 200.0,
+   "qty": "5",
+   "sum": 250.0,
    "date": "2026-10-25",
-   "formula": "karnisze do firan",
-   "status": "zweryfikowana 2026-10-25"
+   "formula": "karnisze do firan (BEKRÄFTA 120–210 cm): HST 326 ×2 + HST wsch. 300 ×2 (skany v2, było 180 ×1) + okno narożne ×1",
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.6,
+    "c": 52,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/bekraefta-komplet-karniszy-bialy-30489536/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "tekstylia",
@@ -1245,7 +4746,18 @@
    "sum": 299.0,
    "date": "2026-10-25",
    "formula": "zasłony 1/07",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.7,
+    "c": 25,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/dytag-zaslona-2-szt-bezowy-na-tasmie-80607820/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "tekstylia",
@@ -1259,7 +4771,18 @@
    "sum": 50.0,
    "date": "2026-10-25",
    "formula": "karnisz 1/07",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 4.6,
+    "c": 52,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.ikea.com/pl/pl/p/bekraefta-komplet-karniszy-bialy-30489536/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "wykończenie ścian",
@@ -1273,7 +4796,18 @@
    "sum": 1680.0,
    "date": "2026-10-25",
    "formula": "lamele dębowe: 1/06 ~3,4 m (6) + 1/08 (2) + 2/05 (2) – w łazienkach tylko poza strefą mokrą",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 15,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.castorama.pl/panel-lamelowy-scienny-radex-ok-wall-mdf-265-x-60-cm-dab/5907859026234_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "wykończenie ścian",
@@ -1287,7 +4821,18 @@
    "sum": 729.8,
    "date": "2026-10-25",
    "formula": "lamele ciemne 2/06: ~2,4 m / 0,245 = 10 szt.",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 7,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.castorama.pl/panel-lamelowy-scienny-stegu-linea-select-mdf-265-x-24-5-x-1-9-cm-dab-czarny/5907762319416_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – WC",
@@ -1301,7 +4846,18 @@
    "sum": 3162.38,
    "date": "2026-10-25",
    "formula": "2 WC (1/08, 2/05)",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 12,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.lazienkaplus.pl/pl/zestaw-geberit-duofix-zestaw-4w1-stelaz-podtynkowy-do-wc-z-przyciskiem-splukujacym-sigma-01-czarnym-wspornikami-i-uszczelka-wygluszajaca-oltens-49301000-111815001-111320005-115770dw5,536551,129,i/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – WC",
@@ -1315,7 +4871,18 @@
    "sum": 1308.28,
    "date": "2026-10-25",
    "formula": "2 miski WC",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.obi.pl/p/6919187/roca-miska-wc-gap-square-compacto-rimless-wiszaca-z-deska-wolnoopadajaca",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – bidet",
@@ -1329,7 +4896,18 @@
    "sum": 268.0,
    "date": "2026-10-25",
    "formula": "bateria bidetowa",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/bateria-bidetowa-goodhome-owens-czarny-matowy/5059340485232_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – bidet",
@@ -1343,21 +4921,43 @@
    "sum": 698.0,
    "date": "2026-10-25",
    "formula": "bidet pod oknem dachowym 2/05",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 4,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.castorama.pl/bidet-wiszacy-roca-gap/8433290383270_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – bidet",
    "room": "2/05",
-   "product": "Stelaż podtynkowy bidetowy GoodHome Savic",
+   "product": "Stelaż podtynkowy do bidetu Mexen Fenix biały 1 szt.",
    "shop": "castorama.pl",
-   "url": "https://www.castorama.pl/stelaz-podtynkowy-bidetowy-goodhome-savic/3663602690795_CAPL.prd",
-   "price": 248.0,
+   "url": "https://www.castorama.pl/departments/stela-podtynkowy-do-bidetu-mexen-fenix-bia-y-1-szt-/5903163384886_CAPL.prd",
+   "price": 239.99,
    "unit": "szt.",
    "qty": "1",
-   "sum": 248.0,
-   "date": "2026-10-25",
-   "formula": "stelaż bidetu",
-   "status": "zweryfikowana 2026-10-25"
+   "sum": 239.99,
+   "date": "2026-10-26",
+   "formula": "stelaż bidetu | ZAMIANA po audycie opinii 2026-10-26: GoodHome Savic (1/5, 3 op.) → Mexen Fenix do bidetu (brak opinii produktu; seria Fenix – stelaż WC 4,8/5, 14 op. u producenta); dostępność do potwierdzenia",
+   "status": "zweryfikowana 2026-10-26",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/stela-podtynkowy-do-bidetu-mexen-fenix-bia-y-1-szt-/5903163384886_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – lustra",
@@ -1371,7 +4971,18 @@
    "sum": 594.0,
    "date": "2026-10-25",
    "formula": "3 lustra",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/lustro-okragle-luna-60-cm-z-oswietleniem-led/5903886111073_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – prysznic",
@@ -1385,7 +4996,18 @@
    "sum": 2912.58,
    "date": "2026-10-25",
    "formula": "2 prysznice",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 3,
+    "v": "OK",
+    "n": "Dobre oceny klientów.",
+    "s": "https://www.lazienkaplus.pl/pl/kfa-armatura-mokait-black-zestaw-prysznicowy-podtynkowy-czarny-5539-511-81,594767,138,i/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – prysznic",
@@ -1399,7 +5021,18 @@
    "sum": 676.0,
    "date": "2026-10-25",
    "formula": "2 odpływy",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii tego wariantu; Fluxio 70 chrom w Castoramie 3/5 (1 op.).",
+    "s": "https://www.castorama.pl/odplyw-liniowy-hytti-fluxio-80-cm-czarny/5905504235581_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – prysznic",
@@ -1413,7 +5046,18 @@
    "sum": 1137.98,
    "date": "2026-10-25",
    "formula": "ścianka walk-in 90 czarna",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/-cianka-prysznicowa-ahaus-90-x-190-cm-czarny-1-szt-/4255664894892_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – umywalki",
@@ -1427,7 +5071,18 @@
    "sum": 1854.0,
    "date": "2026-10-25",
    "formula": "3 szafki 60 dąb",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/szafka-pod-umywalke-cersanit-mille-wiszaca-60-cm-dab/5901771214502_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – umywalki",
@@ -1441,7 +5096,18 @@
    "sum": 1194.0,
    "date": "2026-10-25",
    "formula": "3 umywalki nablatowe",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.castorama.pl/umywalka-nablatowa-ceramiczna-goodhome-endell-35-x-45-cm-biala/5063022514363_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – umywalki",
@@ -1455,7 +5121,18 @@
    "sum": 2039.85,
    "date": "2026-10-25",
    "formula": "3 baterie",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": 5.0,
+    "c": 1,
+    "v": "OK",
+    "n": "Dobra ocena, ale mało opinii.",
+    "s": "https://www.lazienkaplus.pl/pl/ksuro-02-bateria-umywalkowa-stojaca-czarny-mat-10004030,624021,118,i/",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – wanna",
@@ -1469,7 +5146,20 @@
    "sum": 1099.0,
    "date": "2026-10-25",
    "formula": "bateria wannowa z natryskiem",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii produktu; sklep GranMaster 4,9/5 (322 op. TrustMate) – dotyczą obsługi, nie trwałości.",
+    "s": "https://www.castorama.pl/departments/bateria-wannowa-podtynkowa-granmaster-rene-czarny-mat-z-natryskiem-1-szt-/5901986910121_CAPL.prd",
+    "x": [
+     "https://trustmate.io/opinie/granmaster-pl"
+    ],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
   },
   {
    "cat": "łazienki – wanna",
@@ -1483,30 +5173,822 @@
    "sum": 1332.36,
    "date": "2026-10-25",
    "formula": "wanna 170×75 wzdłuż ściany W (2/05) – obudowa/nóżki do sprawdzenia",
-   "status": "zweryfikowana 2026-10-25"
+   "status": "zweryfikowana 2026-10-25",
+   "op": {
+    "r": null,
+    "c": 0,
+    "v": "OK",
+    "n": "Brak opinii w sklepie.",
+    "s": "https://www.castorama.pl/departments/akrylowa-wanna-ravak-flow-170x75-bia-a-1szt/8592626094225_CAPL.prd",
+    "x": [],
+    "d": "2026-10-26",
+    "alt": null,
+    "dec": false
+   }
+  },
+  {
+   "cat": "robocizna – płytki",
+   "room": "płytki",
+   "product": "Robocizna: gruntowanie podłoża pod płytki",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 10.75,
+   "unit": "m²",
+   "qty": "92,72",
+   "sum": 996.74,
+   "date": "2026-10-26",
+   "formula": "podłogi 52,42 + ściany/fartuch 40,3 m²; stawka 6,50 – 10,75 – 15,00 zł/m² (min–ŚREDNIA–max); źródła: Oleba 8–15 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 5–15 (https://muratordom.pl/wnetrza/prace-wykonczeniowe/za-samo-polozenie-plytek-zaplacisz-niemalo-sprawdzamy-aktualne-stawki-aa-Rxo7-t5A7-hioC.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 602,68 – max 1390,80 zł)"
+  },
+  {
+   "cat": "robocizna – płytki",
+   "room": "łazienki, 1/09",
+   "product": "Robocizna: hydroizolacja folią w płynie (2 warstwy)",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 68.67,
+   "unit": "m²",
+   "qty": "31,49",
+   "sum": 2162.42,
+   "date": "2026-10-26",
+   "formula": "podłogi łazienek + strefy prysznica + ściana przy wannie + 1/09 (jak w materiałach); stawka 48,27 – 68,67 – 89,07 zł/m² (min–ŚREDNIA–max); źródła: Oleba 40–90 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 40–80 (https://muratordom.pl/wnetrza/prace-wykonczeniowe/za-samo-polozenie-plytek-zaplacisz-niemalo-sprawdzamy-aktualne-stawki-aa-Rxo7-t5A7-hioC.html); cennikibudowlane.com.pl 60–90 ×1,08 (https://cennikibudowlane.com.pl/cenniki/ukladanie-plytek/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1520,02 – max 2804,81 zł) – Kul-Bud 190–240 netto – odstające, pominięto"
+  },
+  {
+   "cat": "robocizna – płytki",
+   "room": "łazienki, 1/09",
+   "product": "Robocizna: wklejenie taśmy uszczelniającej w narożach",
+   "shop": "Kul-Bud",
+   "url": "https://kul-bud.pl/cennik-2/",
+   "price": 19.71,
+   "unit": "mb",
+   "qty": "45",
+   "sum": 886.95,
+   "date": "2026-10-26",
+   "formula": "naroża i obwody ≈ 45 mb (materiał: 9 × 5 m); stawka 16,20 – 19,71 – 23,22 zł/mb (min–ŚREDNIA–max); źródła: Kul-Bud 18 ×1,08 (https://kul-bud.pl/cennik-2/); cennikibudowlane.com.pl 12–25 ×1,08 (https://cennikibudowlane.com.pl/cenniki/ukladanie-plytek/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 729,00 – max 1044,90 zł)"
+  },
+  {
+   "cat": "robocizna – płytki",
+   "room": "podłogi – płytki",
+   "product": "Robocizna: układanie płytek wielkoformatowych 60×120 – podłogi",
+   "shop": "Murator",
+   "url": "https://muratordom.pl/wnetrza/prace-wykonczeniowe/za-samo-polozenie-plytek-zaplacisz-niemalo-sprawdzamy-aktualne-stawki-aa-Rxo7-t5A7-hioC.html",
+   "price": 259.3,
+   "unit": "m²",
+   "qty": "52,42",
+   "sum": 13592.51,
+   "date": "2026-10-26",
+   "formula": "poza łazienkami 40,74 + łazienki 11,68 m²; stawka 201,10 – 259,30 – 317,50 zł/m² (min–ŚREDNIA–max); źródła: Murator 180–280 (https://muratordom.pl/wnetrza/prace-wykonczeniowe/za-samo-polozenie-plytek-zaplacisz-niemalo-sprawdzamy-aktualne-stawki-aa-Rxo7-t5A7-hioC.html); Murator 200–320 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html); Oleba 230–400 (https://oleba.pl/cennik-uslug-remontowych-oleba/); cennikibudowlane.com.pl 180–250 ×1,08 (https://cennikibudowlane.com.pl/cenniki/ukladanie-plytek/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 10541,66 – max 16643,35 zł) – Kul-Bud 550–700 netto – odstające, pominięto"
+  },
+  {
+   "cat": "robocizna – płytki",
+   "room": "łazienki – ściany, fartuch",
+   "product": "Robocizna: układanie płytek wielkoformatowych 60×120 – ściany łazienek i fartuch",
+   "shop": "Murator",
+   "url": "https://muratordom.pl/wnetrza/prace-wykonczeniowe/za-samo-polozenie-plytek-zaplacisz-niemalo-sprawdzamy-aktualne-stawki-aa-Rxo7-t5A7-hioC.html",
+   "price": 245.73,
+   "unit": "m²",
+   "qty": "40,3",
+   "sum": 9902.92,
+   "date": "2026-10-26",
+   "formula": "ściany łazienek 37 + fartuch 3,3 m²; stawka 191,47 – 245,73 – 300,00 zł/m² (min–ŚREDNIA–max); źródła: Murator 180–280 (https://muratordom.pl/wnetrza/prace-wykonczeniowe/za-samo-polozenie-plytek-zaplacisz-niemalo-sprawdzamy-aktualne-stawki-aa-Rxo7-t5A7-hioC.html); Oleba 200–350 (https://oleba.pl/cennik-uslug-remontowych-oleba/); cennikibudowlane.com.pl 180–250 ×1,08 (https://cennikibudowlane.com.pl/cenniki/ukladanie-plytek/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 7716,24 – max 12090,00 zł)"
+  },
+  {
+   "cat": "robocizna – płytki",
+   "room": "łazienki, kuchnia",
+   "product": "Robocizna: silikonowanie narożników, wanny, brodzików, umywalek",
+   "shop": "Kul-Bud",
+   "url": "https://kul-bud.pl/cennik-2/",
+   "price": 23.63,
+   "unit": "mb",
+   "qty": "40",
+   "sum": 945.2,
+   "date": "2026-10-26",
+   "formula": "naroża pionowe, wanna, brodziki, umywalki, fartuch ≈ 40 mb; stawka 15,80 – 23,63 – 31,47 zł/mb (min–ŚREDNIA–max); źródła: Kul-Bud 15–25 ×1,08 (https://kul-bud.pl/cennik-2/); Oleba 15–35 (https://oleba.pl/cennik-uslug-remontowych-oleba/); cennikibudowlane.com.pl 15–30 ×1,08 (https://cennikibudowlane.com.pl/cenniki/ukladanie-plytek/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 632,00 – max 1258,80 zł)"
+  },
+  {
+   "cat": "robocizna – płytki",
+   "room": "płytki",
+   "product": "Robocizna: montaż profili/listew wykończeniowych do płytek",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 45.25,
+   "unit": "mb",
+   "qty": "15",
+   "sum": 678.75,
+   "date": "2026-10-26",
+   "formula": "krawędzie płytek ≈ 15 mb; stawka 28,50 – 45,25 – 62,00 zł/mb (min–ŚREDNIA–max); źródła: Oleba 30–70 (https://oleba.pl/cennik-uslug-remontowych-oleba/); cennikibudowlane.com.pl 25–50 ×1,08 (https://cennikibudowlane.com.pl/cenniki/ukladanie-plytek/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 427,50 – max 930,00 zł)"
+  },
+  {
+   "cat": "robocizna – podłogi",
+   "room": "posadzki",
+   "product": "Robocizna: wylewka samopoziomująca (lokalne wyrównanie)",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 60.5,
+   "unit": "m²",
+   "qty": "52,02",
+   "sum": 3147.21,
+   "date": "2026-10-26",
+   "formula": "lokalne wyrównanie ~25% posadzek (jak w materiałach); stawka 44,60 – 60,50 – 76,40 zł/m² (min–ŚREDNIA–max); źródła: Oleba 30–60 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 50–65 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html); Murator 35–95 (https://muratordom.pl/wnetrza/prace-wykonczeniowe/za-samo-polozenie-plytek-zaplacisz-niemalo-sprawdzamy-aktualne-stawki-aa-Rxo7-t5A7-hioC.html); Kul-Bud 65–90 ×1,08 (https://kul-bud.pl/cennik-2/); cennikibudowlane.com.pl 35–60 ×1,08 (https://cennikibudowlane.com.pl/cenniki/ukladanie-plytek/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 2320,09 – max 3974,33 zł)"
+  },
+  {
+   "cat": "robocizna – podłogi",
+   "room": "podłogi – drewno/panele",
+   "product": "Robocizna: układanie deski warstwowej / parkietu na klej",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 147.5,
+   "unit": "m²",
+   "qty": "155,66",
+   "sum": 22959.85,
+   "date": "2026-10-26",
+   "formula": "pokoje i hole z podłogą drewnianą 155,66 m²; stawka 105,00 – 147,50 – 190,00 zł/m² (min–ŚREDNIA–max); źródła: Oleba 80–150 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 130–230 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 16344,30 – max 29575,40 zł)"
+  },
+  {
+   "cat": "robocizna – podłogi",
+   "room": "podłogi",
+   "product": "Robocizna: montaż listew przypodłogowych",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 24.9,
+   "unit": "mb",
+   "qty": "150",
+   "sum": 3735.0,
+   "date": "2026-10-26",
+   "formula": "obwody pokoi bez drzwi ≈ 150 mb; stawka 22,40 – 24,90 – 27,40 zł/mb (min–ŚREDNIA–max); źródła: Oleba 15–25 (https://oleba.pl/cennik-uslug-remontowych-oleba/); numiq 27,6 ×1,08 (https://numiq.com/pl/prace-budowlane/prace-stolarskie/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 3360,00 – max 4110,00 zł)"
+  },
+  {
+   "cat": "robocizna – podłogi",
+   "room": "podłogi",
+   "product": "Robocizna: montaż progów / profili przejściowych",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 110.0,
+   "unit": "szt.",
+   "qty": "8",
+   "sum": 880.0,
+   "date": "2026-10-26",
+   "formula": "przejścia drewno/płytki; stawka 60,00 – 110,00 – 160,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 60–160 (https://oleba.pl/cennik-uslug-remontowych-oleba/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 480,00 – max 1280,00 zł)"
+  },
+  {
+   "cat": "robocizna – schody",
+   "room": "1/06",
+   "product": "Robocizna: obłożenie schodów betonowych drewnem – 1 bieg, 16 stopni + podstopnice",
+   "shop": "cenauslug.pl",
+   "url": "https://cenauslug.pl/budowa-i-remont/obkladanie-schodow-betonowych-drewnem",
+   "price": 4412.23,
+   "unit": "bieg",
+   "qty": "1",
+   "sum": 4412.23,
+   "date": "2026-10-26",
+   "formula": "1 bieg, 16 stopni + 16 podstopnic (materiał Gildia Drzew bez montażu); stawka 3987,23 – 4412,23 – 4837,23 zł/bieg (min–ŚREDNIA–max); źródła: cenauslug.pl 3200–4900 (https://cenauslug.pl/budowa-i-remont/obkladanie-schodow-betonowych-drewnem); numiq 4420,8 ×1,08 (https://numiq.com/pl/prace-budowlane/prace-stolarskie/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 3987,23 – max 4837,23 zł) – numiq 276,30 zł netto/stopień × 16"
+  },
+  {
+   "cat": "robocizna – schody",
+   "room": "1/06",
+   "product": "Robocizna: montaż poręczy drewnianej / stalowej przyściennej",
+   "shop": "numiq",
+   "url": "https://numiq.com/pl/prace-budowlane/prace-stolarskie/",
+   "price": 68.9,
+   "unit": "mb",
+   "qty": "5,4",
+   "sum": 372.06,
+   "date": "2026-10-26",
+   "formula": "poręcz przyścienna 2 × 2,7 m; stawka 68,90 – 68,90 – 68,90 zł/mb (min–ŚREDNIA–max); źródła: numiq 63,8 ×1,08 (https://numiq.com/pl/prace-budowlane/prace-stolarskie/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 372,06 – max 372,06 zł)"
+  },
+  {
+   "cat": "robocizna – schody",
+   "room": "2/01",
+   "product": "Robocizna: montaż balustrady (tralki/słupki + pochwyt)",
+   "shop": "s-schody.pl",
+   "url": "https://s-schody.pl/ile-kosztuje-metr-balustrady-schodowej",
+   "price": 275.0,
+   "unit": "mb",
+   "qty": "4,74",
+   "sum": 1303.5,
+   "date": "2026-10-26",
+   "formula": "galeria 2/01 ≈ 4,74 mb; stawka 150,00 – 275,00 – 400,00 zł/mb (min–ŚREDNIA–max); źródła: s-schody.pl 150–400 (https://s-schody.pl/ile-kosztuje-metr-balustrady-schodowej)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 711,00 – max 1896,00 zł) – s-schody: od 150 zł/mb (prosta stalowa) do 400 zł/mb (szklana/złożona)"
+  },
+  {
+   "cat": "robocizna – ściany i sufity",
+   "room": "ściany i sufity",
+   "product": "Robocizna: gruntowanie przed gładzią",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 13.87,
+   "unit": "m²",
+   "qty": "420",
+   "sum": 5825.4,
+   "date": "2026-10-26",
+   "formula": "tynki c-w (bez GK poddasza – zakres GW); stawka 10,48 – 13,87 – 17,26 zł/m² (min–ŚREDNIA–max); źródła: Oleba 8–14 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 12–19 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 4401,60 – max 7249,20 zł)"
+  },
+  {
+   "cat": "robocizna – ściany i sufity",
+   "room": "ściany i sufity",
+   "product": "Robocizna: gładź gipsowa ze szlifowaniem (ściany i sufity)",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 54.76,
+   "unit": "m²",
+   "qty": "420",
+   "sum": 22999.2,
+   "date": "2026-10-26",
+   "formula": "tynki c-w (bez GK poddasza – zakres GW); stawka 41,65 – 54,76 – 67,87 zł/m² (min–ŚREDNIA–max); źródła: Oleba 35–80 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 37–45 ×1,08 (https://kul-bud.pl/cennik-2/); Murator 50–75 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 17493,00 – max 28505,40 zł) – Oleba: 35–55 ściany na nowych tynkach, 50–80 sufit"
+  },
+  {
+   "cat": "robocizna – ściany i sufity",
+   "room": "ściany",
+   "product": "Robocizna: osadzenie narożników + akrylowanie styków",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 36.7,
+   "unit": "mb",
+   "qty": "40",
+   "sum": 1468.0,
+   "date": "2026-10-26",
+   "formula": "narożniki wypukłe + akryl ≈ 40 mb (materiał: 4 narożniki + 20 akryli); stawka 26,40 – 36,70 – 47,00 zł/mb (min–ŚREDNIA–max); źródła: Oleba 15–40 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 35–50 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1056,00 – max 1880,00 zł)"
+  },
+  {
+   "cat": "robocizna – ściany i sufity",
+   "room": "ściany i sufity",
+   "product": "Robocizna: gruntowanie przed malowaniem",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 12.52,
+   "unit": "m²",
+   "qty": "590",
+   "sum": 7386.8,
+   "date": "2026-10-26",
+   "formula": "sufity 230 + ściany 360 m²; stawka 9,40 – 12,52 – 15,64 zł/m² (min–ŚREDNIA–max); źródła: Oleba 8–14 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 10–16 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 5546,00 – max 9227,60 zł)"
+  },
+  {
+   "cat": "robocizna – ściany i sufity",
+   "room": "sufity",
+   "product": "Robocizna: malowanie sufitów na biało – 2 warstwy",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 36.34,
+   "unit": "m²",
+   "qty": "230",
+   "sum": 8358.2,
+   "date": "2026-10-26",
+   "formula": "sufity ≈ 230 m²; stawka 25,08 – 36,34 – 47,60 zł/m² (min–ŚREDNIA–max); źródła: Oleba 20–35 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 28–35 ×1,08 (https://kul-bud.pl/cennik-2/); Murator 25–70 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 5768,40 – max 10948,00 zł)"
+  },
+  {
+   "cat": "robocizna – ściany i sufity",
+   "room": "ściany",
+   "product": "Robocizna: malowanie ścian kolorem – 2 warstwy",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 39.45,
+   "unit": "m²",
+   "qty": "360",
+   "sum": 14202.0,
+   "date": "2026-10-26",
+   "formula": "ściany (bez płytek) ≈ 360 m²; stawka 28,19 – 39,45 – 50,71 zł/m² (min–ŚREDNIA–max); źródła: Oleba 25–40 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 32–39 ×1,08 (https://kul-bud.pl/cennik-2/); Murator 25–70 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 10148,40 – max 18255,60 zł)"
+  },
+  {
+   "cat": "robocizna – ściany i sufity",
+   "room": "wykończenie ścian",
+   "product": "Robocizna: montaż paneli lamelowych / okładziny ściennej",
+   "shop": "Murator",
+   "url": "https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html",
+   "price": 216.76,
+   "unit": "m²",
+   "qty": "22,39",
+   "sum": 4853.26,
+   "date": "2026-10-26",
+   "formula": "Radex 10 × 1,59 m² + Linea 10 × 0,649 m²; stawka 194,26 – 216,76 – 239,26 zł/m² (min–ŚREDNIA–max); źródła: Murator 260–350 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html); numiq 119 ×1,08 (https://numiq.com/pl/prace-budowlane/prace-stolarskie/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 4349,48 – max 5357,03 zł)"
+  },
+  {
+   "cat": "robocizna – drzwi",
+   "room": "całość",
+   "product": "Robocizna: montaż drzwi wewnętrznych z ościeżnicą regulowaną",
+   "shop": "jakzamontowac.pl",
+   "url": "https://jakzamontowac.pl/montaz-drzwi-wewnetrznych-cena",
+   "price": 400.26,
+   "unit": "szt.",
+   "qty": "14",
+   "sum": 5603.64,
+   "date": "2026-10-26",
+   "formula": "14 drzwi wewnętrznych; stawka 338,46 – 400,26 – 462,06 zł/szt. (min–ŚREDNIA–max); źródła: jakzamontowac.pl 320–380 (https://jakzamontowac.pl/montaz-drzwi-wewnetrznych-cena); scandishop.pl 250–450 (https://scandishop.pl/ile-kosztuje-montaz-drzwi-cennik-dla-wszystkich-wojewodztw/); Murator 400–650 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html); Kul-Bud 350–450 ×1,08 (https://kul-bud.pl/cennik-2/); numiq 318,8 ×1,08 (https://numiq.com/pl/prace-budowlane/prace-stolarskie/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 4738,44 – max 6468,84 zł)"
+  },
+  {
+   "cat": "robocizna – drzwi",
+   "room": "1/01, 1/10",
+   "product": "Robocizna: montaż drzwi zewnętrznych / EI30",
+   "shop": "Murator",
+   "url": "https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html",
+   "price": 770.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 1540.0,
+   "date": "2026-10-26",
+   "formula": "wejściowe + EI30 garaż 1/10; stawka 590,00 – 770,00 – 950,00 zł/szt. (min–ŚREDNIA–max); źródła: Murator 580–800 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html); scandishop.pl 600–1100 (https://scandishop.pl/ile-kosztuje-montaz-drzwi-cennik-dla-wszystkich-wojewodztw/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1180,00 – max 1900,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "łazienki",
+   "product": "Robocizna: montaż stelaża podtynkowego WC/bidet z zabudową GK",
+   "shop": "Kul-Bud",
+   "url": "https://kul-bud.pl/cennik-2/",
+   "price": 768.9,
+   "unit": "szt.",
+   "qty": "3",
+   "sum": 2306.7,
+   "date": "2026-10-26",
+   "formula": "stelaże: WC ×2 + bidet ×1, z zabudową GK; stawka 516,60 – 768,90 – 1021,20 zł/szt. (min–ŚREDNIA–max); źródła: Kul-Bud 540–780 ×1,08 (https://kul-bud.pl/cennik-2/); Oleba 450–1200 (https://oleba.pl/cennik-uslug-remontowych-oleba/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1549,80 – max 3063,60 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "łazienki",
+   "product": "Robocizna: montaż miski WC podwieszanej",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 292.5,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 585.0,
+   "date": "2026-10-26",
+   "formula": "miski WC podwieszane; stawka 185,00 – 292,50 – 400,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 220–500 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 150–300 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 370,00 – max 800,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "2/05",
+   "product": "Robocizna: montaż bidetu wiszącego",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 375.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 375.0,
+   "date": "2026-10-26",
+   "formula": "bidet wiszący; stawka 275,00 – 375,00 – 475,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 400–650 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 150–300 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 275,00 – max 475,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "łazienki",
+   "product": "Robocizna: montaż umywalki z szafką",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 362.5,
+   "unit": "szt.",
+   "qty": "3",
+   "sum": 1087.5,
+   "date": "2026-10-26",
+   "formula": "umywalki nablatowe na szafkach; stawka 225,00 – 362,50 – 500,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 300–700 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 150–300 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 675,00 – max 1500,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "łazienki",
+   "product": "Robocizna: montaż baterii stojącej (umywalka/bidet)",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 200.0,
+   "unit": "szt.",
+   "qty": "4",
+   "sum": 800.0,
+   "date": "2026-10-26",
+   "formula": "baterie umywalkowe ×3 + bidetowa stojąca; stawka 110,00 – 200,00 – 290,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 120–280 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 100–300 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 440,00 – max 1160,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "łazienki",
+   "product": "Robocizna: montaż baterii / zestawu podtynkowego",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 750.6,
+   "unit": "kpl.",
+   "qty": "3",
+   "sum": 2251.8,
+   "date": "2026-10-26",
+   "formula": "zestawy prysznicowe ×2 + wannowy ×1; stawka 488,20 – 750,60 – 1013,00 zł/kpl. (min–ŚREDNIA–max); źródła: Oleba 350–1000 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 580–950 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1464,60 – max 3039,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "2/05",
+   "product": "Robocizna: montaż wanny",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 562.5,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 562.5,
+   "date": "2026-10-26",
+   "formula": "wanna 170×75; stawka 350,00 – 562,50 – 775,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 350–1000 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 350–550 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 350,00 – max 775,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "2/05",
+   "product": "Robocizna: obudowa wanny (GK H2 + płytki)",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 1250.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 1250.0,
+   "date": "2026-10-26",
+   "formula": "obudowa wanny; stawka 700,00 – 1250,00 – 1800,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 700–1800 (https://oleba.pl/cennik-uslug-remontowych-oleba/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 700,00 – max 1800,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "łazienki",
+   "product": "Robocizna: montaż odpływu liniowego",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 744.33,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 1488.66,
+   "date": "2026-10-26",
+   "formula": "odpływy liniowe; stawka 516,00 – 744,33 – 972,67 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 550–1500 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 600–850 ×1,08 (https://kul-bud.pl/cennik-2/); Murator 350–500 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1032,00 – max 1945,34 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "łazienki",
+   "product": "Robocizna: montaż ścianki / szyby prysznicowej walk-in",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 850.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 1700.0,
+   "date": "2026-10-26",
+   "formula": "ścianki walk-in; stawka 450,00 – 850,00 – 1250,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 400–1200 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 500–1300 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 900,00 – max 2500,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "łazienki",
+   "product": "Robocizna: montaż lustra z podświetleniem LED",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 475.0,
+   "unit": "szt.",
+   "qty": "3",
+   "sum": 1425.0,
+   "date": "2026-10-26",
+   "formula": "lustra LED; stawka 250,00 – 475,00 – 700,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 250–700 (https://oleba.pl/cennik-uslug-remontowych-oleba/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 750,00 – max 2100,00 zł)"
+  },
+  {
+   "cat": "robocizna – łazienki",
+   "room": "1/09",
+   "product": "Robocizna: podłączenie pralki",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 275.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 275.0,
+   "date": "2026-10-26",
+   "formula": "pralka; stawka 150,00 – 275,00 – 400,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 150–400 (https://oleba.pl/cennik-uslug-remontowych-oleba/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 150,00 – max 400,00 zł)"
+  },
+  {
+   "cat": "robocizna – elektryka",
+   "room": "całość",
+   "product": "Robocizna: montaż gniazda (osprzęt) w przygotowanej puszce",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 50.25,
+   "unit": "szt.",
+   "qty": "48",
+   "sum": 2412.0,
+   "date": "2026-10-26",
+   "formula": "gniazda podwójne 27 + pojedyncze 18 + IP44 3 (założony plan, jak w materiałach); stawka 38,90 – 50,25 – 61,60 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 40–80 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 35–40 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1867,20 – max 2956,80 zł)"
+  },
+  {
+   "cat": "robocizna – elektryka",
+   "room": "całość",
+   "product": "Robocizna: montaż łącznika (osprzęt) w przygotowanej puszce",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 57.75,
+   "unit": "szt.",
+   "qty": "21",
+   "sum": 1212.75,
+   "date": "2026-10-26",
+   "formula": "łączniki (założony plan); stawka 43,90 – 57,75 – 71,60 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 50–100 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 35–40 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 921,90 – max 1503,60 zł)"
+  },
+  {
+   "cat": "robocizna – elektryka",
+   "room": "całość",
+   "product": "Robocizna: montaż łącznika schodowego/krzyżowego",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 67.75,
+   "unit": "szt.",
+   "qty": "6",
+   "sum": 406.5,
+   "date": "2026-10-26",
+   "formula": "łączniki schodowe (założony plan); stawka 53,90 – 67,75 – 81,60 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 70–120 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 35–40 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 323,40 – max 489,60 zł)"
+  },
+  {
+   "cat": "robocizna – elektryka",
+   "room": "oświetlenie",
+   "product": "Robocizna: montaż oprawy wpuszczanej / podtynkowej",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 101.55,
+   "unit": "szt.",
+   "qty": "24",
+   "sum": 2437.2,
+   "date": "2026-10-26",
+   "formula": "oprawy wpuszczane – policzone z listy „oświetlenie” (bez lamp podłogowych/stołowych); stawka 76,70 – 101,55 – 126,40 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 40–80 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Kul-Bud 105–160 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1840,80 – max 3033,60 zł)"
+  },
+  {
+   "cat": "robocizna – elektryka",
+   "room": "oświetlenie",
+   "product": "Robocizna: montaż lampy wiszącej / żyrandola",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 168.47,
+   "unit": "szt.",
+   "qty": "11",
+   "sum": 1853.17,
+   "date": "2026-10-26",
+   "formula": "lampy wiszące/żyrandole – policzone z listy „oświetlenie” (bez lamp podłogowych/stołowych); stawka 119,33 – 168,47 – 217,60 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 150–300 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 100–180 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html); Kul-Bud 100–160 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1312,63 – max 2393,60 zł)"
+  },
+  {
+   "cat": "robocizna – elektryka",
+   "room": "oświetlenie",
+   "product": "Robocizna: montaż kinkietu",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 135.13,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 270.26,
+   "date": "2026-10-26",
+   "formula": "kinkiety – policzone z listy „oświetlenie” (bez lamp podłogowych/stołowych); stawka 99,33 – 135,13 – 170,93 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 90–160 (https://oleba.pl/cennik-uslug-remontowych-oleba/); Murator 100–180 (https://muratordom.pl/remont-domu/odnawianie-wnetrz/tanio-juz-bylo-zobacz-ile-naprawde-kosztuje-remont-domu-czy-mieszkania-w-2026-roku-aa-p42H-hMDE-yQG5.html); Kul-Bud 100–160 ×1,08 (https://kul-bud.pl/cennik-2/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 198,66 – max 341,86 zł)"
+  },
+  {
+   "cat": "robocizna – kuchnia",
+   "room": "1/03",
+   "product": "Robocizna: podłączenie płyty indukcyjnej",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 295.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 295.0,
+   "date": "2026-10-26",
+   "formula": "płyta indukcyjna; stawka 215,00 – 295,00 – 375,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 250–400 (https://oleba.pl/cennik-uslug-remontowych-oleba/); HandyMan24 180–350 (https://www.handyman24.eu/blog/ile-kosztuje-remont-kuchni/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 215,00 – max 375,00 zł)"
+  },
+  {
+   "cat": "robocizna – kuchnia",
+   "room": "1/03",
+   "product": "Robocizna: podłączenie piekarnika",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 240.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 240.0,
+   "date": "2026-10-26",
+   "formula": "piekarnik; stawka 180,00 – 240,00 – 300,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 180–300 (https://oleba.pl/cennik-uslug-remontowych-oleba/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 180,00 – max 300,00 zł)"
+  },
+  {
+   "cat": "robocizna – kuchnia",
+   "room": "1/03",
+   "product": "Robocizna: podłączenie zmywarki do zabudowy",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 307.5,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 307.5,
+   "date": "2026-10-26",
+   "formula": "zmywarka; stawka 215,00 – 307,50 – 400,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 150–400 (https://oleba.pl/cennik-uslug-remontowych-oleba/); HandyMan24 280–400 (https://www.handyman24.eu/blog/ile-kosztuje-remont-kuchni/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 215,00 – max 400,00 zł)"
+  },
+  {
+   "cat": "robocizna – kuchnia",
+   "room": "1/03",
+   "product": "Robocizna: montaż chłodziarki do zabudowy (urządzenie do podejścia)",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 275.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 275.0,
+   "date": "2026-10-26",
+   "formula": "chłodziarka do zabudowy; stawka 150,00 – 275,00 – 400,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 150–400 (https://oleba.pl/cennik-uslug-remontowych-oleba/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 150,00 – max 400,00 zł)"
+  },
+  {
+   "cat": "robocizna – kuchnia",
+   "room": "1/03",
+   "product": "Robocizna: montaż zlewozmywaka",
+   "shop": "IKEA",
+   "url": "https://www.ikea.com/pl/pl/files/pdf/29/fa/29faaef2/cennik_uslug_w_ikea_retail_sp_z_o_o.pdf",
+   "price": 130.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 130.0,
+   "date": "2026-10-26",
+   "formula": "zlewozmywak; stawka 130,00 – 130,00 – 130,00 zł/szt. (min–ŚREDNIA–max); źródła: IKEA 130 (https://www.ikea.com/pl/pl/files/pdf/29/fa/29faaef2/cennik_uslug_w_ikea_retail_sp_z_o_o.pdf)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 130,00 – max 130,00 zł)"
+  },
+  {
+   "cat": "robocizna – kuchnia",
+   "room": "1/03",
+   "product": "Robocizna: montaż baterii kuchennej",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 135.0,
+   "unit": "szt.",
+   "qty": "1",
+   "sum": 135.0,
+   "date": "2026-10-26",
+   "formula": "bateria kuchenna; stawka 95,00 – 135,00 – 175,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 120–280 (https://oleba.pl/cennik-uslug-remontowych-oleba/); IKEA 70 (https://www.ikea.com/pl/pl/files/pdf/29/fa/29faaef2/cennik_uslug_w_ikea_retail_sp_z_o_o.pdf)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 95,00 – max 175,00 zł)"
+  },
+  {
+   "cat": "robocizna – kuchnia",
+   "room": "1/03",
+   "product": "Robocizna: wycięcie otworu w blacie (zlew/płyta)",
+   "shop": "HandyMan24",
+   "url": "https://www.handyman24.eu/blog/ile-kosztuje-remont-kuchni/",
+   "price": 225.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 450.0,
+   "date": "2026-10-26",
+   "formula": "otwory w blacie: zlew + płyta; stawka 150,00 – 225,00 – 300,00 zł/szt. (min–ŚREDNIA–max); źródła: HandyMan24 150–300 (https://www.handyman24.eu/blog/ile-kosztuje-remont-kuchni/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 300,00 – max 600,00 zł) – Gres Design: wycięcia nie są w cenie blatu"
+  },
+  {
+   "cat": "robocizna – kuchnia",
+   "room": "1/03",
+   "product": "Robocizna: montaż mebli kuchennych",
+   "shop": "cenauslug.pl",
+   "url": "https://cenauslug.pl/dom-i-ogrod/montaz-mebli-kuchennych-modulowych",
+   "price": 560.0,
+   "unit": "mb",
+   "qty": "0",
+   "sum": 0.0,
+   "date": "2026-10-26",
+   "formula": "montaż w cenie zabudowy stolarskiej (wiersz „kuchnia – zabudowa”); stawka 420,00 – 560,00 – 700,00 zł/mb (min–ŚREDNIA–max); źródła: cenauslug.pl 420–700 (https://cenauslug.pl/dom-i-ogrod/montaz-mebli-kuchennych-modulowych)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 0,00 – max 0,00 zł) – w cenie stolarza (zabudowa na wymiar 36–57 tys., 7,36 mb) – ilość 0"
+  },
+  {
+   "cat": "robocizna – meble",
+   "room": "szafy",
+   "product": "Robocizna: montaż szafy IKEA PAX",
+   "shop": "cenauslug.pl",
+   "url": "https://cenauslug.pl/dom-i-ogrod/montaz-szafy-ikea-pax",
+   "price": 375.0,
+   "unit": "szt.",
+   "qty": "5",
+   "sum": 1875.0,
+   "date": "2026-10-26",
+   "formula": "PAX: 1/01, 1/07, 2/03, 2/04, 2/09; stawka 260,00 – 375,00 – 490,00 zł/szt. (min–ŚREDNIA–max); źródła: cenauslug.pl 260–490 (https://cenauslug.pl/dom-i-ogrod/montaz-szafy-ikea-pax)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 1300,00 – max 2450,00 zł)"
+  },
+  {
+   "cat": "robocizna – meble",
+   "room": "meble",
+   "product": "Robocizna: montaż mebli z paczek (IKEA) – % wartości mebli",
+   "shop": "IKEA",
+   "url": "https://www.ikea.com/pl/pl/files/pdf/29/fa/29faaef2/cennik_uslug_w_ikea_retail_sp_z_o_o.pdf",
+   "price": 4776.37,
+   "unit": "kpl.",
+   "qty": "1",
+   "sum": 4776.37,
+   "date": "2026-10-26",
+   "formula": "wartość mebli IKEA z kategorii „meble” = 25473,98 zł (bez PAX, tekstyliów, dodatków); stawka 17,5–18,75–20% (min–ŚREDNIA–max) → 25473,98 × 18,75% ; źródła: IKEA 15 (https://www.ikea.com/pl/pl/files/pdf/29/fa/29faaef2/cennik_uslug_w_ikea_retail_sp_z_o_o.pdf); HandyMan24 20–25 (https://www.handyman24.eu/blog/ile-kosztuje-remont-kuchni/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 4457,95 – max 5094,80 zł)"
+  },
+  {
+   "cat": "robocizna – meble",
+   "room": "okna",
+   "product": "Robocizna: montaż karnisza / szyny zasłonowej",
+   "shop": "Oleba",
+   "url": "https://oleba.pl/cennik-uslug-remontowych-oleba/",
+   "price": 150.0,
+   "unit": "szt.",
+   "qty": "8",
+   "sum": 1200.0,
+   "date": "2026-10-26",
+   "formula": "karnisze/szyny zasłonowe ≈ 8 okien z zasłonami; stawka 120,00 – 150,00 – 180,00 zł/szt. (min–ŚREDNIA–max); źródła: Oleba 120–180 (https://oleba.pl/cennik-uslug-remontowych-oleba/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 960,00 – max 1440,00 zł)"
+  },
+  {
+   "cat": "robocizna – logistyka i sprzątanie",
+   "room": "całość",
+   "product": "Robocizna: kontener KP-7 na odpady remontowe (zmieszane)",
+   "shop": "BULI",
+   "url": "https://www.buli.com.pl/cennik/",
+   "price": 1324.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 2648.0,
+   "date": "2026-10-26",
+   "formula": "2 × KP-7 (odpady po wykończeniu); stawka 1199,00 – 1324,00 – 1449,00 zł/szt. (min–ŚREDNIA–max); źródła: BULI 1199–1449 (https://www.buli.com.pl/cennik/)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 2398,00 – max 2898,00 zł)"
+  },
+  {
+   "cat": "robocizna – logistyka i sprzątanie",
+   "room": "całość",
+   "product": "Robocizna: dostawa IKEA z wniesieniem (400–1000 kg)",
+   "shop": "IKEA",
+   "url": "https://www.ikea.com/pl/pl/files/pdf/29/fa/29faaef2/cennik_uslug_w_ikea_retail_sp_z_o_o.pdf",
+   "price": 444.0,
+   "unit": "szt.",
+   "qty": "2",
+   "sum": 888.0,
+   "date": "2026-10-26",
+   "formula": "2 dostawy mebli IKEA (szafy + meble); stawka 429,00 – 444,00 – 459,00 zł/szt. (min–ŚREDNIA–max); źródła: IKEA 429–459 (https://www.ikea.com/pl/pl/files/pdf/29/fa/29faaef2/cennik_uslug_w_ikea_retail_sp_z_o_o.pdf)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 858,00 – max 918,00 zł)"
+  },
+  {
+   "cat": "robocizna – logistyka i sprzątanie",
+   "room": "całość",
+   "product": "Robocizna: sprzątanie po remoncie (lokal pusty)",
+   "shop": "ceny-uslug.pl",
+   "url": "https://ceny-uslug.pl/sprzatanie-po-remoncie-warszawa-cennik",
+   "price": 15.99,
+   "unit": "m²",
+   "qty": "208,08",
+   "sum": 3327.2,
+   "date": "2026-10-26",
+   "formula": "pow. użytkowa bez garażu 208,08 m²; stawka 9,84 – 15,99 – 22,14 zł/m² (min–ŚREDNIA–max); źródła: ceny-uslug.pl 8–18 ×1,23 (https://ceny-uslug.pl/sprzatanie-po-remoncie-warszawa-cennik)",
+   "status": "SZACUNEK – średnia stawka rynkowa (min 2047,51 – max 4606,89 zł)"
   }
  ],
- "total": 165603.63,
+ "total": 370756.72,
+ "breakdown": {
+  "products": 175097.25,
+  "materials": 18201.52,
+  "labour": 177457.95,
+  "labour_min": 132852.55,
+  "labour_max": 222064.04
+ },
  "kitchen_est": [
-  40000,
-  60000
+  36064,
+  57040
  ],
  "budget": 400000,
  "by_cat": {
-  "drzwi": 14135.7,
+  "Dodatki i dekoracje": 3541.56,
+  "drzwi": 14359.7,
   "drzwi zewnętrzne / EI30": 9798.0,
-  "farby": 3054.82,
+  "farby": 3234.9,
   "kominek": 7094.0,
-  "kuchnia": 20490.0,
-  "meble": 39153.98,
-  "oświetlenie": 1902.66,
+  "kuchnia": 19370.0,
+  "materiały pomocnicze": 18201.52,
+  "meble": 40242.98,
+  "oświetlenie": 1912.66,
   "podłogi": 29220.92,
+  "pralnia": 5427.0,
   "płytki": 12404.16,
   "schody i balustrady": 6466.2,
-  "tekstylia": 948.96,
+  "tekstylia": 1098.95,
   "wykończenie ścian": 2409.8,
-  "łazienki": 18524.43
+  "łazienki": 18516.42,
+  "robocizna": 177457.95
  },
- "verified": 106,
+ "verified": 263,
  "unverified": 0
 }

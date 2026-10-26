@@ -3,8 +3,11 @@
  "wygenerowano": "waliduj.py",
  "widoki": {
   "1-01.jpg": {
-   "status": "zgodne",
-   "bledy": [],
+   "status": "do poprawy",
+   "bledy": [
+    "[auto] materialy_powiazane: niepowiązane: drzwi EI30 garaż–dom",
+    "[materiały] drzwi EI30 garaż–dom: brak pozycji w CSV"
+   ],
    "liczba_uwag": 7,
    "materialy": [
     {
@@ -104,22 +107,10 @@
     },
     {
      "nazwa": "drzwi EI30 garaż–dom",
-     "ocena": "dobrany",
-     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
-     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
-     "produkty": [
-      {
-       "produkt": "Hörmann Drzwi Ppoż EI30 Antracyt 800x2000",
-       "sklep": "obi.pl",
-       "url": "https://www.obi.pl/p/7348220/hoermann-drzwi-ppoz-ei30-antracyt-800x2000",
-       "cena": 1299.0,
-       "cena_txt": "1299,00",
-       "jednostka": "szt.",
-       "ilosc": 1.0,
-       "suma": 1299.0,
-       "suma_txt": "1299,00"
-      }
-     ]
+     "ocena": "luka_csv",
+     "ocena_pl": "brak w CSV",
+     "uwagi": "brak pozycji w CSV",
+     "produkty": []
     },
     {
      "nazwa": "wykończenie ścian (lamele / cegła / sztukateria)",
@@ -139,13 +130,254 @@
        "suma_txt": "5862,70"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "1-01_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/1-01_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[auto] materialy_powiazane: niepowiązane: drzwi EI30 garaż–dom",
+    "[materiały] drzwi EI30 garaż–dom: brak pozycji w CSV",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 5,
+   "materialy": [
+    {
+     "nazwa": "płytki podłogowe hol/kuchnia",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Gres Caprano 60 x 120 cm grey 1,44 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/gres-caprano-60-x-120-cm-grey-1-44-m2/5063022655295_CAPL.prd",
+       "cena": 93.57,
+       "cena_txt": "93,57",
+       "jednostka": "op. (1,44 m²)",
+       "ilosc": 32.0,
+       "suma": 2994.24,
+       "suma_txt": "2994,24"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafa",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PAX / FORSAND Szafa - biały/biały 250x60x201 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pax-forsand-szafa-bialy-bialy-s29478082/",
+       "cena": 2195.0,
+       "cena_txt": "2195,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 2195.0,
+       "suma_txt": "2195,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "drzwi wewnętrzne",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Drzwi bezprzylgowe pełne Exmoor 80 białe premium czarne obrzeże",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-80-biale-premium-czarne-obrzeze/5900378226215_CAPL.prd",
+       "cena": 358.0,
+       "cena_txt": "358,00",
+       "jednostka": "szt.",
+       "ilosc": 9.0,
+       "suma": 3222.0,
+       "suma_txt": "3222,00"
+      },
+      {
+       "produkt": "Drzwi pełne Exmoor 90 lewe białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-exmoor-90-lewe-biale/5900378206767_CAPL.prd",
+       "cena": 278.0,
+       "cena_txt": "278,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 278.0,
+       "suma_txt": "278,00"
+      },
+      {
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 348.0,
+       "suma_txt": "348,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-exmoor-80-bialy-czarna-szyba/5900378225492_CAPL.prd",
+       "cena": 718.0,
+       "cena_txt": "718,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 1436.0,
+       "suma_txt": "1436,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Fortia Fresno z czarną szybą 90 białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-fortia-fresno-z-czarna-szyba-90-biale/5063022800732_CAPL.prd",
+       "cena": 798.0,
+       "cena_txt": "798,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 798.0,
+       "suma_txt": "798,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "klamki",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Klamka drzwiowa Verso Qubik kwadratowy szyld czarna",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/klamka-drzwiowa-verso-qubik-kwadratowy-szyld-czarna/5901643189884_CAPL.prd",
+       "cena": 45.98,
+       "cena_txt": "45,98",
+       "jednostka": "szt.",
+       "ilosc": 15.0,
+       "suma": 689.7,
+       "suma_txt": "689,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "drzwi EI30 garaż–dom",
+     "ocena": "luka_csv",
+     "ocena_pl": "brak w CSV",
+     "uwagi": "brak pozycji w CSV",
+     "produkty": []
+    },
+    {
+     "nazwa": "wykończenie ścian (lamele / cegła / sztukateria)",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Płytka dekoracyjna gipsowa Parma 01 Stegu 1 0,5 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plytka-dekoracyjna-gipsowa-parma-01-stegu-1-0-5-m2/5907762302784_CAPL.prd",
+       "cena": 50.98,
+       "cena_txt": "50,98",
+       "jednostka": "op. (0,5 m²)",
+       "ilosc": 115.0,
+       "suma": 5862.7,
+       "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      }
+     ]
     }
    ],
    "luki": []
   },
   "1-02.jpg": {
-   "status": "zgodne",
-   "bledy": [],
+   "status": "do poprawy",
+   "bledy": [
+    "[auto] linki_zywe: martwe: Montaż obudowy kominka – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026) (404), Podłączenie wkładu do komina – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026) (404)"
+   ],
    "liczba_uwag": 3,
    "materialy": [
     {
@@ -427,14 +659,101 @@
        "suma_txt": "5862,70"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+       "cena": 149.0,
+       "cena_txt": "149,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 298.0,
+       "suma_txt": "298,00"
+      },
+      {
+       "produkt": "NYPON Osłonka doniczki - do wewnątrz/na zewnątrz szary 32 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nypon-oslonka-doniczki-do-wewnatrz-na-zewnatrz-szary-30395632/",
+       "cena": 59.0,
+       "cena_txt": "59,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 118.0,
+       "suma_txt": "118,00"
+      },
+      {
+       "produkt": "PJÄTTERYD Obraz - miasto 118x78 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-miasto-40623469/",
+       "cena": 179.0,
+       "cena_txt": "179,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 179.0,
+       "suma_txt": "179,00"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 4.0,
+       "suma": 59.96,
+       "suma_txt": "59,96"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 4.0,
+       "suma": 40.0,
+       "suma_txt": "40,00"
+      },
+      {
+       "produkt": "ROSTLÖNN Pled - antracyt 130x170 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/rostloenn-pled-antracyt-40630422/",
+       "cena": 49.99,
+       "cena_txt": "49,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 49.99,
+       "suma_txt": "49,99"
+      },
+      {
+       "produkt": "KONSTFULL Wazon - zielonobrązowy 16 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/konstfull-wazon-zielonobrazowy-10511963/",
+       "cena": 59.99,
+       "cena_txt": "59,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.99,
+       "suma_txt": "59,99"
+      }
+     ]
     }
    ],
    "luki": []
   },
   "1-02_b.jpg": {
-   "status": "zgodne",
-   "bledy": [],
-   "liczba_uwag": 9,
+   "status": "do poprawy",
+   "bledy": [
+    "[auto] linki_zywe: martwe: Montaż obudowy kominka – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026) (404), Podłączenie wkładu do komina – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026) (404); bez linku (szacunek): fronty, korpusy, półwysep 90×198 cm (kuchnia F1; front drzwi ukrytych spiżarni 70 lakierowany w kolorze frontów – w tym zakresie; blat kamienny wyceniony osobno w kat. „kuchnia – blat”; F1: 7,36 mb = blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67 × 4 900–7 750 zł/mb – średnie z widełek laczynasdrewno.eu i makpolkuchnie.pl 2026)"
+   ],
+   "liczba_uwag": 8,
    "materialy": [
     {
      "nazwa": "podłoga",
@@ -525,9 +844,9 @@
        "cena": 315.06,
        "cena_txt": "315,06",
        "jednostka": "szt.",
-       "ilosc": 3.0,
-       "suma": 945.18,
-       "suma_txt": "945,18"
+       "ilosc": 2.0,
+       "suma": 630.12,
+       "suma_txt": "630,12"
       }
      ]
     },
@@ -538,7 +857,7 @@
      "uwagi": "w CSV tylko szacunek „zabudowa na wymiar” – brak konkretnego frontu (blat wyceniony osobno) (fronty czarne/orzech)",
      "produkty": [
       {
-       "produkt": "fronty, korpusy, wyspa 246 cm (blat kamienny wyceniony osobno w kat. „kuchnia – blat”; zakres pozostawiony bez zmian – może zawierać blat laminowany)",
+       "produkt": "fronty, korpusy, półwysep 90×198 cm (kuchnia F1; front drzwi ukrytych spiżarni 70 lakierowany w kolorze frontów – w tym zakresie; blat kamienny wyceniony osobno w kat. „kuchnia – blat”; F1: 7,36 mb = blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67 × 4 900–7 750 zł/mb – średnie z widełek laczynasdrewno.eu i makpolkuchnie.pl 2026)",
        "sklep": "stolarz – wycena",
        "url": "",
        "cena": null,
@@ -546,7 +865,7 @@
        "jednostka": "",
        "ilosc": null,
        "suma": null,
-       "suma_txt": "40 000–60 000"
+       "suma_txt": "36 064–57 040"
       }
      ]
     },
@@ -631,6 +950,91 @@
        "suma_txt": "1440,00"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+       "cena": 149.0,
+       "cena_txt": "149,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 298.0,
+       "suma_txt": "298,00"
+      },
+      {
+       "produkt": "NYPON Osłonka doniczki - do wewnątrz/na zewnątrz szary 32 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nypon-oslonka-doniczki-do-wewnatrz-na-zewnatrz-szary-30395632/",
+       "cena": 59.0,
+       "cena_txt": "59,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 118.0,
+       "suma_txt": "118,00"
+      },
+      {
+       "produkt": "PJÄTTERYD Obraz - miasto 118x78 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-miasto-40623469/",
+       "cena": 179.0,
+       "cena_txt": "179,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 179.0,
+       "suma_txt": "179,00"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 4.0,
+       "suma": 59.96,
+       "suma_txt": "59,96"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 4.0,
+       "suma": 40.0,
+       "suma_txt": "40,00"
+      },
+      {
+       "produkt": "ROSTLÖNN Pled - antracyt 130x170 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/rostloenn-pled-antracyt-40630422/",
+       "cena": 49.99,
+       "cena_txt": "49,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 49.99,
+       "suma_txt": "49,99"
+      },
+      {
+       "produkt": "KONSTFULL Wazon - zielonobrązowy 16 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/konstfull-wazon-zielonobrazowy-10511963/",
+       "cena": 59.99,
+       "cena_txt": "59,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.99,
+       "suma_txt": "59,99"
+      }
+     ]
     }
    ],
    "luki": []
@@ -685,7 +1089,7 @@
      "uwagi": "w CSV tylko szacunek „zabudowa na wymiar” – brak konkretnego frontu (blat wyceniony osobno)",
      "produkty": [
       {
-       "produkt": "fronty, korpusy, wyspa 246 cm (blat kamienny wyceniony osobno w kat. „kuchnia – blat”; zakres pozostawiony bez zmian – może zawierać blat laminowany)",
+       "produkt": "fronty, korpusy, półwysep 90×198 cm (kuchnia F1; front drzwi ukrytych spiżarni 70 lakierowany w kolorze frontów – w tym zakresie; blat kamienny wyceniony osobno w kat. „kuchnia – blat”; F1: 7,36 mb = blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67 × 4 900–7 750 zł/mb – średnie z widełek laczynasdrewno.eu i makpolkuchnie.pl 2026)",
        "sklep": "stolarz – wycena",
        "url": "",
        "cena": null,
@@ -693,7 +1097,7 @@
        "jednostka": "",
        "ilosc": null,
        "suma": null,
-       "suma_txt": "40 000–60 000"
+       "suma_txt": "36 064–57 040"
       }
      ]
     },
@@ -710,9 +1114,9 @@
        "cena": 1400.0,
        "cena_txt": "1400,00",
        "jednostka": "szt.",
-       "ilosc": 7.0,
-       "suma": 9800.0,
-       "suma_txt": "9800,00"
+       "ilosc": 6.2,
+       "suma": 8680.0,
+       "suma_txt": "8680,00"
       }
      ]
     },
@@ -843,9 +1247,9 @@
        "cena": 315.06,
        "cena_txt": "315,06",
        "jednostka": "szt.",
-       "ilosc": 3.0,
-       "suma": 945.18,
-       "suma_txt": "945,18"
+       "ilosc": 2.0,
+       "suma": 630.12,
+       "suma_txt": "630,12"
       }
      ]
     },
@@ -903,6 +1307,381 @@
        "ilosc": 115.0,
        "suma": 5862.7,
        "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 39.98,
+       "suma_txt": "39,98"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 39.98,
+       "suma_txt": "39,98"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "1-03_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/1-03_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 5,
+   "materialy": [
+    {
+     "nazwa": "płytki podłogowe hol/kuchnia",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Gres Caprano 60 x 120 cm grey 1,44 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/gres-caprano-60-x-120-cm-grey-1-44-m2/5063022655295_CAPL.prd",
+       "cena": 93.57,
+       "cena_txt": "93,57",
+       "jednostka": "op. (1,44 m²)",
+       "ilosc": 32.0,
+       "suma": 2994.24,
+       "suma_txt": "2994,24"
+      }
+     ]
+    },
+    {
+     "nazwa": "płytki – fartuch kuchenny",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Gres mrozoodporny Bresin Ceramstic 60 x 120 cm black 1,44 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/gres-mrozoodporny-bresin-ceramstic-60-x-120-cm-black-1-44-m2/5907220761689_CAPL.prd",
+       "cena": 184.32,
+       "cena_txt": "184,32",
+       "jednostka": "op. (1,44 m²)",
+       "ilosc": 3.0,
+       "suma": 552.96,
+       "suma_txt": "552,96"
+      }
+     ]
+    },
+    {
+     "nazwa": "zabudowa kuchenna (fronty, blat)",
+     "ocena": "generic",
+     "ocena_pl": "ogólnikowy w CSV",
+     "uwagi": "w CSV tylko szacunek „zabudowa na wymiar” – brak konkretnego frontu (blat wyceniony osobno)",
+     "produkty": [
+      {
+       "produkt": "fronty, korpusy, półwysep 90×198 cm (kuchnia F1; front drzwi ukrytych spiżarni 70 lakierowany w kolorze frontów – w tym zakresie; blat kamienny wyceniony osobno w kat. „kuchnia – blat”; F1: 7,36 mb = blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67 × 4 900–7 750 zł/mb – średnie z widełek laczynasdrewno.eu i makpolkuchnie.pl 2026)",
+       "sklep": "stolarz – wycena",
+       "url": "",
+       "cena": null,
+       "cena_txt": "",
+       "jednostka": "",
+       "ilosc": null,
+       "suma": null,
+       "suma_txt": "36 064–57 040"
+      }
+     ]
+    },
+    {
+     "nazwa": "blat kuchenny",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Gres Design – blat granitowy Nero Assoluto / Black Pearl 2 cm (za mb)",
+       "sklep": "gresdesign.com",
+       "url": "https://gresdesign.com/cennik/#granit-nero-assoluto-2cm",
+       "cena": 1400.0,
+       "cena_txt": "1400,00",
+       "jednostka": "szt.",
+       "ilosc": 6.2,
+       "suma": 8680.0,
+       "suma_txt": "8680,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "płyta indukcyjna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Płyta indukcyjna do zabudowy BOSCH PIE631HB1E Series 6 Czarny",
+       "sklep": "mediamarkt.pl",
+       "url": "https://mediamarkt.pl/pl/product/_plyta-indukcyjna-do-zabudowy-bosch-pie631hb1e-series-6-czarny-1482932.html",
+       "cena": 1259.0,
+       "cena_txt": "1259,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 1259.0,
+       "suma_txt": "1259,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "lodówka do zabudowy",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Chłodziarko-zamrażarka BOSCH KIN86NSE0 Biały",
+       "sklep": "mediamarkt.pl",
+       "url": "https://mediamarkt.pl/pl/product/_chlodziarko-zamrazarka-bosch-kin86nse0-bialy-1501651.html",
+       "cena": 2649.0,
+       "cena_txt": "2649,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 2649.0,
+       "suma_txt": "2649,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "zlewozmywak",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Zlewozmywak tectonite Franke Sirius S2D 611-78 1-komorowy z ociekaczem onyx",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/zlewozmywak-tectonite-franke-sirius-s2d-611-78-1-komorowy-z-ociekaczem-onyx/7612985817905_CAPL.prd",
+       "cena": 468.0,
+       "cena_txt": "468,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 468.0,
+       "suma_txt": "468,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "bateria kuchenna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Bateria kuchenna Valvex Monta z wyciąganą wylewką czarna",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/bateria-kuchenna-valvex-monta-z-wyciagana-wylewka-czarna/5902273574026_CAPL.prd",
+       "cena": 378.0,
+       "cena_txt": "378,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 378.0,
+       "suma_txt": "378,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "lampy nad wyspą",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Lampa wisząca Trio Soraya 7436 czarna industrialna 1xE27 x 1 szt.",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/lampa-wisz-ca-trio-soraya-7436-czarna-industrialna-1xe27-x-1-szt-/4017807617436_CAPL.prd",
+       "cena": 315.06,
+       "cena_txt": "315,06",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 630.12,
+       "suma_txt": "630,12"
+      }
+     ]
+    },
+    {
+     "nazwa": "hokery przy wyspie",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "STIG Stołek barowy z oparciem - wysokość blatu czarny/czarny 63 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/stig-stolek-barowy-z-oparciem-wysokosc-blatu-czarny-czarny-30498418/",
+       "cena": 79.0,
+       "cena_txt": "79,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 237.0,
+       "suma_txt": "237,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "wykończenie ścian (lamele / cegła / sztukateria)",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Płytka dekoracyjna gipsowa Parma 01 Stegu 1 0,5 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plytka-dekoracyjna-gipsowa-parma-01-stegu-1-0-5-m2/5907762302784_CAPL.prd",
+       "cena": 50.98,
+       "cena_txt": "50,98",
+       "jednostka": "op. (0,5 m²)",
+       "ilosc": 115.0,
+       "suma": 5862.7,
+       "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 39.98,
+       "suma_txt": "39,98"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 39.98,
+       "suma_txt": "39,98"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "1-04.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/1-04.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "regały OMAR",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "OMAR Regał, 46x36x181 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/omar-regal-s89297192/",
+       "cena": 308.0,
+       "cena_txt": "308,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 616.0,
+       "suma_txt": "616,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "drzwi wewnętrzne",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Drzwi bezprzylgowe pełne Exmoor 80 białe premium czarne obrzeże",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-80-biale-premium-czarne-obrzeze/5900378226215_CAPL.prd",
+       "cena": 358.0,
+       "cena_txt": "358,00",
+       "jednostka": "szt.",
+       "ilosc": 9.0,
+       "suma": 3222.0,
+       "suma_txt": "3222,00"
+      },
+      {
+       "produkt": "Drzwi pełne Exmoor 90 lewe białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-exmoor-90-lewe-biale/5900378206767_CAPL.prd",
+       "cena": 278.0,
+       "cena_txt": "278,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 278.0,
+       "suma_txt": "278,00"
+      },
+      {
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 348.0,
+       "suma_txt": "348,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-exmoor-80-bialy-czarna-szyba/5900378225492_CAPL.prd",
+       "cena": 718.0,
+       "cena_txt": "718,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 1436.0,
+       "suma_txt": "1436,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Fortia Fresno z czarną szybą 90 białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-fortia-fresno-z-czarna-szyba-90-biale/5063022800732_CAPL.prd",
+       "cena": 798.0,
+       "cena_txt": "798,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 798.0,
+       "suma_txt": "798,00"
       }
      ]
     }
@@ -981,15 +1760,15 @@
        "suma_txt": "278,00"
       },
       {
-       "produkt": "Drzwi bezprzylgowe pełne Exmoor 70 białe premium czarne obrzeże",
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
        "sklep": "castorama.pl",
-       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-70-biale-premium-czarne-obrzeze/5900378226222_CAPL.prd",
-       "cena": 358.0,
-       "cena_txt": "358,00",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
        "jednostka": "szt.",
        "ilosc": 1.0,
-       "suma": 358.0,
-       "suma_txt": "358,00"
+       "suma": 348.0,
+       "suma_txt": "348,00"
       },
       {
        "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
@@ -1142,6 +1921,266 @@
        "suma_txt": "5862,70"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 179.98,
+       "suma_txt": "179,98"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "1-06_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/1-06_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "płytki podłogowe hol/kuchnia",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Gres Caprano 60 x 120 cm grey 1,44 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/gres-caprano-60-x-120-cm-grey-1-44-m2/5063022655295_CAPL.prd",
+       "cena": 93.57,
+       "cena_txt": "93,57",
+       "jednostka": "op. (1,44 m²)",
+       "ilosc": 32.0,
+       "suma": 2994.24,
+       "suma_txt": "2994,24"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "drzwi wewnętrzne",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Drzwi bezprzylgowe pełne Exmoor 80 białe premium czarne obrzeże",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-80-biale-premium-czarne-obrzeze/5900378226215_CAPL.prd",
+       "cena": 358.0,
+       "cena_txt": "358,00",
+       "jednostka": "szt.",
+       "ilosc": 9.0,
+       "suma": 3222.0,
+       "suma_txt": "3222,00"
+      },
+      {
+       "produkt": "Drzwi pełne Exmoor 90 lewe białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-exmoor-90-lewe-biale/5900378206767_CAPL.prd",
+       "cena": 278.0,
+       "cena_txt": "278,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 278.0,
+       "suma_txt": "278,00"
+      },
+      {
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 348.0,
+       "suma_txt": "348,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-exmoor-80-bialy-czarna-szyba/5900378225492_CAPL.prd",
+       "cena": 718.0,
+       "cena_txt": "718,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 1436.0,
+       "suma_txt": "1436,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Fortia Fresno z czarną szybą 90 białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-fortia-fresno-z-czarna-szyba-90-biale/5063022800732_CAPL.prd",
+       "cena": 798.0,
+       "cena_txt": "798,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 798.0,
+       "suma_txt": "798,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "klamki",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Klamka drzwiowa Verso Qubik kwadratowy szyld czarna",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/klamka-drzwiowa-verso-qubik-kwadratowy-szyld-czarna/5901643189884_CAPL.prd",
+       "cena": 45.98,
+       "cena_txt": "45,98",
+       "jednostka": "szt.",
+       "ilosc": 15.0,
+       "suma": 689.7,
+       "suma_txt": "689,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "schody – stopnie i podstopnice dębowe",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Gildia Drzew – stopień dębowy na beton, klasa Natur A/B, jednostronny",
+       "sklep": "gildiadrzew.pl",
+       "url": "https://gildiadrzew.pl/schody-blaty#stopien-debowy-na-beton-natur-ab",
+       "cena": 190.0,
+       "cena_txt": "190,00",
+       "jednostka": "szt.",
+       "ilosc": 16.0,
+       "suma": 3040.0,
+       "suma_txt": "3040,00"
+      },
+      {
+       "produkt": "Gildia Drzew – podstopnica drewniana dębowa",
+       "sklep": "gildiadrzew.pl",
+       "url": "https://gildiadrzew.pl/schody-blaty#podstopnica-debowa",
+       "cena": 90.0,
+       "cena_txt": "90,00",
+       "jednostka": "szt.",
+       "ilosc": 16.0,
+       "suma": 1440.0,
+       "suma_txt": "1440,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "poręcz przyścienna",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Poręcz ścienna schodowa AVIS stal nierdzewna o grubości 2,0 mm długość 300 cm",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/por-cz-cienna-schodowa-avis-stal-nierdzewna-o-grubo-ci-2-0-mm-d-ugo-300-cm/5906329650535_CAPL.prd",
+       "cena": 250.0,
+       "cena_txt": "250,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 250.0,
+       "suma_txt": "250,00"
+      },
+      {
+       "produkt": "Poręcz ścienna schodowa AVIS stal nierdzewna o grubości 2,0 mm długość 200 cm",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/por-cz-cienna-schodowa-avis-stal-nierdzewna-o-grubo-ci-2-0-mm-d-ugo-200-cm/5903981691852_CAPL.prd",
+       "cena": 197.0,
+       "cena_txt": "197,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 197.0,
+       "suma_txt": "197,00"
+      },
+      {
+       "produkt": "Wspornik uchwyt AVIS podpora poręczy ściennej schodowej, montaż do powierzchni płaskiej, czarny, 1 zestaw",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/wspornik-uchwyt-avis-podpora-por-czy-ciennej-schodowej-monta-do-powierzchni-p-askiej-czarny-1-zestaw/5907264142314_CAPL.prd",
+       "cena": 12.5,
+       "cena_txt": "12,50",
+       "jednostka": "szt.",
+       "ilosc": 6.0,
+       "suma": 75.0,
+       "suma_txt": "75,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "wykończenie ścian (lamele / cegła / sztukateria)",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Płytka dekoracyjna gipsowa Parma 01 Stegu 1 0,5 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plytka-dekoracyjna-gipsowa-parma-01-stegu-1-0-5-m2/5907762302784_CAPL.prd",
+       "cena": 50.98,
+       "cena_txt": "50,98",
+       "jednostka": "op. (0,5 m²)",
+       "ilosc": 115.0,
+       "suma": 5862.7,
+       "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 179.98,
+       "suma_txt": "179,98"
+      }
+     ]
     }
    ],
    "luki": []
@@ -1149,13 +2188,13 @@
   "1-07.jpg": {
    "status": "zgodne",
    "bledy": [],
-   "liczba_uwag": 7,
+   "liczba_uwag": 12,
    "materialy": [
     {
      "nazwa": "podłoga",
-     "ocena": "ok",
-     "ocena_pl": "zgodny",
-     "uwagi": "szary beton – SPC White Concrete",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
      "produkty": [
       {
        "produkt": "Panel winylowy GoodHome SPC white Concrete 2,402 m2",
@@ -1191,9 +2230,9 @@
     },
     {
      "nazwa": "szafa",
-     "ocena": "ok",
-     "ocena_pl": "zgodny",
-     "uwagi": "biała PAX/BERGSBO",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
      "produkty": [
       {
        "produkt": "PAX / BERGSBO Szafa/2 drzwi - biały/biały 100x60x236 cm",
@@ -1242,22 +2281,49 @@
      ]
     },
     {
-     "nazwa": "łóżko",
-     "ocena": "ok",
-     "ocena_pl": "zgodny",
-     "uwagi": "GLAMBERGET",
+     "nazwa": "sofa rozkładana (spanie dla gości)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
      "produkty": [
       {
-       "produkt": "GLAMBERGET Rozsuw łóżko z pojemnikami/2 mater - sosna/Ågotnes twardy 80x200 cm",
+       "produkt": "LYCKSELE LÖVÅS Sofa 2-osobowa, rozkładana/Knisa jasnoszary",
        "sklep": "ikea.com",
-       "url": "https://www.ikea.com/pl/pl/p/glamberget-rozsuw-lozko-z-pojemnikami-2-mater-sosna-agotnes-twardy-s89568386/",
-       "cena": 1817.0,
-       "cena_txt": "1817,00",
+       "url": "https://www.ikea.com/pl/pl/p/lycksele-loevas-sofa-2-osobowa-rozkladana-knisa-jasnoszary-s09387035/",
+       "cena": 1299.0,
+       "cena_txt": "1299,00",
        "jednostka": "szt.",
        "ilosc": 1.0,
-       "suma": 1817.0,
-       "suma_txt": "1817,00"
-      },
+       "suma": 1299.0,
+       "suma_txt": "1299,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "lampa sufitowa pokoju",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Plafon LED Yonnet 4000 K 43 cm 19W czarny",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plafon-led-yonnet-4000-k-43-cm-19w-czarny/5059340233871_CAPL.prd",
+       "cena": 168.0,
+       "cena_txt": "168,00",
+       "jednostka": "szt.",
+       "ilosc": 6.0,
+       "suma": 1008.0,
+       "suma_txt": "1008,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafki nocne",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
       {
        "produkt": "BLÄSTÅSEN Stolik nocny - czarny 50x37x76 cm",
        "sklep": "ikea.com",
@@ -1268,7 +2334,64 @@
        "ilosc": 1.0,
        "suma": 349.0,
        "suma_txt": "349,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "lampki nocne",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "ÅRSTID Lampa stołowa, niklowano/biały",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/arstid-lampa-stolowa-niklowano-bialy-70280634/",
+       "cena": 79.99,
+       "cena_txt": "79,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 79.99,
+       "suma_txt": "79,99"
+      }
+     ]
+    },
+    {
+     "nazwa": "zasłony + karnisz",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "KORGMOTT Zasłony zaciemniające, para, ciemnoszary/na taśmie, 145x300 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/korgmott-zaslony-zaciemniajace-para-ciemnoszary-na-tasmie-30597159/",
+       "cena": 249.0,
+       "cena_txt": "249,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 249.0,
+       "suma_txt": "249,00"
       },
+      {
+       "produkt": "BEKRÄFTA Podwójny karnisz, komplet, czarny, 120-210 cm 19 mm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/bekraefta-podwojny-karnisz-komplet-czarny-70489695/",
+       "cena": 90.0,
+       "cena_txt": "90,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 90.0,
+       "suma_txt": "90,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "dywan",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
       {
        "produkt": "TIPHEDE Dywan tkany na płasko - czarny/naturalny 155x220 cm",
        "sklep": "ikea.com",
@@ -1281,12 +2404,133 @@
        "suma_txt": "79,00"
       }
      ]
+    }
+   ],
+   "luki": []
+  },
+  "1-07_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/1-07_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Panel winylowy GoodHome SPC white Concrete 2,402 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/panel-winylowy-goodhome-spc-white-concrete-2-402-m2/5059340802848_CAPL.prd",
+       "cena": 307.46,
+       "cena_txt": "307,46",
+       "jednostka": "op. (2,402 m²)",
+       "ilosc": 70.0,
+       "suma": 21522.2,
+       "suma_txt": "21522,20"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafa",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PAX / BERGSBO Szafa/2 drzwi - biały/biały 100x60x236 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pax-bergsbo-szafa-2-drzwi-bialy-bialy-s49904634/",
+       "cena": 790.0,
+       "cena_txt": "790,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 1580.0,
+       "suma_txt": "1580,00"
+      },
+      {
+       "produkt": "PAX / BERGSBO Szafa i drzwi - biały/biały 50x60x236 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pax-bergsbo-szafa-i-drzwi-bialy-bialy-s29904630/",
+       "cena": 525.0,
+       "cena_txt": "525,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 525.0,
+       "suma_txt": "525,00"
+      },
+      {
+       "produkt": "PAX Dodatkowy segment boczny - biały 20x58x236 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pax-dodatkowy-segment-boczny-bialy-10603854/",
+       "cena": 335.0,
+       "cena_txt": "335,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 335.0,
+       "suma_txt": "335,00"
+      },
+      {
+       "produkt": "FÖRBÄTTRA Panel maskujący - biały 62x240 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/foerbaettra-panel-maskujacy-bialy-60297885/",
+       "cena": 285.0,
+       "cena_txt": "285,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 285.0,
+       "suma_txt": "285,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "sofa rozkładana (spanie dla gości)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "LYCKSELE LÖVÅS Sofa 2-osobowa, rozkładana/Knisa jasnoszary",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/lycksele-loevas-sofa-2-osobowa-rozkladana-knisa-jasnoszary-s09387035/",
+       "cena": 1299.0,
+       "cena_txt": "1299,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 1299.0,
+       "suma_txt": "1299,00"
+      }
+     ]
     },
     {
      "nazwa": "lampa sufitowa pokoju",
-     "ocena": "ok",
-     "ocena_pl": "zgodny",
-     "uwagi": "Yonnet czarny",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
      "produkty": [
       {
        "produkt": "Plafon LED Yonnet 4000 K 43 cm 19W czarny",
@@ -1653,6 +2897,241 @@
        "suma_txt": "654,00"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "1-08_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/1-08_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 3,
+   "materialy": [
+    {
+     "nazwa": "płytki łazienka – podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Gres Caprano 60 x 120 cm grey 1,44 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/gres-caprano-60-x-120-cm-grey-1-44-m2/5063022655295_CAPL.prd",
+       "cena": 93.57,
+       "cena_txt": "93,57",
+       "jednostka": "op. (1,44 m²)",
+       "ilosc": 9.0,
+       "suma": 842.13,
+       "suma_txt": "842,13"
+      }
+     ]
+    },
+    {
+     "nazwa": "płytki łazienka – ściany",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Gres Caprano 60 x 120 cm grey 1,44 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/gres-caprano-60-x-120-cm-grey-1-44-m2/5063022655295_CAPL.prd",
+       "cena": 93.57,
+       "cena_txt": "93,57",
+       "jednostka": "op. (1,44 m²)",
+       "ilosc": 29.0,
+       "suma": 2713.53,
+       "suma_txt": "2713,53"
+      }
+     ]
+    },
+    {
+     "nazwa": "ścianka walk-in",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Ścianka prysznicowa Ahaus 90 x 190 cm Czarny 1 szt.",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/-cianka-prysznicowa-ahaus-90-x-190-cm-czarny-1-szt-/4255664894892_CAPL.prd",
+       "cena": 568.99,
+       "cena_txt": "568,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 1137.98,
+       "suma_txt": "1137,98"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafka pod umywalkę",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Szafka pod umywalkę Cersanit Mille wisząca 60 cm dąb",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/szafka-pod-umywalke-cersanit-mille-wiszaca-60-cm-dab/5901771214502_CAPL.prd",
+       "cena": 618.0,
+       "cena_txt": "618,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 1854.0,
+       "suma_txt": "1854,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "umywalka",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Umywalka nablatowa Roca Domus 55 x 39 cm biała",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/umywalka-nablatowa-roca-domus-55-x-39-cm-biala/8433290475722_CAPL.prd",
+       "cena": 518.0,
+       "cena_txt": "518,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 1554.0,
+       "suma_txt": "1554,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "bateria umywalkowa",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Bateria umywalkowa stojąca Ferro Rico czarna",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/bateria-umywalkowa-stojaca-ferro-rico-czarna/5903738233359_CAPL.prd",
+       "cena": 168.0,
+       "cena_txt": "168,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 504.0,
+       "suma_txt": "504,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "lustro",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Lustro łazienkowe okrągłe Domino Slider Vanilia 60 cm czarne z oświetleniem LED",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/lustro-lazienkowe-okragle-domino-slider-vanilia-60-cm-czarne-z-oswietleniem-led/5900378373513_CAPL.prd",
+       "cena": 698.0,
+       "cena_txt": "698,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 2094.0,
+       "suma_txt": "2094,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "oczka łazienkowe IP44",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Oprawa wpuszczana 3000K IP44 Slim 9 AZ2831 Azzardo 1 szt.",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/oprawa-wpuszczana-3000k-ip44-slim-9-az2831-azzardo-1-szt-/5901238428312_CAPL.prd",
+       "cena": 75.0,
+       "cena_txt": "75,00",
+       "jednostka": "szt.",
+       "ilosc": 4.0,
+       "suma": 300.0,
+       "suma_txt": "300,00"
+      },
+      {
+       "produkt": "Kinkiet Light Prestige Nevada M IP44 LED czarny 1 szt.",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/kinkiet-light-prestige-nevada-m-ip44-led-czarny-1-szt-/5907629277491_CAPL.prd",
+       "cena": 218.0,
+       "cena_txt": "218,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 654.0,
+       "suma_txt": "654,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      }
+     ]
     }
    ],
    "luki": []
@@ -1729,15 +3208,15 @@
        "suma_txt": "278,00"
       },
       {
-       "produkt": "Drzwi bezprzylgowe pełne Exmoor 70 białe premium czarne obrzeże",
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
        "sklep": "castorama.pl",
-       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-70-biale-premium-czarne-obrzeze/5900378226222_CAPL.prd",
-       "cena": 358.0,
-       "cena_txt": "358,00",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
        "jednostka": "szt.",
        "ilosc": 1.0,
-       "suma": 358.0,
-       "suma_txt": "358,00"
+       "suma": 348.0,
+       "suma_txt": "348,00"
       },
       {
        "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
@@ -1828,6 +3307,17 @@
        "ilosc": 1.0,
        "suma": 1238.0,
        "suma_txt": "1238,00"
+      },
+      {
+       "produkt": "Robocizna: montaż balustrady (tralki/słupki + pochwyt)",
+       "sklep": "s-schody.pl",
+       "url": "https://s-schody.pl/ile-kosztuje-metr-balustrady-schodowej",
+       "cena": 275.0,
+       "cena_txt": "275,00",
+       "jednostka": "mb",
+       "ilosc": 4.74,
+       "suma": 1303.5,
+       "suma_txt": "1303,50"
       }
      ]
     },
@@ -1868,6 +3358,299 @@
        "suma_txt": "5862,70"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+       "cena": 149.0,
+       "cena_txt": "149,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 149.0,
+       "suma_txt": "149,00"
+      },
+      {
+       "produkt": "NYPON Osłonka doniczki - do wewnątrz/na zewnątrz szary 32 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nypon-oslonka-doniczki-do-wewnatrz-na-zewnatrz-szary-30395632/",
+       "cena": 59.0,
+       "cena_txt": "59,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.0,
+       "suma_txt": "59,00"
+      },
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 179.98,
+       "suma_txt": "179,98"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "2-01_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-01_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Panel winylowy GoodHome SPC white Concrete 2,402 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/panel-winylowy-goodhome-spc-white-concrete-2-402-m2/5059340802848_CAPL.prd",
+       "cena": 307.46,
+       "cena_txt": "307,46",
+       "jednostka": "op. (2,402 m²)",
+       "ilosc": 70.0,
+       "suma": 21522.2,
+       "suma_txt": "21522,20"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "drzwi wewnętrzne",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Drzwi bezprzylgowe pełne Exmoor 80 białe premium czarne obrzeże",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-80-biale-premium-czarne-obrzeze/5900378226215_CAPL.prd",
+       "cena": 358.0,
+       "cena_txt": "358,00",
+       "jednostka": "szt.",
+       "ilosc": 9.0,
+       "suma": 3222.0,
+       "suma_txt": "3222,00"
+      },
+      {
+       "produkt": "Drzwi pełne Exmoor 90 lewe białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-exmoor-90-lewe-biale/5900378206767_CAPL.prd",
+       "cena": 278.0,
+       "cena_txt": "278,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 278.0,
+       "suma_txt": "278,00"
+      },
+      {
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 348.0,
+       "suma_txt": "348,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-exmoor-80-bialy-czarna-szyba/5900378225492_CAPL.prd",
+       "cena": 718.0,
+       "cena_txt": "718,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 1436.0,
+       "suma_txt": "1436,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Fortia Fresno z czarną szybą 90 białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-fortia-fresno-z-czarna-szyba-90-biale/5063022800732_CAPL.prd",
+       "cena": 798.0,
+       "cena_txt": "798,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 798.0,
+       "suma_txt": "798,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "klamki",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Klamka drzwiowa Verso Qubik kwadratowy szyld czarna",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/klamka-drzwiowa-verso-qubik-kwadratowy-szyld-czarna/5901643189884_CAPL.prd",
+       "cena": 45.98,
+       "cena_txt": "45,98",
+       "jednostka": "szt.",
+       "ilosc": 15.0,
+       "suma": 689.7,
+       "suma_txt": "689,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "oczka sufitowe",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Philips Oprawa podtynkowa MESON biała śr. 9,7 cm 3000K 5,5W 500lm",
+       "sklep": "obi.pl",
+       "url": "https://www.obi.pl/p/7141096/philips-oprawa-podtynkowa-meson-biala-sr-9-7-cm-3000k-5-5w-500lm",
+       "cena": 15.99,
+       "cena_txt": "15,99",
+       "jednostka": "szt.",
+       "ilosc": 20.0,
+       "suma": 319.8,
+       "suma_txt": "319,80"
+      }
+     ]
+    },
+    {
+     "nazwa": "balustrada otworu schodowego 2/01",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Balustrada AVIS, barierka balkonowa, schodowa, Aluminium, 4 wypełnienia, czarny, długość 3,0 m",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/balustrada-avis-barierka-balkonowa-schodowa-aluminium-4-wype-nienia-czarny-d-ugo-3-0-m/5907894075532_CAPL.prd",
+       "cena": 1351.0,
+       "cena_txt": "1351,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 1351.0,
+       "suma_txt": "1351,00"
+      },
+      {
+       "produkt": "Balustrada AVIS, barierka balkonowa, schodowa, Aluminium, 4 wypełnienia, czarny, długość 2,0 m",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/balustrada-avis-barierka-balkonowa-schodowa-aluminium-4-wype-nienia-czarny-d-ugo-2-0-m/5907894075525_CAPL.prd",
+       "cena": 1238.0,
+       "cena_txt": "1238,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 1238.0,
+       "suma_txt": "1238,00"
+      },
+      {
+       "produkt": "Robocizna: montaż balustrady (tralki/słupki + pochwyt)",
+       "sklep": "s-schody.pl",
+       "url": "https://s-schody.pl/ile-kosztuje-metr-balustrady-schodowej",
+       "cena": 275.0,
+       "cena_txt": "275,00",
+       "jednostka": "mb",
+       "ilosc": 4.74,
+       "suma": 1303.5,
+       "suma_txt": "1303,50"
+      }
+     ]
+    },
+    {
+     "nazwa": "wykończenie ścian (lamele / cegła / sztukateria)",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Płytka dekoracyjna gipsowa Parma 01 Stegu 1 0,5 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plytka-dekoracyjna-gipsowa-parma-01-stegu-1-0-5-m2/5907762302784_CAPL.prd",
+       "cena": 50.98,
+       "cena_txt": "50,98",
+       "jednostka": "op. (0,5 m²)",
+       "ilosc": 115.0,
+       "suma": 5862.7,
+       "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+       "cena": 149.0,
+       "cena_txt": "149,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 149.0,
+       "suma_txt": "149,00"
+      },
+      {
+       "produkt": "NYPON Osłonka doniczki - do wewnątrz/na zewnątrz szary 32 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nypon-oslonka-doniczki-do-wewnatrz-na-zewnatrz-szary-30395632/",
+       "cena": 59.0,
+       "cena_txt": "59,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.0,
+       "suma_txt": "59,00"
+      },
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 179.98,
+       "suma_txt": "179,98"
+      }
+     ]
     }
    ],
    "luki": []
@@ -1875,7 +3658,7 @@
   "2-02.jpg": {
    "status": "zgodne",
    "bledy": [],
-   "liczba_uwag": 5,
+   "liczba_uwag": 6,
    "materialy": [
     {
      "nazwa": "podłoga",
@@ -2026,6 +3809,481 @@
        "ilosc": 115.0,
        "suma": 5862.7,
        "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+       "cena": 149.0,
+       "cena_txt": "149,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 149.0,
+       "suma_txt": "149,00"
+      },
+      {
+       "produkt": "NYPON Osłonka doniczki - do wewnątrz/na zewnątrz szary 32 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nypon-oslonka-doniczki-do-wewnatrz-na-zewnatrz-szary-30395632/",
+       "cena": 59.0,
+       "cena_txt": "59,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.0,
+       "suma_txt": "59,00"
+      },
+      {
+       "produkt": "PJÄTTERYD Obraz - miasto 118x78 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-miasto-40623469/",
+       "cena": 179.0,
+       "cena_txt": "179,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 179.0,
+       "suma_txt": "179,00"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 29.98,
+       "suma_txt": "29,98"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 20.0,
+       "suma_txt": "20,00"
+      },
+      {
+       "produkt": "ROSTLÖNN Pled - antracyt 130x170 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/rostloenn-pled-antracyt-40630422/",
+       "cena": 49.99,
+       "cena_txt": "49,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 49.99,
+       "suma_txt": "49,99"
+      },
+      {
+       "produkt": "KONSTFULL Wazon - zielonobrązowy 16 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/konstfull-wazon-zielonobrazowy-10511963/",
+       "cena": 59.99,
+       "cena_txt": "59,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.99,
+       "suma_txt": "59,99"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "2-02_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-02_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 3,
+   "materialy": [
+    {
+     "nazwa": "podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Panel winylowy GoodHome SPC white Concrete 2,402 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/panel-winylowy-goodhome-spc-white-concrete-2-402-m2/5059340802848_CAPL.prd",
+       "cena": 307.46,
+       "cena_txt": "307,46",
+       "jednostka": "op. (2,402 m²)",
+       "ilosc": 70.0,
+       "suma": 21522.2,
+       "suma_txt": "21522,20"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "wykończenie ścian (lamele / cegła / sztukateria)",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Płytka dekoracyjna gipsowa Parma 01 Stegu 1 0,5 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plytka-dekoracyjna-gipsowa-parma-01-stegu-1-0-5-m2/5907762302784_CAPL.prd",
+       "cena": 50.98,
+       "cena_txt": "50,98",
+       "jednostka": "op. (0,5 m²)",
+       "ilosc": 115.0,
+       "suma": 5862.7,
+       "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+       "cena": 149.0,
+       "cena_txt": "149,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 149.0,
+       "suma_txt": "149,00"
+      },
+      {
+       "produkt": "NYPON Osłonka doniczki - do wewnątrz/na zewnątrz szary 32 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nypon-oslonka-doniczki-do-wewnatrz-na-zewnatrz-szary-30395632/",
+       "cena": 59.0,
+       "cena_txt": "59,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.0,
+       "suma_txt": "59,00"
+      },
+      {
+       "produkt": "PJÄTTERYD Obraz - miasto 118x78 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-miasto-40623469/",
+       "cena": 179.0,
+       "cena_txt": "179,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 179.0,
+       "suma_txt": "179,00"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 29.98,
+       "suma_txt": "29,98"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 20.0,
+       "suma_txt": "20,00"
+      },
+      {
+       "produkt": "ROSTLÖNN Pled - antracyt 130x170 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/rostloenn-pled-antracyt-40630422/",
+       "cena": 49.99,
+       "cena_txt": "49,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 49.99,
+       "suma_txt": "49,99"
+      },
+      {
+       "produkt": "KONSTFULL Wazon - zielonobrązowy 16 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/konstfull-wazon-zielonobrazowy-10511963/",
+       "cena": 59.99,
+       "cena_txt": "59,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.99,
+       "suma_txt": "59,99"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "2-03.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-03.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Panel winylowy GoodHome SPC white Concrete 2,402 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/panel-winylowy-goodhome-spc-white-concrete-2-402-m2/5059340802848_CAPL.prd",
+       "cena": 307.46,
+       "cena_txt": "307,46",
+       "jednostka": "op. (2,402 m²)",
+       "ilosc": 70.0,
+       "suma": 21522.2,
+       "suma_txt": "21522,20"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafa PAX",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PAX / FLISBERGET Szafa - biały/jasnobeżowy 200x60x201 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pax-flisberget-szafa-bialy-jasnobezowy-s49304340/",
+       "cena": 2355.0,
+       "cena_txt": "2355,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 2355.0,
+       "suma_txt": "2355,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "oczka sufitowe",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Philips Oprawa podtynkowa MESON biała śr. 9,7 cm 3000K 5,5W 500lm",
+       "sklep": "obi.pl",
+       "url": "https://www.obi.pl/p/7141096/philips-oprawa-podtynkowa-meson-biala-sr-9-7-cm-3000k-5-5w-500lm",
+       "cena": 15.99,
+       "cena_txt": "15,99",
+       "jednostka": "szt.",
+       "ilosc": 20.0,
+       "suma": 319.8,
+       "suma_txt": "319,80"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (lustro, rośliny)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "LINDBYN Lustro - czarny 60x170 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/lindbyn-lustro-czarny-80597232/",
+       "cena": 299.0,
+       "cena_txt": "299,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 299.0,
+       "suma_txt": "299,00"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "2-04.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-04.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Panel winylowy GoodHome SPC white Concrete 2,402 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/panel-winylowy-goodhome-spc-white-concrete-2-402-m2/5059340802848_CAPL.prd",
+       "cena": 307.46,
+       "cena_txt": "307,46",
+       "jednostka": "op. (2,402 m²)",
+       "ilosc": 70.0,
+       "suma": 21522.2,
+       "suma_txt": "21522,20"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafa PAX",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PAX / FORSAND Szafa - biały/biały 250x60x201 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pax-forsand-szafa-bialy-bialy-s29478082/",
+       "cena": 2195.0,
+       "cena_txt": "2195,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 2195.0,
+       "suma_txt": "2195,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "oczka sufitowe",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Philips Oprawa podtynkowa MESON biała śr. 9,7 cm 3000K 5,5W 500lm",
+       "sklep": "obi.pl",
+       "url": "https://www.obi.pl/p/7141096/philips-oprawa-podtynkowa-meson-biala-sr-9-7-cm-3000k-5-5w-500lm",
+       "cena": 15.99,
+       "cena_txt": "15,99",
+       "jednostka": "szt.",
+       "ilosc": 20.0,
+       "suma": 319.8,
+       "suma_txt": "319,80"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (lustro, rośliny)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "LINDBYN Lustro - czarny 60x170 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/lindbyn-lustro-czarny-80597232/",
+       "cena": 299.0,
+       "cena_txt": "299,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 299.0,
+       "suma_txt": "299,00"
+      },
+      {
+       "produkt": "FEJKA Sztuczna roślina doniczkowa - do wewnątrz/na zewnątrz/bambus 21 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/fejka-sztuczna-roslina-doniczkowa-do-wewnatrz-na-zewnatrz-bambus-40610607/",
+       "cena": 199.0,
+       "cena_txt": "199,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 199.0,
+       "suma_txt": "199,00"
+      },
+      {
+       "produkt": "NYPON Osłonka doniczki - do wewnątrz/na zewnątrz szary 24 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nypon-oslonka-doniczki-do-wewnatrz-na-zewnatrz-szary-00395624/",
+       "cena": 39.0,
+       "cena_txt": "39,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 39.0,
+       "suma_txt": "39,00"
       }
      ]
     }
@@ -2389,6 +4647,252 @@
        "suma_txt": "139,98"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "BACKMÅRA Dywanik łazienkowy - czarny 50x80 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/backmara-dywanik-lazienkowy-czarny-90603162/",
+       "cena": 39.99,
+       "cena_txt": "39,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 79.98,
+       "suma_txt": "79,98"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "2-05_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-05_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 3,
+   "materialy": [
+    {
+     "nazwa": "płytki łazienka – podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Gres Caprano 60 x 120 cm grey 1,44 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/gres-caprano-60-x-120-cm-grey-1-44-m2/5063022655295_CAPL.prd",
+       "cena": 93.57,
+       "cena_txt": "93,57",
+       "jednostka": "op. (1,44 m²)",
+       "ilosc": 9.0,
+       "suma": 842.13,
+       "suma_txt": "842,13"
+      }
+     ]
+    },
+    {
+     "nazwa": "płytki łazienka – ściany",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Gres Caprano 60 x 120 cm grey 1,44 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/gres-caprano-60-x-120-cm-grey-1-44-m2/5063022655295_CAPL.prd",
+       "cena": 93.57,
+       "cena_txt": "93,57",
+       "jednostka": "op. (1,44 m²)",
+       "ilosc": 29.0,
+       "suma": 2713.53,
+       "suma_txt": "2713,53"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafka pod umywalkę",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Szafka pod umywalkę Cersanit Mille wisząca 60 cm dąb",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/szafka-pod-umywalke-cersanit-mille-wiszaca-60-cm-dab/5901771214502_CAPL.prd",
+       "cena": 618.0,
+       "cena_txt": "618,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 1854.0,
+       "suma_txt": "1854,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "umywalka",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Umywalka nablatowa Roca Domus 55 x 39 cm biała",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/umywalka-nablatowa-roca-domus-55-x-39-cm-biala/8433290475722_CAPL.prd",
+       "cena": 518.0,
+       "cena_txt": "518,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 1554.0,
+       "suma_txt": "1554,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "bateria umywalkowa",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Bateria umywalkowa stojąca Ferro Rico czarna",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/bateria-umywalkowa-stojaca-ferro-rico-czarna/5903738233359_CAPL.prd",
+       "cena": 168.0,
+       "cena_txt": "168,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 504.0,
+       "suma_txt": "504,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "lustro",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Lustro łazienkowe okrągłe Domino Slider Vanilia 60 cm czarne z oświetleniem LED",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/lustro-lazienkowe-okragle-domino-slider-vanilia-60-cm-czarne-z-oswietleniem-led/5900378373513_CAPL.prd",
+       "cena": 698.0,
+       "cena_txt": "698,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 2094.0,
+       "suma_txt": "2094,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "kinkiety łazienkowe IP44",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Kinkiet Light Prestige Nevada M IP44 LED czarny 1 szt.",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/kinkiet-light-prestige-nevada-m-ip44-led-czarny-1-szt-/5907629277491_CAPL.prd",
+       "cena": 218.0,
+       "cena_txt": "218,00",
+       "jednostka": "szt.",
+       "ilosc": 3.0,
+       "suma": 654.0,
+       "suma_txt": "654,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "wykończenie ścian (lamele / cegła / sztukateria)",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Lamel ścienny na czarnym filcu 6L Marbet Design WOODLINE SLIM 270x30 cm Dąb jasny 1 szt.",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/departments/lamel-cienny-na-czarnym-filcu-6l-marbet-design-woodline-slim-270x30-cm-d-b-jasny-1-szt-/5904922819168_CAPL.prd",
+       "cena": 69.99,
+       "cena_txt": "69,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 139.98,
+       "suma_txt": "139,98"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "BACKMÅRA Dywanik łazienkowy - czarny 50x80 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/backmara-dywanik-lazienkowy-czarny-90603162/",
+       "cena": 39.99,
+       "cena_txt": "39,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 79.98,
+       "suma_txt": "79,98"
+      }
+     ]
     }
    ],
    "luki": []
@@ -2522,15 +5026,15 @@
        "suma_txt": "278,00"
       },
       {
-       "produkt": "Drzwi bezprzylgowe pełne Exmoor 70 białe premium czarne obrzeże",
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
        "sklep": "castorama.pl",
-       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-70-biale-premium-czarne-obrzeze/5900378226222_CAPL.prd",
-       "cena": 358.0,
-       "cena_txt": "358,00",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
        "jednostka": "szt.",
        "ilosc": 1.0,
-       "suma": 358.0,
-       "suma_txt": "358,00"
+       "suma": 348.0,
+       "suma_txt": "348,00"
       },
       {
        "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
@@ -2591,6 +5095,80 @@
        "ilosc": 115.0,
        "suma": 5862.7,
        "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+       "cena": 149.0,
+       "cena_txt": "149,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 149.0,
+       "suma_txt": "149,00"
+      },
+      {
+       "produkt": "NYPON Osłonka doniczki - do wewnątrz/na zewnątrz szary 32 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nypon-oslonka-doniczki-do-wewnatrz-na-zewnatrz-szary-30395632/",
+       "cena": 59.0,
+       "cena_txt": "59,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.0,
+       "suma_txt": "59,00"
+      },
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 179.98,
+       "suma_txt": "179,98"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 29.98,
+       "suma_txt": "29,98"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 20.0,
+       "suma_txt": "20,00"
+      },
+      {
+       "produkt": "ROSTLÖNN Pled - antracyt 130x170 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/rostloenn-pled-antracyt-40630422/",
+       "cena": 49.99,
+       "cena_txt": "49,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 49.99,
+       "suma_txt": "49,99"
       }
      ]
     }
@@ -2726,15 +5304,15 @@
        "suma_txt": "278,00"
       },
       {
-       "produkt": "Drzwi bezprzylgowe pełne Exmoor 70 białe premium czarne obrzeże",
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
        "sklep": "castorama.pl",
-       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-70-biale-premium-czarne-obrzeze/5900378226222_CAPL.prd",
-       "cena": 358.0,
-       "cena_txt": "358,00",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
        "jednostka": "szt.",
        "ilosc": 1.0,
-       "suma": 358.0,
-       "suma_txt": "358,00"
+       "suma": 348.0,
+       "suma_txt": "348,00"
       },
       {
        "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
@@ -2797,6 +5375,80 @@
        "suma_txt": "5862,70"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "FICUS ELASTICA ROBUSTA Roślina doniczkowa - Drzewko kauczukowe 27 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/ficus-elastica-robusta-roslina-doniczkowa-drzewko-kauczukowe-80495200/",
+       "cena": 149.0,
+       "cena_txt": "149,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 149.0,
+       "suma_txt": "149,00"
+      },
+      {
+       "produkt": "NYPON Osłonka doniczki - do wewnątrz/na zewnątrz szary 32 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nypon-oslonka-doniczki-do-wewnatrz-na-zewnatrz-szary-30395632/",
+       "cena": 59.0,
+       "cena_txt": "59,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 59.0,
+       "suma_txt": "59,00"
+      },
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 179.98,
+       "suma_txt": "179,98"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 29.98,
+       "suma_txt": "29,98"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 20.0,
+       "suma_txt": "20,00"
+      },
+      {
+       "produkt": "ROSTLÖNN Pled - antracyt 130x170 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/rostloenn-pled-antracyt-40630422/",
+       "cena": 49.99,
+       "cena_txt": "49,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 49.99,
+       "suma_txt": "49,99"
+      }
+     ]
     }
    ],
    "luki": []
@@ -2804,7 +5456,7 @@
   "2-07.jpg": {
    "status": "zgodne",
    "bledy": [],
-   "liczba_uwag": 2,
+   "liczba_uwag": 3,
    "materialy": [
     {
      "nazwa": "podłoga",
@@ -2857,9 +5509,9 @@
        "cena": 1099.0,
        "cena_txt": "1099,00",
        "jednostka": "szt.",
-       "ilosc": 2.0,
-       "suma": 2198.0,
-       "suma_txt": "2198,00"
+       "ilosc": 1.0,
+       "suma": 1099.0,
+       "suma_txt": "1099,00"
       }
      ]
     },
@@ -2957,14 +5609,335 @@
        "suma_txt": "5862,70"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 89.99,
+       "suma_txt": "89,99"
+      },
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 29.98,
+       "suma_txt": "29,98"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 20.0,
+       "suma_txt": "20,00"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "2-07_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-07_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Panel winylowy GoodHome SPC white Concrete 2,402 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/panel-winylowy-goodhome-spc-white-concrete-2-402-m2/5059340802848_CAPL.prd",
+       "cena": 307.46,
+       "cena_txt": "307,46",
+       "jednostka": "op. (2,402 m²)",
+       "ilosc": 70.0,
+       "suma": 21522.2,
+       "suma_txt": "21522,20"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "łóżko",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "STJÄRNÖ Rama łóżka - antracyt/Luröy 140x200 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/stjaernoe-rama-lozka-antracyt-luroey-s99563345/",
+       "cena": 1099.0,
+       "cena_txt": "1099,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 1099.0,
+       "suma_txt": "1099,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "drzwi wewnętrzne",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Drzwi bezprzylgowe pełne Exmoor 80 białe premium czarne obrzeże",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-80-biale-premium-czarne-obrzeze/5900378226215_CAPL.prd",
+       "cena": 358.0,
+       "cena_txt": "358,00",
+       "jednostka": "szt.",
+       "ilosc": 9.0,
+       "suma": 3222.0,
+       "suma_txt": "3222,00"
+      },
+      {
+       "produkt": "Drzwi pełne Exmoor 90 lewe białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-exmoor-90-lewe-biale/5900378206767_CAPL.prd",
+       "cena": 278.0,
+       "cena_txt": "278,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 278.0,
+       "suma_txt": "278,00"
+      },
+      {
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 348.0,
+       "suma_txt": "348,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-exmoor-80-bialy-czarna-szyba/5900378225492_CAPL.prd",
+       "cena": 718.0,
+       "cena_txt": "718,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 1436.0,
+       "suma_txt": "1436,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Fortia Fresno z czarną szybą 90 białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-fortia-fresno-z-czarna-szyba-90-biale/5063022800732_CAPL.prd",
+       "cena": 798.0,
+       "cena_txt": "798,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 798.0,
+       "suma_txt": "798,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafki nocne",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "BLÄSTÅSEN Stolik nocny - czarny 50x37x76 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/blaestasen-stolik-nocny-czarny-90617569/",
+       "cena": 349.0,
+       "cena_txt": "349,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 698.0,
+       "suma_txt": "698,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "lampa sufitowa pokoju",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Plafon LED Yonnet 4000 K 43 cm 19W czarny",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plafon-led-yonnet-4000-k-43-cm-19w-czarny/5059340233871_CAPL.prd",
+       "cena": 168.0,
+       "cena_txt": "168,00",
+       "jednostka": "szt.",
+       "ilosc": 6.0,
+       "suma": 1008.0,
+       "suma_txt": "1008,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "wykończenie ścian (lamele / cegła / sztukateria)",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Płytka dekoracyjna gipsowa Parma 01 Stegu 1 0,5 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plytka-dekoracyjna-gipsowa-parma-01-stegu-1-0-5-m2/5907762302784_CAPL.prd",
+       "cena": 50.98,
+       "cena_txt": "50,98",
+       "jednostka": "op. (0,5 m²)",
+       "ilosc": 115.0,
+       "suma": 5862.7,
+       "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 89.99,
+       "suma_txt": "89,99"
+      },
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 29.98,
+       "suma_txt": "29,98"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 20.0,
+       "suma_txt": "20,00"
+      }
+     ]
     }
    ],
    "luki": []
   },
   "2-08.jpg": {
-   "status": "zgodne",
-   "bledy": [],
-   "liczba_uwag": 2,
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-08.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[skosy] BEZ lukarny: ciągła ścianka kolankowa 144 i skos 38° na całej ścianie pn. (decyzja 26.10.2026) – Wizualizacje z 25.10 pokazują lukarnę – do regeneracji (decyzja 26.10.2026: brak lukarny)",
+    "[elementy] Pokój gościnny: kanapa rozkładana przy ścianie zach. (spanie 140×200) – bez łóżka i siedziska BESTÅ – Na wizualizacjach łóżko 140 + siedzisko BESTÅ – do regeneracji z kanapą rozkładaną",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 3,
    "materialy": [
     {
      "nazwa": "podłoga",
@@ -3005,21 +5978,21 @@
      ]
     },
     {
-     "nazwa": "łóżko",
-     "ocena": "ok",
-     "ocena_pl": "zgodny",
-     "uwagi": "STJÄRNÖ antracyt",
+     "nazwa": "kanapa rozkładana 2/08 (pokój gościnny)",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
      "produkty": [
       {
-       "produkt": "STJÄRNÖ Rama łóżka - antracyt/Luröy 140x200 cm",
+       "produkt": "NYHAMN Sofa 3-osobowa, rozkładana - materac ze sprężynami kieszeniowymi/Skartofta czarny/jasny szary",
        "sklep": "ikea.com",
-       "url": "https://www.ikea.com/pl/pl/p/stjaernoe-rama-lozka-antracyt-luroey-s99563345/",
-       "cena": 1099.0,
-       "cena_txt": "1099,00",
+       "url": "https://www.ikea.com/pl/pl/p/nyhamn-sofa-3-osobowa-rozkladana-materac-ze-sprezynami-kieszeniowymi-skartofta-czarny-jasny-szary-s89494611/",
+       "cena": 1199.0,
+       "cena_txt": "1199,00",
        "jednostka": "szt.",
-       "ilosc": 2.0,
-       "suma": 2198.0,
-       "suma_txt": "2198,00"
+       "ilosc": 1.0,
+       "suma": 1199.0,
+       "suma_txt": "1199,00"
       }
      ]
     },
@@ -3043,7 +6016,7 @@
      ]
     },
     {
-     "nazwa": "szafki nocne",
+     "nazwa": "stolik boczny przy kanapie",
      "ocena": "dobrany",
      "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
      "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
@@ -3062,21 +6035,59 @@
      ]
     },
     {
-     "nazwa": "siedzisko 2/08 (BESTÅ 120: mo/ja/sk 1× pod skosem pod oknem dachowym, cm/il/nk 2× w lukarnie)",
+     "nazwa": "lampka przy kanapie 2/08",
      "ocena": "dobrany",
      "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
      "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
      "produkty": [
       {
-       "produkt": "BESTÅ Obudowa, imitacja dębu bejcowanego na biało, 120x40x38 cm",
+       "produkt": "ÅRSTID Lampa stołowa, niklowano/biały",
        "sklep": "ikea.com",
-       "url": "https://www.ikea.com/pl/pl/p/besta-obudowa-imitacja-debu-bejcowanego-na-bialo-40247373/",
-       "cena": 185.0,
-       "cena_txt": "185,00",
+       "url": "https://www.ikea.com/pl/pl/p/arstid-lampa-stolowa-niklowano-bialy-70280634/",
+       "cena": 79.99,
+       "cena_txt": "79,99",
        "jednostka": "szt.",
-       "ilosc": 2.0,
-       "suma": 370.0,
-       "suma_txt": "370,00"
+       "ilosc": 1.0,
+       "suma": 79.99,
+       "suma_txt": "79,99"
+      }
+     ]
+    },
+    {
+     "nazwa": "wieszak na ubrania 2/08",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "TURBO Wieszak na ubrania, wew/zew - czarny 117x59 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/turbo-wieszak-na-ubrania-wew-zew-czarny-40177233/",
+       "cena": 199.0,
+       "cena_txt": "199,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 199.0,
+       "suma_txt": "199,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "ławka na bagaż 2/08",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "NIPÅSEN Ławka z półkami na buty - czarny 79x35x52 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/nipasen-lawka-z-polkami-na-buty-czarny-20586142/",
+       "cena": 149.0,
+       "cena_txt": "149,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 149.0,
+       "suma_txt": "149,00"
       }
      ]
     },
@@ -3117,11 +6128,557 @@
        "suma_txt": "5862,70"
       }
      ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 89.99,
+       "suma_txt": "89,99"
+      },
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 29.98,
+       "suma_txt": "29,98"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 20.0,
+       "suma_txt": "20,00"
+      }
+     ]
     }
    ],
-   "luki": [
-    "poducha siedziska w lukarnie 240 cm"
-   ]
+   "luki": []
+  },
+  "2-08_b.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-08_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Panel winylowy GoodHome SPC white Concrete 2,402 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/panel-winylowy-goodhome-spc-white-concrete-2-402-m2/5059340802848_CAPL.prd",
+       "cena": 307.46,
+       "cena_txt": "307,46",
+       "jednostka": "op. (2,402 m²)",
+       "ilosc": 70.0,
+       "suma": 21522.2,
+       "suma_txt": "21522,20"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "łóżko",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "STJÄRNÖ Rama łóżka - antracyt/Luröy 140x200 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/stjaernoe-rama-lozka-antracyt-luroey-s99563345/",
+       "cena": 1099.0,
+       "cena_txt": "1099,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 1099.0,
+       "suma_txt": "1099,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "drzwi wewnętrzne",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Drzwi bezprzylgowe pełne Exmoor 80 białe premium czarne obrzeże",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pelne-exmoor-80-biale-premium-czarne-obrzeze/5900378226215_CAPL.prd",
+       "cena": 358.0,
+       "cena_txt": "358,00",
+       "jednostka": "szt.",
+       "ilosc": 9.0,
+       "suma": 3222.0,
+       "suma_txt": "3222,00"
+      },
+      {
+       "produkt": "Drzwi pełne Exmoor 90 lewe białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-exmoor-90-lewe-biale/5900378206767_CAPL.prd",
+       "cena": 278.0,
+       "cena_txt": "278,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 278.0,
+       "suma_txt": "278,00"
+      },
+      {
+       "produkt": "Drzwi pełne ukryte do zewnątrz 70 prawe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-pelne-ukryte-do-zewnatrz-70-prawe/5900378219286_CAPL.prd",
+       "cena": 348.0,
+       "cena_txt": "348,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 348.0,
+       "suma_txt": "348,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Exmoor 80 biały czarna szyba",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-exmoor-80-bialy-czarna-szyba/5900378225492_CAPL.prd",
+       "cena": 718.0,
+       "cena_txt": "718,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 1436.0,
+       "suma_txt": "1436,00"
+      },
+      {
+       "produkt": "Drzwi bezprzylgowe pokojowe Fortia Fresno z czarną szybą 90 białe",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/drzwi-bezprzylgowe-pokojowe-fortia-fresno-z-czarna-szyba-90-biale/5063022800732_CAPL.prd",
+       "cena": 798.0,
+       "cena_txt": "798,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 798.0,
+       "suma_txt": "798,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "stolik boczny przy kanapie",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "BLÄSTÅSEN Stolik nocny - czarny 50x37x76 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/blaestasen-stolik-nocny-czarny-90617569/",
+       "cena": 349.0,
+       "cena_txt": "349,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 349.0,
+       "suma_txt": "349,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "dywan",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "TIPHEDE Dywan tkany na płasko - czarny/naturalny 155x220 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/tiphede-dywan-tkany-na-plasko-czarny-naturalny-20470047/",
+       "cena": 79.0,
+       "cena_txt": "79,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 79.0,
+       "suma_txt": "79,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "lampa sufitowa pokoju",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Plafon LED Yonnet 4000 K 43 cm 19W czarny",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plafon-led-yonnet-4000-k-43-cm-19w-czarny/5059340233871_CAPL.prd",
+       "cena": 168.0,
+       "cena_txt": "168,00",
+       "jednostka": "szt.",
+       "ilosc": 6.0,
+       "suma": 1008.0,
+       "suma_txt": "1008,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "wykończenie ścian (lamele / cegła / sztukateria)",
+     "ocena": "dobrany",
+     "ocena_pl": "dobrany do wizualizacji (do potwierdzenia)",
+     "uwagi": "pozycja dodana 2026-10-25 na podstawie wizualizacji – zgodność do potwierdzenia przy kolejnym przeglądzie",
+     "produkty": [
+      {
+       "produkt": "Płytka dekoracyjna gipsowa Parma 01 Stegu 1 0,5 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/plytka-dekoracyjna-gipsowa-parma-01-stegu-1-0-5-m2/5907762302784_CAPL.prd",
+       "cena": 50.98,
+       "cena_txt": "50,98",
+       "jednostka": "op. (0,5 m²)",
+       "ilosc": 115.0,
+       "suma": 5862.7,
+       "suma_txt": "5862,70"
+      }
+     ]
+    },
+    {
+     "nazwa": "dodatki i dekoracje (rośliny, obrazy, tekstylia)",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PJÄTTERYD Obraz - migawka 70x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pjaetteryd-obraz-migawka-40619392/",
+       "cena": 89.99,
+       "cena_txt": "89,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 89.99,
+       "suma_txt": "89,99"
+      },
+      {
+       "produkt": "MONSTERA DELICIOSA Roślina doniczkowa - monstera dziurawa 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/monstera-deliciosa-roslina-doniczkowa-monstera-dziurawa-50515493/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "GRADVIS Osłonka doniczki - do wewnątrz/na zewnątrz czarny 12 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/gradvis-oslonka-doniczki-do-wewnatrz-na-zewnatrz-czarny-50494792/",
+       "cena": 19.99,
+       "cena_txt": "19,99",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 19.99,
+       "suma_txt": "19,99"
+      },
+      {
+       "produkt": "IDALINNEA Poszewka - antracyt 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/idalinnea-poszewka-antracyt-20548292/",
+       "cena": 14.99,
+       "cena_txt": "14,99",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 29.98,
+       "suma_txt": "29,98"
+      },
+      {
+       "produkt": "INNER Poduszka wewnętrzna - biały 50x50 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/inner-poduszka-wewnetrzna-bialy-60262193/",
+       "cena": 10.0,
+       "cena_txt": "10,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 20.0,
+       "suma_txt": "20,00"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "2-09.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-09.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "podłoga",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Panel winylowy GoodHome SPC white Concrete 2,402 m2",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/panel-winylowy-goodhome-spc-white-concrete-2-402-m2/5059340802848_CAPL.prd",
+       "cena": 307.46,
+       "cena_txt": "307,46",
+       "jednostka": "op. (2,402 m²)",
+       "ilosc": 70.0,
+       "suma": 21522.2,
+       "suma_txt": "21522,20"
+      }
+     ]
+    },
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafa PAX",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "PAX / FORSAND Szafa - biały/biały 250x60x201 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/pax-forsand-szafa-bialy-bialy-s29478082/",
+       "cena": 2195.0,
+       "cena_txt": "2195,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 2195.0,
+       "suma_txt": "2195,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "oczka sufitowe",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Philips Oprawa podtynkowa MESON biała śr. 9,7 cm 3000K 5,5W 500lm",
+       "sklep": "obi.pl",
+       "url": "https://www.obi.pl/p/7141096/philips-oprawa-podtynkowa-meson-biala-sr-9-7-cm-3000k-5-5w-500lm",
+       "cena": 15.99,
+       "cena_txt": "15,99",
+       "jednostka": "szt.",
+       "ilosc": 20.0,
+       "suma": 319.8,
+       "suma_txt": "319,80"
+      }
+     ]
+    }
+   ],
+   "luki": []
+  },
+  "2-10.jpg": {
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/industrialny-loft/2-10.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/industrialny-loft/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
+   "materialy": [
+    {
+     "nazwa": "farba ścienna",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Farba Dulux Twoja biel kryjąca 9 l",
+       "sklep": "castorama.pl",
+       "url": "https://www.castorama.pl/farba-dulux-twoja-biel-kryjaca-9-l/5904078227480_CAPL.prd",
+       "cena": 138.0,
+       "cena_txt": "138,00",
+       "jednostka": "szt.",
+       "ilosc": 8.0,
+       "suma": 1104.0,
+       "suma_txt": "1104,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "pralka",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Pralka ładowana od frontu BOSCH WAN2827LPL Biały z czarnymi drzwiami",
+       "sklep": "mediamarkt.pl",
+       "url": "https://mediamarkt.pl/pl/product/_pralka-ladowana-od-frontu-bosch-bosch-wan2827lpl-bialy-z-czarnymi-drzwiami-1501540.html",
+       "cena": 1999.0,
+       "cena_txt": "1999,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 1999.0,
+       "suma_txt": "1999,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "suszarka z pompą ciepła",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "Suszarka Kondensacyjna z pompą ciepła BOSCH WTH85V9FPL Biały, Czarna ramka drzwi",
+       "sklep": "mediamarkt.pl",
+       "url": "https://mediamarkt.pl/pl/product/_suszarka-kondensacyjna-z-pompa-ciepla-bosch-wth85v9fpl-bialy-czarna-ramka-drzwi-1491194.html",
+       "cena": 2649.0,
+       "cena_txt": "2649,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 2649.0,
+       "suma_txt": "2649,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "szafka z umywalką",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "ENHET / TVÄLLEN Szafka pod umyw z drzwiami/umywalka, biały, 64x33x65 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/enhet-tvaellen-szafka-pod-umyw-z-drzwiami-umywalka-bialy-s79613346/",
+       "cena": 679.0,
+       "cena_txt": "679,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 679.0,
+       "suma_txt": "679,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "bateria umywalkowa",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "SALJEN Bateria umywalkowa, czarny",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/saljen-bateria-umywalkowa-czarny-40385492/",
+       "cena": 100.0,
+       "cena_txt": "100,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 100.0,
+       "suma_txt": "100,00"
+      }
+     ]
+    },
+    {
+     "nazwa": "otwarte szafki wiszące ENHET",
+     "ocena": "nieczytelne",
+     "ocena_pl": "nieczytelny w kadrze",
+     "uwagi": "element mało widoczny / nieoceniony w kadrze",
+     "produkty": [
+      {
+       "produkt": "ENHET Rama szafki wiszącej z półkami, antracyt, 60x30x75 cm",
+       "sklep": "ikea.com",
+       "url": "https://www.ikea.com/pl/pl/p/enhet-rama-szafki-wiszacej-z-polkami-antracyt-00448972/",
+       "cena": 220.0,
+       "cena_txt": "220,00",
+       "jednostka": "szt.",
+       "ilosc": 2.0,
+       "suma": 440.0,
+       "suma_txt": "440,00"
+      }
+     ]
+    }
+   ],
+   "luki": []
   }
  }
 }

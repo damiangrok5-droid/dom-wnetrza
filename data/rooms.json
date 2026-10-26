@@ -12,7 +12,7 @@
   "windows": [],
   "doors": [
    "90/200 do przedpokoju 1/06",
-   "80/200 EI30 do garażu 1/10 (ppoż., samozamykacz)",
+   "80/200 EI30 do garażu 1/10 (ppoż., samozamykacz) – otwierane do garażu, zawias od pd. arkusza (skany v2)",
    "150/210 drzwi wejściowe (wym. ościeżnicy; podział skrzydło+doświetle niepotwierdzony)"
   ],
   "plan": "plany/1-01.png"
@@ -29,8 +29,8 @@
   "slopes": "brak",
   "windows": [
    "HST 326/230 (przesuwne podnoszone) na taras pod pergolą 626×300",
-   "HST 180/230 (pierwotnie drzwi 2-skrzydłowe – przekreślone na czerwono, zamiana na przesuwne)",
-   "okno narożne SE (h=80 = parapet 80 cm), ramiona ok. 112 (E) i 227 (S) – długości niskiej pewności"
+   "HST 300/230 (przesuwne podnoszone; skany v2 + potwierdzenie 26.10: otwór poszerzony z 180 do ≈300, +120 na pn. arkusza, ościeże pd. bez zmian; pierwotnie drzwi 2-skrzydłowe)",
+   "okno narożne SE (h=80 = parapet 80 cm), ramiona ok. 112 (E) i 216 (S, skany v2; było 227)"
   ],
   "doors": [
    "otwarte przejście do przedpokoju 1/06 i kuchni (bez drzwi)"
@@ -51,8 +51,8 @@
    "250/140, parapet h=90 (blat), w wykuszu; nadproże 2×14×35"
   ],
   "doors": [
-   "drzwi 70/200 do spiżarki 1/04 (skrzydło rysowane pod 45° – otwierane do kuchni)",
-   "„drzwi w zabudowie meblowej” do przedpokoju 1/06 (ukryte w frontach)"
+   "drzwi 70/200 do spiżarki 1/04 W ZABUDOWIE (fronty jak meble kuchenne)",
+   "OTWÓR 111 cm bez drzwi z przedpokoju 1/06 (x 705–816), do stropu, bez nadproża"
   ],
   "plan": "plany/1-03.png"
  },
@@ -62,13 +62,13 @@
   "name": "Spiżarka (nowa)",
   "floor": "parter",
   "area": 1.51,
-  "dims": "113 × ok. 134 (113 czerwony; 28+70+45 przy ścianie E)",
+  "dims": "113 × 137 (x 586–699, y 171–308) – wg oryginalnego projektu (lustrzane względem skanu v2)",
   "h": "2,68 m w świetle",
   "shape": "prostokąt (wydzielony z pokoju 1/07, ścianki 12)",
   "slopes": "brak",
   "windows": [],
   "doors": [
-   "70/200 do kuchni"
+   "70/200 do kuchni, w zabudowie (fronty jak meble)"
   ],
   "plan": "plany/1-04.png"
  },
@@ -99,9 +99,9 @@
   "windows": [],
   "doors": [
    "90/200 do wiatrołapu",
-   "80/200 do pokoju 1/07",
+   "80/200 do pokoju 1/07 (otwór 474–564 wg skanu; skrzydło 479–559)",
    "80/200 do łazienki 1/08",
-   "drzwi w zabudowie meblowej do kuchni"
+   "otwór 111 bez drzwi do kuchni 1/03 (x 705–816)"
   ],
   "plan": "plany/1-06.png"
  },
@@ -113,13 +113,13 @@
   "area": 9.38,
   "dims": "L: część N 315 szer. (czerwony), część S 372 szer.; głęb. 283 (N–S)",
   "h": "2,68 m w świetle",
-  "shape": "L (narożnik NE odcięty spiżarką 1/04)",
+  "shape": "L – wnęka 57×134 w narożniku NE (x 574–631, y 25–159) wg oryginalnego projektu; spiżarka 1/04 przy ścianie E na płd.",
   "slopes": "brak",
   "windows": [
    "100/230 (drzwiowe, od podłogi)"
   ],
   "doors": [
-   "80/200"
+   "80/200 (otwór 474–564), zawias po stronie E (zmiana funkcjonalna F1)"
   ],
   "plan": "plany/1-07.png"
  },
@@ -150,8 +150,7 @@
   "shape": "L",
   "slopes": "—",
   "windows": [
-   "100/230",
-   "NOWE okno (czerwone), parapet h=100 – wymiar ucięty na zdjęciu"
+   "100/230"
   ],
   "doors": [
    "90/200 z garażu"
@@ -172,8 +171,8 @@
    "okno, parapet h=100 (rozmiar ucięty)"
   ],
   "doors": [
-   "brama 500/238 (przeniesiona do nowej ściany czołowej)",
-   "80/200 EI30 do wiatrołapu",
+   "brama 500/230 (przeniesiona do nowej ściany czołowej; wys. 230 wg skanów v2 – w starej ścianie 238)",
+   "80/200 EI30 do wiatrołapu 1/01 – otwierane DO GARAŻU, zawias od pd. arkusza (skany v2)",
    "90/200 do kotłowni"
   ],
   "plan": "plany/1-10.png"
@@ -191,9 +190,9 @@
   "windows": [],
   "doors": [
    "180/230 drzwi balkonowe z balustradą (balkon francuski)",
-   "80/200 ×3 do 2/10, 2/09, 2/08",
-   "80/200 ×2 do 2/07, 2/06",
-   "80/200 do 2/05; przedsionek 113 → 2/03, 2/04, 2/02"
+   "80/200 ×3 do 2/10, 2/09, 2/08 (otwory 208 w świetle wg skanów v2; 2/09 zawias W, 2/08 zawias E)",
+   "80/200 ×2 do 2/07, 2/06 (otwory 208; 2/07 zawias od pd. arkusza)",
+   "80/200 do 2/05 – otwierane NA HOL 2/01, zawias W (skany v2); przedsionek 113 → 2/03, 2/04, 2/02"
   ],
   "plan": "plany/2-01.png"
  },
@@ -203,12 +202,12 @@
   "name": "Sypialnia główna (skrzydło nad garażem)",
   "floor": "poddasze",
   "area": 31.45,
-  "dims": "584 (W–E, między ściankami kolankowymi 33) × ok. 515–540 (pomiar pikselowy 513, z pola tabeli 538; po przesunięciu szczytu ok. 150 na S – czerwone; pierwotnie ok. 366)",
-  "h": "ścianki kolankowe ≈1,18 m",
-  "shape": "prostokąt, dach dwuspadowy z kalenicą N–S (wzdłuż pokoju); sufit sklepiony do kalenicy (decyzja – oryginalnie płaski „obrys sufitu”)",
-  "slopes": "pasy wzdłuż ścian W i E: <1,40 m ~25 cm, 1,40–2,20 m ~103 cm, >2,20 m środek ok. 330 cm",
+  "dims": "584 (W–E, między ściankami kolankowymi 33) × ≈470 (skany v2 / model; wcześniej szacowane 515–540 z pola tabeli – nieaktualne; po przesunięciu szczytu ok. 150 na S; pierwotnie ok. 366)",
+  "h": "ścianki kolankowe ≈1,10 m",
+  "shape": "prostokąt, dach dwuspadowy z kalenicą N–S (wzdłuż pokoju); skosy 38° od ścianek 110 do płaskiego pasa ≈1 m na ≈3,00 m (skany v2: C-C/D-D; nie sklepienie do kalenicy)",
+  "slopes": "pasy wzdłuż ścian W i E: H<1,40 ok. 19 cm, 1,40–2,20 do ok. 124 cm od lica (linie rzutu; z geometrii 38/141); środek >2,20 m; płaski pas ≈1 m na ≈3,00 m",
   "windows": [
-   "OKNO SZCZYTOWE „Z/2” – wypełnia cały trójkąt szczytu, 3 pola, szer. ok. 5,6 m przy podłodze? – wymiary NIEZNANE",
+   "OKNO SZCZYTOWE „Z/2” – 3 pola, szer. ok. 5,6 m, wys. 275 od podłogi (+2,96 → +5,71, skany v2 C-C), prostokątne; w narożach przycięte skosami",
    "okno dachowe 78/140"
   ],
   "doors": [
@@ -255,14 +254,14 @@
   "floor": "poddasze",
   "area": 7.97,
   "dims": "296 (W–E) × ok. 269",
-  "h": "ścianka kolankowa S ≈1,18 m; H=140 ok. 0,3 m, H=220 ok. 1,3 m od ściany; dalej sufit płaski 2,76 m",
+  "h": "ścianka kolankowa S ≈1,44 m",
   "shape": "prostokąt; S strona pod skosem",
   "slopes": "pas S (WC/bidet) 1,4–2,2 m; reszta pełna wysokość",
   "windows": [
    "okno dachowe 94/118"
   ],
   "doors": [
-   "80/200 z holu (świetlo 90)"
+   "80/200 z holu (świetlo 90) – otwierane NA HOL 2/01, zawias W (skany v2)"
   ],
   "plan": "plany/2-05.png"
  },
@@ -273,9 +272,9 @@
   "floor": "poddasze",
   "area": 15.59,
   "dims": "359 × 397 + przedłużenie W 60 × 207,5 (łącznie 419 przy ścianie S)",
-  "h": "ścianka kolankowa S ≈1,18 m; H=140 ok. 0,3 m, H=220 ok. 1,3 m od ściany; sufit płaski 2,76 m",
+  "h": "ścianka kolankowa S ≈1,44 m",
   "shape": "prostokąt z występem W przy ścianie S",
-  "slopes": "pas S ok. 1,3 m pod skosem",
+  "slopes": "pas S ok. 1,0 m pod skosem",
   "windows": [
    "okno dachowe 94/118"
   ],
@@ -292,14 +291,14 @@
   "floor": "poddasze",
   "area": 14.09,
   "dims": "359 × 401",
-  "h": "ścianka kolankowa N ≈1,18 m; H=140 ok. 0,3 m, H=220 ok. 1,3 m; sufit płaski 2,76 m",
+  "h": "ścianka kolankowa N ≈1,44 m",
   "shape": "prostokąt",
-  "slopes": "pas N ok. 1,3 m pod skosem; obrys sufitu ~2,0 m od ściany N",
+  "slopes": "pas N ok. 1,0 m pod skosem; obrys sufitu ~2,0 m od ściany N",
   "windows": [
    "okno dachowe 94/118"
   ],
   "doors": [
-   "80/200 z holu",
+   "80/200 z holu – zawias od pd. arkusza (skany v2)",
    "160/230 drzwi balkonowe na taras"
   ],
   "plan": "plany/2-07.png"
@@ -307,19 +306,18 @@
  {
   "id": "2/08",
   "slug": "2-08",
-  "name": "Pokój z lukarną",
+  "name": "Pokój gościnny (bez lukarny)",
   "floor": "poddasze",
   "area": 14.37,
-  "dims": "440 × 283 + lukarna 320 × 80 (2 okna 153 + słupek 14×14)",
-  "h": "ścianka kolankowa N ≈1,18 m → skos 38° → sufit płaski 2,76 m",
-  "shape": "prostokąt z lukarną na N",
-  "slopes": "pas N poza lukarną",
+  "dims": "440 × 283 + wnęka pn. 320 × 80 (x 644–964) pod połacią – BEZ lukarny",
+  "h": "ścianka kolankowa N ≈1,44 m",
+  "shape": "prostokąt z wnęką 320×80 na N (pod skosem, H 82–144)",
+  "slopes": "pas N na całej szerokości + wnęka 320×80 w całości poniżej 1,44 m (H 82 przy murze → 144 przy linii ścianki)",
   "windows": [
-   "2 × okno w lukarnie szer. 153 (wys. nieznana), słupek 14×14 pośrodku – BEZ szprosów",
    "2 × okno dachowe 94/118"
   ],
   "doors": [
-   "80/200 z holu"
+   "80/200 z holu – otwierane do pokoju, zawias E (przy kominie; skany v2)"
   ],
   "plan": "plany/2-08.png"
  },
@@ -330,12 +328,12 @@
   "floor": "poddasze",
   "area": 6.25,
   "dims": "228 × 283",
-  "h": "ścianka kolankowa N ≈1,18 m → skos 38° → sufit płaski 2,76 m",
+  "h": "ścianka kolankowa N ≈1,44 m",
   "shape": "prostokąt",
   "slopes": "pas N",
   "windows": [],
   "doors": [
-   "80/200"
+   "80/200 – otwierane do pokoju, zawias W (skany v2)"
   ],
   "plan": "plany/2-09.png"
  },
@@ -346,7 +344,7 @@
   "floor": "poddasze",
   "area": 6.46,
   "dims": "247 × 283",
-  "h": "ścianka kolankowa N ≈1,18 m → skos 38° → sufit płaski 2,76 m",
+  "h": "ścianka kolankowa N ≈1,44 m",
   "shape": "prostokąt",
   "slopes": "pas N",
   "windows": [

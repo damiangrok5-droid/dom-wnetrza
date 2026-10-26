@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4EFE7">
+<meta name="robots" content="noindex">
+<title>Dom – harmonogram wykończenia</title>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/vendor/frappe-gantt/frappe-gantt.css">
+<style>
+.hm-bar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.hm-bar .btn.on{background:var(--acc)}
+.gwrap{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;max-width:100%}
+.gwrap .gantt-container{max-width:100%;-webkit-overflow-scrolling:touch}
+.gantt .bar-wrapper.g-termin .bar{fill:#A8432F}
+.gantt .bar-wrapper.g-przerwa .bar{fill:#CFC6B8}
+.gantt .bar-wrapper.g-zamówienia .bar{fill:#7D7A5B}
+.gantt .bar-wrapper.g-montaż .bar{fill:#8C6A43}
+.gantt .bar-wrapper.g-instalacje .bar{fill:#4F6F8A}
+.gantt .bar-wrapper.g-mokre .bar{fill:#9C8A6E}
+.gantt .bar-wrapper.g-wykończenie .bar{fill:#4F7A4A}
+.gantt .bar-label{font-size:12px}
+.lista{list-style:none;margin:16px 0 0;padding:0}
+.lista li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0;display:grid;grid-template-columns:1fr auto;gap:2px 10px}
+.lista .d{color:var(--mut);font-size:.85rem;grid-column:1/-1}
+.lista .t{font-weight:600}
+.lista .n{color:var(--mut);font-size:.85rem;white-space:nowrap}
+.lista li.termin{border-left:4px solid var(--bad)}
+.leg{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:.82rem;color:var(--mut);margin:8px 0}
+.leg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html#/">Dom <span>· wnętrza</span></a>
+  <nav class="tabs" id="tabs" aria-label="Sekcje">
+    <a href="index.html#/">Style</a>
+    <a href="index.html#/pokoje">Pokoje</a>
+    <a href="index.html#/zakupy">Zakupy</a>
+    <a href="index.html#/porownanie">Porównanie</a>
+    <a href="harmonogram.html" class="on" aria-current="page">Harmonogram</a>
+    <a href="3d.html">3D</a>
+    <a href="spacer.html">Spacer</a>
+  </nav>
+</header>
+<main>
+  <h1>Harmonogram wykończenia</h1>
+  <div class="note" id="uwaga"></div>
+  <div class="hm-bar" role="group" aria-label="Skala">
+    <button class="btn alt" data-vm="Week">Tygodnie</button>
+    <button class="btn alt" data-vm="Month">Miesiące</button>
+  </div>
+  <div class="leg" id="leg"></div>
+  <div class="gwrap"><div id="gantt"></div></div>
+  <h2>Kolejność prac</h2>
+  <ol class="lista" id="lista"></ol>
+</main>
+<footer class="foot"><p>Harmonogram orientacyjny – daty startu są założeniem do uzgodnienia z wykonawcami. Wykres: Frappe Gantt (MIT).</p></footer>
+<script src="assets/vendor/frappe-gantt/frappe-gantt.umd.js"></script>
+<script>
+(async()=>{
+const D=86400000, iso=d=>d.toISOString().slice(0,10), P=s=>new Date(s+'T00:00:00Z');
+const fmt=s=>P(s).toLocaleDateString('pl-PL',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'});
+const j=await (await fetch('data/harmonogram.json',{cache:'no-cache'})).json();
+document.getElementById('uwaga').textContent=j.uwaga;
+const by={};j.zadania.forEach(t=>by[t.id]=t);
+const end=t=>{ if(t._e) return t._e;
+  if(!t.start){ let s=P(j.start); (t.deps||[]).forEach(d=>{const e=P(end(by[d]));e.setUTCDate(e.getUTCDate()+1);if(e>s)s=e;});
+    t.start=iso(s); const e=new Date(s.getTime()+(t.dni-1)*D); t.end=iso(e);} return t._e=t.end; };
+j.zadania.forEach(end);
+const kol={termin:'#A8432F',przerwa:'#CFC6B8','zamówienia':'#7D7A5B','montaż':'#8C6A43',instalacje:'#4F6F8A',mokre:'#9C8A6E','wykończenie':'#4F7A4A'};
+document.getElementById('leg').innerHTML=Object.entries(kol).map(([k,c])=>`<span><i style="background:${c}"></i>${k}</span>`).join('');
+const tasks=j.zadania.map(t=>({id:t.id,name:t.name,start:t.start,end:t.end,progress:0,dependencies:(t.deps||[]).join(','),custom_class:'g-'+t.grupa}));
+const wide=matchMedia('(min-width:700px)').matches;
+const vm0=wide?'Week':'Month';
+const g=new Gantt('#gantt',tasks,{view_mode:vm0,language:'pl',readonly:true,bar_height:22,padding:14,
+  container_height:'auto',today_button:false,view_mode_select:false,scroll_to:'2026-12-01',popup_on:'click',
+  popup:({task,set_title,set_subtitle,set_details})=>{const t=by[task.id];set_title(t.name);set_subtitle(fmt(t.start)+' – '+fmt(t.end));set_details(t.opis||(t.dni?t.dni+' dni':''));}});
+const btns=document.querySelectorAll('[data-vm]');
+const mark=v=>btns.forEach(b=>b.classList.toggle('on',b.dataset.vm===v));mark(vm0);
+btns.forEach(b=>b.addEventListener('click',()=>{g.change_view_mode(b.dataset.vm);mark(b.dataset.vm);}));
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+document.getElementById('lista').innerHTML=[...j.zadania].sort((a,b)=>a.start<b.start?-1:a.start>b.start?1:0).map(t=>
+ `<li class="${t.grupa==='termin'?'termin':''}"><span class="t">${esc(t.name)}</span><span class="n">${t.dni?t.dni+' dni':''}</span><span class="d">${fmt(t.start)}${t.end!==t.start?' – '+fmt(t.end):''}${t.opis?' · '+esc(t.opis):''}</span></li>`).join('');
+})().catch(e=>{document.getElementById('gantt').textContent='Nie udało się wczytać harmonogramu.';console.error(e);});
+</script>
+<script>document.querySelector('#tabs a.on')?.scrollIntoView({inline:'center',block:'nearest'});</script>
+</body>
+</html>

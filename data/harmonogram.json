@@ -1,0 +1,27 @@
+{
+  "uwaga": "Kolejność i czasy trwania typowe dla wykończenia domu ~260 m²; daty to ZAŁOŻENIE (start instalacji po stanie surowym zamkniętym, umowa GW do końca 2026) – do uzgodnienia z wykonawcami. Czasy w dniach kalendarzowych, schnięcie wg typowych zaleceń producentów.",
+  "start": "2027-01-11",
+  "zadania": [
+    {"id": "m-proj", "name": "Projekt rozmieszczenia: elektryka, oświetlenie, hydraulika", "start": "2026-10-26", "end": "2026-12-31", "grupa": "termin", "opis": "TERMIN: grudzień 2026 – rozmieszczenie gniazd, łączników, punktów świetlnych, podejść wod.-kan. i stelaży musi być gotowe przed startem instalacji."},
+    {"id": "m-ssz", "name": "Stan surowy zamknięty (GW)", "start": "2026-12-31", "end": "2026-12-31", "grupa": "termin", "opis": "Umowa z generalnym wykonawcą do końca 2026."},
+    {"id": "el", "name": "Instalacja elektryczna i oświetlenie (bruzdy, puszki, przewody)", "dni": 21, "deps": ["m-proj", "m-ssz"], "grupa": "instalacje"},
+    {"id": "wk", "name": "Instalacja wod.-kan., stelaże podtynkowe", "dni": 14, "deps": ["m-proj", "m-ssz"], "grupa": "instalacje"},
+    {"id": "rek", "name": "Rekuperacja – kanały i skrzynki", "dni": 10, "deps": ["m-ssz"], "grupa": "instalacje"},
+    {"id": "tynki", "name": "Tynki wewnętrzne", "dni": 21, "deps": ["el", "wk", "rek"], "grupa": "mokre"},
+    {"id": "tynki-s", "name": "Schnięcie tynków (wietrzenie)", "dni": 21, "deps": ["tynki"], "grupa": "przerwa"},
+    {"id": "pod", "name": "Izolacja posadzki + rury ogrzewania podłogowego", "dni": 7, "deps": ["tynki"], "grupa": "instalacje"},
+    {"id": "wyl", "name": "Wylewki", "dni": 5, "deps": ["pod"], "grupa": "mokre"},
+    {"id": "wyl-s", "name": "Schnięcie i wygrzewanie wylewek, pomiar wilgotności CM", "dni": 35, "deps": ["wyl"], "grupa": "przerwa"},
+    {"id": "gl", "name": "Gruntowanie, gładzie, malowanie podkładowe", "dni": 21, "deps": ["tynki-s"], "grupa": "wykończenie"},
+    {"id": "plyt", "name": "Hydroizolacja i płytki (łazienki, pralnia, schody, fartuch)", "dni": 28, "deps": ["wyl-s", "gl"], "grupa": "wykończenie"},
+    {"id": "podl", "name": "Podłogi – deska warstwowa, listwy, progi", "dni": 14, "deps": ["plyt"], "grupa": "wykończenie"},
+    {"id": "drz-z", "name": "Drzwi wewnętrzne – pomiar otworów i czas realizacji", "dni": 42, "deps": ["tynki"], "grupa": "zamówienia"},
+    {"id": "drz", "name": "Montaż drzwi wewnętrznych", "dni": 5, "deps": ["podl", "drz-z"], "grupa": "montaż"},
+    {"id": "kuch-z", "name": "Kuchnia – pomiar po gładziach i produkcja", "dni": 42, "deps": ["gl"], "grupa": "zamówienia"},
+    {"id": "kuch", "name": "Montaż kuchni na wymiar + AGD", "dni": 7, "deps": ["podl", "kuch-z"], "grupa": "montaż"},
+    {"id": "bm", "name": "Biały montaż (WC, umywalki, baterie, wanna, prysznice)", "dni": 7, "deps": ["plyt"], "grupa": "montaż"},
+    {"id": "mal", "name": "Malowanie końcowe, osprzęt elektryczny, oprawy", "dni": 7, "deps": ["drz", "bm"], "grupa": "wykończenie"},
+    {"id": "meb", "name": "Meble – szafy na wymiar i IKEA, oświetlenie dekoracyjne", "dni": 14, "deps": ["mal", "kuch"], "grupa": "montaż"},
+    {"id": "odb", "name": "Sprzątanie, odbiór, lista usterek", "dni": 3, "deps": ["meb"], "grupa": "termin"}
+  ]
+}

@@ -25,7 +25,8 @@
   "file": "1-03.jpg",
   "title_pl": "Kuchnia z wyspą",
   "opis_pl": "Kuchnia 2,57 m: fronty grafitowe, blat Nero Assoluto, okno 250 bez szprosów, wyspa z płytą indukcyjną i czarnym okapem wyspowym, 3 czarne kopuły, ściana z cegły Parma.",
-  "odstepstwa_pl": "W tle jasne krzesła jadalni (spoza CSV)."
+  "odstepstwa_pl": "W tle jasne krzesła jadalni (spoza CSV).",
+  "uwaga_pl": "Wizualizacja sprzed korekty układu kuchni (26.10): obecnie blat L w wykuszu, półwysep 90×198 i 2 lampy, wejście z korytarza otworem 111 cm do sufitu. Aktualny układ: rzut poniżej i Spacer 3D (styl Modern organic)."
  },
  {
   "room": "1/06",
@@ -40,7 +41,7 @@
   "title_pl": "Pokój gościnny",
   "opis_pl": "Pokój gościnny (kadr z blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 ściana-ściana, czarne okno balkonowe 100/230 z balustradą, zasłony KORGMOTT ciemnoszare na czarnym karniszu BEKRÄFTA, stolik BLÅSTÅSEN czarny z lampą ÅRSTID, łóżko GLAMBERGET 80×200, pilaster w prawym dalszym narożniku, dywan TIPHEDE, winyl SPC white Concrete.",
   "odstepstwa_pl": "Łóżko 80×200 tymczasowo, do decyzji; plafon poza kadrem (sufit niewidoczny).",
-  "uwaga_pl": "Łóżko 80×200 jest tymczasowe – czeka na decyzję inwestora (140, 160, 80 albo sofa rozkładana); po decyzji wizualizacja i lista zakupów zostaną zaktualizowane."
+  "uwaga_pl": "Wizualizacja sprzed zmiany aranżacji (26.10): obecnie szafa PAX i sofa rozkładana LYCKSELE zamiast łóżka; obraz zostanie przerenderowany. Aktualny układ: rzut poniżej."
  },
  {
   "room": "1/08",
@@ -90,12 +91,5 @@
   "title_pl": "Pokój 2/07",
   "opis_pl": "Pokój na poddaszu: drzwi balkonowe 160 (~45% ściany), łóżko STJÄRNÖ antracyt 140, biurko czarnobrązowe, ściana szczytowa z cegły Parma.",
   "odstepstwa_pl": "Szyna Kobi i okno dachowe poza kadrem."
- },
- {
-  "room": "2/08",
-  "file": "2-08.jpg",
-  "title_pl": "Pokój z lukarną 2/08",
-  "opis_pl": "Pokój z lukarną: gładki biały sufit bez belek, dwa czarne okna rozdzielone słupkiem, biała cegła Parma, łóżko STJÄRNÖ antracyt, czarny plafon, okna dachowe w obu połaciach.",
-  "odstepstwa_pl": "Ławka pod oknami dłuższa niż 120 cm; łóżko wygląda nieco szerzej niż 140."
  }
 ]

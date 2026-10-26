@@ -1,157 +1,223 @@
 [
  {
   "slug": "modern-organic",
-  "total": 169909.33,
+  "total": 373187.48,
+  "breakdown": {
+   "products": 181163.84,
+   "materials": 17594.32,
+   "labour": 174429.32,
+   "labour_min": 130577.83,
+   "labour_max": 218281.58
+  },
   "by_cat": {
-   "drzwi": 13985.7,
+   "Dodatki i dekoracje": 3171.46,
+   "drzwi": 14179.7,
    "drzwi zewnętrzne / EI30": 9798.0,
-   "farby": 2754.82,
+   "farby": 2934.9,
    "kominek": 7094.0,
-   "kuchnia": 20490.0,
-   "meble": 46911.98,
-   "oświetlenie": 3935.79,
+   "kuchnia": 19370.0,
+   "materiały pomocnicze": 17594.32,
+   "meble": 50250.98,
+   "oświetlenie": 3856.78,
    "podłogi": 29213.67,
+   "pralnia": 5427.0,
    "płytki": 5779.41,
    "schody i balustrady": 10306.0,
-   "tekstylia": 948.96,
+   "tekstylia": 1098.95,
    "wykończenie ścian": 1680.0,
-   "łazienki": 17011.0
+   "łazienki": 17002.99,
+   "robocizna": 174429.32
   },
-  "verified": 107,
+  "verified": 263,
   "unverified": 0,
   "kitchen_est": [
-   40000,
-   60000
+   36064,
+   57040
   ],
   "budget": 400000
  },
  {
   "slug": "japandi",
-  "total": 165603.63,
+  "total": 370756.72,
+  "breakdown": {
+   "products": 175097.25,
+   "materials": 18201.52,
+   "labour": 177457.95,
+   "labour_min": 132852.55,
+   "labour_max": 222064.04
+  },
   "by_cat": {
-   "drzwi": 14135.7,
+   "Dodatki i dekoracje": 3541.56,
+   "drzwi": 14359.7,
    "drzwi zewnętrzne / EI30": 9798.0,
-   "farby": 3054.82,
+   "farby": 3234.9,
    "kominek": 7094.0,
-   "kuchnia": 20490.0,
-   "meble": 39153.98,
-   "oświetlenie": 1902.66,
+   "kuchnia": 19370.0,
+   "materiały pomocnicze": 18201.52,
+   "meble": 40242.98,
+   "oświetlenie": 1912.66,
    "podłogi": 29220.92,
+   "pralnia": 5427.0,
    "płytki": 12404.16,
    "schody i balustrady": 6466.2,
-   "tekstylia": 948.96,
+   "tekstylia": 1098.95,
    "wykończenie ścian": 2409.8,
-   "łazienki": 18524.43
+   "łazienki": 18516.42,
+   "robocizna": 177457.95
   },
-  "verified": 106,
+  "verified": 263,
   "unverified": 0,
   "kitchen_est": [
-   40000,
-   60000
+   36064,
+   57040
   ],
   "budget": 400000
  },
  {
   "slug": "skandynawski-jasny",
-  "total": 140450.41,
+  "total": 322988.79,
+  "breakdown": {
+   "products": 149558.98,
+   "materials": 11917.44,
+   "labour": 161512.37,
+   "labour_min": 121636.38,
+   "labour_max": 201387.55
+  },
   "by_cat": {
-   "drzwi": 12149.7,
+   "Dodatki i dekoracje": 3147.51,
+   "drzwi": 12472.7,
    "drzwi zewnętrzne / EI30": 9798.0,
-   "farby": 1938.82,
+   "farby": 2118.9,
    "kominek": 7094.0,
-   "kuchnia": 20490.0,
-   "meble": 35542.97,
-   "oświetlenie": 2537.74,
+   "kuchnia": 19370.0,
+   "materiały pomocnicze": 11917.44,
+   "meble": 36581.97,
+   "oświetlenie": 2507.74,
    "podłogi": 15424.22,
+   "pralnia": 5427.0,
    "płytki": 6305.01,
    "schody i balustrady": 10306.0,
-   "tekstylia": 749.95,
+   "tekstylia": 899.94,
    "wykończenie ścian": 1072.0,
-   "łazienki": 17042.0
+   "łazienki": 17033.99,
+   "robocizna": 161512.37
   },
-  "verified": 105,
+  "verified": 264,
   "unverified": 0,
   "kitchen_est": [
-   40000,
-   60000
+   36064,
+   57040
   ],
   "budget": 400000
  },
  {
   "slug": "cieply-minimalizm",
-  "total": 171573.27,
+  "total": 358748.09,
+  "breakdown": {
+   "products": 183099.86,
+   "materials": 13246.15,
+   "labour": 162402.08,
+   "labour_min": 122439.13,
+   "labour_max": 202365.81
+  },
   "by_cat": {
-   "drzwi": 17435.7,
+   "Dodatki i dekoracje": 4384.53,
+   "drzwi": 17379.7,
    "drzwi zewnętrzne / EI30": 9798.0,
-   "farby": 2754.82,
+   "farby": 2934.9,
    "kominek": 7094.0,
-   "kuchnia": 20471.0,
-   "meble": 42701.99,
-   "oświetlenie": 3927.17,
+   "kuchnia": 19351.0,
+   "materiały pomocnicze": 13246.15,
+   "meble": 45656.99,
+   "oświetlenie": 3691.16,
    "podłogi": 27969.06,
+   "pralnia": 5427.0,
    "płytki": 9458.61,
    "schody i balustrady": 10306.0,
    "tekstylia": 349.0,
    "wykończenie ścian": 559.92,
-   "łazienki": 18748.0
+   "łazienki": 18739.99,
+   "robocizna": 162402.08
   },
-  "verified": 98,
+  "verified": 256,
   "unverified": 0,
   "kitchen_est": [
-   40000,
-   60000
+   36064,
+   57040
   ],
   "budget": 400000
  },
  {
   "slug": "industrialny-loft",
-  "total": 165491.94,
+  "total": 358479.4,
+  "breakdown": {
+   "products": 173698.53,
+   "materials": 16474.78,
+   "labour": 168306.09,
+   "labour_min": 126258.15,
+   "labour_max": 210354.8
+  },
   "by_cat": {
-   "drzwi": 14145.7,
+   "Dodatki i dekoracje": 3883.59,
+   "drzwi": 14409.7,
    "drzwi zewnętrzne / EI30": 9798.0,
-   "farby": 1938.82,
+   "farby": 2118.9,
    "kominek": 7094.0,
-   "kuchnia": 21111.24,
-   "meble": 42370.0,
-   "oświetlenie": 5021.94,
+   "kuchnia": 19991.24,
+   "materiały pomocnicze": 16474.78,
+   "meble": 42185.0,
+   "oświetlenie": 4786.87,
    "podłogi": 24145.7,
+   "pralnia": 5427.0,
    "płytki": 7102.86,
    "schody i balustrady": 7591.0,
    "tekstylia": 339.0,
    "wykończenie ścian": 6002.68,
-   "łazienki": 18831.0
+   "łazienki": 18822.99,
+   "robocizna": 168306.09
   },
-  "verified": 106,
+  "verified": 269,
   "unverified": 0,
   "kitchen_est": [
-   40000,
-   60000
+   36064,
+   57040
   ],
   "budget": 400000
  },
  {
   "slug": "nowoczesna-klasyka",
-  "total": 175684.38,
+  "total": 394868.64,
+  "breakdown": {
+   "products": 186751.84,
+   "materials": 17783.28,
+   "labour": 190333.52,
+   "labour_min": 146405.51,
+   "labour_max": 234262.31
+  },
   "by_cat": {
-   "drzwi": 15269.81,
+   "Dodatki i dekoracje": 4086.51,
+   "drzwi": 15452.7,
    "drzwi zewnętrzne / EI30": 9798.0,
-   "farby": 2297.82,
+   "farby": 2477.9,
    "kominek": 7094.0,
-   "kuchnia": 20471.0,
-   "meble": 45064.0,
-   "oświetlenie": 5660.79,
+   "kuchnia": 19351.0,
+   "materiały pomocnicze": 17783.28,
+   "meble": 47619.0,
+   "oświetlenie": 5424.78,
    "podłogi": 30918.5,
+   "pralnia": 5427.0,
    "płytki": 12404.16,
    "schody i balustrady": 6816.4,
    "tekstylia": 1645.0,
    "wykończenie ścian": 389.9,
-   "łazienki": 17855.0
+   "łazienki": 17846.99,
+   "robocizna": 190333.52
   },
-  "verified": 99,
+  "verified": 258,
   "unverified": 0,
   "kitchen_est": [
-   40000,
-   60000
+   36064,
+   57040
   ],
   "budget": 400000
  }

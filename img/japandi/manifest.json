@@ -25,14 +25,16 @@
   "file": "1-03.jpg",
   "title_pl": "Kuchnia 1/03 – ściana wysokiej zabudowy",
   "opis_pl": "Kuchnia japandi: ciemna zabudowa wysoka 220 cm z piekarnikiem i lodówką w zabudowie, obok drzwi 70/200 do spiżarni w kolorze kaszmir, zlew pod oknem po prawej, wyspa z płytą, kominowy okap wyspowy Franke Tale (stal), 3 hokery, 3 plecione lampy, gres Lora crema.",
-  "odstepstwa_pl": "Komin okapu dodany w obróbce do wcześniejszego kadru; środkowa lampa wisi przed kominem. Lampy plecione zamiast BLÅSTÅNG/HAVSDJUP z listy (bez zmian względem poprzedniej wersji)."
+  "odstepstwa_pl": "Komin okapu dodany w obróbce do wcześniejszego kadru; środkowa lampa wisi przed kominem. Lampy plecione zamiast BLÅSTÅNG/HAVSDJUP z listy (bez zmian względem poprzedniej wersji).",
+  "uwaga_pl": "Wizualizacja sprzed korekty układu kuchni (26.10): obecnie blat L w wykuszu, półwysep 90×198 i 2 lampy, wejście z korytarza otworem 111 cm do sufitu. Aktualny układ: rzut poniżej i Spacer 3D (styl Modern organic)."
  },
  {
   "room": "1-03",
   "file": "1-03_b.jpg",
   "title_pl": "Kuchnia 1/03 – widok na okno",
   "opis_pl": "Kuchnia japandi – widok na wykusz: okno we wnęce ze zlewem, ciemna zabudowa z piekarnikiem i lodówką KIN86 w zabudowie, wyspa z płytą, okap wyspowy Franke Tale nad płytą, plecione lampy, czarne hokery.",
-  "odstepstwa_pl": "Widać 2 z 3 lamp."
+  "odstepstwa_pl": "Widać 2 z 3 lamp.",
+  "uwaga_pl": "Wizualizacja sprzed korekty układu kuchni (26.10): obecnie blat L w wykuszu, półwysep 90×198 i 2 lampy, wejście z korytarza otworem 111 cm do sufitu. Aktualny układ: rzut poniżej i Spacer 3D (styl Modern organic)."
  },
  {
   "room": "1-06",
@@ -47,7 +49,7 @@
   "title_pl": "Pokój gościnny 1/07",
   "opis_pl": "Pokój gościnny japandi (kamera blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 po lewej, okno francuskie 100/230 z ciemną ramą, beżowa zasłona DYTÅG po prawej stronie okna, brązowy dębowy stolik TONSTAD z lampką TÄRNABY, sosnowe łóżko GLAMBERGET 80×200 z szufladami bez wezgłowia, grafitowy pled, dywan LOHALS, dąb Country.",
   "odstepstwa_pl": "Kadr z kamery blockoutu 1-07; szerokość okna skorygowana w obróbce (deterministyczne rozciągnięcie poziome strefy okna kosztem frontu szafy), tak by ściana z oknem odpowiadała ok. 3,15–3,5 m. Łóżko 80×200 wstępnie (do potwierdzenia). Plafonu Yonnet nie widać (poza kadrem). Widać jeden panel zasłony.",
-  "uwaga_pl": "Łóżko 80×200 jest tymczasowe – czeka na decyzję inwestora (140, 160, 80 albo sofa rozkładana); po decyzji wizualizacja i lista zakupów zostaną zaktualizowane."
+  "uwaga_pl": "Wizualizacja sprzed zmiany aranżacji (26.10): obecnie szafa PAX i sofa rozkładana LYCKSELE zamiast łóżka; obraz zostanie przerenderowany. Aktualny układ: rzut poniżej."
  },
  {
   "room": "1-08",
@@ -97,12 +99,5 @@
   "title_pl": "Pokój 2/07",
   "opis_pl": "Sypialnia 2/07 japandi: skos po lewej, drzwi balkonowe na wprost, łóżko 140 z jasnego drewna, szałwiowy pled, lampa kula GULLSUDARE, ciemna komoda.",
   "odstepstwa_pl": "Brak istotnych odstępstw."
- },
- {
-  "room": "2-08",
-  "file": "2-08.jpg",
-  "title_pl": "Pokój 2/08 z lukarną",
-  "opis_pl": "Sypialnia japandi z lukarną (kamera 2-08_v2): okno dachowe w północnym skosie nad siedziskiem BESTÅ 120 po lewej, 2 okna z czarnymi ramami w lukarnie, białe siedzisko z poduszką, niskie łóżko 140×200 z wezgłowiem przy prawej ścianie, stolik nocny z lampką, jasny dąb, wełniany dywan.",
-  "odstepstwa_pl": "Okno dachowe dodane w obróbce do wcześniejszego kadru (geometria jak w wersji modern-organic); za oknami lukarny niebo bez drzew; łóżko ucięte dolną krawędzią kadru."
  }
 ]

@@ -25,7 +25,8 @@
   "file": "1-03.jpg",
   "title_pl": "Kuchnia z wyspą",
   "opis_pl": "Kuchnia 2,57 m: zabudowa wysoka w L, okno 250 w wykuszu, wyspa z płytą indukcyjną i stalowym okapem wyspowym, 3 lampy Bollique.",
-  "odstepstwa_pl": "W tle jasne krzesła jadalni zamiast TOSSBERG (drugi plan)."
+  "odstepstwa_pl": "W tle jasne krzesła jadalni zamiast TOSSBERG (drugi plan).",
+  "uwaga_pl": "Wizualizacja sprzed korekty układu kuchni (26.10): obecnie blat L w wykuszu, półwysep 90×198 i 2 lampy, wejście z korytarza otworem 111 cm do sufitu. Aktualny układ: rzut poniżej i Spacer 3D (styl Modern organic)."
  },
  {
   "room": "1/06",
@@ -40,7 +41,7 @@
   "title_pl": "Pokój gościnny",
   "opis_pl": "Pokój gościnny (kadr z blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 ściana-ściana po lewej, okno balkonowe 100/230 z balustradą francuską i beżowymi zasłonami DYTÅG, stolik TONSTAD z lampą TÄRNABY, łóżko GLAMBERGET 80×200 sosna z szufladami, pilaster w prawym dalszym narożniku, dywan BREVBÄRARE, dąb Zip.",
   "odstepstwa_pl": "Wezgłowie łóżka nieco węższe w kadrze niż w blockoucie (66–79% vs 68–89% szer.); łóżko 80×200 tymczasowo, do decyzji.",
-  "uwaga_pl": "Łóżko 80×200 jest tymczasowe – czeka na decyzję inwestora (140, 160, 80 albo sofa rozkładana); po decyzji wizualizacja i lista zakupów zostaną zaktualizowane."
+  "uwaga_pl": "Wizualizacja sprzed zmiany aranżacji (26.10): obecnie szafa PAX i sofa rozkładana LYCKSELE zamiast łóżka; obraz zostanie przerenderowany. Aktualny układ: rzut poniżej."
  },
  {
   "room": "1/08",
@@ -90,12 +91,5 @@
   "title_pl": "Pokój 2/07",
   "opis_pl": "Pokój na poddaszu: drzwi balkonowe 160 (~45% ściany), skos po lewej, łóżko TARVA 140, biurko MICKE dąb.",
   "odstepstwa_pl": "Biurko MICKE wygląda jak zamknięta szafka; okno dachowe poza kadrem."
- },
- {
-  "room": "2/08",
-  "file": "2-08.jpg",
-  "title_pl": "Pokój z lukarną 2/08",
-  "opis_pl": "Pokój z lukarną: lukarna z 2 oknami na ok. 73% ściany, siedzisko z 2× BESTÅ 120 dąb bielony z poduchą.",
-  "odstepstwa_pl": "Okna dachowe poza kadrem (jak w blockoucie)."
  }
 ]

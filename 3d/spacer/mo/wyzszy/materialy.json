@@ -1,0 +1,173 @@
+{
+ "styl": "mo",
+ "wariant": "wyzszy",
+ "lightmap": {
+  "url": "lightmap.webp",
+  "K": 3.225577204704282,
+  "gamma": 2.2
+ },
+ "uwaga": "mapa światła wypieczona dla wariantu wyzszy (Cycles, odbicia światła zależą od kolorów wariantu)",
+ "zrodla": {
+  "podloga": "Barlinek Deska Dąb Colorado Grande (1-lamelowa, długi format)",
+  "trawertyn": "Paradyż Relis Beige gres szkl. rekt. struktura mat 120×120",
+  "sciana": "Farba Tikkurila Optiva Ceramic Super Matt [3] 9 l (baza A, do barwienia)",
+  "kwarc": "Gres Design – blat ze spieku Laminam 12 mm (za mb)",
+  "front_kuchni": "zabudowa na wymiar – fronty z forniru dębowego naturalnego (olej/lakier mat): 8 mb × średnia z widełek laczynasdrewno 7 300–11 300 i makpol 4 706–6 800 zł/mb",
+  "klamki": "HOPPE Amsterdam – komplet klamek na rozecie, stal nierdzewna czarna matowa (cena wersji WC)",
+  "boucle": "ZURICH Narożnik rozkładany boucle kremowy, prawy",
+  "dywan": "STOENSE Dywan z krótkim włosiem - kremowy 200x300 cm",
+  "firanka": "SILVERLÖNN Firanki, 2 szt. - beżowy/na taśmie 145x300 cm"
+ },
+ "sloty": {
+  "podloga": {
+   "map": "podloga.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 1.7,
+   "normal": "podloga_n.webp",
+   "szorstkosc": 0.55,
+   "odbicia": 0.35
+  },
+  "fornir": {
+   "map": "fornir.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 1.83,
+   "normal": "fornir_n.webp",
+   "szorstkosc": 0.6,
+   "odbicia": 0.2
+  },
+  "sciana": {
+   "map": "sciana.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 2.0,
+   "szorstkosc": 0.92,
+   "odbicia": 0
+  },
+  "strop": {
+   "map": "strop.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 2.0,
+   "szorstkosc": 0.95,
+   "odbicia": 0
+  },
+  "boucle": {
+   "map": "boucle.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.35,
+   "normal": "boucle_n.webp",
+   "szorstkosc": 1,
+   "odbicia": 0
+  },
+  "len": {
+   "map": "len.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.27,
+   "szorstkosc": 1,
+   "odbicia": 0
+  },
+  "pled": {
+   "map": "pled.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.27,
+   "szorstkosc": 1,
+   "odbicia": 0
+  },
+  "rattan": {
+   "map": "rattan.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.12,
+   "szorstkosc": 0.8,
+   "odbicia": 0
+  },
+  "trawertyn": {
+   "map": "trawertyn.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 2.4,
+   "normal": "trawertyn_n.webp",
+   "szorstkosc": 0.7,
+   "odbicia": 0.25
+  },
+  "dywan": {
+   "map": "dywan.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.35,
+   "normal": "dywan_n.webp",
+   "szorstkosc": 1.0,
+   "odbicia": 0
+  },
+  "front_kuchni": {
+   "map": "fornir.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 1.83,
+   "normal": "fornir_n.webp",
+   "szorstkosc": 0.5,
+   "odbicia": 0.2
+  },
+  "czern": {
+   "kolor": "#1E1E1E",
+   "szorstkosc": 0.45,
+   "odbicia": 0.3
+  },
+  "braz": {
+   "kolor": "#8C6A43",
+   "szorstkosc": 0.32,
+   "odbicia": 0.8
+  },
+  "kwarc": {
+   "kolor": "#D8C7AE",
+   "szorstkosc": 0.4,
+   "odbicia": 0.6
+  },
+  "tv": {
+   "kolor": "#0B0B0C",
+   "szorstkosc": 0.08,
+   "odbicia": 1
+  },
+  "ceramika": {
+   "kolor": "#D9C7AE",
+   "szorstkosc": 0.35,
+   "odbicia": 0.4
+  },
+  "lisc": {
+   "kolor": "#3F6B3A",
+   "szorstkosc": 0.45,
+   "odbicia": 0
+  },
+  "obraz_rama": {
+   "kolor": "#C9A77C",
+   "szorstkosc": 0.6,
+   "odbicia": 0
+  },
+  "biel_mebli": {
+   "kolor": "#F1ECE3",
+   "szorstkosc": 0.38,
+   "odbicia": 0.3
+  },
+  "glina": {
+   "kolor": "#B9805E",
+   "szorstkosc": 0.7,
+   "odbicia": 0
+  },
+  "klamki": {
+   "kolor": "#1A1A1A",
+   "szorstkosc": 0.45,
+   "odbicia": 0
+  },
+  "firanka": {
+   "kolor": "#E9E2D6",
+   "szorstkosc": 0.95,
+   "odbicia": 0
+  },
+  "klosz": {
+   "kolor": "#F3EEE6",
+   "szorstkosc": 1,
+   "odbicia": 0
+  },
+  "obraz": {
+   "map": "obraz.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": null,
+   "szorstkosc": 0.8,
+   "odbicia": 0
+  }
+ }
+}

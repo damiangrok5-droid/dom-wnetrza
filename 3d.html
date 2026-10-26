@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4EFE7">
+<meta name="robots" content="noindex">
+<title>Dom – model 3D</title>
+<link rel="stylesheet" href="assets/app.css">
+<style>
+.mv-tabs{display:flex;gap:8px;margin:10px 0}
+.mv-tabs .btn.on{background:var(--acc)}
+model-viewer{display:block;width:100%;height:min(72vh,640px);background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);--poster-color:transparent}
+.mv-ar{position:absolute;right:12px;bottom:12px}
+.mv-load{position:absolute;inset:auto 0 50% 0;text-align:center;color:var(--mut);font-size:.9rem}
+.mv-box{position:relative}
+.small{color:var(--mut);font-size:.85rem}
+</style>
+<script type="module" src="assets/vendor/model-viewer/model-viewer.min.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html#/">Dom <span>· wnętrza</span></a>
+  <nav class="tabs" id="tabs" aria-label="Sekcje">
+    <a href="index.html#/">Style</a>
+    <a href="index.html#/pokoje">Pokoje</a>
+    <a href="index.html#/zakupy">Zakupy</a>
+    <a href="index.html#/porownanie">Porównanie</a>
+    <a href="harmonogram.html">Harmonogram</a>
+    <a href="3d.html" class="on" aria-current="page">3D</a>
+    <a href="spacer.html">Spacer</a>
+  </nav>
+</header>
+<main>
+  <h1>Model 3D</h1>
+  <p class="small">Bryła poglądowa wg rzutów (±5–15 cm), wariant modern organic. Strop (i skosy poddasza) domyślnie ukryte, żeby widzieć wnętrza. Obracaj jednym palcem, przybliżaj dwoma. Na iPhonie przycisk „AR” otwiera model w rzeczywistości rozszerzonej (skala 1:1 – można go pomniejszyć gestem).</p>
+  <div class="mv-tabs" role="group" aria-label="Kondygnacja">
+    <button class="btn on" data-m="parter">Parter</button>
+    <button class="btn alt" data-m="poddasze">Poddasze</button>
+    <button class="btn alt" id="cut" aria-pressed="true">Strop: ukryty</button>
+  </div>
+  <div class="mv-box">
+    <model-viewer id="mv" src="3d/parter.glb" ios-src="3d/parter.usdz" alt="Model 3D parteru"
+      camera-controls touch-action="pan-y" interaction-prompt="auto" shadow-intensity="0.6" exposure="1.05"
+      camera-target="6.8m 0.8m 6.5m" camera-orbit="25deg 50deg 40m" min-camera-orbit="auto 0deg 6m" max-camera-orbit="auto 88deg 60m" field-of-view="35deg"
+      ar ar-modes="quick-look webxr scene-viewer" ar-scale="auto" loading="eager">
+      <button slot="ar-button" class="btn mv-ar">AR</button>
+      <div slot="progress-bar"></div>
+    </model-viewer>
+  </div>
+  <p class="small">Pliki: <a href="3d/parter.glb">parter.glb</a> · <a href="3d/poddasze.glb">poddasze.glb</a> (glTF) · <a href="3d/parter.usdz">parter.usdz</a> · <a href="3d/poddasze.usdz">poddasze.usdz</a> (iPhone AR). Przeglądarka: &lt;model-viewer&gt; (Apache-2.0).</p>
+</main>
+<footer class="foot"><p>Model poglądowy, nie dokumentacja wykonawcza.</p></footer>
+<script>
+const mv=document.getElementById('mv'),bs=document.querySelectorAll('[data-m]');
+bs.forEach(b=>b.addEventListener('click',()=>{const m=b.dataset.m;mv.src='3d/'+m+'.glb';mv.iosSrc='3d/'+m+'.usdz';mv.alt='Model 3D '+(m==='parter'?'parteru':'poddasza');
+ bs.forEach(x=>{x.classList.toggle('on',x===b);x.classList.toggle('alt',x!==b);});}));
+let cut=true;const cb=document.getElementById('cut');
+const applyCut=()=>{const m=mv.model&&mv.model.materials.find(x=>x.name==='sufit');if(!m)return;
+ const c=m.pbrMetallicRoughness.baseColorFactor;m.setAlphaMode(cut?'MASK':'OPAQUE');m.setAlphaCutoff(0.5);m.pbrMetallicRoughness.setBaseColorFactor([c[0],c[1],c[2],cut?0:1]);
+ cb.textContent=cut?'Strop: ukryty':'Strop: widoczny';cb.setAttribute('aria-pressed',cut);};
+mv.addEventListener('load',applyCut);cb.addEventListener('click',()=>{cut=!cut;applyCut();});
+document.querySelector('#tabs a.on')?.scrollIntoView({inline:'center',block:'nearest'});
+const q=new URLSearchParams(location.search).get('m');if(q==='poddasze')document.querySelector('[data-m=poddasze]').click();
+mv.addEventListener('error',e=>console.warn('model-viewer',e.detail));
+</script>
+</body>
+</html>
