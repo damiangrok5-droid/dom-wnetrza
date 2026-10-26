@@ -1,0 +1,26 @@
+== Spacer 3D / 360° – licencje użytych zasobów
+
+## Tekstury PBR i HDRI (CC0 1.0 – domena publiczna, bez wymogu przypisania; podajemy źródła dla porządku)
+| Zasób | Źródło | Licencja | Użycie |
+|---|---|---|---|
+| laminate_floor_02 | Poly Haven – https://polyhaven.com/a/laminate_floor_02 | CC0 | podłoga (deski) – baza do koloryzacji wg wariantu |
+| oak_veneer_01 | Poly Haven – https://polyhaven.com/a/oak_veneer_01 | CC0 | fornir dębowy (meble, fronty jeśli wariant ma fornir) |
+| painted_plaster_wall | Poly Haven – https://polyhaven.com/a/painted_plaster_wall | CC0 | ściany (farba / lime-wash) |
+| wool_boucle | Poly Haven – https://polyhaven.com/a/wool_boucle | CC0 | sofa bouclé, dywan |
+| rough_linen | Poly Haven – https://polyhaven.com/a/rough_linen | CC0 | zasłony / tkaniny |
+| meadow_2 (HDRI) | Poly Haven – https://polyhaven.com/a/meadow_2 | CC0 | światło dzienne i widok za oknem |
+| Travertine009 | ambientCG – https://ambientcg.com/view?id=Travertine009 | CC0 | płytki trawertyn (kuchnia, hol) |
+
+Tekstury są przekolorowane skryptem `spacer/src/make_textures.py` do kolorów z `warianty_materialy.json` (nie są zdjęciami konkretnych produktów).
+
+## Biblioteki JS (dołączone lokalnie, `site/assets/vendor/`)
+| Biblioteka | Wersja | Licencja | Plik licencji |
+|---|---|---|---|
+| three.js | 0.185.1 | MIT | vendor/three/LICENSE |
+| Photo Sphere Viewer (core, markers, gyroscope) | 5.15.1 | MIT | vendor/psv/LICENSE |
+| three-mesh-bvh | 0.9.16 | MIT | vendor/three-mesh-bvh/LICENSE |
+| nipplejs | 1.0.4 | MIT | vendor/nipplejs/LICENSE |
+
+## Narzędzia (tylko do budowy, nie publikowane)
+Blender 4.2 (GPL – narzędzie, wynik renderu nie jest objęty GPL), glTF-Transform CLI + meshoptimizer (MIT), Pillow, NumPy, Playwright (Apache-2.0).
+Świadomie NIE użyto: The Lightmapper (GPL), Marzipano, pmndrs/postprocessing, modeli z Sketchfab/Poly Pizza.

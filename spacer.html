@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4EFE7">
+<meta name="robots" content="noindex">
+<title>Dom – spacer 3D</title>
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/vendor/psv/core.css">
+<link rel="stylesheet" href="assets/vendor/psv/markers-plugin.css">
+<script type="importmap">
+{"imports":{
+ "three":"./assets/vendor/three/three.module.min.js",
+ "three/addons/":"./assets/vendor/three/addons/",
+ "@photo-sphere-viewer/core":"./assets/vendor/psv/core.js",
+ "@photo-sphere-viewer/markers-plugin":"./assets/vendor/psv/markers-plugin.js",
+ "@photo-sphere-viewer/gyroscope-plugin":"./assets/vendor/psv/gyroscope-plugin.js",
+ "three-mesh-bvh":"./assets/vendor/three-mesh-bvh/index.module.js",
+ "nipplejs":"./assets/vendor/nipplejs/nipplejs.mjs"
+}}
+</script>
+<style>
+:root{--glass:rgba(255,253,249,.62);--glass-d:rgba(28,25,22,.46);--gl-line:rgba(255,255,255,.55)}
+body.sp main{max-width:1180px;padding:10px 12px 12px}
+.sp-ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px}
+.sp-ctl select{appearance:none;-webkit-appearance:none;font:inherit;font-size:.9rem;color:var(--ink);background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237A7166'/%3E%3C/svg%3E") no-repeat right 10px center;border:1px solid var(--line);border-radius:999px;padding:7px 28px 7px 12px;min-height:36px}
+.seg{display:inline-flex;background:rgba(122,113,102,.12);border-radius:999px;padding:3px;gap:2px}
+.seg button{font:inherit;font-size:.86rem;border:0;background:transparent;color:var(--ink);padding:6px 11px;border-radius:999px;min-height:30px;cursor:pointer;white-space:nowrap}
+.seg button.on{background:var(--card);box-shadow:0 1px 3px rgba(43,39,35,.18);font-weight:600}
+.seg button:disabled{opacity:.4;cursor:default}
+.stage{position:relative;height:calc(100svh - var(--st,330px) - 14px);min-height:380px;max-height:860px;border-radius:var(--r);overflow:hidden;background:#d9d0c3;box-shadow:var(--sh);border:1px solid var(--line);touch-action:none;-webkit-user-select:none;user-select:none}
+.stage.fs{position:fixed;inset:0;height:auto;max-height:none;border-radius:0;z-index:50;border:0}
+#pano,#walk{position:absolute;inset:0}
+#walk canvas{display:block;width:100%;height:100%}
+.g{background:var(--glass);-webkit-backdrop-filter:saturate(1.6) blur(14px);backdrop-filter:saturate(1.6) blur(14px);border:1px solid var(--gl-line);box-shadow:0 4px 18px rgba(43,39,35,.16)}
+.wm{position:absolute;left:10px;top:10px;z-index:10;border-radius:999px;padding:4px 10px;font-size:.72rem;color:var(--ink);pointer-events:none;max-width:70%}
+.tools{position:absolute;right:10px;top:10px;z-index:10;display:flex;flex-direction:column;gap:8px}
+.tools button{width:42px;height:42px;border-radius:50%;font-size:1.05rem;color:var(--ink);cursor:pointer;display:grid;place-items:center;padding:0}
+.tools button.on{background:var(--ink);color:#fff}
+.tools button[hidden]{display:none}
+.where{position:absolute;left:50%;transform:translateX(-50%);bottom:12px;z-index:10;border-radius:999px;padding:6px 14px;font-size:.85rem;white-space:nowrap;pointer-events:none}
+.plan{position:absolute;right:10px;bottom:10px;z-index:11;width:132px;border-radius:14px;padding:6px;cursor:pointer}
+.plan.big{width:min(300px,62%)}
+.plan svg{display:block;width:100%;height:auto}
+.plan .pt{cursor:pointer}
+.hint{position:absolute;left:10px;top:44px;z-index:10;border-radius:12px;padding:6px 10px;font-size:.78rem;color:var(--ink);max-width:260px;transition:opacity .6s}
+.hint.off{opacity:0;pointer-events:none}
+.joy{position:absolute;left:0;bottom:0;width:46%;height:52%;z-index:9}
+.stage [hidden],.stage[hidden] *[hidden]{display:none!important}
+@media (hover:hover) and (pointer:fine){#joy{display:none!important}}
+.loadbox{position:absolute;inset:0;display:grid;place-items:center;z-index:20;pointer-events:none}
+.loadbox span{border-radius:999px;padding:8px 16px;font-size:.9rem}
+.hs{position:relative;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:rgba(255,253,249,.5);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:2px solid rgba(255,255,255,.9);box-shadow:0 4px 14px rgba(0,0,0,.25);cursor:pointer;transition:transform .15s}
+.hs:hover{transform:scale(1.08)}
+.hs b{display:block;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(140,106,67,.55)}
+.hs i{position:absolute;top:62px;left:50%;transform:translateX(-50%);font-style:normal;font-size:.78rem;font-weight:600;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.7);white-space:nowrap}
+.psv-loader-container{display:none}
+.sp-note{color:var(--mut);font-size:.82rem;margin:8px 2px 0}
+.sp-note b{color:var(--ink)}
+.err{position:absolute;inset:auto 12px 50% 12px;text-align:center;z-index:21;border-radius:12px;padding:10px}
+@media (prefers-color-scheme:dark){.g{--glass:rgba(40,36,32,.55)}.g,.g *{color:#f4efe7}.tools button.on{background:#f4efe7;color:#2b2723}}
+</style>
+</head>
+<body class="sp">
+<header class="top">
+  <a class="brand" href="index.html#/">Dom <span>· wnętrza</span></a>
+  <nav class="tabs" id="tabs" aria-label="Sekcje">
+    <a href="index.html#/">Style</a>
+    <a href="index.html#/pokoje">Pokoje</a>
+    <a href="index.html#/zakupy">Zakupy</a>
+    <a href="index.html#/porownanie">Porównanie</a>
+    <a href="spacer.html" class="on" aria-current="page">Spacer</a>
+  </nav>
+</header>
+<main>
+  <div class="sp-ctl" role="group" aria-label="Wybór wizualizacji">
+    <select id="selStyl" aria-label="Styl"></select>
+    <select id="selWar" aria-label="Wariant wykończenia"></select>
+    <div class="seg" id="segRoom" role="group" aria-label="Pomieszczenie"></div>
+    <div class="seg" id="segMode" role="group" aria-label="Tryb">
+      <button data-m="pano" class="on">360°</button><button data-m="walk">Spacer</button>
+    </div>
+  </div>
+  <div class="stage" id="stage">
+    <div id="pano"></div>
+    <div id="walk" hidden></div>
+    <div class="wm g">wizualizacja nastrojowa (3D), nie 1:1</div>
+    <div class="tools">
+      <button class="g" id="bGyro" aria-label="Żyroskop" title="Rozglądaj się, obracając telefon" hidden>🧭</button>
+      <button class="g" id="bFs" aria-label="Pełny ekran" title="Pełny ekran">⤢</button>
+    </div>
+    <div class="hint g" id="hint"></div>
+    <div class="plan g" id="plan" title="Rzut – dotknij punktu, aby się przenieść"></div>
+    <div class="where g" id="where"></div>
+    <div class="joy" id="joy" hidden></div>
+    <div class="loadbox" id="load" hidden><span class="g">Ładowanie…</span></div>
+  </div>
+  <p class="sp-note"><b>Wizualizacja nastrojowa (3D), nie 1:1.</b> Układ ścian, okien i mebli wg rzutu i listy zakupów (wymiary z CSV); materiały i światło poglądowe. Tryb „360°” – zdjęcia sferyczne z wysokości oczu (160 cm), przesuwaj palcem, kropki na podłodze przenoszą do kolejnego punktu. Tryb „Spacer” – swobodne chodzenie: lewy dolny róg ekranu = joystick, reszta ekranu = rozglądanie; na komputerze klawisze WASD/strzałki i mysz. Licencje: <a href="assets/LICENSES/spacer.txt">materiały i biblioteki</a>.</p>
+</main>
+<script type="module">
+const $ = s => document.querySelector(s);
+const st = { m: null, styles: [], styl: 'mo', war: 'podstawowy', pt: 'salon', mode: 'pano', yaw: 0 };
+const q = new URLSearchParams(location.search);
+const ROOMS = { '1/02': 'Salon i jadalnia', '1/03': 'Kuchnia' };
+let psv = null, markers = null, gyro = null, walk = null;
+document.documentElement.style.setProperty('--top', $('.top').offsetHeight + 'px');
+const fitStage = () => document.documentElement.style.setProperty('--st', Math.round($('#stage').getBoundingClientRect().top + scrollY) + 'px');
+addEventListener('resize', fitStage);
+
+const hint = (t, ms = 6000) => { const h = $('#hint'); h.textContent = t; h.classList.remove('off'); clearTimeout(hint.t); hint.t = setTimeout(() => h.classList.add('off'), ms); };
+const showLoad = on => { $('#load').hidden = !on; };
+const S = () => st.m.style[st.styl];
+const W = () => S()?.warianty[st.war];
+
+async function init() {
+  const [m, styles] = await Promise.all([fetch('data/spacer.json').then(r => r.json()), fetch('data/styles.json').then(r => r.json()).catch(() => [])]);
+  st.m = m; st.styles = styles;
+  const bySlug = Object.fromEntries(Object.entries(m.style).map(([k, v]) => [v.slug, k]));
+  let s = q.get('styl'); if (s && bySlug[s]) s = bySlug[s];
+  st.styl = m.style[s] ? s : Object.keys(m.style)[0];
+  const w = q.get('war'); st.war = W() && w && S().warianty[w] ? w : Object.keys(S().warianty)[0];
+  const pk = (q.get('pokoj') || '').replace('-', '/');
+  const ptq = q.get('punkt');
+  st.pt = m.punkty[ptq] ? ptq : (Object.entries(m.punkty).find(([, p]) => p.pokoj === pk)?.[0] || Object.keys(m.punkty)[0]);
+  st.yaw = 0;
+  buildControls(); drawPlan(); fitStage();
+  if (q.get('tryb') === 'spacer') setMode('walk'); else setMode('pano');
+}
+function buildControls() {
+  const m = st.m, names = Object.fromEntries(st.styles.map(s => [s.slug, s.name]));
+  const all = st.styles.length ? st.styles.map(s => s.slug) : Object.values(m.style).map(v => v.slug);
+  const key = slug => Object.keys(m.style).find(k => m.style[k].slug === slug);
+  $('#selStyl').innerHTML = all.map(slug => { const k = key(slug); return `<option value="${k || ''}" ${k ? '' : 'disabled'} ${k === st.styl ? 'selected' : ''}>${names[slug] || m.style[k]?.nazwa || slug}${k ? '' : ' – w przygotowaniu'}</option>`; }).join('');
+  $('#selStyl').onchange = e => { if (!e.target.value) return; st.styl = e.target.value; if (!W()) st.war = Object.keys(S().warianty)[0]; buildControls(); reload(); };
+  const WN = [['podstawowy', 'Podstawowy'], ['wyzszy', 'Wyższy'], ['premium', 'Premium']];
+  $('#selWar').innerHTML = WN.map(([k, n]) => `<option value="${k}" ${S().warianty[k] ? '' : 'disabled'} ${k === st.war ? 'selected' : ''}>Wariant: ${n}${S().warianty[k] ? '' : ' (wkrótce)'}</option>`).join('');
+  $('#selWar').onchange = e => { st.war = e.target.value; reload(); };
+  $('#segRoom').innerHTML = m.pokoje.map(r => `<button data-r="${r}" class="${m.punkty[st.pt].pokoj === r ? 'on' : ''}">${ROOMS[r] || r}</button>`).join('');
+  $('#segRoom').onclick = e => { const b = e.target.closest('button'); if (!b) return; const p = Object.entries(m.punkty).find(([, p]) => p.pokoj === b.dataset.r)[0]; goPoint(p, null); };
+  $('#segMode').onclick = e => { const b = e.target.closest('button'); if (b && !b.disabled) setMode(b.dataset.m); };
+  $('#segMode [data-m=walk]').disabled = !W()?.materialy;
+  $('#segMode [data-m=pano]').disabled = !Object.keys(W()?.pano || {}).length;
+}
+function syncRoomSeg() { const r = st.m.punkty[st.pt].pokoj; document.querySelectorAll('#segRoom button').forEach(b => b.classList.toggle('on', b.dataset.r === r)); $('#where').textContent = st.m.punkty[st.pt].nazwa; }
+function syncUrl() { const u = new URL(location); u.search = new URLSearchParams({ styl: S().slug, war: st.war, punkt: st.pt, ...(st.mode === 'walk' ? { tryb: 'spacer' } : {}) }); history.replaceState(null, '', u); }
+
+/* ---------- rzut ---------- */
+function drawPlan() {
+  const r = st.m.rzut, [x0, y0, x1, y1] = r.box, pad = 10;
+  const rooms = r.pomieszczenia.map(p => `<polygon points="${p.pts.map(q => q.join(',')).join(' ')}" fill="#efe6d8" />`).join('');
+  const walls = r.sciany.map(([a, b, c, d]) => `<rect x="${a}" y="${b}" width="${c - a}" height="${d - b}" fill="#5d544b"/>`).join('');
+  const ops = r.otwory.map(o => { const [a, b, c, d] = o.r; const win = o.t !== 'door'; return `<rect x="${a}" y="${b}" width="${c - a}" height="${d - b}" fill="${win ? '#9cc7e0' : '#fffdf9'}" stroke="${win ? '#4c87a8' : '#b9a58c'}" stroke-width="3"/>`; }).join('');
+  const pts = Object.entries(st.m.punkty).map(([k, p]) => `<g class="pt" data-p="${k}"><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="38" fill="transparent"/><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="17" fill="#fffdf9" stroke="#8C6A43" stroke-width="7"/></g>`).join('');
+  $('#plan').innerHTML = `<svg viewBox="${x0 - pad} ${y0 - pad} ${x1 - x0 + 2 * pad} ${y1 - y0 + 2 * pad}" role="img" aria-label="Rzut strefy dziennej z punktem widzenia">
+    ${rooms}${walls}${ops}${pts}
+    <g id="me"><path id="cone" d="M0 0 L210 -95 A230 230 0 0 1 210 95 Z" fill="rgba(140,106,67,.35)"/><circle r="24" fill="#8C6A43" stroke="#fff" stroke-width="7"/></g></svg>`;
+  $('#plan').onclick = e => { const g = e.target.closest('.pt'); if (g) { e.stopPropagation(); goPoint(g.dataset.p, null); } else $('#plan').classList.toggle('big'); };
+}
+function setMe(x, y, yaw) { const g = $('#me'); if (g) g.setAttribute('transform', `translate(${x} ${y}) rotate(${yaw * 180 / Math.PI})`); }
+
+/* ---------- panorama (Photo Sphere Viewer) ---------- */
+async function startPano() {
+  const { Viewer } = await import('@photo-sphere-viewer/core');
+  const { MarkersPlugin } = await import('@photo-sphere-viewer/markers-plugin');
+  const { GyroscopePlugin } = await import('@photo-sphere-viewer/gyroscope-plugin');
+  if (W()?.pano && !W().pano[st.pt]) { st.pt = panoPt(st.pt); syncRoomSeg(); syncUrl(); }
+  if (!psv) {
+    psv = new Viewer({ container: $('#pano'), panorama: W().pano[st.pt] ? W().pano[st.pt] : Object.values(W().pano)[0], navbar: false,
+      defaultYaw: st.yaw, defaultPitch: -0.08, defaultZoomLvl: 10, minFov: 40, maxFov: 100, loadingTxt: '', mousewheelCtrlKey: false,
+      touchmoveTwoFingers: false, moveInertia: true, lang: { loadError: 'Nie udało się wczytać panoramy' },
+      plugins: [[MarkersPlugin, {}], [GyroscopePlugin, { touchmove: true, absolutePosition: false }]] });
+    markers = psv.getPlugin(MarkersPlugin); gyro = psv.getPlugin(GyroscopePlugin);
+    markers.addEventListener('select-marker', ({ marker }) => marker.data?.to && goPoint(marker.data.to, marker.data.yaw));
+    psv.addEventListener('position-updated', ({ position }) => { st.yaw = position.yaw; const p = st.m.punkty[st.pt]; setMe(p.xy[0], p.xy[1], position.yaw); });
+    psv.addEventListener('ready', () => { setMarkers(); }, { once: true });
+    Promise.resolve(gyro.isSupported()).then(ok => { $('#bGyro').hidden = !ok; });
+    $('#bGyro').onclick = () => { gyro.toggle(); setTimeout(() => $('#bGyro').classList.toggle('on', gyro.isEnabled()), 400); };
+  } else {
+    await psv.setPanorama(W().pano[st.pt], { transition: false, position: { yaw: st.yaw, pitch: -0.08 }, showLoader: false });
+    setMarkers();
+  }
+  hint('Przesuń palcem, aby się rozejrzeć. Okrągłe punkty na podłodze przenoszą dalej.');
+}
+function setMarkers() {
+  if (!markers) return;
+  const p = st.m.punkty[st.pt];
+  const L = []; for (const l of [...p.linki].filter(l => W().pano[l.do]).sort((a, b) => a.odl_cm - b.odl_cm)) {
+    if (!L.some(o => Math.abs(Math.atan2(Math.sin(o.yaw - l.yaw), Math.cos(o.yaw - l.yaw))) < 0.25)) L.push(l); } // bliższy punkt zasłania dalszy w tym samym kierunku
+  markers.setMarkers(L.map(l => ({ id: 'go-' + l.do, position: { yaw: l.yaw, pitch: l.pitch },
+    html: `<div class="hs" role="button" aria-label="Przejdź: ${st.m.punkty[l.do].nazwa}"><b></b><i>${st.m.punkty[l.do].nazwa}</i></div>`,
+    size: { width: 58, height: 58 }, anchor: 'center center', data: { to: l.do, yaw: l.yaw } })));
+  syncRoomSeg(); setMe(p.xy[0], p.xy[1], st.yaw);
+}
+// punkt bez panoramy w danym wariancie (np. Premium ma tylko salon i kuchnię) -> najbliższy punkt z panoramą
+function panoPt(pt) {
+  const P = W()?.pano || {}; if (P[pt]) return pt;
+  const q = st.m.punkty[pt].xy; let best = Object.keys(P)[0], bd = 1e9;
+  for (const k of Object.keys(P)) { const r = st.m.punkty[k]?.xy; if (!r) continue; const d = Math.hypot(r[0] - q[0], r[1] - q[1]); if (d < bd) { bd = d; best = k; } }
+  return best;
+}
+async function goPoint(pt, yaw) {
+  if (!st.m.punkty[pt]) return;
+  if (st.mode !== 'walk') pt = panoPt(pt);
+  if (yaw != null) st.yaw = yaw;
+  st.pt = pt; syncRoomSeg(); syncUrl();
+  if (st.mode === 'walk') { walk?.teleport(st.m.punkty[pt].xy, st.yaw); return; }
+  if (!psv) return startPano();
+  markers.clearMarkers(); showLoad(true);
+  try { await psv.setPanorama(W().pano[pt], { transition: 650, position: { yaw: st.yaw, pitch: -0.08 }, showLoader: false }); } finally { showLoad(false); }
+  setMarkers();
+}
+
+/* ---------- spacer swobodny (three.js) ---------- */
+async function startWalk() {
+  showLoad(true);
+  try {
+    if (!walk) walk = await createWalk($('#walk'), $('#joy'), st.m, { onMove: (x, y, yaw) => { setMe(x, y, yaw); st.yaw = yaw; }, onPoint: k => { st.pt = k; syncRoomSeg(); } });
+    await walk.load(S().glb, W().materialy, st.m.tlo);
+    walk.teleport(st.m.punkty[st.pt].xy, st.yaw); walk.start();
+    hint(matchMedia('(pointer:coarse)').matches ? 'Lewy dolny róg: joystick (chodzenie). Reszta ekranu: przeciągnij, aby się rozejrzeć.' : 'WASD / strzałki – chodzenie, przeciągnij myszą – rozglądanie (kliknij, aby zablokować kursor; Esc zwalnia).', 9000);
+  } catch (e) { console.error(e); hint('Nie udało się uruchomić spaceru 3D na tym urządzeniu (WebGL). Użyj trybu 360°.', 12000); setMode('pano'); }
+  finally { showLoad(false); }
+}
+async function setMode(m) {
+  if (m === 'walk' && !W()?.materialy) m = 'pano';
+  st.mode = m; syncUrl();
+  document.querySelectorAll('#segMode button').forEach(b => b.classList.toggle('on', b.dataset.m === m));
+  $('#pano').hidden = m !== 'pano'; $('#walk').hidden = m !== 'walk'; $('#joy').hidden = m !== 'walk';
+  $('#bGyro').style.display = m === 'pano' ? '' : 'none';
+  if (m === 'pano') { walk?.stop(); if (gyro?.isEnabled()) gyro.stop(); await startPano(); }
+  else { if (gyro?.isEnabled()) gyro.stop(); await startWalk(); }
+}
+async function reload() {
+  buildControls(); syncUrl();
+  if (st.mode === 'walk' && !W()?.materialy) { await setMode('pano'); return; }
+  if (st.mode === 'walk') { await startWalk(); } else if (psv) { await goPoint(st.pt, st.yaw); } else await startPano();
+}
+$('#bFs').onclick = () => { $('#stage').classList.toggle('fs'); $('#bFs').classList.toggle('on'); setTimeout(() => { psv?.autoSize?.(); walk?.resize(); }, 50); };
+addEventListener('resize', () => walk?.resize());
+/* ---------- moduł spaceru swobodnego: GLB + mapy światła (Cycles), kolizje BVH, joystick ---------- */
+async function createWalk(host, joyEl, M, cb) {
+  const THREE = await import('three');
+  const { GLTFLoader } = await import('three/addons/loaders/GLTFLoader.js');
+  const { MeshoptDecoder } = await import('three/addons/libs/meshopt_decoder.module.js');
+  const { mergeGeometries } = await import('three/addons/utils/BufferGeometryUtils.js');
+  const { MeshBVH } = await import('three-mesh-bvh');
+  const nipplejs = (await import('nipplejs')).default;
+  const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  renderer.toneMapping = THREE.AgXToneMapping; renderer.toneMappingExposure = Math.pow(2, 0.2);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  host.appendChild(renderer.domElement);
+  const scene = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(72, 1, 0.05, 200); cam.rotation.order = 'YXZ';
+  const EYE = (M.oko_cm || 160) / 100, R = 0.22, LO = 0.25, HI = 1.55;
+  const pos = new THREE.Vector3(10.4, 0, 6.9); let yaw = 0, pitch = -0.05;
+  const keys = {}; const joy = { x: 0, y: 0 };
+  let root = null, collider = null, running = false, raf = 0, curGlb = '', curMat = '', envTex = null, bgTex = null;
+  const texL = new THREE.TextureLoader(), aniso = renderer.capabilities.getMaxAnisotropy();
+  const tex = (url, srgb, clamp) => new Promise((res, rej) => texL.load(url, t => {
+    t.flipY = false; t.colorSpace = srgb ? THREE.SRGBColorSpace : THREE.NoColorSpace;
+    t.wrapS = t.wrapT = clamp ? THREE.ClampToEdgeWrapping : THREE.RepeatWrapping; t.anisotropy = Math.min(8, aniso); res(t);
+  }, undefined, rej));
+  const noIblDiffuse = sh => { sh.fragmentShader = sh.fragmentShader.replace('#include <lights_fragment_maps>', '#include <lights_fragment_maps>\n\tiblIrradiance = vec3( 0.0 );'); };
+
+  function resize() { const w = host.clientWidth || 1, h = host.clientHeight || 1; renderer.setSize(w, h, false); cam.aspect = w / h; cam.fov = w < h ? Math.min(90, 2 * Math.atan(Math.tan(0.611) / cam.aspect) * 180 / Math.PI) : 72; cam.updateProjectionMatrix(); }
+  resize();
+
+  async function load(glbUrl, matUrl, tloUrl) {
+    if (glbUrl === curGlb && matUrl === curMat) return;
+    if (!bgTex) {
+      bgTex = await tex(tloUrl, true, false); bgTex.flipY = true; bgTex.needsUpdate = true; bgTex.mapping = THREE.EquirectangularReflectionMapping;
+      scene.background = bgTex; scene.backgroundIntensity = 0.85;
+      const pm = new THREE.PMREMGenerator(renderer); envTex = pm.fromEquirectangular(bgTex).texture; pm.dispose();
+    }
+    if (glbUrl !== curGlb) {
+      const gl = new GLTFLoader(); gl.setMeshoptDecoder(MeshoptDecoder);
+      const g = await gl.loadAsync(glbUrl);
+      if (root) scene.remove(root);
+      root = g.scene; scene.add(root); root.updateMatrixWorld(true);
+      // kolizje: cała geometria statyczna + szkło (bez ognia), w układzie świata
+      const parts = []; const v = new THREE.Vector3();
+      root.traverse(o => {
+        if (!o.isMesh || o.material.name === 'ogien') return;
+        const p = o.geometry.attributes.position, arr = new Float32Array(p.count * 3);
+        for (let i = 0; i < p.count; i++) { v.fromBufferAttribute(p, i).applyMatrix4(o.matrixWorld); arr[i * 3] = v.x; arr[i * 3 + 1] = v.y; arr[i * 3 + 2] = v.z; }
+        const gg = new THREE.BufferGeometry(); gg.setAttribute('position', new THREE.BufferAttribute(arr, 3));
+        gg.setIndex(o.geometry.index ? Array.from(o.geometry.index.array) : [...Array(p.count).keys()]); parts.push(gg);
+      });
+      const merged = mergeGeometries(parts, false); merged.boundsTree = new MeshBVH(merged); collider = merged;
+      curGlb = glbUrl;
+    }
+    // materiały wariantu (sloty = nazwy materiałów w GLB)
+    const base = matUrl.slice(0, matUrl.lastIndexOf('/') + 1);
+    const mj = await fetch(matUrl).then(r => r.json());
+    const LM = await tex(base + mj.lightmap.url, true, true); LM.channel = 1;
+    const K = mj.lightmap.K, cache = {}, jobs = [];
+    const mk = slot => {
+      if (cache[slot]) return cache[slot];
+      const d = mj.sloty[slot] || { kolor: '#d8d2c8', szorstkosc: .8 };
+      let m;
+      if (slot === 'szklo') m = new THREE.MeshBasicMaterial({ color: 0xe8f2f4, transparent: true, opacity: 0.1, depthWrite: false, envMap: envTex, reflectivity: 0.15 });
+      else if (slot === 'ogien') m = new THREE.MeshBasicMaterial({ color: 0xff8a3a });
+      else {
+        m = new THREE.MeshStandardMaterial({ color: new THREE.Color(d.kolor || '#ffffff'), roughness: d.szorstkosc ?? .8, metalness: 0, lightMap: LM, lightMapIntensity: K * Math.PI * (slot === 'rattan' ? 0.3 : 1) }); // klosze rattanowe: żarówka w środku prześwietla mapę
+        if (d.map) jobs.push(tex(base + d.map, true).then(t => { m.map = t; m.needsUpdate = true; }));
+        if (d.normal) jobs.push(tex(base + d.normal, false).then(t => { m.normalMap = t; m.normalScale.set(0.6, 0.6); m.needsUpdate = true; }));
+        if (d.odbicia > 0) { m.envMap = envTex; m.envMapIntensity = d.odbicia; m.onBeforeCompile = noIblDiffuse; }
+        if (slot === 'firanka') { m.transparent = true; m.opacity = 0.72; m.side = THREE.DoubleSide; m.depthWrite = false; }
+      }
+      m.name = slot; return (cache[slot] = m);
+    };
+    root.traverse(o => { if (o.isMesh) { const s = (o.userData.slot || o.material.userData?.slot || o.material.name || '').replace(/\.\d+$/, ''); o.userData.slot = s; o.material = mk(s); } });
+    await Promise.all(jobs); curMat = matUrl;
+  }
+
+  // kolizja kapsuły (pionowy odcinek LO..HI nad podłogą, promień R) z BVH
+  const seg = new THREE.Line3(), tp = new THREE.Vector3(), cp = new THREE.Vector3(), box = new THREE.Box3();
+  function collide(p) {
+    seg.start.set(p.x, LO + R, p.z); seg.end.set(p.x, HI - R, p.z);
+    for (let it = 0; it < 3; it++) {
+      box.makeEmpty(); box.expandByPoint(seg.start); box.expandByPoint(seg.end); box.min.addScalar(-R); box.max.addScalar(R);
+      let hit = false;
+      collider.boundsTree.shapecast({
+        intersectsBounds: b => b.intersectsBox(box),
+        intersectsTriangle: tri => {
+          const d = tri.closestPointToSegment(seg, tp, cp);
+          if (d < R) { const dir = cp.sub(tp); dir.y = 0; const l = dir.length(); if (l < 1e-6) return; dir.multiplyScalar((R - d) / l); seg.start.add(dir); seg.end.add(dir); hit = true; }
+        }
+      });
+      if (!hit) break;
+    }
+    p.x = seg.start.x; p.z = seg.start.z;
+  }
+
+  // sterowanie: klawiatura, mysz/dotyk (rozglądanie), joystick
+  const onKey = e => { if (e.target.closest?.('select,input')) return; keys[e.code] = e.type === 'keydown'; if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Space'].includes(e.code) && running) e.preventDefault(); };
+  addEventListener('keydown', onKey); addEventListener('keyup', onKey);
+  const look = new Map(); const cvs = renderer.domElement; cvs.style.touchAction = 'none';
+  cvs.addEventListener('pointerdown', e => { look.set(e.pointerId, [e.clientX, e.clientY]); cvs.setPointerCapture(e.pointerId); });
+  cvs.addEventListener('pointermove', e => {
+    if (document.pointerLockElement === cvs) { yaw += e.movementX * 0.0025; pitch -= e.movementY * 0.0025; }
+    else if (look.has(e.pointerId)) { const [x, y] = look.get(e.pointerId); const s = e.pointerType === 'touch' ? 0.006 : 0.004; yaw -= (e.clientX - x) * s; pitch += (e.clientY - y) * s; look.set(e.pointerId, [e.clientX, e.clientY]); }
+    pitch = Math.max(-1.35, Math.min(1.35, pitch));
+  });
+  const up = e => look.delete(e.pointerId); cvs.addEventListener('pointerup', up); cvs.addEventListener('pointercancel', up);
+  cvs.addEventListener('dblclick', () => { if (matchMedia('(pointer:fine)').matches) cvs.requestPointerLock?.(); });
+  const nj = nipplejs.create({ zone: joyEl, mode: 'static', position: { left: '72px', bottom: '72px' }, size: 104, color: '#fffdf9', restOpacity: 0.55 });
+  nj.on('move', (e, d) => { const vct = (d || e.data || {}).vector; if (vct) { joy.x = vct.x; joy.y = vct.y; } });
+  nj.on('end', () => { joy.x = 0; joy.y = 0; });
+
+  const clock = { t: performance.now(), getDelta() { const n = performance.now(), d = (n - this.t) / 1000; this.t = n; return d; } }; let lastPt = '';
+  function frame() {
+    raf = requestAnimationFrame(frame);
+    const dt = Math.min(clock.getDelta(), 0.05);
+    let f = (keys.KeyW || keys.ArrowUp ? 1 : 0) - (keys.KeyS || keys.ArrowDown ? 1 : 0) + joy.y;
+    let s = (keys.KeyD ? 1 : 0) - (keys.KeyA ? 1 : 0) + joy.x;
+    if (keys.ArrowLeft) yaw -= 1.6 * dt; if (keys.ArrowRight) yaw += 1.6 * dt;
+    const sp = (keys.ShiftLeft || keys.ShiftRight ? 2.4 : 1.25) * dt;
+    const n = Math.hypot(f, s); if (n > 1) { f /= n; s /= n; }
+    if (n > 0.02 && collider) {
+      // yaw arkusza: 0 = wschód (+x), + w prawo (ku +y = południe)
+      const dx = Math.cos(yaw) * f - Math.sin(yaw) * s, dz = Math.sin(yaw) * f + Math.cos(yaw) * s;
+      const steps = Math.ceil(Math.hypot(dx, dz) * sp / 0.08) || 1;
+      for (let i = 0; i < steps; i++) { pos.x += dx * sp / steps; pos.z += dz * sp / steps; collide(pos); }
+    }
+    cam.position.set(pos.x, EYE, pos.z); cam.rotation.set(pitch, -yaw - Math.PI / 2, 0);
+    renderer.render(scene, cam);
+    cb.onMove?.(pos.x * 100, pos.z * 100, yaw);
+    let best = '', bd = 1e9; for (const [k, p] of Object.entries(M.punkty)) { const d = Math.hypot(p.xy[0] - pos.x * 100, p.xy[1] - pos.z * 100); if (d < bd) { bd = d; best = k; } }
+    if (best !== lastPt) { lastPt = best; cb.onPoint?.(best); }
+  }
+  return {
+    load: (glb, mat, tlo) => load(glb, mat, tlo),
+    teleport(xy, y) { pos.set(xy[0] / 100, 0, xy[1] / 100); if (y != null) yaw = y; pitch = -0.05; if (collider) collide(pos); },
+    start() { if (running) return; running = true; resize(); clock.getDelta(); frame(); },
+    stop() { running = false; cancelAnimationFrame(raf); if (document.pointerLockElement) document.exitPointerLock(); },
+    resize, get state() { return { x: pos.x * 100, y: pos.z * 100, yaw, pitch }; }
+  };
+}
+
+{ const tb = $('#tabs'); if (tb) tb.scrollLeft = tb.scrollWidth; } // iPhone: aktywna zakładka „Spacer” widoczna
+window.__spacer = st; window.__walk = () => walk; window.__psv = () => psv;
+init().catch(e => { console.error(e); $('#stage').insertAdjacentHTML('beforeend', '<div class="err g">Nie udało się wczytać danych spaceru.</div>'); });
+</script>
+</body>
+</html>
