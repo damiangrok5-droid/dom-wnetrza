@@ -43,9 +43,9 @@
   "name": "Kuchnia",
   "floor": "parter",
   "area": 10.99,
-  "dims": "szer. 257 (czerwony wymiar, w wykuszu) × ok. 410 (od lica wykusza N do linii słupa); wykusz N głęb. 80",
+  "dims": "259 (x 705–964, w świetle ściana W–słup) × 363 (y −55…308: 283 od lica ściany pn. do ściany pd. + wykusz 80 od wewn. lica ściany pn., tj. 55 poza jej lico zewn.) + pas 62×214 przy ścianie W (x 643–705, y −55…159, zabudowa wysoka)",
   "h": "2,68 m w świetle",
-  "shape": "prostokąt z wykuszem 80 cm na N; strona E otwarta na jadalnię",
+  "shape": "prostokąt 259×283 + wykusz 80 na N (całą szerokością 320, x 644–964) + pas 62 cm przy ścianie W (zabudowa wysoka); strona E otwarta na jadalnię",
   "slopes": "brak",
   "windows": [
    "250/140, parapet h=90 (blat), w wykuszu; nadproże 2×14×35"
@@ -64,7 +64,7 @@
   "area": 1.51,
   "dims": "113 × 137 (x 586–699, y 171–308) – wg oryginalnego projektu (lustrzane względem skanu v2)",
   "h": "2,68 m w świetle",
-  "shape": "prostokąt (wydzielony z pokoju 1/07, ścianki 12)",
+  "shape": "prostokąt (wydzielony z pokoju 1/07, ścianki 12; ściana od kuchni x699–705 przyjęta 6 cm – do weryfikacji na budowie)",
   "slopes": "brak",
   "windows": [],
   "doors": [
@@ -111,7 +111,7 @@
   "name": "Pokój gościnny",
   "floor": "parter",
   "area": 9.38,
-  "dims": "L: część N 315 szer. (czerwony), część S 372 szer.; głęb. 283 (N–S)",
+  "dims": "L: część N 372 szer. (z wnęką 57×134 w narożniku NE), część S 315 szer. (czerwony wymiar); głęb. 283 (N–S)",
   "h": "2,68 m w świetle",
   "shape": "L – wnęka 57×134 w narożniku NE (x 574–631, y 25–159) wg oryginalnego projektu; spiżarka 1/04 przy ścianie E na płd.",
   "slopes": "brak",
@@ -119,7 +119,7 @@
    "100/230 (drzwiowe, od podłogi)"
   ],
   "doors": [
-   "80/200 (otwór 474–564), zawias po stronie E (zmiana funkcjonalna F1)"
+   "80/200 (otwór 474–564), skrzydłowe, zawias po stronie E (zmiana funkcjonalna F1)"
   ],
   "plan": "plany/1-07.png"
  },

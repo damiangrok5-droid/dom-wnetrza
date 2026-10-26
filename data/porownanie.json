@@ -1,35 +1,35 @@
 [
  {
   "slug": "modern-organic",
-  "total": 373187.48,
+  "total": 369041.18,
   "breakdown": {
-   "products": 181163.84,
+   "products": 176983.8,
    "materials": 17594.32,
-   "labour": 174429.32,
-   "labour_min": 130577.83,
-   "labour_max": 218281.58
+   "labour": 174463.06,
+   "labour_min": 130609.32,
+   "labour_max": 218317.57
   },
   "by_cat": {
    "Dodatki i dekoracje": 3171.46,
    "drzwi": 14179.7,
    "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 2934.9,
-   "kominek": 7094.0,
+   "kominek": 2734.0,
    "kuchnia": 19370.0,
    "materiały pomocnicze": 17594.32,
-   "meble": 50250.98,
+   "meble": 50430.94,
    "oświetlenie": 3856.78,
+   "tekstylia": 1098.95,
    "podłogi": 29213.67,
    "pralnia": 5427.0,
    "płytki": 5779.41,
    "schody i balustrady": 10306.0,
-   "tekstylia": 1098.95,
    "wykończenie ścian": 1680.0,
    "łazienki": 17002.99,
-   "robocizna": 174429.32
+   "robocizna": 174463.06
   },
-  "verified": 263,
-  "unverified": 0,
+  "verified": 262,
+  "unverified": 2,
   "kitchen_est": [
    36064,
    57040
@@ -38,35 +38,35 @@
  },
  {
   "slug": "japandi",
-  "total": 370756.72,
+  "total": 366610.42,
   "breakdown": {
-   "products": 175097.25,
+   "products": 170917.21,
    "materials": 18201.52,
-   "labour": 177457.95,
-   "labour_min": 132852.55,
-   "labour_max": 222064.04
+   "labour": 177491.69,
+   "labour_min": 132884.04,
+   "labour_max": 222100.03
   },
   "by_cat": {
    "Dodatki i dekoracje": 3541.56,
    "drzwi": 14359.7,
    "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 3234.9,
-   "kominek": 7094.0,
+   "kominek": 2734.0,
    "kuchnia": 19370.0,
    "materiały pomocnicze": 18201.52,
-   "meble": 40242.98,
+   "meble": 40422.94,
    "oświetlenie": 1912.66,
+   "tekstylia": 1098.95,
    "podłogi": 29220.92,
    "pralnia": 5427.0,
    "płytki": 12404.16,
    "schody i balustrady": 6466.2,
-   "tekstylia": 1098.95,
    "wykończenie ścian": 2409.8,
    "łazienki": 18516.42,
-   "robocizna": 177457.95
+   "robocizna": 177491.69
   },
-  "verified": 263,
-  "unverified": 0,
+  "verified": 262,
+  "unverified": 2,
   "kitchen_est": [
    36064,
    57040
@@ -75,35 +75,35 @@
  },
  {
   "slug": "skandynawski-jasny",
-  "total": 322988.79,
+  "total": 318961.25,
   "breakdown": {
-   "products": 149558.98,
+   "products": 145478.94,
    "materials": 11917.44,
-   "labour": 161512.37,
-   "labour_min": 121636.38,
-   "labour_max": 201387.55
+   "labour": 161564.87,
+   "labour_min": 121685.38,
+   "labour_max": 201443.55
   },
   "by_cat": {
    "Dodatki i dekoracje": 3147.51,
    "drzwi": 12472.7,
    "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 2118.9,
-   "kominek": 7094.0,
+   "kominek": 2734.0,
    "kuchnia": 19370.0,
    "materiały pomocnicze": 11917.44,
-   "meble": 36581.97,
+   "meble": 36861.93,
    "oświetlenie": 2507.74,
+   "tekstylia": 899.94,
    "podłogi": 15424.22,
    "pralnia": 5427.0,
    "płytki": 6305.01,
    "schody i balustrady": 10306.0,
-   "tekstylia": 899.94,
    "wykończenie ścian": 1072.0,
    "łazienki": 17033.99,
-   "robocizna": 161512.37
+   "robocizna": 161564.87
   },
-  "verified": 264,
-  "unverified": 0,
+  "verified": 263,
+  "unverified": 2,
   "kitchen_est": [
    36064,
    57040
@@ -112,35 +112,35 @@
  },
  {
   "slug": "cieply-minimalizm",
-  "total": 358748.09,
+  "total": 354601.79,
   "breakdown": {
-   "products": 183099.86,
+   "products": 178919.82,
    "materials": 13246.15,
-   "labour": 162402.08,
-   "labour_min": 122439.13,
-   "labour_max": 202365.81
+   "labour": 162435.82,
+   "labour_min": 122470.63,
+   "labour_max": 202401.8
   },
   "by_cat": {
    "Dodatki i dekoracje": 4384.53,
    "drzwi": 17379.7,
    "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 2934.9,
-   "kominek": 7094.0,
+   "kominek": 2734.0,
    "kuchnia": 19351.0,
    "materiały pomocnicze": 13246.15,
-   "meble": 45656.99,
+   "meble": 45836.95,
    "oświetlenie": 3691.16,
+   "tekstylia": 349.0,
    "podłogi": 27969.06,
    "pralnia": 5427.0,
    "płytki": 9458.61,
    "schody i balustrady": 10306.0,
-   "tekstylia": 349.0,
    "wykończenie ścian": 559.92,
    "łazienki": 18739.99,
-   "robocizna": 162402.08
+   "robocizna": 162435.82
   },
-  "verified": 256,
-  "unverified": 0,
+  "verified": 255,
+  "unverified": 2,
   "kitchen_est": [
    36064,
    57040
@@ -149,35 +149,35 @@
  },
  {
   "slug": "industrialny-loft",
-  "total": 358479.4,
+  "total": 354570.6,
   "breakdown": {
-   "products": 173698.53,
+   "products": 169718.49,
    "materials": 16474.78,
-   "labour": 168306.09,
-   "labour_min": 126258.15,
-   "labour_max": 210354.8
+   "labour": 168377.33,
+   "labour_min": 126324.65,
+   "labour_max": 210430.79
   },
   "by_cat": {
    "Dodatki i dekoracje": 3883.59,
    "drzwi": 14409.7,
    "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 2118.9,
-   "kominek": 7094.0,
+   "kominek": 2734.0,
    "kuchnia": 19991.24,
    "materiały pomocnicze": 16474.78,
-   "meble": 42185.0,
+   "meble": 42564.96,
    "oświetlenie": 4786.87,
+   "tekstylia": 339.0,
    "podłogi": 24145.7,
    "pralnia": 5427.0,
    "płytki": 7102.86,
    "schody i balustrady": 7591.0,
-   "tekstylia": 339.0,
    "wykończenie ścian": 6002.68,
    "łazienki": 18822.99,
-   "robocizna": 168306.09
+   "robocizna": 168377.33
   },
-  "verified": 269,
-  "unverified": 0,
+  "verified": 268,
+  "unverified": 2,
   "kitchen_est": [
    36064,
    57040
@@ -186,23 +186,23 @@
  },
  {
   "slug": "nowoczesna-klasyka",
-  "total": 394868.64,
+  "total": 390841.1,
   "breakdown": {
-   "products": 186751.84,
+   "products": 182671.8,
    "materials": 17783.28,
-   "labour": 190333.52,
-   "labour_min": 146405.51,
-   "labour_max": 234262.31
+   "labour": 190386.02,
+   "labour_min": 146454.5,
+   "labour_max": 234318.3
   },
   "by_cat": {
    "Dodatki i dekoracje": 4086.51,
    "drzwi": 15452.7,
    "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 2477.9,
-   "kominek": 7094.0,
+   "kominek": 2734.0,
    "kuchnia": 19351.0,
    "materiały pomocnicze": 17783.28,
-   "meble": 47619.0,
+   "meble": 47898.96,
    "oświetlenie": 5424.78,
    "podłogi": 30918.5,
    "pralnia": 5427.0,
@@ -211,10 +211,10 @@
    "tekstylia": 1645.0,
    "wykończenie ścian": 389.9,
    "łazienki": 17846.99,
-   "robocizna": 190333.52
+   "robocizna": 190386.02
   },
-  "verified": 258,
-  "unverified": 0,
+  "verified": 257,
+  "unverified": 2,
   "kitchen_est": [
    36064,
    57040

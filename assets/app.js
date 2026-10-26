@@ -36,12 +36,13 @@ const FILE_KEYS=['file','src','path','img','image','url','plik','name','filename
 const ROOM_KEYS=['room','room_id','roomId','pomieszczenie','id','pokoj','slug'];
 const pick=(o,ks)=>{for(const k of ks)if(o&&o[k]!=null&&o[k]!=='')return o[k];return null;};
 function imgPath(slug,f){f=String(f).trim();if(/^(https?:)?\/\//.test(f)||f.startsWith('img/'))return f;return `img/${slug}/${f.replace(/^\.?\//,'')}`;}
-const rejected=o=>o&&typeof o==='object'&&(o.rejected||o.ok===false||o.hidden||/odrzu|reject/i.test(o.status||''));
+const rejected=o=>o&&typeof o==='object'&&(o.rejected||o.wycofane||o.ok===false||o.hidden||/odrzu|reject/i.test(o.status||''));
 function normManifest(m,slug){
-  const rooms={};let cover=null;
+  const rooms={},pending={};let cover=null;
   const add=(rk,e)=>{
     if(e==null||rejected(e))return;
     if(Array.isArray(e)){e.forEach(x=>add(rk,x));return;}
+    if(typeof e==='object'&&e.w_przygotowaniu){const k=rk||roomKey(pick(e,ROOM_KEYS));if(k)pending[k]=typeof e.w_przygotowaniu==='string'?e.w_przygotowaniu:'';return;}
     if(typeof e==='object'&&!pick(e,FILE_KEYS)){const inner=e.files||e.images||e.imgs||e.warianty;if(inner){add(rk,inner);}return;}
     const f=typeof e==='string'?e:pick(e,FILE_KEYS);if(!f||!/\.(jpe?g|png|webp|avif)(\?|$)/i.test(f))return;
     if(/_rej\b|_rej\./i.test(f))return;
@@ -67,7 +68,7 @@ function normManifest(m,slug){
   }
   for(const k in rooms){const seen=new Set();rooms[k]=rooms[k].filter(x=>!seen.has(x.src)&&seen.add(x.src));}
   if(cover)cover=typeof cover==='string'?imgPath(slug,cover):imgPath(slug,pick(cover,FILE_KEYS));
-  return {rooms,cover};
+  return {rooms,cover,pending};
 }
 const imgOk=src=>new Promise(res=>{const i=new Image();i.onload=()=>res(i.naturalWidth>0);i.onerror=()=>res(false);i.src=src;});
 const manifests={};
@@ -216,9 +217,17 @@ async function viewRooms(){
   for(const r of S.rooms){
     const wrap=app.querySelector(`[data-room="${r.slug}"]`);if(!wrap)continue;
     if(m&&m.rooms[r.slug]?.length)fillImgs(wrap,m.rooms[r.slug],r,W);
+    else if(m&&m.pending&&r.slug in m.pending)phNowyUklad(wrap,r,m.pending[r.slug],st.slug);
     else if(m)fillImgs(wrap,[],r,W); /* manifest jest, pokój bez wizualizacji – nie sondujemy plików (404) */
     else probeRoom(st.slug,r.slug).then(l=>{if(cur()===st.slug)fillImgs(wrap,l,r,W);});
   }
+}
+/* wizualizacja wycofana (nieaktualny układ): plansza zastępcza + odnośniki do rzutu i spaceru 3D/360° albo modelu 3D */
+async function phNowyUklad(wrap,r,txt,slug){
+  let sp=null;try{const M=await getJSON('data/spacer.json');const k=Object.keys(M.style||{}).find(k=>M.style[k].slug===slug);if(k&&(M.pokoje||[]).includes(r.id))sp=`spacer.html?styl=${encodeURIComponent(slug)}&pokoj=${encodeURIComponent(r.slug)}`;}catch(e){}
+  const l3=sp?`<a class="btn" href="${esc(sp)}">Spacer 3D / 360° →</a>`:`<a class="btn alt" href="3d.html${/^2\//.test(r.id)?'?m=poddasze':''}">Model 3D${/^2\//.test(r.id)?' – poddasze':''} →</a>`;
+  wrap.innerHTML=`<div class="ph phn"><b>Wizualizacja w przygotowaniu (nowy układ)</b><span>${esc(txt||'Poprzedni obraz pokazywał nieaktualny układ i został wycofany.')}</span><span class="phl">${r.plan?'<button type="button" class="btn alt">Rzut – nowy układ</button>':''}${l3}</span></div>`;
+  const b=wrap.querySelector('button');if(b)b.onclick=()=>openLB([{src:r.plan,cap:`${r.id} ${r.name} – rzut`}],0);
 }
 /* spacer 3D/360° – link na karcie pokoju tylko gdy dla stylu i pokoju są gotowe pliki (data/spacer.json) */
 async function spacerLinks(slug){
@@ -315,9 +324,9 @@ async function viewShop(){
      order.map(k=>{const L=groups[k];const s=L.reduce((a,i)=>a+(i.sum||0),0);
       return `<div class="cat"><h3>${esc(g==='room'&&/^\d\/\d{2}$/.test(k)?k+' '+roomName(k):k)}</h3><span>${zl2(s)}</span></div>
       <table class="shop"><thead><tr><th>Produkt</th><th>Sklep</th><th class="n">Cena</th><th class="n">Ilość</th><th class="n">Suma</th><th>Sprawdzono</th></tr></thead><tbody>
-      ${L.map(i=>`<tr><td class="pn"><div class="pname"><a href="${esc(i.url)}" target="_blank" rel="noopener nofollow">${esc(i.product)} ↗</a>${isLab(i)?labInfo(i):`<small>${esc(g==='cat'?i.room:i.cat)}${i.formula?' · '+esc(i.formula):''}</small>`}${opInfo(i)}</div></td>
-       <td data-l="${isLab(i)?'Źródło stawki':'Sklep'}">${isLab(i)?`<a href="${esc(i.url)}" target="_blank" rel="noopener nofollow">${esc(i.shop)} ↗</a>`:esc(i.shop)}</td>
-       <td class="n" data-l="${isLab(i)?'Stawka (średnia)':'Cena'}">${i.price!=null?zl2(i.price)+' / '+esc(i.unit):'<span class="unv">niezweryfikowana</span>'}</td>
+      ${L.map(i=>`<tr><td class="pn"><div class="pname">${i.url?`<a href="${esc(i.url)}" target="_blank" rel="noopener nofollow">${esc(i.product)} ↗</a>`:`<span>${esc(i.product)}</span>`}${isLab(i)?labInfo(i):`<small>${esc(g==='cat'?i.room:i.cat)}${i.formula?' · '+esc(i.formula):''}</small>`}${opInfo(i)}</div></td>
+       <td data-l="${isLab(i)?'Źródło stawki':'Sklep'}">${isLab(i)&&i.url?`<a href="${esc(i.url)}" target="_blank" rel="noopener nofollow">${esc(i.shop)} ↗</a>`:esc(i.shop)}</td>
+       <td class="n" data-l="${isLab(i)?'Stawka (średnia)':'Cena'}">${i.price!=null?zl2(i.price)+' / '+esc(i.unit):`<span class="unv">${/do potwierdzenia/.test(i.status||'')?'cena do potwierdzenia':'niezweryfikowana'}</span>`}</td>
        <td class="n" data-l="Ilość">${esc(String(i.qty).replace('.',','))} ${esc(i.unit)}</td>
        <td class="n" data-l="Suma">${i.sum!=null?'<b>'+zl2(i.sum)+'</b>':'<span class="unv">poza sumą</span>'}</td>
        <td data-l="Sprawdzono">${esc(i.date)}</td></tr>`).join('')}</tbody></table>`;}).join('');

@@ -3,11 +3,8 @@
  "wygenerowano": "waliduj.py",
  "widoki": {
   "1-01.jpg": {
-   "status": "do poprawy",
-   "bledy": [
-    "[auto] materialy_powiazane: niepowiązane: drzwi EI30 garaż–dom",
-    "[materiały] drzwi EI30 garaż–dom: brak pozycji w CSV"
-   ],
+   "status": "zgodne",
+   "bledy": [],
    "liczba_uwag": 9,
    "materialy": [
     {
@@ -148,10 +145,22 @@
     },
     {
      "nazwa": "drzwi EI30 garaż–dom",
-     "ocena": "luka_csv",
-     "ocena_pl": "brak w CSV",
-     "uwagi": "brak pozycji w CSV",
-     "produkty": []
+     "ocena": "ok",
+     "ocena_pl": "zgodny",
+     "uwagi": "Hörmann szare stalowe",
+     "produkty": [
+      {
+       "produkt": "Hörmann Drzwi Ppoż EI30 Jasno Szary 800x2000",
+       "sklep": "obi.pl",
+       "url": "https://www.obi.pl/p/7348253/hoermann-drzwi-ppoz-ei30-jasno-szary-800x2000",
+       "cena": 1299.0,
+       "cena_txt": "1299,00",
+       "jednostka": "szt.",
+       "ilosc": 1.0,
+       "suma": 1299.0,
+       "suma_txt": "1299,00"
+      }
+     ]
     },
     {
      "nazwa": "lustro w wiatrołapie",
@@ -419,10 +428,8 @@
    "luki": []
   },
   "1-02.jpg": {
-   "status": "do poprawy",
-   "bledy": [
-    "[auto] linki_zywe: martwe: Montaż obudowy kominka – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026) (404), Podłączenie wkładu do komina – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026) (404)"
-   ],
+   "status": "zgodne",
+   "bledy": [],
    "liczba_uwag": 5,
    "materialy": [
     {
@@ -585,28 +592,6 @@
        "ilosc": 2.0,
        "suma": 236.0,
        "suma_txt": "236,00"
-      },
-      {
-       "produkt": "Montaż obudowy kominka – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026)",
-       "sklep": "tani-komin.pl",
-       "url": "https://tani-komin.pl/cennik-zabudowy-kominka#montaz-obudowy",
-       "cena": 3150.0,
-       "cena_txt": "3150,00",
-       "jednostka": "szt.",
-       "ilosc": 1.0,
-       "suma": 3150.0,
-       "suma_txt": "3150,00"
-      },
-      {
-       "produkt": "Podłączenie wkładu do komina – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026)",
-       "sklep": "tani-komin.pl",
-       "url": "https://tani-komin.pl/cennik-zabudowy-kominka#podlaczenie-wkladu",
-       "cena": 1210.0,
-       "cena_txt": "1210,00",
-       "jednostka": "szt.",
-       "ilosc": 1.0,
-       "suma": 1210.0,
-       "suma_txt": "1210,00"
       }
      ]
     },
@@ -748,11 +733,13 @@
    "luki": []
   },
   "1-02_b.jpg": {
-   "status": "do poprawy",
+   "status": "niezweryfikowane przez testera",
    "bledy": [
-    "[auto] linki_zywe: martwe: Montaż obudowy kominka – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026) (404), Podłączenie wkładu do komina – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026) (404); bez linku (szacunek): fronty, korpusy, półwysep 90×198 cm (kuchnia F1; front drzwi ukrytych spiżarni 70 lakierowany w kolorze frontów – w tym zakresie; blat kamienny wyceniony osobno w kat. „kuchnia – blat”; F1: 7,36 mb = blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67 × 4 900–7 750 zł/mb – średnie z widełek laczynasdrewno.eu i makpolkuchnie.pl 2026)"
+    "[auto] plik_istnieje: site/img/japandi/1-02_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/japandi/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
    ],
-   "liczba_uwag": 4,
+   "liczba_uwag": 5,
    "materialy": [
     {
      "nazwa": "podłoga",
@@ -895,28 +882,6 @@
        "ilosc": 2.0,
        "suma": 236.0,
        "suma_txt": "236,00"
-      },
-      {
-       "produkt": "Montaż obudowy kominka – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026)",
-       "sklep": "tani-komin.pl",
-       "url": "https://tani-komin.pl/cennik-zabudowy-kominka#montaz-obudowy",
-       "cena": 3150.0,
-       "cena_txt": "3150,00",
-       "jednostka": "szt.",
-       "ilosc": 1.0,
-       "suma": 3150.0,
-       "suma_txt": "3150,00"
-      },
-      {
-       "produkt": "Podłączenie wkładu do komina – cena regionalna (cennik orientacyjny tani-komin.pl, akt. 18.07.2026)",
-       "sklep": "tani-komin.pl",
-       "url": "https://tani-komin.pl/cennik-zabudowy-kominka#podlaczenie-wkladu",
-       "cena": 1210.0,
-       "cena_txt": "1210,00",
-       "jednostka": "szt.",
-       "ilosc": 1.0,
-       "suma": 1210.0,
-       "suma_txt": "1210,00"
       }
      ]
     },
@@ -1009,9 +974,13 @@
    "luki": []
   },
   "1-03.jpg": {
-   "status": "zgodne",
-   "bledy": [],
-   "liczba_uwag": 9,
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/japandi/1-03.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/japandi/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 5,
    "materialy": [
     {
      "nazwa": "płytki podłogowe hol/kuchnia",
@@ -1256,9 +1225,13 @@
    "luki": []
   },
   "1-03_b.jpg": {
-   "status": "zgodne",
-   "bledy": [],
-   "liczba_uwag": 5,
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/japandi/1-03_b.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/japandi/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 4,
    "materialy": [
     {
      "nazwa": "płytki podłogowe hol/kuchnia",
@@ -2044,9 +2017,13 @@
    "luki": []
   },
   "1-07.jpg": {
-   "status": "zgodne",
-   "bledy": [],
-   "liczba_uwag": 11,
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[auto] plik_istnieje: site/img/japandi/1-07.jpg",
+    "[auto] wpis_w_manifescie: brak wpisu w site/img/japandi/manifest.json",
+    "[tester] obraz niezweryfikowany przez testera (brak wpisu lub zmieniony sha1)"
+   ],
+   "liczba_uwag": 6,
    "materialy": [
     {
      "nazwa": "podłoga",
@@ -3450,8 +3427,10 @@
    "luki": []
   },
   "2-02.jpg": {
-   "status": "zgodne",
-   "bledy": [],
+   "status": "niezweryfikowane przez testera",
+   "bledy": [
+    "[hotfix 2026-10-26] wycofane ze strony: sufit i okno szczytowe niezgodne z geometrią v2 (płaski pas ok. 1 m na 3,00 m, okno szczytowe od podłogi)"
+   ],
    "liczba_uwag": 5,
    "materialy": [
     {

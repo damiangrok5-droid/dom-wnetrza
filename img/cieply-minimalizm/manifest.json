@@ -14,19 +14,8 @@
   "odstepstwa_pl": "TONSTAD wygląda prawie na biały; fronty BESTÅ z delikatnym ryflem zamiast gładkich Björköviken."
  },
  {
-  "room": "1/02",
-  "file": "1-02_b.jpg",
-  "title_pl": "Salon – jadalnia",
-  "opis_pl": "Jadalnia i wyspa: zabudowane schody dębowe, wyspa z czarną płytą indukcyjną i stalowym okapem wyspowym Franke Tale, 3 hokery BERGMUND z oparciem (czarna rama, ciemnoszare obicie), lampy Bollique mosiądz, stół STRANDTORP, drzwi korytarza gładkie kaszmir Fortia Surin w białych ościeżnicach.",
-  "odstepstwa_pl": "Nad wyspą widoczne 2 lampy Bollique zamiast 3."
- },
- {
   "room": "1/03",
-  "file": "1-03.jpg",
-  "title_pl": "Kuchnia z wyspą",
-  "opis_pl": "Kuchnia 2,57 m: zabudowa wysoka w L, okno 250 w wykuszu, wyspa z płytą indukcyjną i stalowym okapem wyspowym, 3 lampy Bollique.",
-  "odstepstwa_pl": "W tle jasne krzesła jadalni zamiast TOSSBERG (drugi plan).",
-  "uwaga_pl": "Wizualizacja sprzed korekty układu kuchni (26.10): obecnie blat L w wykuszu, półwysep 90×198 i 2 lampy, wejście z korytarza otworem 111 cm do sufitu. Aktualny układ: rzut poniżej i Spacer 3D (styl Modern organic)."
+  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała kuchnię sprzed zmian (wyspa, drzwi w słupie) i została wycofana. Aktualny układ (otwór 111 do sufitu bez drzwi, blat pod oknem ze zlewem i zmywarką, zabudowa wysoka z lodówką i piekarnikiem, półwysep 90×198 z płytą i okapem) – na rzucie oraz w spacerze 3D / modelu 3D."
  },
  {
   "room": "1/06",
@@ -37,11 +26,7 @@
  },
  {
   "room": "1/07",
-  "file": "1-07.jpg",
-  "title_pl": "Pokój gościnny",
-  "opis_pl": "Pokój gościnny (kadr z blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 ściana-ściana po lewej, okno balkonowe 100/230 z balustradą francuską i beżowymi zasłonami DYTÅG, stolik TONSTAD z lampą TÄRNABY, łóżko GLAMBERGET 80×200 sosna z szufladami, pilaster w prawym dalszym narożniku, dywan BREVBÄRARE, dąb Zip.",
-  "odstepstwa_pl": "Wezgłowie łóżka nieco węższe w kadrze niż w blockoucie (66–79% vs 68–89% szer.); łóżko 80×200 tymczasowo, do decyzji.",
-  "uwaga_pl": "Wizualizacja sprzed zmiany aranżacji (26.10): obecnie szafa PAX i sofa rozkładana LYCKSELE zamiast łóżka; obraz zostanie przerenderowany. Aktualny układ: rzut poniżej."
+  "w_przygotowaniu": "Poprzednia wizualizacja nie zgadzała się z listą zakupów (meble) i została wycofana. Aktualne wymiary – na rzucie; nowa wizualizacja po weryfikacji."
  },
  {
   "room": "1/08",
@@ -59,10 +44,7 @@
  },
  {
   "room": "2/02",
-  "file": "2-02.jpg",
-  "title_pl": "Sypialnia główna",
-  "opis_pl": "Sypialnia na poddaszu: cały trójkąt szczytu przeszklony (3 tafle), okno dachowe na prawej połaci, łóżko w lewym narożniku, fotel POÄNG (gięta rama brzozowa, beżowa poduszka) przy oknie.",
-  "odstepstwa_pl": "Dywan spoza CSV; komoda STORKLINTA i kinkiety MIRI poza kadrem."
+  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała inny kształt sufitu i okna szczytowego niż aktualny projekt (skosy od ścianek 110 do płaskiego pasa ok. 1 m na wys. ok. 3,00 m, okno szczytowe od podłogi) i została wycofana. Aktualny układ – na rzucie oraz w modelu 3D."
  },
  {
   "room": "2/05",

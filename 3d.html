@@ -11,6 +11,7 @@
 .mv-tabs{display:flex;gap:8px;margin:10px 0}
 .mv-tabs .btn.on{background:var(--acc)}
 model-viewer{display:block;width:100%;height:min(72vh,640px);background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);--poster-color:transparent}
+.mv-poster{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;text-align:center;padding:1rem}
 .mv-ar{position:absolute;right:12px;bottom:12px}
 .mv-load{position:absolute;inset:auto 0 50% 0;text-align:center;color:var(--mut);font-size:.9rem}
 .mv-box{position:relative}
@@ -43,7 +44,8 @@ model-viewer{display:block;width:100%;height:min(72vh,640px);background:var(--ca
     <model-viewer id="mv" src="3d/parter.glb" ios-src="3d/parter.usdz" alt="Model 3D parteru"
       camera-controls touch-action="pan-y" interaction-prompt="auto" shadow-intensity="0.6" exposure="1.05"
       camera-target="6.8m 0.8m 6.5m" camera-orbit="25deg 50deg 40m" min-camera-orbit="auto 0deg 6m" max-camera-orbit="auto 88deg 60m" field-of-view="35deg"
-      ar ar-modes="quick-look webxr scene-viewer" ar-scale="auto" loading="eager">
+      ar ar-modes="quick-look webxr scene-viewer" ar-scale="auto" loading="lazy" reveal="manual">
+      <div slot="poster" class="mv-poster"><button type="button" class="btn" id="mvLoad">Wczytaj model 3D <span id="mvSize">(ok. 4,2 MB)</span></button><p class="small">Model wczytuje się dopiero po kliknięciu – oszczędza transfer na telefonie.</p></div>
       <button slot="ar-button" class="btn mv-ar">AR</button>
       <div slot="progress-bar"></div>
     </model-viewer>
@@ -53,8 +55,11 @@ model-viewer{display:block;width:100%;height:min(72vh,640px);background:var(--ca
 <footer class="foot"><p>Model poglądowy, nie dokumentacja wykonawcza.</p></footer>
 <script>
 const mv=document.getElementById('mv'),bs=document.querySelectorAll('[data-m]');
-bs.forEach(b=>b.addEventListener('click',()=>{const m=b.dataset.m;mv.src='3d/'+m+'.glb';mv.iosSrc='3d/'+m+'.usdz';mv.alt='Model 3D '+(m==='parter'?'parteru':'poddasza');
- bs.forEach(x=>{x.classList.toggle('on',x===b);x.classList.toggle('alt',x!==b);});}));
+// hotfix 2026-10-26: model ładowany leniwie (reveal=manual) – dopiero po kliknięciu „Wczytaj model 3D” albo przycisku kondygnacji
+const SZ={parter:'4,2 MB',poddasze:'4,6 MB'},show=()=>mv.dismissPoster();
+document.getElementById('mvLoad').addEventListener('click',show);
+bs.forEach(b=>b.addEventListener('click',e=>{const m=b.dataset.m;document.getElementById('mvSize').textContent='(ok. '+SZ[m]+')';mv.src='3d/'+m+'.glb';mv.iosSrc='3d/'+m+'.usdz';mv.alt='Model 3D '+(m==='parter'?'parteru':'poddasza');
+ bs.forEach(x=>{x.classList.toggle('on',x===b);x.classList.toggle('alt',x!==b);});if(e.isTrusted)show();}));
 let cut=true;const cb=document.getElementById('cut');
 const applyCut=()=>{const m=mv.model&&mv.model.materials.find(x=>x.name==='sufit');if(!m)return;
  const c=m.pbrMetallicRoughness.baseColorFactor;m.setAlphaMode(cut?'MASK':'OPAQUE');m.setAlphaCutoff(0.5);m.pbrMetallicRoughness.setBaseColorFactor([c[0],c[1],c[2],cut?0:1]);
@@ -62,7 +67,7 @@ const applyCut=()=>{const m=mv.model&&mv.model.materials.find(x=>x.name==='sufit
 mv.addEventListener('load',applyCut);cb.addEventListener('click',()=>{cut=!cut;applyCut();});
 document.querySelector('#tabs a.on')?.scrollIntoView({inline:'center',block:'nearest'});
 const q=new URLSearchParams(location.search).get('m');if(q==='poddasze')document.querySelector('[data-m=poddasze]').click();
-mv.addEventListener('error',e=>console.warn('model-viewer',e.detail));
+mv.addEventListener('error',e=>{const d=e.detail||{};if(d.type==='loadfailure'&&/abort|Load failed|Failed to fetch/i.test(String(d.sourceError||'')))return;console.warn('model-viewer',d);});
 </script>
 </body>
 </html>

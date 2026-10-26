@@ -14,19 +14,8 @@
   "odstepstwa_pl": "Stół ma czarne metalowe nogi (CLARA – drewniane)."
  },
  {
-  "room": "1/02",
-  "file": "1-02_b.jpg",
-  "title_pl": "Salon – jadalnia",
-  "opis_pl": "Jadalnia i wyspa: zabudowane schody dębowe, czytelny wkład kominkowy w słupie ze sztukaterią, wyspa z blatem Calacatta i płytą indukcyjną, hokery BERGMUND czarno-szare, żyrandol MONTANA.",
-  "odstepstwa_pl": "Nad wyspą okap zamiast kul Bollique; blat stołu jasny dąb, nie rustykalny."
- },
- {
   "room": "1/03",
-  "file": "1-03.jpg",
-  "title_pl": "Kuchnia z wyspą",
-  "opis_pl": "Kuchnia 2,57 m: kremowe fronty ramowe, blat i fartuch Calacatta, okno 250 bez szprosów, wyspa z płytą indukcyjną i okapem wyspowym Franke Tale, 3 kule Bollique, jodełka.",
-  "odstepstwa_pl": "W tle jasne drewniane krzesła jadalni.",
-  "uwaga_pl": "Wizualizacja sprzed korekty układu kuchni (26.10): obecnie blat L w wykuszu, półwysep 90×198 i 2 lampy, wejście z korytarza otworem 111 cm do sufitu. Aktualny układ: rzut poniżej i Spacer 3D (styl Modern organic)."
+  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała kuchnię sprzed zmian (wyspa, drzwi w słupie) i została wycofana. Aktualny układ (otwór 111 do sufitu bez drzwi, blat pod oknem ze zlewem i zmywarką, zabudowa wysoka z lodówką i piekarnikiem, półwysep 90×198 z płytą i okapem) – na rzucie oraz w spacerze 3D / modelu 3D."
  },
  {
   "room": "1/06",
@@ -37,11 +26,7 @@
  },
  {
   "room": "1/07",
-  "file": "1-07.jpg",
-  "title_pl": "Pokój gościnny",
-  "opis_pl": "Pokój gościnny (kadr z blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 ściana-ściana, okno balkonowe 100/230 z balustradą francuską i granatowymi zasłonami SANELA, stolik TONSTAD z lampą ÅRSTID, łóżko GLAMBERGET 80×200, pilaster w prawym dalszym narożniku, dywan JÄRNVÄG, jodełka Barlinek.",
-  "odstepstwa_pl": "Zasłona częściowo zasłania lewą część szyby; łóżko 80×200 tymczasowo, do decyzji; plafon poza kadrem.",
-  "uwaga_pl": "Wizualizacja sprzed zmiany aranżacji (26.10): obecnie szafa PAX i sofa rozkładana LYCKSELE zamiast łóżka; obraz zostanie przerenderowany. Aktualny układ: rzut poniżej."
+  "w_przygotowaniu": "Poprzednia wizualizacja nie zgadzała się z listą zakupów (meble) i została wycofana. Aktualne wymiary – na rzucie; nowa wizualizacja po weryfikacji."
  },
  {
   "room": "1/08",
@@ -59,10 +44,7 @@
  },
  {
   "room": "2/02",
-  "file": "2-02.jpg",
-  "title_pl": "Sypialnia główna",
-  "opis_pl": "Sypialnia na poddaszu: cały trójkąt szczytu przeszklony (3 tafle, czarne ramy) i w pełni odsłonięty do parapetu 80 cm, sztukateria QUEST pod oknem, okno dachowe na prawej połaci, łóżko tapicerowane, TONSTAD kremowy, kinkiet MIRI, plafon Yonnet, jodełka.",
-  "odstepstwa_pl": "Komoda GULLABERG 168 cm stoi przy drzwiach (x380–548 wg blockoutu), za kamerą – poza kadrem; brak granatowych zasłon SANELA."
+  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała inny kształt sufitu i okna szczytowego niż aktualny projekt (skosy od ścianek 110 do płaskiego pasa ok. 1 m na wys. ok. 3,00 m, okno szczytowe od podłogi) i została wycofana. Aktualny układ – na rzucie oraz w modelu 3D."
  },
  {
   "room": "2/05",

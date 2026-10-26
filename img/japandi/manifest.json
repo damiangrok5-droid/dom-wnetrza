@@ -14,27 +14,8 @@
   "odstepstwa_pl": "Okno narożne nie zawija wyraźnie na lewą ścianę."
  },
  {
-  "room": "1-02",
-  "file": "1-02_b.jpg",
-  "title_pl": "Jadalnia 1/02",
-  "opis_pl": "Jadalnia japandi: słup z kominkiem po lewej, dębowy stół ELIO z czarnymi krzesłami PINNTORP przy HST, HST na prawej ścianie, papierowa lampa nad stołem.",
-  "odstepstwa_pl": "Brak istotnych odstępstw."
- },
- {
   "room": "1-03",
-  "file": "1-03.jpg",
-  "title_pl": "Kuchnia 1/03 – ściana wysokiej zabudowy",
-  "opis_pl": "Kuchnia japandi: ciemna zabudowa wysoka 220 cm z piekarnikiem i lodówką w zabudowie, obok drzwi 70/200 do spiżarni w kolorze kaszmir, zlew pod oknem po prawej, wyspa z płytą, kominowy okap wyspowy Franke Tale (stal), 3 hokery, 3 plecione lampy, gres Lora crema.",
-  "odstepstwa_pl": "Komin okapu dodany w obróbce do wcześniejszego kadru; środkowa lampa wisi przed kominem. Lampy plecione zamiast BLÅSTÅNG/HAVSDJUP z listy (bez zmian względem poprzedniej wersji).",
-  "uwaga_pl": "Wizualizacja sprzed korekty układu kuchni (26.10): obecnie blat L w wykuszu, półwysep 90×198 i 2 lampy, wejście z korytarza otworem 111 cm do sufitu. Aktualny układ: rzut poniżej i Spacer 3D (styl Modern organic)."
- },
- {
-  "room": "1-03",
-  "file": "1-03_b.jpg",
-  "title_pl": "Kuchnia 1/03 – widok na okno",
-  "opis_pl": "Kuchnia japandi – widok na wykusz: okno we wnęce ze zlewem, ciemna zabudowa z piekarnikiem i lodówką KIN86 w zabudowie, wyspa z płytą, okap wyspowy Franke Tale nad płytą, plecione lampy, czarne hokery.",
-  "odstepstwa_pl": "Widać 2 z 3 lamp.",
-  "uwaga_pl": "Wizualizacja sprzed korekty układu kuchni (26.10): obecnie blat L w wykuszu, półwysep 90×198 i 2 lampy, wejście z korytarza otworem 111 cm do sufitu. Aktualny układ: rzut poniżej i Spacer 3D (styl Modern organic)."
+  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała kuchnię sprzed zmian (wyspa, drzwi w słupie) i została wycofana. Aktualny układ (otwór 111 do sufitu bez drzwi, blat pod oknem ze zlewem i zmywarką, zabudowa wysoka z lodówką i piekarnikiem, półwysep 90×198 z płytą i okapem) – na rzucie oraz w spacerze 3D / modelu 3D."
  },
  {
   "room": "1-06",
@@ -45,11 +26,7 @@
  },
  {
   "room": "1-07",
-  "file": "1-07.jpg",
-  "title_pl": "Pokój gościnny 1/07",
-  "opis_pl": "Pokój gościnny japandi (kamera blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 po lewej, okno francuskie 100/230 z ciemną ramą, beżowa zasłona DYTÅG po prawej stronie okna, brązowy dębowy stolik TONSTAD z lampką TÄRNABY, sosnowe łóżko GLAMBERGET 80×200 z szufladami bez wezgłowia, grafitowy pled, dywan LOHALS, dąb Country.",
-  "odstepstwa_pl": "Kadr z kamery blockoutu 1-07; szerokość okna skorygowana w obróbce (deterministyczne rozciągnięcie poziome strefy okna kosztem frontu szafy), tak by ściana z oknem odpowiadała ok. 3,15–3,5 m. Łóżko 80×200 wstępnie (do potwierdzenia). Plafonu Yonnet nie widać (poza kadrem). Widać jeden panel zasłony.",
-  "uwaga_pl": "Wizualizacja sprzed zmiany aranżacji (26.10): obecnie szafa PAX i sofa rozkładana LYCKSELE zamiast łóżka; obraz zostanie przerenderowany. Aktualny układ: rzut poniżej."
+  "w_przygotowaniu": "Poprzednia wizualizacja nie zgadzała się z listą zakupów (meble) i została wycofana. Aktualne wymiary – na rzucie; nowa wizualizacja po weryfikacji."
  },
  {
   "room": "1-08",
@@ -67,10 +44,7 @@
  },
  {
   "room": "2-02",
-  "file": "2-02.jpg",
-  "title_pl": "Sypialnia główna 2/02",
-  "opis_pl": "Sypialnia japandi: sklepienie, przeszklony szczyt, łóżko TARVA 160, TONSTAD brąz, GULLSUDARE, dywan TIDTABELL.",
-  "odstepstwa_pl": "Szczyt z krótkimi pionowymi bokami; wezgłowie wg karty analizy (rzut v4 inaczej)."
+  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała inny kształt sufitu i okna szczytowego niż aktualny projekt (skosy od ścianek 110 do płaskiego pasa ok. 1 m na wys. ok. 3,00 m, okno szczytowe od podłogi) i została wycofana. Aktualny układ – na rzucie oraz w modelu 3D."
  },
  {
   "room": "2-05",

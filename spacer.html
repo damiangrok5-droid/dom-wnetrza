@@ -187,9 +187,12 @@ async function startPano() {
 function setMarkers() {
   if (!markers) return;
   const p = st.m.punkty[st.pt];
+  // hotfix 2026-10-26: różne cele w tym samym kierunku (np. z kuchni przez otwór 111: kominek, jadalnia, salon) NIE są już
+  // odrzucane – najbliższy zostaje na swoim kierunku, kolejne rozsuwamy w poziomie (na przemian w prawo/lewo) i podnosimy ku horyzontowi
   const L = []; for (const l of [...p.linki].filter(l => W().pano[l.do]).sort((a, b) => a.odl_cm - b.odl_cm)) {
-    if (!L.some(o => Math.abs(Math.atan2(Math.sin(o.yaw - l.yaw), Math.cos(o.yaw - l.yaw))) < 0.25)) L.push(l); } // bliższy punkt zasłania dalszy w tym samym kierunku
-  markers.setMarkers(L.map(l => ({ id: 'go-' + l.do, position: { yaw: l.yaw, pitch: l.pitch },
+    const n = L.filter(o => Math.abs(Math.atan2(Math.sin(o.base - l.yaw), Math.cos(o.base - l.yaw))) < 0.25).length;
+    L.push({ ...l, base: l.yaw, vy: l.yaw + (n ? (n % 2 ? 1 : -1) * Math.ceil(n / 2) * 0.45 : 0), vp: n ? l.pitch * 0.7 : l.pitch }); }
+  markers.setMarkers(L.map(l => ({ id: 'go-' + l.do, position: { yaw: l.vy, pitch: l.vp },
     html: `<div class="hs" role="button" aria-label="Przejdź: ${st.m.punkty[l.do].nazwa}"><b></b><i>${st.m.punkty[l.do].nazwa}</i></div>`,
     size: { width: 58, height: 58 }, anchor: 'center center', data: { to: l.do, yaw: l.yaw } })));
   syncRoomSeg(); setMe(p.xy[0], p.xy[1], st.yaw);
