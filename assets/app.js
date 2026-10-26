@@ -33,7 +33,9 @@ function normManifest(m,slug){
     let cap=null;
     if(typeof e==='object'){const t=pick(e,['title_pl','title','tytul']),o=pick(e,['opis_pl','caption','opis','desc','description','alt','label','podpis','view','widok']),x=pick(e,['odstepstwa_pl','odstepstwa','deviations']);
       cap=[t,o].filter(Boolean).join(' – ')+(x?` (odstępstwa od rzutu: ${x})`:'')||null;}
-    (rooms[k]??=[]).push({src:imgPath(slug,f),cap,title:typeof e==='object'?pick(e,['title_pl','title']):null});
+    const note=typeof e==='object'?pick(e,['uwaga_pl','uwaga','note']):null;
+    if(note)cap=`⚠ ${note}`+(cap?` · ${cap}`:'');
+    (rooms[k]??=[]).push({src:imgPath(slug,f),cap,note,title:typeof e==='object'?pick(e,['title_pl','title']):null});
   };
   if(!m)return null;
   if(Array.isArray(m))add(null,m);
@@ -137,19 +139,43 @@ function roomCard(r){
    <div class="b"><div class="hd"><h3>${esc(r.name)}</h3><span class="area">${r.area!=null?esc(String(r.area).replace('.',','))+' m²':''}</span></div>
    <div class="id">${esc(r.id)} · ${esc(r.floor)}</div>
    <dl>${rows.map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>
+   <div class="wal" data-wal="${r.slug}"></div>
    <details><summary>Rzut z góry, okna i drzwi</summary>
     ${r.plan?`<img class="plan" loading="lazy" src="${esc(r.plan)}" alt="Rzut pomieszczenia ${esc(r.id)}" data-plan="${esc(r.plan)}" data-cap="${esc(r.id+' '+r.name+' – rzut')}">`:''}
     ${r.windows.length?`<p><b>Okna:</b> ${r.windows.map(esc).join('; ')}</p>`:''}
     ${r.doors.length?`<p><b>Drzwi:</b> ${r.doors.map(esc).join('; ')}</p>`:''}
    </details></div></article>`;
 }
-function fillImgs(wrap,list,r){
+/* ---------- autowalidacja: plakietka + „Materiały w tym widoku” (dane: data/walidacja-<styl>.json) ---------- */
+const fname=src=>String(src).split('/').pop().split('?')[0];
+const OC={ok:'zgodny',partial:'częściowo',generic:'ogólnikowy',mismatch:'niezgodny',luka_csv:'brak w CSV',nieczytelne:'nieczytelny'};
+const wTag=b=>{const m=String(b).match(/^\[([^\]]+)\]\s*(.*)$/);if(!m)return ['',b];let t=m[1],x=m[2];if(t==='auto'){t='kontrola';x=x.replace(/^znak_wodny:.*/,'brak znaku wodnego „wizualizacja nastrojowa (AI)”').replace(/^[a-z_]+:\s*/,'');}return [t,x];};
+function wBadge(v){if(!v)return '';const ok=v.status==='zgodne';return `<span class="wbadge ${ok?'ok':'bad'}">${ok?'✓ zgodne':'✕ do poprawy'}</span>`;}
+function wPrice(p){const c=p.cena!=null?zl2(p.cena):(p.cena_txt||'cena niezweryfikowana');const q=p.ilosc!=null?` × ${String(p.ilosc).replace('.',',')} ${esc(p.jednostka||'')}`:'';const su=p.suma!=null?` = <b>${zl2(p.suma)}</b>`:(p.suma_txt?` = <b>${esc(p.suma_txt)} zł</b>`:'');return `${esc(c)}${q}${su}`;}
+function wBlock(v,i,n){
+  if(!v)return '';
+  const ok=v.status==='zgodne';
+  const fails=v.bledy.map(b=>{const [t,x]=wTag(b);return `<li>${t?`<span class="wk">${esc(t)}</span> `:''}${esc(x)}</li>`;}).join('');
+  const mats=v.materialy.map(m=>`<li class="o-${esc(m.ocena)}"><div class="wn"><span>${esc(m.nazwa)}</span><i>${esc(OC[m.ocena]||m.ocena)}</i></div>
+    ${m.produkty.map(p=>`<div class="wp">${p.url?`<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.produkt)}</a>`:esc(p.produkt)}<small>${esc(p.sklep)} · ${wPrice(p)}</small></div>`).join('')}
+    ${m.uwagi&&m.ocena!=='ok'?`<div class="wu">Na wizualizacji: ${esc(m.uwagi)}</div>`:''}</li>`).join('');
+  return `<details class="walv ${ok?'ok':'bad'}"><summary>${wBadge(v)} ${n>1?`Ujęcie ${i+1}: `:''}Materiały w tym widoku <small>(${v.materialy.length})</small></summary>
+   ${fails?`<div class="wfail"><b>Do poprawy:</b><ul>${fails}</ul></div>`:''}
+   <ul class="wmat">${mats}</ul>
+   ${v.luki.length?`<p class="wluki"><b>Widoczne, ale brak w liście zakupów:</b> ${v.luki.map(esc).join(', ')}</p>`:''}
+   ${v.liczba_uwag?`<p class="wluki">${v.liczba_uwag} ${pl(v.liczba_uwag,'drobna uwaga','drobne uwagi','drobnych uwag')} – szczegóły w walidacja/raport.md</p>`:''}</details>`;
+}
+function fillImgs(wrap,list,r,W){
   if(!list.length)return;
-  const L=list.map((x,i)=>({src:x.src,cap:x.cap&&x.title?x.cap:`${r.id} ${r.name}`+(x.cap?` – ${x.cap}`:'')}));
-  wrap.innerHTML=`<div class="imgs">${L.map((x,i)=>`<button data-i="${i}" aria-label="Powiększ"><img loading="lazy" decoding="async" src="${esc(x.src)}" alt="${esc(x.cap)}"></button>`).join('')}</div>${L.length>1?`<div class="dots">${L.map(()=>'<i></i>').join('')}</div><div class="capt">${L.length} ujęcia – przesuń palcem</div>`:''}`;
+  const L=list.map((x,i)=>({src:x.src,note:x.note,cap:x.cap&&x.title?x.cap:`${r.id} ${r.name}`+(x.cap?` – ${x.cap}`:'')}));
+  const wv=L.map(x=>W?.widoki?.[fname(x.src)]);
+  wrap.innerHTML=`<div class="imgs">${L.map((x,i)=>`<button data-i="${i}" aria-label="Powiększ"><img loading="lazy" decoding="async" src="${esc(x.src)}" alt="${esc(x.cap)}">${wBadge(wv[i])}</button>`).join('')}</div>${L.length>1?`<div class="dots">${L.map(()=>'<i></i>').join('')}</div><div class="capt">${L.length} ujęcia – przesuń palcem</div>`:''}`;
   wrap.querySelectorAll('button').forEach(b=>b.onclick=()=>openLB(L.filter(x=>!x.bad),+b.dataset.i));
   wrap.querySelectorAll('img').forEach((im,i)=>im.onerror=()=>{L[i].bad=true;im.parentElement.remove();
     if(!wrap.querySelector('img'))wrap.innerHTML='<div class="ph"><b>W przygotowaniu</b><span>plik wizualizacji jeszcze niedostępny</span></div>';});
+  const box=wrap.closest('.room')?.querySelector('.wal');
+  const notes=[...new Set(L.map(x=>x.note).filter(Boolean))].map(n=>`<p class="note vnote">⚠ ${esc(n)}</p>`).join('');
+  if(box)box.innerHTML=notes+(W?wv.map((v,i)=>wBlock(v,i,L.length)).join(''):'');
 }
 async function viewRooms(){
   const st=styleBy(cur());
@@ -159,12 +185,13 @@ async function viewRooms(){
    ${floors.map(([f,l])=>{const rs=S.rooms.filter(r=>r.floor===f);return `<h2 class="floorh">${l} <small>${rs.length} pomieszczeń · ${rs.reduce((a,r)=>a+(+r.area||0),0).toFixed(1).replace('.',',')} m²</small></h2><div class="grid s3">${rs.map(roomCard).join('')}</div>`;}).join('')}
    <p style="margin-top:24px"><a class="btn" href="#/zakupy/${st.slug}">Lista zakupów – ${esc(st.name)} →</a></p>`;
   app.querySelectorAll('img.plan').forEach(im=>im.onclick=()=>openLB([{src:im.dataset.plan,cap:im.dataset.cap}],0));
-  const m=await loadManifest(st.slug);
+  const [m,W]=await Promise.all([loadManifest(st.slug),getJSON(`data/walidacja-${st.slug}.json`).catch(()=>null)]);
   if(cur()!==st.slug)return;
   for(const r of S.rooms){
     const wrap=app.querySelector(`[data-room="${r.slug}"]`);if(!wrap)continue;
-    if(m&&m.rooms[r.slug]?.length)fillImgs(wrap,m.rooms[r.slug],r);
-    else probeRoom(st.slug,r.slug).then(l=>{if(cur()===st.slug)fillImgs(wrap,l,r);});
+    if(m&&m.rooms[r.slug]?.length)fillImgs(wrap,m.rooms[r.slug],r,W);
+    else if(m)fillImgs(wrap,[],r,W); /* manifest jest, pokój bez wizualizacji – nie sondujemy plików (404) */
+    else probeRoom(st.slug,r.slug).then(l=>{if(cur()===st.slug)fillImgs(wrap,l,r,W);});
   }
 }
 

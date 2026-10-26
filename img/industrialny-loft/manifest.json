@@ -1,100 +1,101 @@
 [
-  {
-    "room": "1/01",
-    "file": "1-01.jpg",
-    "title_pl": "Wiatrołap",
-    "opis_pl": "Wejście z drzwiami zewnętrznymi i zabudową na okrycia, widok od strony przedpokoju.",
-    "odstepstwa_pl": "Drzwi wejściowe bardziej centralnie niż w narożniku wg rzutu."
-  },
-  {
-    "room": "1/02",
-    "file": "1-02.jpg",
-    "title_pl": "Salon – strefa TV i narożnik",
-    "opis_pl": "Narożnik w kształcie L zwrócony do ściany TV, HST 326 (geo wschód) i HST 180 z oknem narożnym (geo południe) wolne od mebli.",
-    "odstepstwa_pl": "Orientacja narożnika niejednoznaczna."
-  },
-  {
-    "room": "1/02",
-    "file": "1-02_b.jpg",
-    "title_pl": "Salon – jadalnia",
-    "opis_pl": "Strefa jadalni ze stołem przy przeszkleniach, w tle zamknięty bieg schodów między ścianami.",
-    "odstepstwa_pl": "Dodana stalowo-szklana ścianka przy schodach (bieg nadal między ścianami)."
-  },
-  {
-    "room": "1/03",
-    "file": "1-03.jpg",
-    "title_pl": "Kuchnia z wyspą",
-    "opis_pl": "Kuchnia z wyspą, okno (parapet 90, okno 140) na geo wschód z porannym światłem, zabudowa wysoka z wejściem do spiżarni.",
-    "odstepstwa_pl": "Fronty pozostały orzechowe zamiast wędzonego dębu; dodatkowe elementy słupowe."
-  },
-  {
-    "room": "1/06",
-    "file": "1-06.jpg",
-    "title_pl": "Przedpokój ze schodami",
-    "opis_pl": "Przedpokój z prostymi schodami 96 cm (16 stopni 18,5 cm, dębowe stopnice) w zamkniętym biegu między ścianami.",
-    "odstepstwa_pl": "Widoczne dodatkowe skrzydło drzwi przy lewej krawędzi (prawdopodobnie drzwi wiatrołapu); przedpokój szerszy niż 1,2 m."
-  },
-  {
-    "room": "1/07",
-    "file": "1-07.jpg",
-    "title_pl": "Pokój gościnny",
-    "opis_pl": "Pokój gościnny z szafą na całą ścianę, jednym wysokim oknem z balustradą francuską i łóżkiem przy ścianie bocznej.",
-    "odstepstwa_pl": "Okno szersze niż 100 cm; uskok ściany tylko zasugerowany."
-  },
-  {
-    "room": "1/08",
-    "file": "1-08.jpg",
-    "title_pl": "Łazienka parter",
-    "opis_pl": "Łazienka bez okna: WC podwieszane naprzeciw drzwi, umywalka po prawej, prysznic walk-in ~90×120 po lewej.",
-    "odstepstwa_pl": "Brak istotnych."
-  },
-  {
-    "room": "2/01",
-    "file": "2-01.jpg",
-    "title_pl": "Hol poddasza",
-    "opis_pl": "Hol 2,4 × 9,4 m z sufitem 2,76 m, otworem schodowym z balustradą i drzwiami balkonowymi 180/230 na końcu.",
-    "odstepstwa_pl": "Jak w ciepłym minimalizmie (bez wyłazu na strych; otwór do przedsionka na końcu lewej ściany)."
-  },
-  {
-    "room": "2/02",
-    "file": "2-02.jpg",
-    "title_pl": "Sypialnia główna",
-    "opis_pl": "Sypialnia pod sklepieniem do ~3,45 m, ścianki kolankowe 1,18 m, przeszklenie szczytowe w 3 polach na geo zachód (zachód słońca), okno dachowe 78/140 w lewej połaci.",
-    "odstepstwa_pl": "Okno szczytowe z niskim parapetem; dodane belki krokwi (stylizacja)."
-  },
-  {
-    "room": "2/05",
-    "file": "2-05.jpg",
-    "title_pl": "Łazienka poddasze",
-    "opis_pl": "Mała łazienka 2,96 × 2,69 m widziana od drzwi: kabina walk-in w prawym bliższym narożniku, wanna wzdłuż prawej ściany, dwie umywalki na lewej ścianie, WC i bidet na wprost pod jedynym oknem dachowym 94/118; płaski sufit 2,76 m przy wejściu i jeden skos do ścianki kolankowej ~1,18 m.",
-    "odstepstwa_pl": "Jak w ciepłym minimalizmie (łazienka wygląda nieco głębiej, płaski sufit wąskim pasem); dwa osobne lustra zamiast jednego; pas cegły nad ścianką kolankową."
-  },
-  {
-    "room": "2/06",
-    "file": "2-06.jpg",
-    "title_pl": "Pokój rodzinny – strefa TV i sofa",
-    "opis_pl": "Strefa TV do grania na konsoli, sofa pod skosem z oknem dachowym, drzwi balkonowe 160/230 na taras (geo południe) wolne.",
-    "odstepstwa_pl": "Dodane belki krokwi na skosie (stylizacja)."
-  },
-  {
-    "room": "2/06",
-    "file": "2-06_b.jpg",
-    "title_pl": "Pokój rodzinny – biurko i gitary",
-    "opis_pl": "Widok od balkonu: biurko we wnęce 60 cm, ściana z prawdziwymi gitarami i wzmacniaczem, drzwi z holu w narożniku.",
-    "odstepstwa_pl": "Brak istotnych."
-  },
-  {
-    "room": "2/07",
-    "file": "2-07.jpg",
-    "title_pl": "Pokój 2/07",
-    "opis_pl": "Pokój 3,59 × 4,01 m: łóżko pod skosem 38° z oknem dachowym 94/118, drzwi balkonowe 160/230 na taras (geo południe).",
-    "odstepstwa_pl": "Dodane odsłonięte krokwie (stylizacja)."
-  },
-  {
-    "room": "2/08",
-    "file": "2-08.jpg",
-    "title_pl": "Pokój z lukarną 2/08",
-    "opis_pl": "Pokój 4,40 × 2,83 m z lukarną 3,2 m: dwa okna po 153 cm ze słupkiem 14 cm, bez szprosów, siedzisko w lukarnie, dwa okna dachowe w połaciach.",
-    "odstepstwa_pl": "Słupek między oknami jako czarny profil zamiast tynkowanego słupka 14 cm."
-  }
+ {
+  "room": "1/01",
+  "file": "1-01.jpg",
+  "title_pl": "Wiatrołap",
+  "opis_pl": "Wiatrołap: drzwi wejściowe Inspiro Iguana Black Premium antracyt – skrzydło 100 z pionowym pasem szyby i czarną klamką, doświetle boczne 37 cm (ok. 1:3 do skrzydła), prawa ściana cegła Parma biała, posadzka Caprano szara, downlighty MESON; bez lustra.",
+  "odstepstwa_pl": "Drzwi EI30 do garażu za kamerą (niewidoczne). Proporcja doświetla dociągnięta korektą geometrii obrazu (zwężenie strefy doświetla do ok. 0,27–0,28 szerokości ramy; CSV: 0,247)."
+ },
+ {
+  "room": "1/02",
+  "file": "1-02.jpg",
+  "title_pl": "Salon – strefa TV i narożnik",
+  "opis_pl": "Salon: pas 3,46 m, narożnik koniakowy, regał FJÄLLBO, ściana TV z cegły Parma, posadzka betonopodobna, szyna z reflektorami, stół dębowy z czarnymi nogami.",
+  "odstepstwa_pl": "Okno narożne pokazane jako jedno okno na ścianie czołowej (jak w blockoucie)."
+ },
+ {
+  "room": "1/02",
+  "file": "1-02_b.jpg",
+  "title_pl": "Salon – jadalnia",
+  "opis_pl": "Jadalnia i wyspa: zabudowane schody z dębowymi stopniami, słup kominka, wyspa z płytą indukcyjną i czarnym okapem, nad stołem jedna czarna listwa EDYLIT z 4 bursztynowymi kloszami, posadzka betonopodobna.",
+  "odstepstwa_pl": "Kopuły Soraya nad wyspą niewidoczne (w ich miejscu okap)."
+ },
+ {
+  "room": "1/03",
+  "file": "1-03.jpg",
+  "title_pl": "Kuchnia z wyspą",
+  "opis_pl": "Kuchnia 2,57 m: fronty grafitowe, blat Nero Assoluto, okno 250 bez szprosów, wyspa z płytą indukcyjną i czarnym okapem wyspowym, 3 czarne kopuły, ściana z cegły Parma.",
+  "odstepstwa_pl": "W tle jasne krzesła jadalni (spoza CSV)."
+ },
+ {
+  "room": "1/06",
+  "file": "1-06.jpg",
+  "title_pl": "Przedpokój ze schodami",
+  "opis_pl": "Przedpokój ok. 3,45 m (kadr jak blockout 1-06_B): na wprost drzwi 1/08, po prawej tylko drzwi 1/07 – Exmoor białe z czarnym obrzeżem i czarnymi klamkami; lewa ściana z cegły Parma, posadzka Caprano szara 60×120, downlighty MESON.",
+  "odstepstwa_pl": "Schody i poręcz AVIS poza kadrem (jak w blockoucie B)."
+ },
+ {
+  "room": "1/07",
+  "file": "1-07.jpg",
+  "title_pl": "Pokój gościnny",
+  "opis_pl": "Pokój gościnny (kadr z blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 ściana-ściana, czarne okno balkonowe 100/230 z balustradą, zasłony KORGMOTT ciemnoszare na czarnym karniszu BEKRÄFTA, stolik BLÅSTÅSEN czarny z lampą ÅRSTID, łóżko GLAMBERGET 80×200, pilaster w prawym dalszym narożniku, dywan TIPHEDE, winyl SPC white Concrete.",
+  "odstepstwa_pl": "Łóżko 80×200 tymczasowo, do decyzji; plafon poza kadrem (sufit niewidoczny).",
+  "uwaga_pl": "Łóżko 80×200 jest tymczasowe – czeka na decyzję inwestora (140, 160, 80 albo sofa rozkładana); po decyzji wizualizacja i lista zakupów zostaną zaktualizowane."
+ },
+ {
+  "room": "1/08",
+  "file": "1-08.jpg",
+  "title_pl": "Łazienka parter",
+  "opis_pl": "Łazienka 1,6×2,26: gres Caprano szary, prysznic za szybą w czarnym profilu, szafka dąb 60 z umywalką nablatową Roca Domus, czarne lustro LED, kinkiet Nevada czarny, armatura gun metal.",
+  "odstepstwa_pl": "Brak istotnych."
+ },
+ {
+  "room": "2/01",
+  "file": "2-01.jpg",
+  "title_pl": "Hol poddasza",
+  "opis_pl": "Korytarz poddasza: płaski sufit, wąski przebieg, drzwi balkonowe 180 z balustradą francuską, filar w cegle Parma, drzwi Exmoor z czarnym obrzeżem, czarna balustrada schodów, szyna Kobi.",
+  "odstepstwa_pl": "Ściana końcowa nieco szersza niż w blockoucie."
+ },
+ {
+  "room": "2/02",
+  "file": "2-02.jpg",
+  "title_pl": "Sypialnia główna",
+  "opis_pl": "Sypialnia na poddaszu: cały szczyt przeszklony (3 tafle, czarne ramy), okno dachowe na prawej połaci, ścianka pod oknem z cegły Parma, łóżko IDANÄS ciemny brąz, komoda STORKLINTA.",
+  "odstepstwa_pl": "Komoda STORKLINTA w miejscu bryły fotela z blockoutu; plafon Yonnet i kinkiet Dior niewidoczne."
+ },
+ {
+  "room": "2/05",
+  "file": "2-05.jpg",
+  "title_pl": "Łazienka poddasze",
+  "opis_pl": "Łazienka na poddaszu: dwie szafki dąb 60 z umywalkami Roca Domus, okrągłe lustra LED w czarnej ramie, lamele dębowe za WC i bidetem, wanna Ravak, gres Caprano.",
+  "odstepstwa_pl": "Układ jak w zaakceptowanym ujęciu cm (blockout 2-05 ma kamerę przy WC, a szafki są w nim poza kadrem)."
+ },
+ {
+  "room": "2/06",
+  "file": "2-06.jpg",
+  "title_pl": "Pokój rodzinny – strefa TV i sofa",
+  "opis_pl": "Pokój dzienny: sofa 2-os. GULLVALLA ~160 cm zamiast narożnika, bez belek i szynoprzewodu, biała cegła, czarny plafon.",
+  "odstepstwa_pl": "KALLAX wygląda na naturalny dąb zamiast bielonego. Rzut v4: sofa 110×85 vs CSV ~160 (konflikt)."
+ },
+ {
+  "room": "2/06",
+  "file": "2-06_b.jpg",
+  "title_pl": "Pokój rodzinny – biurko i gitary",
+  "opis_pl": "Wnęka biurowa: MITTZON 160 dąb/czarny we wnęce, czerwony STYRSPEL, biała cegła, drzwi białe z czarnym obrzeżem, lampa STIG.",
+  "odstepstwa_pl": "Widoczne 4 gitary zamiast 5."
+ },
+ {
+  "room": "2/07",
+  "file": "2-07.jpg",
+  "title_pl": "Pokój 2/07",
+  "opis_pl": "Pokój na poddaszu: drzwi balkonowe 160 (~45% ściany), łóżko STJÄRNÖ antracyt 140, biurko czarnobrązowe, ściana szczytowa z cegły Parma.",
+  "odstepstwa_pl": "Szyna Kobi i okno dachowe poza kadrem."
+ },
+ {
+  "room": "2/08",
+  "file": "2-08.jpg",
+  "title_pl": "Pokój z lukarną 2/08",
+  "opis_pl": "Pokój z lukarną: gładki biały sufit bez belek, dwa czarne okna rozdzielone słupkiem, biała cegła Parma, łóżko STJÄRNÖ antracyt, czarny plafon, okna dachowe w obu połaciach.",
+  "odstepstwa_pl": "Ławka pod oknami dłuższa niż 120 cm; łóżko wygląda nieco szerzej niż 140."
+ }
 ]

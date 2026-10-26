@@ -1,19 +1,24 @@
 [
  {
   "slug": "modern-organic",
-  "total": 119923.4,
+  "total": 169909.33,
   "by_cat": {
-   "drzwi": 14045.7,
+   "drzwi": 13985.7,
+   "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 2754.82,
-   "kuchnia": 8831.0,
-   "meble": 38750.0,
-   "oświetlenie": 3537.8,
+   "kominek": 7094.0,
+   "kuchnia": 20490.0,
+   "meble": 46911.98,
+   "oświetlenie": 3935.79,
    "podłogi": 29213.67,
    "płytki": 5779.41,
+   "schody i balustrady": 10306.0,
+   "tekstylia": 948.96,
+   "wykończenie ścian": 1680.0,
    "łazienki": 17011.0
   },
-  "verified": 61,
-  "unverified": 1,
+  "verified": 107,
+  "unverified": 0,
   "kitchen_est": [
    40000,
    60000
@@ -22,19 +27,24 @@
  },
  {
   "slug": "japandi",
-  "total": 119892.74,
+  "total": 165603.63,
   "by_cat": {
    "drzwi": 14135.7,
+   "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 3054.82,
-   "kuchnia": 8831.0,
-   "meble": 32139.0,
-   "oświetlenie": 1582.71,
+   "kominek": 7094.0,
+   "kuchnia": 20490.0,
+   "meble": 39153.98,
+   "oświetlenie": 1902.66,
    "podłogi": 29220.92,
    "płytki": 12404.16,
+   "schody i balustrady": 6466.2,
+   "tekstylia": 948.96,
+   "wykończenie ścian": 2409.8,
    "łazienki": 18524.43
   },
-  "verified": 61,
-  "unverified": 1,
+  "verified": 106,
+  "unverified": 0,
   "kitchen_est": [
    40000,
    60000
@@ -43,19 +53,24 @@
  },
  {
   "slug": "skandynawski-jasny",
-  "total": 93156.52,
+  "total": 140450.41,
   "by_cat": {
    "drzwi": 12149.7,
+   "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 1938.82,
-   "kuchnia": 8831.0,
-   "meble": 29150.0,
-   "oświetlenie": 2315.77,
+   "kominek": 7094.0,
+   "kuchnia": 20490.0,
+   "meble": 35542.97,
+   "oświetlenie": 2537.74,
    "podłogi": 15424.22,
    "płytki": 6305.01,
+   "schody i balustrady": 10306.0,
+   "tekstylia": 749.95,
+   "wykończenie ścian": 1072.0,
    "łazienki": 17042.0
   },
-  "verified": 62,
-  "unverified": 1,
+  "verified": 105,
+  "unverified": 0,
   "kitchen_est": [
    40000,
    60000
@@ -64,19 +79,24 @@
  },
  {
   "slug": "cieply-minimalizm",
-  "total": 122970.37,
+  "total": 171573.27,
   "by_cat": {
-   "drzwi": 17455.7,
+   "drzwi": 17435.7,
+   "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 2754.82,
-   "kuchnia": 8812.0,
-   "meble": 34761.0,
-   "oświetlenie": 3011.18,
+   "kominek": 7094.0,
+   "kuchnia": 20471.0,
+   "meble": 42701.99,
+   "oświetlenie": 3927.17,
    "podłogi": 27969.06,
    "płytki": 9458.61,
+   "schody i balustrady": 10306.0,
+   "tekstylia": 349.0,
+   "wykończenie ścian": 559.92,
    "łazienki": 18748.0
   },
-  "verified": 59,
-  "unverified": 1,
+  "verified": 98,
+  "unverified": 0,
   "kitchen_est": [
    40000,
    60000
@@ -85,19 +105,24 @@
  },
  {
   "slug": "industrialny-loft",
-  "total": 115040.06,
+  "total": 165491.94,
   "by_cat": {
    "drzwi": 14145.7,
+   "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 1938.82,
-   "kuchnia": 8941.0,
-   "meble": 36929.0,
-   "oświetlenie": 3005.98,
+   "kominek": 7094.0,
+   "kuchnia": 21111.24,
+   "meble": 42370.0,
+   "oświetlenie": 5021.94,
    "podłogi": 24145.7,
    "płytki": 7102.86,
+   "schody i balustrady": 7591.0,
+   "tekstylia": 339.0,
+   "wykończenie ścian": 6002.68,
    "łazienki": 18831.0
   },
-  "verified": 62,
-  "unverified": 1,
+  "verified": 106,
+  "unverified": 0,
   "kitchen_est": [
    40000,
    60000
@@ -106,19 +131,24 @@
  },
  {
   "slug": "nowoczesna-klasyka",
-  "total": 129604.98,
+  "total": 175684.38,
   "by_cat": {
-   "drzwi": 15289.7,
+   "drzwi": 15269.81,
+   "drzwi zewnętrzne / EI30": 9798.0,
    "farby": 2297.82,
-   "kuchnia": 8812.0,
-   "meble": 38220.0,
-   "oświetlenie": 3652.8,
+   "kominek": 7094.0,
+   "kuchnia": 20471.0,
+   "meble": 45064.0,
+   "oświetlenie": 5660.79,
    "podłogi": 30918.5,
    "płytki": 12404.16,
-   "łazienki": 18010.0
+   "schody i balustrady": 6816.4,
+   "tekstylia": 1645.0,
+   "wykończenie ścian": 389.9,
+   "łazienki": 17855.0
   },
-  "verified": 60,
-  "unverified": 1,
+  "verified": 99,
+  "unverified": 0,
   "kitchen_est": [
    40000,
    60000

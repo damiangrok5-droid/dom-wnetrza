@@ -1,107 +1,108 @@
 [
-  {
-    "room": "1-01",
-    "file": "1-01.jpg",
-    "title_pl": "Wiatrołap 1/01",
-    "opis_pl": "Wiatrołap z szafą na całą ścianę i ławką, drzwi do garażu po lewej i do przedpokoju na wprost.",
-    "odstepstwa_pl": "Brak widocznych drzwi wejściowych (za kamerą); proporcje zbliżone do 2,39×2,64 m."
-  },
-  {
-    "room": "1-02",
-    "file": "1-02.jpg",
-    "title_pl": "Salon 1/02 – narożnik i TV",
-    "opis_pl": "Salon z narożnikiem w kształcie L przy oknie narożnym, TV na ścianie od wiatrołapu, kominek przy kuchni, HST 180 po lewej (geo południe).",
-    "odstepstwa_pl": "Okno narożne widoczne głównie na ścianie czołowej (nie zawija się wyraźnie przez narożnik); szeroki obiektyw – pokój wygląda na szerszy i krótszy niż 3,46×8,1 m."
-  },
-  {
-    "room": "1-02",
-    "file": "1-02_b.jpg",
-    "title_pl": "Jadalnia 1/02",
-    "opis_pl": "Jadalnia ze stołem dla 6 osób, HST 326 pod pergolą na wprost (geo wschód), HST 180 po prawej, kominek i słup po lewej.",
-    "odstepstwa_pl": "HST 180 wydaje się bliżej kamery niż ok. 3 m od ściany szczytowej."
-  },
-  {
-    "room": "1-03",
-    "file": "1-03.jpg",
-    "title_pl": "Kuchnia 1/03 – ściana wysokiej zabudowy",
-    "opis_pl": "Kuchnia z wyspą i 3 hokerami, wysoka zabudowa z piekarnikami i drzwiami do spiżarni, okno w wykuszu ze zlewem po prawej.",
-    "odstepstwa_pl": "Blat w wykuszu czyta się jak ciąg L wzdłuż prawej ściany; zamiast widocznego komina/słupa po lewej – gładka ściana."
-  },
-  {
-    "room": "1-03",
-    "file": "1-03_b.jpg",
-    "title_pl": "Kuchnia 1/03 – widok na okno",
-    "opis_pl": "Widok wzdłuż kuchni na okno w wykuszu (geo wschód), wysoka zabudowa po lewej, wyspa z hokerami od strony jadalni.",
-    "odstepstwa_pl": "Brak istotnych odstępstw."
-  },
-  {
-    "room": "1-06",
-    "file": "1-06.jpg",
-    "title_pl": "Przedpokój 1/06 ze schodami",
-    "opis_pl": "Prosty, zabudowany bieg schodów 96 cm (16 stopni po 18,5 cm, dębowe stopnie na płycie) po lewej, korytarz z zabudową i drzwiami do łazienki 1/08 na wprost.",
-    "odstepstwa_pl": "Drzwi do 1/07 pokazane jako drzwi ukryte w zabudowie."
-  },
-  {
-    "room": "1-07",
-    "file": "1-07.jpg",
-    "title_pl": "Pokój gościnny 1/07",
-    "opis_pl": "Pokój z szafą na całą ścianę, oknem francuskim (geo wschód) i łóżkiem wezgłowiem do prawej ściany.",
-    "odstepstwa_pl": "Pokój wygląda na nieco głębszy niż 2,83 m."
-  },
-  {
-    "room": "1-08",
-    "file": "1-08.jpg",
-    "title_pl": "Łazienka 1/08",
-    "opis_pl": "Łazienka bez okna: prysznic po lewej, WC na wprost, umywalka po prawej.",
-    "odstepstwa_pl": "Pomieszczenie wygląda na nieco szersze niż 1,6 m."
-  },
-  {
-    "room": "2-01",
-    "file": "2-01.jpg",
-    "title_pl": "Hol poddasza 2/01",
-    "opis_pl": "Długi hol z płaskim sufitem 2,76 m: po prawej 3 drzwi do pokoi, po lewej drzwi do łazienki 2/05, otwór schodowy z balustradą (wyjście z biegu przy końcu holu) i przejście do przedsionka; na wprost drzwi balkonowe 180/230 z balkonem francuskim (geo północ).",
-    "odstepstwa_pl": "Przedsionek pokazany jako otwór przy ścianie szczytowej; wyłaz na strych pominięty lub poza kadrem; szeroki obiektyw – hol wygląda nieco krócej niż 9,4 m."
-  },
-  {
-    "room": "2-02",
-    "file": "2-02.jpg",
-    "title_pl": "Sypialnia główna 2/02",
-    "opis_pl": "Sypialnia ze sklepieniem do kalenicy (~3,45 m), trójkątnym przeszkleniem szczytowym w 3 polach (geo zachód) i oknem dachowym 78/140; łóżko wezgłowiem do lewej ścianki kolankowej.",
-    "odstepstwa_pl": "Wymiary okna szczytowego nieznane (przyjęto całe pole trójkąta nad ścianką 1,18 m); łóżko pokazane z boku kadru."
-  },
-  {
-    "room": "2-05",
-    "file": "2-05.jpg",
-    "title_pl": "Łazienka poddasza 2/05",
-    "opis_pl": "Mała łazienka 2,96 × 2,69 m widziana od drzwi: kabina walk-in w prawym bliższym narożniku, wanna wzdłuż prawej ściany, dwie umywalki na lewej ścianie, WC i bidet na wprost pod jedynym oknem dachowym 94/118; płaski sufit 2,76 m przy wejściu i jeden skos do ścianki kolankowej ~1,18 m.",
-    "odstepstwa_pl": "Szeroki obiektyw – łazienka wygląda nieco głębiej niż 2,69 m; płaski fragment sufitu widoczny tylko wąskim pasem u góry kadru."
-  },
-  {
-    "room": "2-06",
-    "file": "2-06.jpg",
-    "title_pl": "Pokój 2/06 – strefa TV i sofa",
-    "opis_pl": "Strefa do grania na konsoli: sofa tyłem do kamery, TV na ścianie czołowej, drzwi balkonowe 160/230 na taras po prawej (geo południe), wejście po lewej.",
-    "odstepstwa_pl": "Skos dachu słabo widoczny (tylko w górnej części kadru)."
-  },
-  {
-    "room": "2-06",
-    "file": "2-06_b.jpg",
-    "title_pl": "Pokój 2/06 – biurko i gitary",
-    "opis_pl": "Ściana z prawdziwymi gitarami i wzmacniaczem po lewej, biurko pod skosem z oknem dachowym 94/118 po prawej, drzwi balkonowe przy lewej krawędzi.",
-    "odstepstwa_pl": "Brak istotnych odstępstw."
-  },
-  {
-    "room": "2-07",
-    "file": "2-07.jpg",
-    "title_pl": "Pokój 2/07",
-    "opis_pl": "Pokój z łóżkiem pod skosem i oknem dachowym 94/118, drzwi balkonowe 160/230 na taras na wprost (geo południe), komoda po prawej.",
-    "odstepstwa_pl": "Brak istotnych odstępstw."
-  },
-  {
-    "room": "2-08",
-    "file": "2-08.jpg",
-    "title_pl": "Pokój 2/08 z lukarną",
-    "opis_pl": "Pokój z lukarną: dwie szyby po 153 cm rozdzielone słupkiem 14 cm, bez szprosów (geo wschód), po bokach dwa okna dachowe 94/118, łóżko przed lukarną.",
-    "odstepstwa_pl": "Lukarna czyta się bardziej jak wnęka ze skośnymi bokami niż jak skrzynia z płaskim dachem; wysokość okien przyjęta orientacyjnie."
-  }
+ {
+  "room": "1-01",
+  "file": "1-01.jpg",
+  "title_pl": "Wiatrołap 1/01",
+  "opis_pl": "Wiatrołap japandi: drzwi w kolorze kaszmir na wprost, szare drzwi EI30 do garażu po lewej, biała szafa PAX po prawej, pozioma orzechowa półka LACK 110×26 przy lustrze EDSGARN (lewy pierwszy plan), lampa BLÅSTÅNG, gres Lora crema.",
+  "odstepstwa_pl": "Kadr nieco szerszy niż blockout, żeby pokazać półkę i lustro (w blockoucie są tuż przy kamerze)."
+ },
+ {
+  "room": "1-02",
+  "file": "1-02.jpg",
+  "title_pl": "Salon 1/02 – narożnik i TV",
+  "opis_pl": "Salon japandi: HST po lewej, okno na wprost, szałwiowe ściany, beżowy narożnik SÖDERHAMN, niski stolik, gładka malowana ściana z TV i niska szafka BESTÅ, lampa LAUTERS; na pierwszym planie dębowy stół ELIO z czarnymi krzesłami PINNTORP.",
+  "odstepstwa_pl": "Okno narożne nie zawija wyraźnie na lewą ścianę."
+ },
+ {
+  "room": "1-02",
+  "file": "1-02_b.jpg",
+  "title_pl": "Jadalnia 1/02",
+  "opis_pl": "Jadalnia japandi: słup z kominkiem po lewej, dębowy stół ELIO z czarnymi krzesłami PINNTORP przy HST, HST na prawej ścianie, papierowa lampa nad stołem.",
+  "odstepstwa_pl": "Brak istotnych odstępstw."
+ },
+ {
+  "room": "1-03",
+  "file": "1-03.jpg",
+  "title_pl": "Kuchnia 1/03 – ściana wysokiej zabudowy",
+  "opis_pl": "Kuchnia japandi: ciemna zabudowa wysoka 220 cm z piekarnikiem i lodówką w zabudowie, obok drzwi 70/200 do spiżarni w kolorze kaszmir, zlew pod oknem po prawej, wyspa z płytą, kominowy okap wyspowy Franke Tale (stal), 3 hokery, 3 plecione lampy, gres Lora crema.",
+  "odstepstwa_pl": "Komin okapu dodany w obróbce do wcześniejszego kadru; środkowa lampa wisi przed kominem. Lampy plecione zamiast BLÅSTÅNG/HAVSDJUP z listy (bez zmian względem poprzedniej wersji)."
+ },
+ {
+  "room": "1-03",
+  "file": "1-03_b.jpg",
+  "title_pl": "Kuchnia 1/03 – widok na okno",
+  "opis_pl": "Kuchnia japandi – widok na wykusz: okno we wnęce ze zlewem, ciemna zabudowa z piekarnikiem i lodówką KIN86 w zabudowie, wyspa z płytą, okap wyspowy Franke Tale nad płytą, plecione lampy, czarne hokery.",
+  "odstepstwa_pl": "Widać 2 z 3 lamp."
+ },
+ {
+  "room": "1-06",
+  "file": "1-06.jpg",
+  "title_pl": "Przedpokój 1/06 ze schodami",
+  "opis_pl": "Korytarz japandi: schody po lewej, drzwi 1/08 na wprost, 1/07 po prawej; Lora crema, drzwi Exmoor kaszmir z czarną klamką, lamele dąb, poręcz dębowa.",
+  "odstepstwa_pl": "Kinkiet zbliżony do NYMÅNE."
+ },
+ {
+  "room": "1-07",
+  "file": "1-07.jpg",
+  "title_pl": "Pokój gościnny 1/07",
+  "opis_pl": "Pokój gościnny japandi (kamera blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 po lewej, okno francuskie 100/230 z ciemną ramą, beżowa zasłona DYTÅG po prawej stronie okna, brązowy dębowy stolik TONSTAD z lampką TÄRNABY, sosnowe łóżko GLAMBERGET 80×200 z szufladami bez wezgłowia, grafitowy pled, dywan LOHALS, dąb Country.",
+  "odstepstwa_pl": "Kadr z kamery blockoutu 1-07; szerokość okna skorygowana w obróbce (deterministyczne rozciągnięcie poziome strefy okna kosztem frontu szafy), tak by ściana z oknem odpowiadała ok. 3,15–3,5 m. Łóżko 80×200 wstępnie (do potwierdzenia). Plafonu Yonnet nie widać (poza kadrem). Widać jeden panel zasłony.",
+  "uwaga_pl": "Łóżko 80×200 jest tymczasowe – czeka na decyzję inwestora (140, 160, 80 albo sofa rozkładana); po decyzji wizualizacja i lista zakupów zostaną zaktualizowane."
+ },
+ {
+  "room": "1-08",
+  "file": "1-08.jpg",
+  "title_pl": "Łazienka 1/08",
+  "opis_pl": "Łazienka 1/08 japandi: walk-in z czarnym profilem, WC z czarnym przyciskiem, dębowy panel nad półścianką, szafka Mille dąb z umywalką Endell i czarną baterią, okrągłe lustro, gres Lora.",
+  "odstepstwa_pl": "Brak istotnych odstępstw."
+ },
+ {
+  "room": "2-01",
+  "file": "2-01.jpg",
+  "title_pl": "Hol poddasza 2/01",
+  "opis_pl": "Hol piętra japandi: drzwi kaszmir po lewej i prawej, balustrada z dębowych tralek, drzwi balkonowe na wprost, wyłaz w suficie, chodnik.",
+  "odstepstwa_pl": "Brak istotnych odstępstw."
+ },
+ {
+  "room": "2-02",
+  "file": "2-02.jpg",
+  "title_pl": "Sypialnia główna 2/02",
+  "opis_pl": "Sypialnia japandi: sklepienie, przeszklony szczyt, łóżko TARVA 160, TONSTAD brąz, GULLSUDARE, dywan TIDTABELL.",
+  "odstepstwa_pl": "Szczyt z krótkimi pionowymi bokami; wezgłowie wg karty analizy (rzut v4 inaczej)."
+ },
+ {
+  "room": "2-05",
+  "file": "2-05.jpg",
+  "title_pl": "Łazienka poddasza 2/05",
+  "opis_pl": "Łazienka 2/05 japandi: lamele dębowe za umywalkami, 2 szafki Mille z umywalkami Endell, czarne baterie, 2 okrągłe lustra Luna, czarny walk-in, wanna, gres Lora crema.",
+  "odstepstwa_pl": "Wanna wygląda na krótszą niż 170 cm."
+ },
+ {
+  "room": "2-06",
+  "file": "2-06.jpg",
+  "title_pl": "Pokój 2/06 – strefa TV i sofa",
+  "opis_pl": "Salon na piętrze japandi: sofa GULLVALLA, KALLAX, stolik LACK, lampa GULLSUDARE, dywan TIDTABELL, lamele, balkon po prawej.",
+  "odstepstwa_pl": "Drzwi płycinowe zamiast gładkich."
+ },
+ {
+  "room": "2-06",
+  "file": "2-06_b.jpg",
+  "title_pl": "Pokój 2/06 – biurko i gitary",
+  "opis_pl": "Kącik do pracy wg rzutu v4: balkon 160 po lewej, gitary na wieszakach K&M, skos ze ścianką kolankową i oknem dachowym na wprost, biurko we wnęce po prawej, krzesło STYRSPEL; biurko MITTZON, lampa GULLSUDARE, LACK.",
+  "odstepstwa_pl": "3 gitary zamiast 5; lamele bez czarnego tła."
+ },
+ {
+  "room": "2-07",
+  "file": "2-07.jpg",
+  "title_pl": "Pokój 2/07",
+  "opis_pl": "Sypialnia 2/07 japandi: skos po lewej, drzwi balkonowe na wprost, łóżko 140 z jasnego drewna, szałwiowy pled, lampa kula GULLSUDARE, ciemna komoda.",
+  "odstepstwa_pl": "Brak istotnych odstępstw."
+ },
+ {
+  "room": "2-08",
+  "file": "2-08.jpg",
+  "title_pl": "Pokój 2/08 z lukarną",
+  "opis_pl": "Sypialnia japandi z lukarną (kamera 2-08_v2): okno dachowe w północnym skosie nad siedziskiem BESTÅ 120 po lewej, 2 okna z czarnymi ramami w lukarnie, białe siedzisko z poduszką, niskie łóżko 140×200 z wezgłowiem przy prawej ścianie, stolik nocny z lampką, jasny dąb, wełniany dywan.",
+  "odstepstwa_pl": "Okno dachowe dodane w obróbce do wcześniejszego kadru (geometria jak w wersji modern-organic); za oknami lukarny niebo bez drzew; łóżko ucięte dolną krawędzią kadru."
+ }
 ]

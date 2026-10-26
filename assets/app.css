@@ -103,3 +103,25 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .note summary{cursor:pointer}
 @media(max-width:759px){.filters{position:static;display:grid;grid-template-columns:1fr 1fr;padding:4px 0}.filters #f-room,.filters #f-q{grid-column:1/-1}}
 .stylebar[hidden]{display:none}
+
+/* autowalidacja */
+.room .imgs button{position:relative}
+.wbadge{display:inline-block;border-radius:999px;padding:2px 9px;font-size:.74rem;font-weight:600;line-height:1.5;white-space:nowrap;vertical-align:1px}
+.wbadge.ok{background:#E3EEDF;color:var(--ok)}.wbadge.bad{background:#F6E3D8;color:#9A4A26}
+.room .imgs .wbadge{position:absolute;left:10px;top:10px;box-shadow:0 1px 3px rgba(0,0,0,.15)}
+.room .wal details.walv{margin-top:10px;border:1px solid var(--line);border-radius:12px;padding:8px 10px;background:#FFFCF7}
+.room .wal details.walv.bad{border-left:4px solid #C9764F}.room .wal details.walv.ok{border-left:4px solid var(--ok)}
+.room .wal summary{color:var(--ink);font-weight:500;list-style-position:outside}
+.room .wal summary small{color:var(--mut);font-weight:400}
+.wfail{margin:8px 0 4px;font-size:.84rem;background:#FBEFE8;border-radius:8px;padding:8px 10px}
+.wfail ul{margin:4px 0 0;padding-left:1.1em}.wfail li{margin:3px 0}
+.wk{display:inline-block;font-size:.7rem;text-transform:uppercase;letter-spacing:.03em;color:#9A4A26;background:#fff;border:1px solid #EBCDBE;border-radius:6px;padding:0 5px}
+.wmat{list-style:none;margin:8px 0 0;padding:0}
+.wmat li{padding:7px 0;border-top:1px solid var(--line)}
+.wmat .wn{display:flex;justify-content:space-between;gap:8px;font-size:.78rem;color:var(--mut);text-transform:lowercase}
+.wmat .wn i{font-style:normal;font-weight:600;white-space:nowrap}
+.wmat .o-ok .wn i{color:var(--ok)}.wmat .o-partial .wn i,.wmat .o-generic .wn i{color:var(--warn)}.wmat .o-mismatch .wn i,.wmat .o-luka_csv .wn i{color:#B0432A}.wmat .o-nieczytelne .wn i{color:var(--mut);font-weight:400}
+.wp{font-size:.88rem;line-height:1.35;margin-top:2px}.wp a{text-decoration:none;font-weight:500}.wp small{display:block;color:var(--mut);font-size:.78rem;font-variant-numeric:tabular-nums}
+.wu{font-size:.8rem;color:#9A4A26;margin-top:2px}
+.wluki{font-size:.8rem;color:var(--mut);margin:8px 0 0}
+.vnote{margin:8px 0;font-weight:600;color:var(--ink)}

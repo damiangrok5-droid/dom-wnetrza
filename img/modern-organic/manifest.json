@@ -1,107 +1,108 @@
 [
-  {
-    "room": "1-01",
-    "file": "1-01.jpg",
-    "title_pl": "Wiatrołap 1/01",
-    "opis_pl": "Wiatrołap z szafą na całą ścianę i ławką, drzwi do garażu po lewej i do przedpokoju na wprost.",
-    "odstepstwa_pl": "Brak widocznych drzwi wejściowych (za kamerą); proporcje zbliżone do 2,39×2,64 m."
-  },
-  {
-    "room": "1-02",
-    "file": "1-02.jpg",
-    "title_pl": "Salon 1/02 – narożnik i TV",
-    "opis_pl": "Salon z narożnikiem w kształcie L przy oknie narożnym, TV na ścianie od wiatrołapu, kominek przy kuchni, HST 180 po lewej (geo południe).",
-    "odstepstwa_pl": "Okno narożne widoczne głównie na ścianie czołowej (nie zawija się wyraźnie przez narożnik); szeroki obiektyw – pokój wygląda na szerszy i krótszy niż 3,46×8,1 m."
-  },
-  {
-    "room": "1-02",
-    "file": "1-02_b.jpg",
-    "title_pl": "Jadalnia 1/02",
-    "opis_pl": "Jadalnia ze stołem dla 6 osób, HST 326 pod pergolą na wprost (geo wschód), HST 180 po prawej, kominek i słup po lewej.",
-    "odstepstwa_pl": "HST 180 wydaje się bliżej kamery niż ok. 3 m od ściany szczytowej."
-  },
-  {
-    "room": "1-03",
-    "file": "1-03.jpg",
-    "title_pl": "Kuchnia 1/03 – ściana wysokiej zabudowy",
-    "opis_pl": "Kuchnia z wyspą i 3 hokerami, wysoka zabudowa z piekarnikami i drzwiami do spiżarni, okno w wykuszu ze zlewem po prawej.",
-    "odstepstwa_pl": "Blat w wykuszu czyta się jak ciąg L wzdłuż prawej ściany; zamiast widocznego komina/słupa po lewej – gładka ściana."
-  },
-  {
-    "room": "1-03",
-    "file": "1-03_b.jpg",
-    "title_pl": "Kuchnia 1/03 – widok na okno",
-    "opis_pl": "Widok wzdłuż kuchni na okno w wykuszu (geo wschód), wysoka zabudowa po lewej, wyspa z hokerami od strony jadalni.",
-    "odstepstwa_pl": "Brak istotnych odstępstw."
-  },
-  {
-    "room": "1-06",
-    "file": "1-06.jpg",
-    "title_pl": "Przedpokój 1/06 ze schodami",
-    "opis_pl": "Prosty, zabudowany bieg schodów 96 cm (16 stopni po 18,5 cm, dębowe stopnie na płycie) po lewej, korytarz z zabudową i drzwiami do łazienki 1/08 na wprost.",
-    "odstepstwa_pl": "Drzwi do 1/07 pokazane jako drzwi ukryte w zabudowie."
-  },
-  {
-    "room": "1-07",
-    "file": "1-07.jpg",
-    "title_pl": "Pokój gościnny 1/07",
-    "opis_pl": "Pokój z szafą na całą ścianę, oknem francuskim (geo wschód) i łóżkiem wezgłowiem do prawej ściany.",
-    "odstepstwa_pl": "Pokój wygląda na nieco głębszy niż 2,83 m."
-  },
-  {
-    "room": "1-08",
-    "file": "1-08.jpg",
-    "title_pl": "Łazienka 1/08",
-    "opis_pl": "Łazienka bez okna: prysznic po lewej, WC na wprost, umywalka po prawej.",
-    "odstepstwa_pl": "Pomieszczenie wygląda na nieco szersze niż 1,6 m."
-  },
-  {
-    "room": "2-01",
-    "file": "2-01.jpg",
-    "title_pl": "Hol poddasza 2/01",
-    "opis_pl": "Długi hol z płaskim sufitem 2,76 m: po prawej 3 drzwi do pokoi, po lewej drzwi do łazienki 2/05, otwór schodowy z balustradą (wyjście z biegu przy końcu holu) i przejście do przedsionka; na wprost drzwi balkonowe 180/230 z balkonem francuskim (geo północ).",
-    "odstepstwa_pl": "Przedsionek pokazany jako otwór przy ścianie szczytowej; wyłaz na strych pominięty lub poza kadrem; szeroki obiektyw – hol wygląda nieco krócej niż 9,4 m."
-  },
-  {
-    "room": "2-02",
-    "file": "2-02.jpg",
-    "title_pl": "Sypialnia główna 2/02",
-    "opis_pl": "Sypialnia ze sklepieniem do kalenicy (~3,45 m), trójkątnym przeszkleniem szczytowym w 3 polach (geo zachód) i oknem dachowym 78/140; łóżko wezgłowiem do lewej ścianki kolankowej.",
-    "odstepstwa_pl": "Wymiary okna szczytowego nieznane (przyjęto całe pole trójkąta nad ścianką 1,18 m); łóżko pokazane z boku kadru."
-  },
-  {
-    "room": "2-05",
-    "file": "2-05.jpg",
-    "title_pl": "Łazienka poddasza 2/05",
-    "opis_pl": "Mała łazienka 2,96 × 2,69 m widziana od drzwi: kabina walk-in w prawym bliższym narożniku, wanna wzdłuż prawej ściany, dwie umywalki na lewej ścianie, WC i bidet na wprost pod jedynym oknem dachowym 94/118; płaski sufit 2,76 m przy wejściu i jeden skos do ścianki kolankowej ~1,18 m.",
-    "odstepstwa_pl": "Szeroki obiektyw – łazienka wygląda nieco głębiej niż 2,69 m; płaski fragment sufitu widoczny tylko wąskim pasem u góry kadru."
-  },
-  {
-    "room": "2-06",
-    "file": "2-06.jpg",
-    "title_pl": "Pokój 2/06 – strefa TV i sofa",
-    "opis_pl": "Strefa do grania na konsoli: sofa tyłem do kamery, TV na ścianie czołowej, drzwi balkonowe 160/230 na taras po prawej (geo południe), wejście po lewej.",
-    "odstepstwa_pl": "Skos dachu słabo widoczny (tylko w górnej części kadru)."
-  },
-  {
-    "room": "2-06",
-    "file": "2-06_b.jpg",
-    "title_pl": "Pokój 2/06 – biurko i gitary",
-    "opis_pl": "Ściana z prawdziwymi gitarami i wzmacniaczem po lewej, biurko pod skosem z oknem dachowym 94/118 po prawej, drzwi balkonowe przy lewej krawędzi.",
-    "odstepstwa_pl": "Brak istotnych odstępstw."
-  },
-  {
-    "room": "2-07",
-    "file": "2-07.jpg",
-    "title_pl": "Pokój 2/07",
-    "opis_pl": "Pokój z łóżkiem pod skosem i oknem dachowym 94/118, drzwi balkonowe 160/230 na taras na wprost (geo południe), komoda po prawej.",
-    "odstepstwa_pl": "Brak istotnych odstępstw."
-  },
-  {
-    "room": "2-08",
-    "file": "2-08.jpg",
-    "title_pl": "Pokój 2/08 z lukarną",
-    "opis_pl": "Pokój z lukarną: dwie szyby po 153 cm rozdzielone słupkiem 14 cm, bez szprosów (geo wschód), po bokach dwa okna dachowe 94/118, łóżko przed lukarną.",
-    "odstepstwa_pl": "Lukarna czyta się bardziej jak wnęka ze skośnymi bokami niż jak skrzynia z płaskim dachem; wysokość okien przyjęta orientacyjnie."
-  }
+ {
+  "room": "1-01",
+  "file": "1-01.jpg",
+  "title_pl": "Wiatrołap 1/01",
+  "opis_pl": "Wiatrołap: dębowe drzwi Exmoor na wprost, szare stalowe drzwi EI30 do garażu na lewej ścianie, biała szafa PAX na całą prawą ścianę, trawertyn 60×120, oczka w suficie.",
+  "odstepstwa_pl": "Kamera i proporcje wg blockoutu; lustra LINDBYN i półki LACK nie widać w kadrze."
+ },
+ {
+  "room": "1-02",
+  "file": "1-02.jpg",
+  "title_pl": "Salon 1/02 – narożnik i TV",
+  "opis_pl": "Salon: HST po lewej, okno na wprost, kremowy narożnik L, biały stolik, dywan, lampa podłogowa, TV na niskiej szafce po prawej, dąb na podłodze.",
+  "odstepstwa_pl": "Okno narożne nie zawija wyraźnie na lewą ścianę; kominka nie widać w kadrze; szafka RTV jasna zamiast dębowych frontów."
+ },
+ {
+  "room": "1-02",
+  "file": "1-02_b.jpg",
+  "title_pl": "Jadalnia 1/02",
+  "opis_pl": "Jadalnia: słup z kominkiem po lewej, okrągły dębowy stół VOLTI Ø120 z 4 krzesłami WISSPER przy HST na wprost, HST na prawej ścianie z widokiem na ogród i pergolę, rattanowa lampa nad stołem.",
+  "odstepstwa_pl": "Krzesła WISSPER przybliżone (brak zdjęcia produktu)."
+ },
+ {
+  "room": "1-03",
+  "file": "1-03.jpg",
+  "title_pl": "Kuchnia 1/03 – ściana wysokiej zabudowy",
+  "opis_pl": "Kuchnia: dębowa zabudowa wysoka 220 cm (poniżej sufitu) z piekarnikiem w zabudowie, obok dębowe drzwi 70/200 do spiżarni, zlew pod oknem po prawej, wyspa z płytą i kominowym okapem wyspowym Franke Tale (stal), 3 czarne hokery ROSENTORP z oparciem X (siedzisko 63), 3 rattanowe lampy KAPPELAND/HAVSDJUP, słup po lewej; na pierwszym planie zaokrąglona krawędź dębowego stołu VOLTI Ø120 z krzesłem.",
+  "odstepstwa_pl": "Lampy rozmieszczone asymetrycznie: jedna po lewej i dwie po prawej stronie komina okapu."
+ },
+ {
+  "room": "1-03",
+  "file": "1-03_b.jpg",
+  "title_pl": "Kuchnia 1/03 – widok na okno",
+  "opis_pl": "Kuchnia – widok na wykusz: okno we wnęce wykusza ze zlewem, dębowa zabudowa po lewej z piekarnikiem i lodówką KIN86 w zabudowie, wyspa z płytą, okap wyspowy Franke Tale nad płytą, rattanowe lampy, czarne hokery.",
+  "odstepstwa_pl": "Widać 2 z 3 lamp (trzecia poza kadrem)."
+ },
+ {
+  "room": "1-06",
+  "file": "1-06.jpg",
+  "title_pl": "Przedpokój 1/06 ze schodami",
+  "opis_pl": "Korytarz: schody 16 stopni po lewej wznoszą się od kamery, drzwi 1/08 na wprost, zwykłe drzwi 1/07 po prawej przy dalszym końcu; trawertyn, drzwi dąb, lamele, poręcz dębowa.",
+  "odstepstwa_pl": "Brak istotnych odstępstw."
+ },
+ {
+  "room": "1-07",
+  "file": "1-07.jpg",
+  "title_pl": "Pokój gościnny 1/07",
+  "opis_pl": "Pokój gościnny (kamera blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 po lewej, okno francuskie 100/230 z czarną ramą przy szafie, zasłona DYTÅG zebrana po prawej stronie okna, dębowy stolik TONSTAD z beżową lampką TÄRNABY, sosnowe łóżko GLAMBERGET 80×200 z szufladami bez wezgłowia wzdłuż prawej ściany, dywan LOHALS, dąb na podłodze.",
+  "odstepstwa_pl": "Kadr z kamery blockoutu 1-07; szerokość okna skorygowana w obróbce (deterministyczne rozciągnięcie poziome strefy okna kosztem frontu szafy), tak by ściana z oknem odpowiadała ok. 3,15–3,5 m. Łóżko 80×200 wstępnie (do potwierdzenia). Plafonu Yonnet nie widać (poza kadrem). Widać jeden panel zasłony (drugi zebrany poza kadrem).",
+  "uwaga_pl": "Łóżko 80×200 jest tymczasowe – czeka na decyzję inwestora (140, 160, 80 albo sofa rozkładana); po decyzji wizualizacja i lista zakupów zostaną zaktualizowane."
+ },
+ {
+  "room": "1-08",
+  "file": "1-08.jpg",
+  "title_pl": "Łazienka 1/08",
+  "opis_pl": "Łazienka 1/08: walk-in z mosiężną deszczownicą po lewej, WC przed półścianką z czarnym przyciskiem na wprost, dębowa szafka 60 z umywalką nablatową i złotą baterią, podświetlane okrągłe lustro, trawertyn.",
+  "odstepstwa_pl": "Brak istotnych odstępstw."
+ },
+ {
+  "room": "2-01",
+  "file": "2-01.jpg",
+  "title_pl": "Hol poddasza 2/01",
+  "opis_pl": "Hol piętra: dębowe drzwi po lewej, otwór schodowy ze szklaną balustradą, na wprost drzwi balkonowe, drzwi po prawej, wyłaz w suficie, beżowy chodnik, ławka VALTORP przy prawej ścianie na końcu holu.",
+  "odstepstwa_pl": "Ławka w odcieniu szarobeżowym."
+ },
+ {
+  "room": "2-02",
+  "file": "2-02.jpg",
+  "title_pl": "Sypialnia główna 2/02",
+  "opis_pl": "Sypialnia pod sklepieniem: przeszklony szczyt, okno dachowe w prawej połaci przy drzwiach, łóżko RUBEN 160 wezgłowiem do ścianki kolankowej, TONSTAD, fotel POÄNG, dywan LOHALS, plafon Yonnet.",
+  "odstepstwa_pl": "Szczyt z krótkimi pionowymi bokami; wezgłowie wg karty analizy (rzut v4: przy ścianie wejściowej)."
+ },
+ {
+  "room": "2-05",
+  "file": "2-05.jpg",
+  "title_pl": "Łazienka poddasza 2/05",
+  "opis_pl": "Łazienka 2/05: skos na wprost z oknem nad WC i bidetem, po prawej walk-in ze złotym profilem i wanna wzdłuż ściany, po lewej 2 ryflowane szafki Roca Style z umywalkami Domus, złote baterie Harris i 2 okrągłe lustra Luna; trawertyn.",
+  "odstepstwa_pl": "Wanna wygląda na ~150 zamiast 170 cm; pokój wydaje się nieco głębszy."
+ },
+ {
+  "room": "2-06",
+  "file": "2-06.jpg",
+  "title_pl": "Pokój 2/06 – strefa TV i sofa",
+  "opis_pl": "Salon na piętrze: płaski sufit, drzwi po lewej, TV na lamelach na wprost na KALLAX, balkon 160 po prawej, sofa GULLVALLA, stolik LACK, dywan LOHALS, plafon Yonnet.",
+  "odstepstwa_pl": "Brak istotnych odstępstw."
+ },
+ {
+  "room": "2-06",
+  "file": "2-06_b.jpg",
+  "title_pl": "Pokój 2/06 – biurko i gitary",
+  "opis_pl": "Kącik do pracy wg rzutu v4: balkon 160 po lewej, gitary na wieszakach K&M, skos ze ścianką kolankową i oknem dachowym na wprost, biurko we wnęce po prawej, krzesło STYRSPEL; biurko MITTZON, dywan LOHALS, plafon Yonnet.",
+  "odstepstwa_pl": "3 gitary zamiast 5."
+ },
+ {
+  "room": "2-07",
+  "file": "2-07.jpg",
+  "title_pl": "Pokój 2/07",
+  "opis_pl": "Sypialnia 2/07: skos po lewej, drzwi balkonowe na wprost (~40% ściany), łóżko 140 wezgłowiem do ścianki kolankowej, dębowa komoda po prawej, plafon.",
+  "odstepstwa_pl": "Kadr nieco szerszy niż w blockoucie."
+ },
+ {
+  "room": "2-08",
+  "file": "2-08.jpg",
+  "title_pl": "Pokój 2/08 z lukarną",
+  "opis_pl": "Sypialnia z lukarną (kamera 2-08_v2: 20 mm, pochylona w dół): 2 okna z czarnymi ramami w lukarnie, okno dachowe w skosie nad siedziskiem, białe siedzisko BESTÅ 120 z poduszką po lewej, łóżko 140×200 bokiem do kamery z wezgłowiem przy prawej ścianie, dębowy stolik nocny z lampką, dąb na podłodze.",
+  "odstepstwa_pl": "Łóżko ucięte dolną krawędzią kadru (jak w blockoucie)."
+ }
 ]

@@ -1,100 +1,101 @@
 [
-  {
-    "room": "1/01",
-    "file": "1-01.jpg",
-    "title_pl": "Wiatrołap",
-    "opis_pl": "Wejście z drzwiami zewnętrznymi i zabudową na okrycia, widok od strony przedpokoju.",
-    "odstepstwa_pl": "Drzwi wejściowe bardziej centralnie niż w narożniku wg rzutu."
-  },
-  {
-    "room": "1/02",
-    "file": "1-02.jpg",
-    "title_pl": "Salon – strefa TV i narożnik",
-    "opis_pl": "Narożnik w kształcie L zwrócony do ściany TV, HST 326 (geo wschód) i HST 180 z oknem narożnym (geo południe) wolne od mebli.",
-    "odstepstwa_pl": "Orientacja narożnika niejednoznaczna (częściowo zwrócony do kamery)."
-  },
-  {
-    "room": "1/02",
-    "file": "1-02_b.jpg",
-    "title_pl": "Salon – jadalnia",
-    "opis_pl": "Strefa jadalni ze stołem przy przeszkleniach, w tle zamknięty bieg schodów między ścianami.",
-    "odstepstwa_pl": "Krzesła jadalni blisko HST 180 – w realizacji zachować przejście."
-  },
-  {
-    "room": "1/03",
-    "file": "1-03.jpg",
-    "title_pl": "Kuchnia z wyspą",
-    "opis_pl": "Kuchnia z wyspą, okno (parapet 90, okno 140) na geo wschód z porannym światłem, zabudowa wysoka z wejściem do spiżarni.",
-    "odstepstwa_pl": "Głębokość wnęki kuchennej słabo czytelna; dodatkowe elementy słupowe."
-  },
-  {
-    "room": "1/06",
-    "file": "1-06.jpg",
-    "title_pl": "Przedpokój ze schodami",
-    "opis_pl": "Przedpokój z prostymi schodami 96 cm (16 stopni 18,5 cm, dębowe stopnice) w zamkniętym biegu między ścianami.",
-    "odstepstwa_pl": "Przedpokój wygląda szerzej niż ~1,2 m."
-  },
-  {
-    "room": "1/07",
-    "file": "1-07.jpg",
-    "title_pl": "Pokój gościnny",
-    "opis_pl": "Pokój gościnny z szafą na całą ścianę, jednym wysokim oknem z balustradą francuską i łóżkiem przy ścianie bocznej.",
-    "odstepstwa_pl": "Okno wygląda szerzej niż 100 cm; uskok ściany 57 cm tylko zasugerowany."
-  },
-  {
-    "room": "1/08",
-    "file": "1-08.jpg",
-    "title_pl": "Łazienka parter",
-    "opis_pl": "Łazienka bez okna: WC podwieszane naprzeciw drzwi, umywalka po prawej, prysznic walk-in ~90×120 po lewej.",
-    "odstepstwa_pl": "Brak istotnych."
-  },
-  {
-    "room": "2/01",
-    "file": "2-01.jpg",
-    "title_pl": "Hol poddasza",
-    "opis_pl": "Hol 2,4 × 9,4 m z sufitem 2,76 m, otworem schodowym z balustradą i drzwiami balkonowymi 180/230 na końcu.",
-    "odstepstwa_pl": "Wyłaz na strych pominięty; wejście do przedsionka pokazane jako otwór z widocznymi dalej drzwiami; schody kończą się tuż przy wejściu do przedsionka."
-  },
-  {
-    "room": "2/02",
-    "file": "2-02.jpg",
-    "title_pl": "Sypialnia główna",
-    "opis_pl": "Sypialnia pod sklepieniem do ~3,45 m, ścianki kolankowe 1,18 m, przeszklenie szczytowe w 3 polach na geo zachód (zachód słońca), okno dachowe 78/140 w lewej połaci.",
-    "odstepstwa_pl": "Okno szczytowe z parapetem ~40–50 cm zamiast od podłogi; wymiary okna Z/2 nieznane."
-  },
-  {
-    "room": "2/05",
-    "file": "2-05.jpg",
-    "title_pl": "Łazienka poddasze",
-    "opis_pl": "Mała łazienka 2,96 × 2,69 m widziana od drzwi: kabina walk-in w prawym bliższym narożniku, wanna wzdłuż prawej ściany, dwie umywalki na lewej ścianie, WC i bidet na wprost pod jedynym oknem dachowym 94/118; płaski sufit 2,76 m przy wejściu i jeden skos do ścianki kolankowej ~1,18 m.",
-    "odstepstwa_pl": "Głębokość pomieszczenia i szerokość obiektywu sprawiają, że łazienka wygląda nieco głębiej niż 2,69 m; płaski fragment sufitu widoczny tylko wąskim pasem u góry kadru."
-  },
-  {
-    "room": "2/06",
-    "file": "2-06.jpg",
-    "title_pl": "Pokój rodzinny – strefa TV i sofa",
-    "opis_pl": "Strefa TV do grania na konsoli, sofa pod skosem z oknem dachowym, drzwi balkonowe 160/230 na taras (geo południe) wolne.",
-    "odstepstwa_pl": "Brak istotnych."
-  },
-  {
-    "room": "2/06",
-    "file": "2-06_b.jpg",
-    "title_pl": "Pokój rodzinny – biurko i gitary",
-    "opis_pl": "Widok od balkonu: biurko we wnęce 60 cm, ściana z prawdziwymi gitarami i wzmacniaczem, drzwi z holu w narożniku.",
-    "odstepstwa_pl": "Brak istotnych."
-  },
-  {
-    "room": "2/07",
-    "file": "2-07.jpg",
-    "title_pl": "Pokój 2/07",
-    "opis_pl": "Pokój 3,59 × 4,01 m: łóżko pod skosem 38° z oknem dachowym 94/118, drzwi balkonowe 160/230 na taras (geo południe).",
-    "odstepstwa_pl": "Brak istotnych."
-  },
-  {
-    "room": "2/08",
-    "file": "2-08.jpg",
-    "title_pl": "Pokój z lukarną 2/08",
-    "opis_pl": "Pokój 4,40 × 2,83 m z lukarną 3,2 m: dwa okna po 153 cm ze słupkiem 14 cm, bez szprosów, siedzisko w lukarnie, dwa okna dachowe w połaciach.",
-    "odstepstwa_pl": "Wysokość okien lukarny przyjęta ~150 cm (nieznana)."
-  }
+ {
+  "room": "1/01",
+  "file": "1-01.jpg",
+  "title_pl": "Wiatrołap",
+  "opis_pl": "Wiatrołap: drzwi wejściowe Inspiro Iguana Black Premium antracyt – skrzydło 100 z pionowym pasem szyby w czarnej ramce i czarną klamką, doświetle boczne 37 cm matowe (ok. 1:3 do skrzydła), szafa PAX biała, posadzka Giunia beż, downlighty; prawa ściana pusta.",
+  "odstepstwa_pl": "Doświetle po lewej stronie w kadrze (od środka); proporcja doświetla dociągnięta korektą geometrii obrazu."
+ },
+ {
+  "room": "1/02",
+  "file": "1-02.jpg",
+  "title_pl": "Salon – strefa TV i narożnik",
+  "opis_pl": "Salon: pas wypoczynkowy 3,46 m, sofa VIMLE brązowobeżowa, stolik TONSTAD, TV na szafce BESTÅ przy prawej ścianie, stół STRANDTORP z krzesłami TOSSBERG.",
+  "odstepstwa_pl": "TONSTAD wygląda prawie na biały; fronty BESTÅ z delikatnym ryflem zamiast gładkich Björköviken."
+ },
+ {
+  "room": "1/02",
+  "file": "1-02_b.jpg",
+  "title_pl": "Salon – jadalnia",
+  "opis_pl": "Jadalnia i wyspa: zabudowane schody dębowe, wyspa z czarną płytą indukcyjną i stalowym okapem wyspowym Franke Tale, 3 hokery BERGMUND z oparciem (czarna rama, ciemnoszare obicie), lampy Bollique mosiądz, stół STRANDTORP, drzwi korytarza gładkie kaszmir Fortia Surin w białych ościeżnicach.",
+  "odstepstwa_pl": "Nad wyspą widoczne 2 lampy Bollique zamiast 3."
+ },
+ {
+  "room": "1/03",
+  "file": "1-03.jpg",
+  "title_pl": "Kuchnia z wyspą",
+  "opis_pl": "Kuchnia 2,57 m: zabudowa wysoka w L, okno 250 w wykuszu, wyspa z płytą indukcyjną i stalowym okapem wyspowym, 3 lampy Bollique.",
+  "odstepstwa_pl": "W tle jasne krzesła jadalni zamiast TOSSBERG (drugi plan)."
+ },
+ {
+  "room": "1/06",
+  "file": "1-06.jpg",
+  "title_pl": "Przedpokój ze schodami",
+  "opis_pl": "Przedpokój: proste schody wzdłuż lewej ściany (geo S), po prawej ukryte drzwi kuchni i drzwi pokoju 1/07, na końcu drzwi łazienki 1/08; drzwi kaszmirowe płycinowe, bez szaf.",
+  "odstepstwa_pl": "Brak istotnych."
+ },
+ {
+  "room": "1/07",
+  "file": "1-07.jpg",
+  "title_pl": "Pokój gościnny",
+  "opis_pl": "Pokój gościnny (kadr z blockoutu 1-07): biała szafa PAX/BERGSBO 283×236 ściana-ściana po lewej, okno balkonowe 100/230 z balustradą francuską i beżowymi zasłonami DYTÅG, stolik TONSTAD z lampą TÄRNABY, łóżko GLAMBERGET 80×200 sosna z szufladami, pilaster w prawym dalszym narożniku, dywan BREVBÄRARE, dąb Zip.",
+  "odstepstwa_pl": "Wezgłowie łóżka nieco węższe w kadrze niż w blockoucie (66–79% vs 68–89% szer.); łóżko 80×200 tymczasowo, do decyzji.",
+  "uwaga_pl": "Łóżko 80×200 jest tymczasowe – czeka na decyzję inwestora (140, 160, 80 albo sofa rozkładana); po decyzji wizualizacja i lista zakupów zostaną zaktualizowane."
+ },
+ {
+  "room": "1/08",
+  "file": "1-08.jpg",
+  "title_pl": "Łazienka parter",
+  "opis_pl": "Łazienka 1,6×2,26: WC na wprost, prysznic walk-in ze ścianką w złotym profilu po lewej, szafka Furnidea 60 kaszmir po prawej, lustro Luna LED, posadzka Giunia beż.",
+  "odstepstwa_pl": "Brak kinkietu w kadrze."
+ },
+ {
+  "room": "2/01",
+  "file": "2-01.jpg",
+  "title_pl": "Hol poddasza",
+  "opis_pl": "Korytarz poddasza: płaski sufit, wąski przebieg, drzwi balkonowe dwuskrzydłowe 180, szklana balustrada schodów, drzwi gładkie kaszmir ze złotymi klamkami, downlighty.",
+  "odstepstwa_pl": "Ławka VALTORP poza kadrem."
+ },
+ {
+  "room": "2/02",
+  "file": "2-02.jpg",
+  "title_pl": "Sypialnia główna",
+  "opis_pl": "Sypialnia na poddaszu: cały trójkąt szczytu przeszklony (3 tafle), okno dachowe na prawej połaci, łóżko w lewym narożniku, fotel POÄNG (gięta rama brzozowa, beżowa poduszka) przy oknie.",
+  "odstepstwa_pl": "Dywan spoza CSV; komoda STORKLINTA i kinkiety MIRI poza kadrem."
+ },
+ {
+  "room": "2/05",
+  "file": "2-05.jpg",
+  "title_pl": "Łazienka poddasze",
+  "opis_pl": "Łazienka poddasza: 2× szafka Furnidea 60 z lustrami Luna, walk-in przy drzwiach, dalej wanna 170, złote baterie Owens, deszczownica podtynkowa, czarny Sigma01, gres beżowy.",
+  "odstepstwa_pl": "Skala i rozmieszczenie: 2×60 cm na ścianie 2,69 m – zgodne."
+ },
+ {
+  "room": "2/06",
+  "file": "2-06.jpg",
+  "title_pl": "Pokój rodzinny – strefa TV i sofa",
+  "opis_pl": "Pokój dzienny: sofa 2-os. LANDSKRONA pod ścianką kolankową naprzeciw TV, wolne przejście do balkonu, lamele, dąb Zip, plafon biały, stolik LACK.",
+  "odstepstwa_pl": "KALLAX wygląda na naturalny dąb zamiast bielonego. Rzut v4: TV na ścianie N, specyfikacja: lewa ściana – obraz wg specyfikacji. Skala: narożnik ~3 m zastąpiony sofą ~165 cm."
+ },
+ {
+  "room": "2/06",
+  "file": "2-06_b.jpg",
+  "title_pl": "Pokój rodzinny – biurko i gitary",
+  "opis_pl": "Wnęka biurowa: biurko MITTZON 160 we wnęce 207 cm, czerwony fotel STYRSPEL, gitary na lamelach, dąb Zip.",
+  "odstepstwa_pl": "Dodatkowa lampka biurkowa spoza listy."
+ },
+ {
+  "room": "2/07",
+  "file": "2-07.jpg",
+  "title_pl": "Pokój 2/07",
+  "opis_pl": "Pokój na poddaszu: drzwi balkonowe 160 (~45% ściany), skos po lewej, łóżko TARVA 140, biurko MICKE dąb.",
+  "odstepstwa_pl": "Biurko MICKE wygląda jak zamknięta szafka; okno dachowe poza kadrem."
+ },
+ {
+  "room": "2/08",
+  "file": "2-08.jpg",
+  "title_pl": "Pokój z lukarną 2/08",
+  "opis_pl": "Pokój z lukarną: lukarna z 2 oknami na ok. 73% ściany, siedzisko z 2× BESTÅ 120 dąb bielony z poduchą.",
+  "odstepstwa_pl": "Okna dachowe poza kadrem (jak w blockoucie)."
+ }
 ]
