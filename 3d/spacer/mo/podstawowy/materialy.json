@@ -3,8 +3,13 @@
  "wariant": "podstawowy",
  "lightmap": {
   "url": "lightmap.webp",
-  "K": 3.2692996969222894,
-  "gamma": 2.2
+  "K": 6.3810173273086725,
+  "gamma": 2.2,
+  "wb": [
+   0.92,
+   1.005,
+   1.185
+  ]
  },
  "uwaga": "mapa światła wypieczona dla wariantu podstawowy (Cycles, odbicia światła zależą od kolorów wariantu)",
  "zrodla": {
@@ -12,9 +17,9 @@
   "trawertyn": "Gres Trawertyn classic 60 x 120 cm 1,44 m2",
   "sciana": "Farba Śnieżka Becolour idealnie beżowy 5 l",
   "kwarc": "Gres Design – blat z konglomeratu kwarcowego standard 2 cm (za mb)",
-  "front_kuchni": "zabudowa na wymiar – fronty lakierowane/laminowane (zakres z listy podstawowej)",
+  "front_kuchni": "zabudowa na wymiar – fronty lakierowane/laminowane (zakres z listy podstawowej): 7,36 mb (blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67) × 4 900–7 750 zł/mb; front drzwi ukrytych spiżarni lakierowany w kolorze frontów",
   "klamki": "Klamka drzwiowa Verso Qubik kwadratowy szyld czarna",
-  "boucle": "ZURICH Narożnik rozkładany boucle kremowy, prawy",
+  "boucle": "SÖDERHAMN Sofa 2-osobowa z szezlongiem - Fridtuna jasnobeżowy",
   "dywan": "STOENSE Dywan z krótkim włosiem - kremowy 200x300 cm",
   "firanka": "SILVERLÖNN Firanki, 2 szt. - beżowy/na taśmie 145x300 cm"
  },

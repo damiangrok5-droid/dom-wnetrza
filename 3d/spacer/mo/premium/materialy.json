@@ -3,12 +3,12 @@
  "wariant": "premium",
  "lightmap": {
   "url": "lightmap.webp",
-  "K": 3.1300898270607025,
+  "K": 6.434318027019506,
   "gamma": 2.2,
   "wb": [
-   0.923,
-   1.003,
-   1.201
+   0.918,
+   1.006,
+   1.184
   ]
  },
  "uwaga": "mapa światła wypieczona dla wariantu premium (Cycles, odbicia światła zależą od kolorów wariantu)",
@@ -17,7 +17,7 @@
   "trawertyn": "Paradyż Relis Beige gres szkl. rekt. struktura mat 120×120",
   "sciana": "Farba Tikkurila Optiva Ceramic Super Matt [3] 9 l (baza A, do barwienia)",
   "kwarc": "Gres Design – blat ze spieku Dekton (Cosentino) 12 mm (za mb)",
-  "front_kuchni": "zabudowa na wymiar – fronty z forniru dębowego naturalnego (olej/lakier mat): 8 mb × średnia z widełek laczynasdrewno 7 300–11 300 i makpol 4 706–6 800 zł/mb",
+  "front_kuchni": "zabudowa na wymiar – fronty z forniru dębowego naturalnego (olej/lakier mat): 7,36 mb (blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67) × średnia z widełek laczynasdrewno 7 300–11 300 i makpol 4 706–6 800 zł/mb; front drzwi ukrytych spiżarni w tym samym fornirze dębowym",
   "klamki": "HOPPE Amsterdam – komplet klamek na rozecie, stal nierdzewna czarna matowa (cena wersji WC)",
   "boucle": "Westwing Lennon – narożna sofa modułowa bouclé 3-os. taupe 238×180 cm",
   "dywan": "TORRONE dywan wełniany ręcznie tkany 200×300 cm, naturalna biel",

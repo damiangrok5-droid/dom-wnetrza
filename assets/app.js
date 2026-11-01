@@ -303,8 +303,8 @@ async function viewShop(){
   </div>
   ${sumCard(d,kMin,kMax,B)}
   <div id="warianty"></div>
-  <div class="bar" title="Udział w budżecie 400 000 zł">${cats.map(([c,v])=>`<span style="width:${v/B*100}%;background:${CAT_COL[c]||'#999'}" title="${esc(c)} ${zl(v)}"></span>`).join('')}<span style="width:${kMin/B*100}%;background:repeating-linear-gradient(45deg,#B9805E 0 4px,#d9b49b 4px 8px)" title="kuchnia na wymiar (min.)"></span></div>
-  <div class="legend">${cats.map(([c,v])=>`<span><i style="background:${CAT_COL[c]||'#999'}"></i>${esc(c)} ${zl(v)}</span>`).join('')}<span><i style="background:#B9805E"></i>kuchnia na wymiar (szac.)</span><span>tło = budżet 400 000 zł</span></div>
+  <div class="bar" title="Udział w budżecie 550 000 zł">${cats.map(([c,v])=>`<span style="width:${v/B*100}%;background:${CAT_COL[c]||'#999'}" title="${esc(c)} ${zl(v)}"></span>`).join('')}<span style="width:${kMin/B*100}%;background:repeating-linear-gradient(45deg,#B9805E 0 4px,#d9b49b 4px 8px)" title="kuchnia na wymiar (min.)"></span></div>
+  <div class="legend">${cats.map(([c,v])=>`<span><i style="background:${CAT_COL[c]||'#999'}"></i>${esc(c)} ${zl(v)}</span>`).join('')}<span><i style="background:#B9805E"></i>kuchnia na wymiar (szac.)</span><span>tło = budżet 550 000 zł</span></div>
   <details class="note"><summary><b>Czego nie ma w sumie (${S.gaps.length} uwag)</b> – kuchnia na wymiar, zakres GW, szacunki…</summary><ul>${S.gaps.map(g=>`<li>${esc(g)}</li>`).join('')}</ul></details>
   <div class="filters">
    <select id="f-room" aria-label="Pomieszczenie"><option value="">Wszystkie pomieszczenia</option>${ids.map(id=>`<option value="${id}">${id} ${esc(roomName(id))}</option>`).join('')}${gen?'<option value="_og">Ogólne / cały dom</option>':''}</select>
@@ -341,7 +341,7 @@ function viewCompare(){
   const C=S.styles.map(s=>({s,c:cmpBy(s.slug)})).filter(x=>x.c);
   const cats=Object.keys(CAT_COL).filter(k=>C.some(x=>x.c.by_cat[k]!=null));
   const min=k=>Math.min(...C.map(x=>k?x.c.by_cat[k]??Infinity:x.c.total));
-  const B=C[0]?.c.budget||400000,[kMin,kMax]=C[0]?.c.kitchen_est||[0,0];
+  const B=C[0]?.c.budget||550000,[kMin,kMax]=C[0]?.c.kitchen_est||[0,0];
   const maxT=Math.max(...C.map(x=>x.c.total+kMax));
   app.innerHTML=`<h1>Porównanie stylów</h1>
   <p class="lead">Produkty (ceny zweryfikowane) + materiały pomocnicze + robocizna (szacunek wg średnich stawek rynkowych). Do każdej sumy doliczyć kuchnię na wymiar: ${rng(kMin,kMax)}. Budżet: ${zl(B)} (z meblami).</p>

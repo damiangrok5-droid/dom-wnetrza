@@ -3,8 +3,13 @@
  "wariant": "wyzszy",
  "lightmap": {
   "url": "lightmap.webp",
-  "K": 3.225577204704282,
-  "gamma": 2.2
+  "K": 6.404016651153526,
+  "gamma": 2.2,
+  "wb": [
+   0.92,
+   1.005,
+   1.183
+  ]
  },
  "uwaga": "mapa światła wypieczona dla wariantu wyzszy (Cycles, odbicia światła zależą od kolorów wariantu)",
  "zrodla": {
@@ -12,9 +17,9 @@
   "trawertyn": "Paradyż Relis Beige gres szkl. rekt. struktura mat 120×120",
   "sciana": "Farba Tikkurila Optiva Ceramic Super Matt [3] 9 l (baza A, do barwienia)",
   "kwarc": "Gres Design – blat ze spieku Laminam 12 mm (za mb)",
-  "front_kuchni": "zabudowa na wymiar – fronty z forniru dębowego naturalnego (olej/lakier mat): 8 mb × średnia z widełek laczynasdrewno 7 300–11 300 i makpol 4 706–6 800 zł/mb",
+  "front_kuchni": "zabudowa na wymiar – fronty z forniru dębowego naturalnego (olej/lakier mat): 7,36 mb (blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67) × średnia z widełek laczynasdrewno 7 300–11 300 i makpol 4 706–6 800 zł/mb; front drzwi ukrytych spiżarni w tym samym fornirze dębowym",
   "klamki": "HOPPE Amsterdam – komplet klamek na rozecie, stal nierdzewna czarna matowa (cena wersji WC)",
-  "boucle": "ZURICH Narożnik rozkładany boucle kremowy, prawy",
+  "boucle": "SÖDERHAMN Sofa 2-osobowa z szezlongiem - Fridtuna jasnobeżowy",
   "dywan": "STOENSE Dywan z krótkim włosiem - kremowy 200x300 cm",
   "firanka": "SILVERLÖNN Firanki, 2 szt. - beżowy/na taśmie 145x300 cm"
  },

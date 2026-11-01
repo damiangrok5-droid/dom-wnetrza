@@ -1,11 +1,11 @@
-:root{--bg:#F4EFE7;--card:#FFFDF9;--ink:#2B2723;--mut:#7A7166;--line:#E4DBCE;--acc:#8C6A43;--acc2:#7D7A5B;--ok:#4F7A4A;--warn:#B9805E;--bad:#A8432F;--r:16px;--sh:0 1px 2px rgba(43,39,35,.06),0 6px 20px rgba(43,39,35,.06)}
+:root{--bg:#F4EFE7;--card:#FFFDF9;--ink:#2B2723;--mut:#6B6258;--line:#E4DBCE;--acc:#82623E;--acc2:#7D7A5B;--ok:#41693C;--warn:#8F5A36;--bad:#A8432F;--r:16px;--sh:0 1px 2px rgba(43,39,35,.06),0 6px 20px rgba(43,39,35,.06)}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;padding-bottom:env(safe-area-inset-bottom)}
 h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;font-weight:500;letter-spacing:-.01em;line-height:1.2}
 h1{font-size:1.8rem;margin:.2em 0 .3em}h2{font-size:1.4rem;margin:1.4em 0 .5em}h3{font-size:1.1rem;margin:0}
 a{color:var(--acc)}
-.top{position:sticky;top:0;z-index:20;background:rgba(244,239,231,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);padding:calc(env(safe-area-inset-top) + 8px) 16px 0}
+.top{position:sticky;top:0;z-index:20;background:rgba(244,239,231,.97);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);padding:calc(env(safe-area-inset-top) + 8px) 16px 0}
 .brand{font-family:Georgia,serif;font-size:1.2rem;text-decoration:none;color:var(--ink)}.brand span{color:var(--mut)}
 .tabs{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin:6px -16px 0;padding:0 12px}
 .tabs::-webkit-scrollbar{display:none}
@@ -167,3 +167,31 @@ td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .room .ph.phn{text-align:center;padding:14px;gap:8px}
 .room .ph.phn span{max-width:34em}
 .room .ph .phl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+
+/* F2 28.10 – UX iOS (iPhone 390×844): cele dotyku ≥44 px, czytelność ≥12 px i kontrast AA, zawijanie sum, stan :active */
+:root{color-scheme:light}
+.brand{display:inline-flex;align-items:center;min-height:44px}
+.top{padding-top:calc(env(safe-area-inset-top) + 2px)}.tabs{margin-top:0}
+.tabs a{min-height:44px;display:flex;align-items:center}
+.chip{min-height:44px;padding:8px 14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:10px 16px;touch-action:manipulation}
+.btn:active,.chip:active,.wseg button:active{opacity:.75}
+select,input[type=search]{min-height:44px}
+.room .thumbs button{width:80px}
+.room .thumbs{padding-left:12px;padding-right:12px;gap:8px;padding-top:10px}
+.cmp a{display:inline-block;padding:13px 0;margin:-13px 0}
+table.shop td.pn a{display:inline-block;padding:11px 0;margin:-11px 0}
+.opb{font-size:.75rem}.opb i{opacity:1}.opd{opacity:1}
+.wbadge{font-size:.75rem}.wk{font-size:.75rem}
+.room .wal summary small,.sumcard small,.wseg small{font-size:.78rem}
+.room .wal summary{min-height:44px;display:list-item;padding:10px 0}
+.room details>summary{padding:10px 0}
+.wseg button{min-height:52px}
+.kpi b{text-wrap:balance}
+/* sumy: długie etykiety (np. „Zakres min–max” + „w limicie …”) zawijają się zamiast ściskać kolumnę do 1 słowa */
+.sumcard .sr{flex-wrap:wrap}
+.sumcard .sr span{flex:1 1 11em}
+.sumcard .sr>b:last-child{margin-left:auto}
+.lb-x{right:max(10px,env(safe-area-inset-right))}
+.opb.mid{color:#8a5800}.opb.ok{color:#256a40}
+.top{background:#F4EFE7}

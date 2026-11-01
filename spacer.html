@@ -24,9 +24,9 @@
 :root{--glass:rgba(255,253,249,.62);--glass-d:rgba(28,25,22,.46);--gl-line:rgba(255,255,255,.55)}
 body.sp main{max-width:1180px;padding:10px 12px 12px}
 .sp-ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px}
-.sp-ctl select{appearance:none;-webkit-appearance:none;font:inherit;font-size:.9rem;color:var(--ink);background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237A7166'/%3E%3C/svg%3E") no-repeat right 10px center;border:1px solid var(--line);border-radius:999px;padding:7px 28px 7px 12px;min-height:36px}
+.sp-ctl select{appearance:none;-webkit-appearance:none;font:inherit;font-size:.9rem;color:var(--ink);background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%237A7166'/%3E%3C/svg%3E") no-repeat right 10px center;border:1px solid var(--line);border-radius:999px;padding:7px 30px 7px 14px;min-height:44px;font-size:16px}
 .seg{display:inline-flex;background:rgba(122,113,102,.12);border-radius:999px;padding:3px;gap:2px}
-.seg button{font:inherit;font-size:.86rem;border:0;background:transparent;color:var(--ink);padding:6px 11px;border-radius:999px;min-height:30px;cursor:pointer;white-space:nowrap}
+.seg button{font:inherit;font-size:.9rem;border:0;background:transparent;color:var(--ink);padding:6px 12px;border-radius:999px;min-height:44px;touch-action:manipulation;cursor:pointer;white-space:nowrap}
 .seg button.on{background:var(--card);box-shadow:0 1px 3px rgba(43,39,35,.18);font-weight:600}
 .seg button:disabled{opacity:.4;cursor:default}
 .stage{position:relative;height:calc(100svh - var(--st,330px) - 14px);min-height:380px;max-height:860px;border-radius:var(--r);overflow:hidden;background:#d9d0c3;box-shadow:var(--sh);border:1px solid var(--line);touch-action:none;-webkit-user-select:none;user-select:none}
@@ -34,9 +34,9 @@ body.sp main{max-width:1180px;padding:10px 12px 12px}
 #pano,#walk{position:absolute;inset:0}
 #walk canvas{display:block;width:100%;height:100%}
 .g{background:var(--glass);-webkit-backdrop-filter:saturate(1.6) blur(14px);backdrop-filter:saturate(1.6) blur(14px);border:1px solid var(--gl-line);box-shadow:0 4px 18px rgba(43,39,35,.16)}
-.wm{position:absolute;left:10px;top:10px;z-index:10;border-radius:999px;padding:4px 10px;font-size:.72rem;color:var(--ink);pointer-events:none;max-width:70%}
+.wm{position:absolute;left:10px;top:10px;z-index:10;border-radius:999px;padding:4px 10px;font-size:.75rem;color:var(--ink);pointer-events:none;max-width:70%}
 .tools{position:absolute;right:10px;top:10px;z-index:10;display:flex;flex-direction:column;gap:8px}
-.tools button{width:42px;height:42px;border-radius:50%;font-size:1.05rem;color:var(--ink);cursor:pointer;display:grid;place-items:center;padding:0}
+.tools button{width:44px;height:44px;border-radius:50%;font-size:1.05rem;color:var(--ink);cursor:pointer;display:grid;place-items:center;padding:0}
 .tools button.on{background:var(--ink);color:#fff}
 .tools button[hidden]{display:none}
 .where{position:absolute;left:50%;transform:translateX(-50%);bottom:12px;z-index:10;border-radius:999px;padding:6px 14px;font-size:.85rem;white-space:nowrap;pointer-events:none}
@@ -60,6 +60,16 @@ body.sp main{max-width:1180px;padding:10px 12px 12px}
 .sp-note b{color:var(--ink)}
 .err{position:absolute;inset:auto 12px 50% 12px;text-align:center;z-index:21;border-radius:12px;padding:10px}
 @media (prefers-color-scheme:dark){.g{--glass:rgba(40,36,32,.55)}.g,.g *{color:#f4efe7}.tools button.on{background:#f4efe7;color:#2b2723}}
+/* F2 28.10 – iPhone: podpis miejsca nie wchodzi pod minimapę; segmenty przewijane w poziomie zamiast łamać się w 3 wiersze; aktywny stan */
+.seg button:active{opacity:.7}
+@media (max-width:600px){
+ .where{left:10px;transform:none;max-width:calc(100% - 132px - 34px);overflow:hidden;text-overflow:ellipsis}
+ .plan.big ~ .where{visibility:hidden}
+ #segRoom{max-width:100%;overflow-x:auto;scrollbar-width:none;flex-wrap:nowrap}
+ #segRoom::-webkit-scrollbar{display:none}
+ #segRoom button{flex:0 0 auto}
+}
+.sp-ctl select:active{opacity:.8}
 </style>
 </head>
 <body class="sp">
@@ -79,6 +89,7 @@ body.sp main{max-width:1180px;padding:10px 12px 12px}
   <div class="sp-ctl" role="group" aria-label="Wybór wizualizacji">
     <select id="selStyl" aria-label="Styl"></select>
     <select id="selWar" aria-label="Wariant wykończenia"></select>
+    <div class="seg" id="segFloor" role="group" aria-label="Piętro" hidden><button data-f="parter" class="on">Parter</button><button data-f="poddasze">Poddasze</button></div>
     <div class="seg" id="segRoom" role="group" aria-label="Pomieszczenie"></div>
     <div class="seg" id="segMode" role="group" aria-label="Tryb">
       <button data-m="pano" class="on">360°</button><button data-m="walk">Spacer</button>
@@ -98,13 +109,13 @@ body.sp main{max-width:1180px;padding:10px 12px 12px}
     <div class="joy" id="joy" hidden></div>
     <div class="loadbox" id="load" hidden><span class="g">Ładowanie…</span></div>
   </div>
-  <p class="sp-note"><b>Wizualizacja nastrojowa (3D), nie 1:1.</b> Układ ścian, okien i mebli wg rzutu i listy zakupów (wymiary z CSV); materiały i światło poglądowe. Tryb „360°” – zdjęcia sferyczne z wysokości oczu (160 cm), przesuwaj palcem, kropki na podłodze przenoszą do kolejnego punktu. Tryb „Spacer” – swobodne chodzenie: lewy dolny róg ekranu = joystick, reszta ekranu = rozglądanie; na komputerze klawisze WASD/strzałki i mysz. Licencje: <a href="assets/LICENSES/spacer.txt">materiały i biblioteki</a>.</p>
+  <p class="sp-note"><b>Wizualizacja nastrojowa (3D), nie 1:1.</b> Układ ścian, okien i mebli wg rzutu i listy zakupów (wymiary z CSV); materiały i światło poglądowe. Tryb „360°” – zdjęcia sferyczne z wysokości oczu (160 cm), przesuwaj palcem, kropki na podłodze przenoszą do kolejnego punktu. Poddasze (hol, sypialnia 2/02, pokoje 2/07 i 2/08) – na razie tylko 360°. Tryb „Spacer” (parter) – swobodne chodzenie: lewy dolny róg ekranu = joystick, reszta ekranu = rozglądanie; na komputerze klawisze WASD/strzałki i mysz. Licencje: <a href="assets/LICENSES/spacer.txt">materiały i biblioteki</a>.</p>
 </main>
 <script type="module">
 const $ = s => document.querySelector(s);
-const st = { m: null, styles: [], styl: 'mo', war: 'podstawowy', pt: 'salon', mode: 'pano', yaw: 0 };
+const st = { m: null, styles: [], styl: 'mo', war: 'podstawowy', pt: 'salon', mode: 'pano', yaw: 0, fl: 'parter' };
 const q = new URLSearchParams(location.search);
-const ROOMS = { '1/02': 'Salon i jadalnia', '1/03': 'Kuchnia' };
+const ROOMS = { '1/02': 'Salon i jadalnia', '1/03': 'Kuchnia', '2/01': 'Hol', '2/02': 'Sypialnia', '2/08': 'Pokój gościnny', '2/07': 'Pokój 2/07' };
 let psv = null, markers = null, gyro = null, walk = null;
 document.documentElement.style.setProperty('--top', $('.top').offsetHeight + 'px');
 const fitStage = () => document.documentElement.style.setProperty('--st', Math.round($('#stage').getBoundingClientRect().top + scrollY) + 'px');
@@ -113,7 +124,10 @@ addEventListener('resize', fitStage);
 const hint = (t, ms = 6000) => { const h = $('#hint'); h.textContent = t; h.classList.remove('off'); clearTimeout(hint.t); hint.t = setTimeout(() => h.classList.add('off'), ms); };
 const showLoad = on => { $('#load').hidden = !on; };
 const S = () => st.m.style[st.styl];
-const W = () => S()?.warianty[st.war];
+// F1e 27.10: piętra – parter (panoramy + spacer GLB) i poddasze (tylko panoramy); F() = manifest bieżącego piętra
+const F = () => st.fl === 'poddasze' && st.m.poddasze ? st.m.poddasze : st.m;
+const PU = () => F().punkty;
+const W = () => st.fl === 'poddasze' ? st.m.poddasze?.style[st.styl]?.warianty[st.war] : S()?.warianty[st.war];
 
 async function init() {
   const [m, styles] = await Promise.all([fetch('data/spacer.json').then(r => r.json()), fetch('data/styles.json').then(r => r.json()).catch(() => [])]);
@@ -124,8 +138,11 @@ async function init() {
   const w = q.get('war'); st.war = W() && w && S().warianty[w] ? w : Object.keys(S().warianty)[0];
   const pk = (q.get('pokoj') || '').replace('-', '/');
   const ptq = q.get('punkt');
-  st.pt = m.punkty[ptq] ? ptq : (Object.entries(m.punkty).find(([, p]) => p.pokoj === pk)?.[0] || Object.keys(m.punkty)[0]);
-  st.yaw = m.punkty[st.pt].yaw0 ?? 0;
+  if (m.poddasze && (q.get('pietro') === 'poddasze' || m.poddasze.punkty[ptq] || m.poddasze.pokoje.includes(pk))) st.fl = 'poddasze';
+  if (!W()) st.war = Object.keys((st.fl === 'poddasze' ? m.poddasze.style[st.styl] : S())?.warianty || {})[0] || st.war;
+  const P = PU();
+  st.pt = P[ptq] ? ptq : (Object.entries(P).find(([, p]) => p.pokoj === pk)?.[0] || Object.keys(P)[0]);
+  st.yaw = P[st.pt].yaw0 ?? 0;
   buildControls(); drawPlan(); fitStage();
   if (q.get('tryb') === 'spacer') setMode('walk'); else setMode('pano');
 }
@@ -134,27 +151,43 @@ function buildControls() {
   const all = st.styles.length ? st.styles.map(s => s.slug) : Object.values(m.style).map(v => v.slug);
   const key = slug => Object.keys(m.style).find(k => m.style[k].slug === slug);
   $('#selStyl').innerHTML = all.map(slug => { const k = key(slug); return `<option value="${k || ''}" ${k ? '' : 'disabled'} ${k === st.styl ? 'selected' : ''}>${names[slug] || m.style[k]?.nazwa || slug}${k ? '' : ' – w przygotowaniu'}</option>`; }).join('');
-  $('#selStyl').onchange = e => { if (!e.target.value) return; st.styl = e.target.value; if (!W()) st.war = Object.keys(S().warianty)[0]; buildControls(); reload(); };
+  $('#selStyl').onchange = e => { if (!e.target.value) return; st.styl = e.target.value; if (!W()) st.war = Object.keys(st.fl === 'poddasze' ? m.poddasze.style[st.styl]?.warianty || {} : S().warianty)[0]; buildControls(); reload(); };
   const WN = [['podstawowy', 'Podstawowy'], ['wyzszy', 'Wyższy'], ['premium', 'Premium']];
-  $('#selWar').innerHTML = WN.map(([k, n]) => `<option value="${k}" ${S().warianty[k] ? '' : 'disabled'} ${k === st.war ? 'selected' : ''}>Wariant: ${n}${S().warianty[k] ? '' : ' (wkrótce)'}</option>`).join('');
+  const SW = (st.fl === 'poddasze' ? m.poddasze.style[st.styl]?.warianty : S().warianty) || {};
+  $('#selWar').innerHTML = WN.map(([k, n]) => `<option value="${k}" ${SW[k] ? '' : 'disabled'} ${k === st.war ? 'selected' : ''}>Wariant: ${n}${SW[k] ? '' : ' (wkrótce)'}</option>`).join('');
+  $('#segFloor').hidden = !m.poddasze;
+  document.querySelectorAll('#segFloor button').forEach(b => { b.classList.toggle('on', b.dataset.f === st.fl); b.disabled = b.dataset.f === 'poddasze' && !m.poddasze?.style[st.styl]; });
+  $('#segFloor').onclick = e => { const b = e.target.closest('button'); if (b && !b.disabled && b.dataset.f !== st.fl) setFloor(b.dataset.f); };
   $('#selWar').onchange = e => { st.war = e.target.value; reload(); };
-  $('#segRoom').innerHTML = m.pokoje.map(r => `<button data-r="${r}" class="${m.punkty[st.pt].pokoj === r ? 'on' : ''}">${ROOMS[r] || r}</button>`).join('');
-  $('#segRoom').onclick = e => { const b = e.target.closest('button'); if (!b) return; const p = Object.entries(m.punkty).find(([, p]) => p.pokoj === b.dataset.r)[0]; goPoint(p, null); };
+  $('#segRoom').innerHTML = F().pokoje.map(r => `<button data-r="${r}" class="${PU()[st.pt]?.pokoj === r ? 'on' : ''}">${ROOMS[r] || r}</button>`).join('');
+  $('#segRoom').onclick = e => { const b = e.target.closest('button'); if (!b) return; const p = Object.entries(PU()).find(([, p]) => p.pokoj === b.dataset.r)[0]; goPoint(p, null); };
   $('#segMode').onclick = e => { const b = e.target.closest('button'); if (b && !b.disabled) setMode(b.dataset.m); };
   $('#segMode [data-m=walk]').disabled = !W()?.materialy;
+  $('#segMode [data-m=walk]').title = st.fl === 'poddasze' ? 'Spacer swobodny – na razie tylko parter' : '';
   $('#segMode [data-m=pano]').disabled = !Object.keys(W()?.pano || {}).length;
 }
-function syncRoomSeg() { const r = st.m.punkty[st.pt].pokoj; document.querySelectorAll('#segRoom button').forEach(b => b.classList.toggle('on', b.dataset.r === r)); $('#where').textContent = st.m.punkty[st.pt].nazwa; }
-function syncUrl() { const u = new URL(location); u.search = new URLSearchParams({ styl: S().slug, war: st.war, punkt: st.pt, ...(st.mode === 'walk' ? { tryb: 'spacer' } : {}) }); history.replaceState(null, '', u); }
+function syncRoomSeg() { const r = PU()[st.pt].pokoj; document.querySelectorAll('#segRoom button').forEach(b => b.classList.toggle('on', b.dataset.r === r)); $('#where').textContent = PU()[st.pt].nazwa; }
+function syncUrl() { const u = new URL(location); u.search = new URLSearchParams({ styl: S().slug, war: st.war, ...(st.fl === 'poddasze' ? { pietro: 'poddasze' } : {}), punkt: st.pt, ...(st.mode === 'walk' ? { tryb: 'spacer' } : {}) }); history.replaceState(null, '', u); }
+// F1e: przełączenie piętra (poddasze: tylko 360°, więc tryb spaceru wraca do panoram)
+async function setFloor(fl) {
+  if (fl === 'poddasze' && !st.m.poddasze) return;
+  st.fl = fl;
+  if (!W()) st.war = Object.keys((fl === 'poddasze' ? st.m.poddasze.style[st.styl] : S()).warianty)[0];
+  const P = PU(); st.pt = Object.keys(P)[0]; st.yaw = P[st.pt].yaw0 ?? 0;
+  buildControls(); drawPlan(); syncRoomSeg();
+  if (st.mode === 'walk' && !W()?.materialy) { await setMode('pano'); return; }
+  if (st.mode === 'walk') { await startWalk(); return; }
+  if (psv) await goPoint(st.pt, st.yaw); else await startPano();
+}
 
 /* ---------- rzut ---------- */
 function drawPlan() {
-  const r = st.m.rzut, [x0, y0, x1, y1] = r.box, pad = 10;
+  const r = F().rzut, [x0, y0, x1, y1] = r.box, pad = 10;
   const rooms = r.pomieszczenia.map(p => `<polygon points="${p.pts.map(q => q.join(',')).join(' ')}" fill="#efe6d8" />`).join('');
   const walls = r.sciany.map(([a, b, c, d]) => `<rect x="${a}" y="${b}" width="${c - a}" height="${d - b}" fill="#5d544b"/>`).join('');
   const ops = r.otwory.map(o => { const [a, b, c, d] = o.r; const win = o.t !== 'door'; return `<rect x="${a}" y="${b}" width="${c - a}" height="${d - b}" fill="${win ? '#9cc7e0' : '#fffdf9'}" stroke="${win ? '#4c87a8' : '#b9a58c'}" stroke-width="3"/>`; }).join('');
-  const pts = Object.entries(st.m.punkty).map(([k, p]) => `<g class="pt" data-p="${k}"><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="38" fill="transparent"/><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="17" fill="#fffdf9" stroke="#8C6A43" stroke-width="7"/></g>`).join('');
-  $('#plan').innerHTML = `<svg viewBox="${x0 - pad} ${y0 - pad} ${x1 - x0 + 2 * pad} ${y1 - y0 + 2 * pad}" role="img" aria-label="Rzut strefy dziennej z punktem widzenia">
+  const pts = Object.entries(PU()).map(([k, p]) => `<g class="pt" data-p="${k}"><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="38" fill="transparent"/><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="17" fill="#fffdf9" stroke="#8C6A43" stroke-width="7"/></g>`).join('');
+  $('#plan').innerHTML = `<svg viewBox="${x0 - pad} ${y0 - pad} ${x1 - x0 + 2 * pad} ${y1 - y0 + 2 * pad}" role="img" aria-label="${st.fl === 'poddasze' ? 'Rzut poddasza' : 'Rzut strefy dziennej'} z punktem widzenia">
     ${rooms}${walls}${ops}${pts}
     <g id="me"><path id="cone" d="M0 0 L210 -95 A230 230 0 0 1 210 95 Z" fill="rgba(140,106,67,.35)"/><circle r="24" fill="#8C6A43" stroke="#fff" stroke-width="7"/></g></svg>`;
   $('#plan').onclick = e => { const g = e.target.closest('.pt'); if (g) { e.stopPropagation(); goPoint(g.dataset.p, null); } else $('#plan').classList.toggle('big'); };
@@ -174,48 +207,55 @@ async function startPano() {
       plugins: [[MarkersPlugin, {}], [GyroscopePlugin, { touchmove: true, absolutePosition: false }]] });
     markers = psv.getPlugin(MarkersPlugin); gyro = psv.getPlugin(GyroscopePlugin);
     markers.addEventListener('select-marker', ({ marker }) => marker.data?.to && goPoint(marker.data.to, marker.data.yaw));
-    psv.addEventListener('position-updated', ({ position }) => { st.yaw = position.yaw; const p = st.m.punkty[st.pt]; setMe(p.xy[0], p.xy[1], position.yaw); });
+    psv.addEventListener('position-updated', ({ position }) => { st.yaw = position.yaw; const p = PU()[st.pt]; if (p) setMe(p.xy[0], p.xy[1], position.yaw); });
     psv.addEventListener('ready', () => { setMarkers(); }, { once: true });
     Promise.resolve(gyro.isSupported()).then(ok => { $('#bGyro').hidden = !ok; });
     $('#bGyro').onclick = () => { gyro.toggle(); setTimeout(() => $('#bGyro').classList.toggle('on', gyro.isEnabled()), 400); };
   } else {
-    await psv.setPanorama(W().pano[st.pt], { transition: false, position: { yaw: st.yaw, pitch: -0.08 }, zoom: zl(st.pt), showLoader: false });
-    setMarkers();
+    const seq = ++goSeq;
+    try { await psv.setPanorama(W().pano[st.pt], { transition: false, position: { yaw: st.yaw, pitch: -0.08 }, zoom: zl(st.pt), showLoader: false }); }
+    catch (e) { if (seq === goSeq) console.warn('pano', st.pt, e); return; }
+    if (seq === goSeq) setMarkers();
   }
   hint('Przesuń palcem, aby się rozejrzeć. Okrągłe punkty na podłodze przenoszą dalej.');
 }
 function setMarkers() {
   if (!markers) return;
-  const p = st.m.punkty[st.pt];
+  const p = PU()[st.pt];
   // hotfix 2026-10-26: różne cele w tym samym kierunku (np. z kuchni przez otwór 111: kominek, jadalnia, salon) NIE są już
   // odrzucane – najbliższy zostaje na swoim kierunku, kolejne rozsuwamy w poziomie (na przemian w prawo/lewo) i podnosimy ku horyzontowi
   const L = []; for (const l of [...p.linki].filter(l => W().pano[l.do]).sort((a, b) => a.odl_cm - b.odl_cm)) {
     const n = L.filter(o => Math.abs(Math.atan2(Math.sin(o.base - l.yaw), Math.cos(o.base - l.yaw))) < 0.25).length;
     L.push({ ...l, base: l.yaw, vy: l.yaw + (n ? (n % 2 ? 1 : -1) * Math.ceil(n / 2) * 0.45 : 0), vp: n ? l.pitch * 0.7 : l.pitch }); }
   markers.setMarkers(L.map(l => ({ id: 'go-' + l.do, position: { yaw: l.vy, pitch: l.vp },
-    html: `<div class="hs" role="button" aria-label="Przejdź: ${st.m.punkty[l.do].nazwa}"><b></b><i>${st.m.punkty[l.do].nazwa}</i></div>`,
+    html: `<div class="hs" role="button" aria-label="Przejdź: ${PU()[l.do].nazwa}"><b></b><i>${PU()[l.do].nazwa}</i></div>`,
     size: { width: 58, height: 58 }, anchor: 'center center', data: { to: l.do, yaw: l.yaw } })));
   syncRoomSeg(); setMe(p.xy[0], p.xy[1], st.yaw);
 }
 // punkt bez panoramy w danym wariancie (np. Premium ma tylko salon i kuchnię) -> najbliższy punkt z panoramą
 function panoPt(pt) {
   const P = W()?.pano || {}; if (P[pt]) return pt;
-  const q = st.m.punkty[pt].xy; let best = Object.keys(P)[0], bd = 1e9;
-  for (const k of Object.keys(P)) { const r = st.m.punkty[k]?.xy; if (!r) continue; const d = Math.hypot(r[0] - q[0], r[1] - q[1]); if (d < bd) { bd = d; best = k; } }
+  const q = PU()[pt].xy; let best = Object.keys(P)[0], bd = 1e9;
+  for (const k of Object.keys(P)) { const r = PU()[k]?.xy; if (!r) continue; const d = Math.hypot(r[0] - q[0], r[1] - q[1]); if (d < bd) { bd = d; best = k; } }
   return best;
 }
 // F1: punkt może mieć własne pionowe FOV (punkty.json 'fov'); minFov 40 / maxFov 100 -> poziom zoomu PSV
-const zl = pt => { const f = st.m.punkty[pt]?.fov; return f ? Math.round((100 - f) / 0.6) : 10; };
+const zl = pt => { const f = PU()[pt]?.fov; return f ? Math.round((100 - f) / 0.6) : 10; };
+let goSeq = 0;
 async function goPoint(pt, yaw) {
-  if (!st.m.punkty[pt]) return;
+  if (!PU()[pt]) return;
   if (st.mode !== 'walk') pt = panoPt(pt);
-  if (yaw != null) st.yaw = yaw; else if (st.m.punkty[pt].yaw0 != null) st.yaw = st.m.punkty[pt].yaw0;
+  if (yaw != null) st.yaw = yaw; else if (PU()[pt].yaw0 != null) st.yaw = PU()[pt].yaw0;
   st.pt = pt; syncRoomSeg(); syncUrl();
   if (st.mode === 'walk') { walk?.teleport(st.m.punkty[pt].xy, st.yaw); return; }
   if (!psv) return startPano();
-  markers.clearMarkers(); showLoad(true);
-  try { await psv.setPanorama(W().pano[pt], { transition: 650, position: { yaw: st.yaw, pitch: -0.08 }, zoom: zl(pt), showLoader: false }); } finally { showLoad(false); }
-  setMarkers();
+  markers.clearMarkers(); showLoad(true); const seq = ++goSeq;
+  // F1e: szybkie przełączanie (piętro/pokój/hotspot) przerywa poprzednie ładowanie -> PSV odrzuca obietnicę (WebKit: ProgressEvent);
+  // przerwane ładowanie wyciszamy, prawdziwy błąd sygnalizujemy podpowiedzią
+  try { await psv.setPanorama(W().pano[pt], { transition: 650, position: { yaw: st.yaw, pitch: -0.08 }, zoom: zl(pt), showLoader: false }); }
+  catch (e) { if (seq === goSeq) { console.warn('pano', pt, e); hint('Nie udało się wczytać panoramy – spróbuj ponownie.', 6000); } return; }
+  finally { if (seq === goSeq) showLoad(false); }
+  if (seq === goSeq) setMarkers();
 }
 
 /* ---------- spacer swobodny (three.js) ---------- */

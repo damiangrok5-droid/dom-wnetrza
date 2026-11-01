@@ -1,0 +1,178 @@
+{
+ "styl": "sk",
+ "wariant": "premium",
+ "lightmap": {
+  "url": "lightmap.webp",
+  "K": 5.954399669647162,
+  "gamma": 2.2,
+  "wb": [
+   0.932,
+   1.006,
+   1.142
+  ]
+ },
+ "uwaga": "mapa światła wypieczona dla wariantu premium (Cycles, odbicia światła zależą od kolorów wariantu)",
+ "zrodla": {
+  "podloga": "Barlinek Deska Dąb Gentle (jasny, 1-lamelowa)",
+  "trawertyn": "Baldocer Blanco gres Natural rektyfikowany 120×120",
+  "sciana": "Farba Tikkurila Optiva Ceramic Super Matt [3] 9 l (baza A, do barwienia)",
+  "kwarc": "Gres Design – blat ze spieku Dekton (Cosentino) 12 mm (za mb)",
+  "front_kuchni": "zabudowa na wymiar – fronty z forniru dębowego naturalnego (olej/lakier mat): 7,36 mb (blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67) × średnia z widełek laczynasdrewno 7 300–11 300 i makpol 4 706–6 800 zł/mb; front drzwi ukrytych spiżarni w tym samym fornirze dębowym",
+  "klamki": "HOPPE Amsterdam – klamki na płaskiej rozecie 2 mm, F69 stal szlachetna matowa",
+  "boucle": "FRIHETEN Narożnik z funkcją spania - Faringe jasnoszary",
+  "dywan": "TORRONE dywan wełniany ręcznie tkany 200×300 cm, naturalna biel",
+  "firanka": "So Linen – zasłona lniana na taśmie, medium linen 160 g/m² (stonewashed)"
+ },
+ "sloty": {
+  "podloga": {
+   "map": "podloga.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 1.7,
+   "normal": "podloga_n.webp",
+   "szorstkosc": 0.55,
+   "odbicia": 0.35
+  },
+  "fornir": {
+   "map": "fornir.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 1.83,
+   "normal": "fornir_n.webp",
+   "szorstkosc": 0.6,
+   "odbicia": 0.2
+  },
+  "sciana": {
+   "map": "sciana.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 2.0,
+   "szorstkosc": 0.92,
+   "odbicia": 0
+  },
+  "strop": {
+   "map": "strop.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 2.0,
+   "szorstkosc": 0.95,
+   "odbicia": 0
+  },
+  "boucle": {
+   "map": "boucle.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.35,
+   "normal": "boucle_n.webp",
+   "szorstkosc": 1,
+   "odbicia": 0
+  },
+  "len": {
+   "map": "len.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.27,
+   "szorstkosc": 1,
+   "odbicia": 0
+  },
+  "pled": {
+   "map": "pled.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.27,
+   "szorstkosc": 1,
+   "odbicia": 0
+  },
+  "rattan": {
+   "map": "rattan.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.12,
+   "szorstkosc": 0.8,
+   "odbicia": 0
+  },
+  "trawertyn": {
+   "map": "trawertyn.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 2.4,
+   "normal": "trawertyn_n.webp",
+   "szorstkosc": 0.6,
+   "odbicia": 0.25
+  },
+  "dywan": {
+   "map": "dywan.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 0.35,
+   "normal": "dywan_n.webp",
+   "szorstkosc": 1.0,
+   "odbicia": 0
+  },
+  "front_kuchni": {
+   "map": "fornir.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": 1.83,
+   "normal": "fornir_n.webp",
+   "szorstkosc": 0.5,
+   "odbicia": 0.2
+  },
+  "czern": {
+   "kolor": "#222222",
+   "szorstkosc": 0.45,
+   "odbicia": 0.3
+  },
+  "braz": {
+   "kolor": "#8A7563",
+   "szorstkosc": 0.32,
+   "odbicia": 0.8
+  },
+  "kwarc": {
+   "kolor": "#F2F1EE",
+   "szorstkosc": 0.4,
+   "odbicia": 0.6
+  },
+  "tv": {
+   "kolor": "#0B0B0C",
+   "szorstkosc": 0.08,
+   "odbicia": 1
+  },
+  "ceramika": {
+   "kolor": "#E3E3E0",
+   "szorstkosc": 0.35,
+   "odbicia": 0.4
+  },
+  "lisc": {
+   "kolor": "#3F6B3A",
+   "szorstkosc": 0.45,
+   "odbicia": 0
+  },
+  "obraz_rama": {
+   "kolor": "#DCC9A9",
+   "szorstkosc": 0.6,
+   "odbicia": 0
+  },
+  "biel_mebli": {
+   "kolor": "#FAFAF8",
+   "szorstkosc": 0.38,
+   "odbicia": 0.3
+  },
+  "glina": {
+   "kolor": "#B5BFA8",
+   "szorstkosc": 0.7,
+   "odbicia": 0
+  },
+  "klamki": {
+   "kolor": "#B9B9B6",
+   "szorstkosc": 0.3,
+   "odbicia": 0
+  },
+  "firanka": {
+   "kolor": "#FAFAF8",
+   "szorstkosc": 0.95,
+   "odbicia": 0
+  },
+  "klosz": {
+   "kolor": "#F3EEE6",
+   "szorstkosc": 1,
+   "odbicia": 0
+  },
+  "obraz": {
+   "map": "obraz.webp",
+   "kolor": "#ffffff",
+   "rozmiar_m": null,
+   "szorstkosc": 0.8,
+   "odbicia": 0
+  }
+ }
+}
