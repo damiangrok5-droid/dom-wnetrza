@@ -1,74 +1,205 @@
 [
- {
-  "room": "1-01",
-  "file": "1-01.jpg",
-  "title_pl": "Wiatrołap 1/01",
-  "opis_pl": "Wiatrołap japandi: drzwi w kolorze kaszmir na wprost, szare drzwi EI30 do garażu po lewej, biała szafa PAX po prawej, pozioma orzechowa półka LACK 110×26 przy lustrze EDSGARN (lewy pierwszy plan), lampa BLÅSTÅNG, gres Lora crema.",
-  "odstepstwa_pl": "Kadr nieco szerszy niż blockout, żeby pokazać półkę i lustro (w blockoucie są tuż przy kamerze)."
- },
- {
-  "room": "1-02",
-  "w_przygotowaniu": "Poprzednia wizualizacja salonu nie zgadzała się z aktualną listą zakupów (zmieniona sofa lub stół jadalniany 160×90) i została wycofana. Aktualny układ – na rzucie oraz w spacerze 3D; nowa wizualizacja po weryfikacji."
- },
- {
-  "room": "1-03",
-  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała kuchnię sprzed zmian (wyspa, drzwi w słupie) i została wycofana. Aktualny układ (otwór 111 do sufitu bez drzwi, blat pod oknem ze zlewem i zmywarką, zabudowa wysoka z lodówką i piekarnikiem, półwysep 90×198 z płytą i okapem) – na rzucie oraz w spacerze 3D / modelu 3D."
- },
- {
-  "room": "1-06",
-  "file": "1-06.jpg",
-  "title_pl": "Przedpokój 1/06 ze schodami",
-  "opis_pl": "Korytarz japandi: schody po lewej, drzwi 1/08 na wprost, 1/07 po prawej; Lora crema, drzwi Exmoor kaszmir z czarną klamką, lamele dąb, poręcz dębowa.",
-  "odstepstwa_pl": "Kinkiet zbliżony do NYMÅNE."
- },
- {
-  "room": "1-07",
-  "w_przygotowaniu": "Poprzednia wizualizacja nie zgadzała się z listą zakupów (meble) i została wycofana. Aktualne wymiary – na rzucie; nowa wizualizacja po weryfikacji."
- },
- {
-  "room": "1-08",
-  "file": "1-08.jpg",
-  "title_pl": "Łazienka 1/08",
-  "opis_pl": "Łazienka 1/08 japandi: walk-in z czarnym profilem, WC z czarnym przyciskiem, dębowy panel nad półścianką, szafka Mille dąb z umywalką Endell i czarną baterią, okrągłe lustro, gres Lora.",
-  "odstepstwa_pl": "Brak istotnych odstępstw."
- },
- {
-  "room": "2-01",
-  "file": "2-01.jpg",
-  "title_pl": "Hol poddasza 2/01",
-  "opis_pl": "Hol piętra japandi: drzwi kaszmir po lewej i prawej, balustrada z dębowych tralek, drzwi balkonowe na wprost, wyłaz w suficie, chodnik.",
-  "odstepstwa_pl": "Brak istotnych odstępstw."
- },
- {
-  "room": "2-02",
-  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała inny kształt sufitu i okna szczytowego niż aktualny projekt (skosy od ścianek 110 do płaskiego pasa ok. 1 m na wys. ok. 3,00 m, okno szczytowe od podłogi) i została wycofana. Aktualny układ – na rzucie oraz w modelu 3D."
- },
- {
-  "room": "2-05",
-  "file": "2-05.jpg",
-  "title_pl": "Łazienka poddasza 2/05",
-  "opis_pl": "Łazienka 2/05 japandi: lamele dębowe za umywalkami, 2 szafki Mille z umywalkami Endell, czarne baterie, 2 okrągłe lustra Luna, czarny walk-in, wanna, gres Lora crema.",
-  "odstepstwa_pl": "Wanna wygląda na krótszą niż 170 cm."
- },
- {
-  "room": "2-06",
-  "file": "2-06.jpg",
-  "title_pl": "Pokój 2/06 – strefa TV i sofa",
-  "opis_pl": "Salon na piętrze japandi: sofa GULLVALLA, KALLAX, stolik LACK, lampa GULLSUDARE, dywan TIDTABELL, lamele, balkon po prawej.",
-  "odstepstwa_pl": "Drzwi płycinowe zamiast gładkich."
- },
- {
-  "room": "2-06",
-  "file": "2-06_b.jpg",
-  "title_pl": "Pokój 2/06 – biurko i gitary",
-  "opis_pl": "Kącik do pracy wg rzutu v4: balkon 160 po lewej, gitary na wieszakach K&M, skos ze ścianką kolankową i oknem dachowym na wprost, biurko we wnęce po prawej, krzesło STYRSPEL; biurko MITTZON, lampa GULLSUDARE, LACK.",
-  "odstepstwa_pl": "3 gitary zamiast 5; lamele bez czarnego tła."
- },
- {
-  "room": "2-07",
-  "file": "2-07.jpg",
-  "title_pl": "Pokój 2/07",
-  "opis_pl": "Sypialnia 2/07 japandi: skos po lewej, drzwi balkonowe na wprost, łóżko 140 z jasnego drewna, szałwiowy pled, lampa kula GULLSUDARE, ciemna komoda.",
-  "odstepstwa_pl": "Brak istotnych odstępstw."
- }
+    {
+        "room": "1-01",
+        "file": "1-01.jpg",
+        "title_pl": "Wiatrołap 1/01",
+        "opis_pl": "Wiatrołap japandi: drzwi w kolorze kaszmir na wprost, szare drzwi EI30 do garażu po lewej, biała szafa PAX po prawej, pozioma orzechowa półka LACK 110×26 przy lustrze EDSGARN (lewy pierwszy plan), lampa BLÅSTÅNG, gres Lora crema.",
+        "odstepstwa_pl": "Kadr nieco szerszy niż blockout, żeby pokazać półkę i lustro (w blockoucie są tuż przy kamerze)."
+    },
+    {
+        "room": "1-01",
+        "file": "1-01_b.jpg",
+        "title_pl": "Wiatrołap 1/01 – drugie ujęcie",
+        "opis_pl": "Ujęcie od przedpokoju ku drzwiom wejściowym Iguana z doświetlem; szafa PAX FORSAND z boku. Lustro EDSGARN orzech, półka LACK.",
+        "odstepstwa_pl": "Drzwi ~8% w prawo; półka LACK wygląda na jaśniejszy dąb niż orzech; ławki z rzutu nie ma w CSV."
+    },
+    {
+        "room": "1-02",
+        "file": "1-02.jpg",
+        "title_pl": "Salon 1/02 – narożnik i TV",
+        "opis_pl": "Salon japandi: HST po lewej, okno na wprost, szałwiowe ściany, beżowy narożnik SÖDERHAMN, niski stolik, gładka malowana ściana z TV i niska szafka BESTÅ, lampa LAUTERS; na pierwszym planie dębowy stół ELIO z czarnymi krzesłami PINNTORP.",
+        "odstepstwa_pl": "Okno narożne nie zawija wyraźnie na lewą ścianę."
+    },
+    {
+        "room": "1-02",
+        "file": "1-02_b.jpg",
+        "title_pl": "Jadalnia 1/02",
+        "opis_pl": "Jadalnia japandi: słup z kominkiem po lewej, dębowy stół ELIO z czarnymi krzesłami PINNTORP przy HST, HST na prawej ścianie, papierowa lampa nad stołem.",
+        "odstepstwa_pl": "Brak istotnych odstępstw."
+    },
+    {
+        "room": "1-03",
+        "file": "1-03.jpg",
+        "title_pl": "Kuchnia 1/03 – ściana wysokiej zabudowy",
+        "opis_pl": "Kuchnia japandi: ciemna zabudowa wysoka 220 cm z piekarnikiem i lodówką w zabudowie, obok drzwi 70/200 do spiżarni w kolorze kaszmir, zlew pod oknem po prawej, wyspa z płytą, kominowy okap wyspowy Franke Tale (stal), 3 hokery, 3 plecione lampy, gres Lora crema.",
+        "odstepstwa_pl": "Komin okapu dodany w obróbce do wcześniejszego kadru; środkowa lampa wisi przed kominem. Lampy plecione zamiast BLÅSTÅNG/HAVSDJUP z listy (bez zmian względem poprzedniej wersji)."
+    },
+    {
+        "room": "1-03",
+        "file": "1-03_b.jpg",
+        "title_pl": "Kuchnia 1/03 – widok na okno",
+        "opis_pl": "Kuchnia japandi – widok na wykusz: okno we wnęce ze zlewem, ciemna zabudowa z piekarnikiem i lodówką KIN86 w zabudowie, wyspa z płytą, okap wyspowy Franke Tale nad płytą, plecione lampy, czarne hokery.",
+        "odstepstwa_pl": "Widać 2 z 3 lamp."
+    },
+    {
+        "room": "1-04",
+        "file": "1-04.jpg",
+        "title_pl": "Spiżarka 1/04",
+        "opis_pl": "Wąska spiżarka widziana od drzwi: po obu stronach regały OMAR ze stali ocynkowanej (wg CSV), słoje, kosze, butelki, puszki.",
+        "odstepstwa_pl": "Zawartość półek (słoje, kosze) dekoracyjna, nie w CSV; regały wizualnie nieco głębsze niż w blockoucie. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    },
+    {
+        "room": "1-06",
+        "file": "1-06.jpg",
+        "title_pl": "Przedpokój 1/06 ze schodami",
+        "opis_pl": "Korytarz japandi: schody po lewej, drzwi 1/08 na wprost, 1/07 po prawej; Lora crema, drzwi Exmoor kaszmir z czarną klamką, lamele dąb, poręcz dębowa.",
+        "odstepstwa_pl": "Kinkiet zbliżony do NYMÅNE."
+    },
+    {
+        "room": "1-06",
+        "file": "1-06_b.jpg",
+        "title_pl": "Przedpokój 1/06 – schody z innej strony",
+        "opis_pl": "Ujęcie z progu wiatrołapu: bieg schodów z dębowymi stopniami i podstopnicami wznosi się w lewo, ściana schodów na wprost, wejście do korytarza po prawej. 2 obrazy, kinkiet NYMÅNE, lamele dębowe na ścianie korytarza.",
+        "odstepstwa_pl": "Biegi ~3–5% szersze niż w blockoucie."
+    },
+    {
+        "room": "1-07",
+        "file": "1-07.jpg",
+        "title_pl": "Pokój gościnny 1/07",
+        "opis_pl": "Pokój gościnny (ujęcie z narożnika przy drzwiach): po lewej okno francuskie 100/230 z balustradą francuską (poprzeczka ok. 100 cm), zasłona DYTÅG (beż) przy oknie, wąski pas białej szafy PAX/BERGSBO przy lewej krawędzi; po prawej sofa rozkładana NYHAMN Knisa (szaro-beżowa, pikowana) 200×97×90 (po rozłożeniu 200×140, spanie 140×200) oparciem do ściany E, bez podłokietników i wezgłowia; za jej prawym końcem uskok ściany i wnęka, w niej dębowy stolik TONSTAD (bejcowany brąz) z beżową lampką TÄRNABY; dywan LOHALS (juta, tkany na płasko); dąb (Barlinek Dąb Country) na podłodze, ciepłe złamane biele na ścianach.",
+        "odstepstwa_pl": "Obraz wygenerowany (bez kompozytu i bez deformacji w obróbce), sprawdzony nakładką krawędzi blockoutu: okno, poprzeczka balustrady i sofa pokrywają się; przednia krawędź sofy jest nieco niżej/bliżej niż w blockoucie, a krawędź uskoku ściany ok. 2–3% szerokości kadru w lewo. Szafa widoczna tylko jako wąski pas – ramka frontów BERGSBO słabo czytelna. Plafon poza kadrem. Poduszki i pled to dekoracja spoza listy zakupów. Podłoga wyszła gładsza i jaśniejsza niż rustykalny Dąb Country; lampa wisząca GULLSUDARE poza kadrem."
+    },
+    {
+        "room": "1-07",
+        "file": "1-07_b.jpg",
+        "title_pl": "Pokój gościnny 1/07 – drugie ujęcie",
+        "opis_pl": "Ujęcie od strony okna: zabudowa szaf PAX na lewej ścianie, wąskie okno z zasłoną, dywan i rozkładana sofa NYHAMN (wg CSV) w dolnej części kadru.",
+        "odstepstwa_pl": "Sofa widoczna tylko fragmentem (bez podłokietnika); fronty PAX gładkie zamiast ramowych BERGSBO; widok za oknem orientacyjny. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne). Sofa bez podłokietników."
+    },
+    {
+        "room": "1-08",
+        "file": "1-08.jpg",
+        "title_pl": "Łazienka 1/08",
+        "opis_pl": "Łazienka 1/08 japandi: walk-in z czarnym profilem, WC z czarnym przyciskiem, dębowy panel nad półścianką, szafka Mille dąb z umywalką Endell i czarną baterią, okrągłe lustro, gres Lora.",
+        "odstepstwa_pl": "Brak istotnych odstępstw."
+    },
+    {
+        "room": "1-08",
+        "file": "1-08_b.jpg",
+        "title_pl": "Łazienka 1/08 – drugie ujęcie",
+        "opis_pl": "Ujęcie od drzwi: kabina walk-in ze szklaną ścianką, podwieszana szafka z umywalką, okrągłe podświetlane lustro, płytki 60×120 wg CSV.",
+        "odstepstwa_pl": "Ścianka walk-in nieco węższa niż w blockoucie; lustro okrągłe wg CSV zamiast prostokąta z blockoutu. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne). Zestaw prysznicowy pozostał złoty."
+    },
+    {
+        "room": "2-01",
+        "file": "2-01.jpg",
+        "title_pl": "Hol poddasza 2/01",
+        "opis_pl": "Hol piętra japandi: drzwi kaszmir po lewej i prawej, balustrada z dębowych tralek, drzwi balkonowe na wprost, wyłaz w suficie, chodnik.",
+        "odstepstwa_pl": "Brak istotnych odstępstw."
+    },
+    {
+        "room": "2-01",
+        "file": "2-01_b.jpg",
+        "title_pl": "Hol poddasza 2/01 – drugie ujęcie",
+        "opis_pl": "Ujęcie wzdłuż holu: drzwi do pokoi, chodnik, otwór schodów z balustradą.",
+        "odstepstwa_pl": "Chodnik nieco bliżej kamery niż w blockoucie. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne). Przy otworze schodów dorysowany dodatkowy segment balustrady."
+    },
+    {
+        "room": "2-02",
+        "file": "2-02.jpg",
+        "title_pl": "Sypialnia główna 2/02",
+        "opis_pl": "Sypialnia japandi: sklepienie, przeszklony szczyt, łóżko TARVA 160, TONSTAD brąz, GULLSUDARE, dywan TIDTABELL.",
+        "odstepstwa_pl": "Szczyt z krótkimi pionowymi bokami; wezgłowie wg karty analizy (rzut v4 inaczej)."
+    },
+    {
+        "room": "2-02",
+        "file": "2-02_b.jpg",
+        "title_pl": "Sypialnia główna 2/02 – widok na szczyt",
+        "opis_pl": "Ujęcie spod drzwi ku przeszklonemu szczytowi; łóżko poza kadrem po prawej. Duża roślina w osłonce.",
+        "odstepstwa_pl": "Brak istotnych odstępstw poza kadrem."
+    },
+    {
+        "room": "2-03",
+        "file": "2-03.jpg",
+        "title_pl": "Garderoba 2/03",
+        "opis_pl": "Garderoba z szafą PAX (wg CSV) i lustrem stojącym.",
+        "odstepstwa_pl": "Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    },
+    {
+        "room": "2-04",
+        "file": "2-04.jpg",
+        "title_pl": "Garderoba 2/04",
+        "opis_pl": "Zabudowa PAX FORSAND (wg CSV), lustro stojące, roślina.",
+        "odstepstwa_pl": "Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    },
+    {
+        "room": "2-05",
+        "file": "2-05.jpg",
+        "title_pl": "Łazienka poddasza 2/05",
+        "opis_pl": "Łazienka 2/05 japandi: lamele dębowe za umywalkami, 2 szafki Mille z umywalkami Endell, czarne baterie, 2 okrągłe lustra Luna, czarny walk-in, wanna, gres Lora crema.",
+        "odstepstwa_pl": "Wanna wygląda na krótszą niż 170 cm."
+    },
+    {
+        "room": "2-05",
+        "file": "2-05_b.jpg",
+        "title_pl": "Łazienka 2/05 – widok na drzwi i umywalki",
+        "opis_pl": "Ujęcie spod ściany między wanną a WC ku drzwiom i umywalkom: drzwi 80 po lewej, okno dachowe w połaci. Lamele dębowe za umywalkami, 2 umywalki nablatowe, czarne baterie, 2 lustra okrągłe, monstera w ciemnoszarej osłonce, dywanik ALSTERN.",
+        "odstepstwa_pl": "Drzwi ~10% w prawo; drugi ALSTERN, wanna, WC i bidet poza kadrem."
+    },
+    {
+        "room": "2-06",
+        "file": "2-06.jpg",
+        "title_pl": "Pokój 2/06 – strefa TV i sofa",
+        "opis_pl": "Salon na piętrze japandi: sofa GULLVALLA, KALLAX, stolik LACK, lampa GULLSUDARE, dywan TIDTABELL, lamele, balkon po prawej.",
+        "odstepstwa_pl": "Drzwi płycinowe zamiast gładkich."
+    },
+    {
+        "room": "2-06",
+        "file": "2-06_b.jpg",
+        "title_pl": "Pokój 2/06 – biurko i gitary",
+        "opis_pl": "Kącik do pracy wg rzutu v4: balkon 160 po lewej, gitary na wieszakach K&M, skos ze ścianką kolankową i oknem dachowym na wprost, biurko we wnęce po prawej, krzesło STYRSPEL; biurko MITTZON, lampa GULLSUDARE, LACK.",
+        "odstepstwa_pl": "3 gitary zamiast 5; lamele bez czarnego tła."
+    },
+    {
+        "room": "2-07",
+        "file": "2-07.jpg",
+        "title_pl": "Pokój 2/07",
+        "opis_pl": "Sypialnia 2/07 japandi: skos po lewej, drzwi balkonowe na wprost, łóżko 140 z jasnego drewna, szałwiowy pled, lampa kula GULLSUDARE, ciemna komoda.",
+        "odstepstwa_pl": "Brak istotnych odstępstw."
+    },
+    {
+        "room": "2-07",
+        "file": "2-07_b.jpg",
+        "title_pl": "Pokój 2/07 – widok na łóżko i drzwi",
+        "opis_pl": "Ujęcie spod drzwi balkonowych: drzwi z holu po lewej, skos z oknem dachowym, łóżko 140 ze stolikami nocnymi. Komoda STORKLINTA ciemnobrązowa, biurko MICKE z monsterą, 2 stoliki TONSTAD brąz, poduszki GURLI.",
+        "odstepstwa_pl": "Meble ~3–5% przesunięte; obraz nad biurkiem poza kadrem."
+    },
+    {
+        "room": "2-08",
+        "file": "2-08.jpg",
+        "title_pl": "Pokój 2/08 z lukarną",
+        "opis_pl": "Sypialnia japandi z lukarną (kamera 2-08_v2): okno dachowe w północnym skosie nad siedziskiem BESTÅ 120 po lewej, 2 okna z czarnymi ramami w lukarnie, białe siedzisko z poduszką, niskie łóżko 140×200 z wezgłowiem przy prawej ścianie, stolik nocny z lampką, jasny dąb, wełniany dywan.",
+        "odstepstwa_pl": "Okno dachowe dodane w obróbce do wcześniejszego kadru (geometria jak w wersji modern-organic); za oknami lukarny niebo bez drzew; łóżko ucięte dolną krawędzią kadru."
+    },
+    {
+        "room": "2-08",
+        "file": "2-08_b.jpg",
+        "title_pl": "Pokój 2/08 – widok na łóżko i drzwi",
+        "opis_pl": "Ujęcie z lukarny: skos po lewej, łóżko wezgłowiem do ściany, stolik nocny z rośliną, drzwi z holu po prawej. Monstera w szarej osłonce, dywan LOHALS.",
+        "odstepstwa_pl": "Kadr ~8% w prawo; stolik jasny dąb zamiast brązowego TONSTAD; poduszki białe zamiast naturalnych GURLI; obraz poza kadrem."
+    },
+    {
+        "room": "2-09",
+        "file": "2-09.jpg",
+        "title_pl": "Garderoba 2/09",
+        "opis_pl": "Przejście między szafami PAX FORSAND pod skosem.",
+        "odstepstwa_pl": "Skrzydło drzwi 2/09 nie pokazane. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    },
+    {
+        "room": "2-10",
+        "file": "2-10.jpg",
+        "title_pl": "Pralnia 2/10",
+        "opis_pl": "Pralka Bosch WAN2827LPL i suszarka Bosch WTH85V9FPL obok siebie, umywalka ENHET/TVÄLLEN z baterią SALJEN, otwarta rama ENHET (antracyt) nad urządzeniami, okno dachowe.",
+        "odstepstwa_pl": "Płytki podłogowe pralni nie są w CSV; pralka w rzucie opisana jako 1/09. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    }
 ]

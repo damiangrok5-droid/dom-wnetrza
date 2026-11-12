@@ -1,0 +1,100 @@
+{
+  "runda": "F14",
+  "data_oceny": "12.11.2026",
+  "strefa": "Europa/Warsaw",
+  "cel_pct": 80,
+  "cel_osiagniety": false,
+  "trwa_nastepna_runda": "F15",
+  "spacer_aktualizowany": false,
+  "opis": "Ocena niezależnego testera po zamkniętej rundzie F14. Trzy wyniki: automat stara ścisła / automat nowa / ocena wzrokowa zgodne (w nawiasie zgodne plus połowa częściowo). Cel 80% muszą osiągnąć zarówno wyniki automatyczne, jak i wzrokowe — jeszcze nieosiągnięty. Trwa runda F15. Spacer 3D nie był w tej rundzie odświeżany.",
+  "style": [
+    {
+      "slug": "modern-organic",
+      "kod": "mo",
+      "name": "Modern organic",
+      "auto_stara": 59.1,
+      "auto_nowa": 68.2,
+      "wzrok": 65.9,
+      "wzrok_z_polowa": 83.0,
+      "n": 44,
+      "zgodny": 29,
+      "czesciowo": 15,
+      "niezgodny": 0
+    },
+    {
+      "slug": "japandi",
+      "kod": "ja",
+      "name": "Japandi",
+      "auto_stara": 61.0,
+      "auto_nowa": 63.4,
+      "wzrok": 73.2,
+      "wzrok_z_polowa": 86.6,
+      "n": 41,
+      "zgodny": 30,
+      "czesciowo": 11,
+      "niezgodny": 0
+    },
+    {
+      "slug": "skandynawski-jasny",
+      "kod": "sk",
+      "name": "Skandynawski jasny",
+      "auto_stara": 66.7,
+      "auto_nowa": 76.2,
+      "wzrok": 64.3,
+      "wzrok_z_polowa": 82.1,
+      "n": 42,
+      "zgodny": 27,
+      "czesciowo": 15,
+      "niezgodny": 0
+    },
+    {
+      "slug": "cieply-minimalizm",
+      "kod": "cm",
+      "name": "Ciepły minimalizm",
+      "auto_stara": 61.0,
+      "auto_nowa": 65.9,
+      "wzrok": 82.9,
+      "wzrok_z_polowa": 91.5,
+      "n": 41,
+      "zgodny": 34,
+      "czesciowo": 7,
+      "niezgodny": 0
+    },
+    {
+      "slug": "industrialny-loft",
+      "kod": "il",
+      "name": "Industrialny loft",
+      "auto_stara": 63.2,
+      "auto_nowa": 65.8,
+      "wzrok": 76.3,
+      "wzrok_z_polowa": 88.2,
+      "n": 38,
+      "zgodny": 29,
+      "czesciowo": 9,
+      "niezgodny": 0
+    },
+    {
+      "slug": "nowoczesna-klasyka",
+      "kod": "nk",
+      "name": "Nowoczesna klasyka",
+      "auto_stara": 72.5,
+      "auto_nowa": 72.5,
+      "wzrok": 77.5,
+      "wzrok_z_polowa": 88.8,
+      "n": 40,
+      "zgodny": 31,
+      "czesciowo": 9,
+      "niezgodny": 0
+    }
+  ],
+  "razem": {
+    "auto_stara": 63.8,
+    "auto_nowa": 68.7,
+    "wzrok": 73.2,
+    "wzrok_z_polowa": 86.6,
+    "n": 246,
+    "zgodny": 180,
+    "czesciowo": 66,
+    "niezgodny": 0
+  }
+}

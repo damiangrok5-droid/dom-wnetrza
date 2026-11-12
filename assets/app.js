@@ -128,6 +128,35 @@ function renderStylebar(t){
 const styleBy=slug=>S.styles.find(s=>s.slug===slug)||S.styles[0];
 const cmpBy=slug=>S.cmp.find(c=>c.slug===slug);
 
+
+function fmtPct(n){return new Intl.NumberFormat('pl-PL',{minimumFractionDigits:1,maximumFractionDigits:1}).format(n)+' %';}
+function scoreTd(n,cel){return `<td class="${n>=cel?'ok':'warn'}">${fmtPct(n)}</td>`;}
+function fillStatus(){
+  const el=app.querySelector('#status-f14');if(!el)return;
+  getJSON('data/status.json').then(st=>{
+    if(!app.querySelector('#status-f14'))return;
+    const cel=st.cel_pct||80;
+    const rows=(st.style||[]).map(s=>`<tr>
+      <th scope="row">${esc(s.name)}</th>
+      ${scoreTd(s.auto_stara,cel)}${scoreTd(s.auto_nowa,cel)}${scoreTd(s.wzrok,cel)}
+      <td class="${s.wzrok_z_polowa>=cel?'ok':'warn'}">${fmtPct(s.wzrok_z_polowa)}</td>
+    </tr>`).join('');
+    const r=st.razem||{};
+    el.innerHTML=`<h2>Zgodność mebli z produktami – runda ${esc(st.runda)} (${esc(st.data_oceny)})</h2>
+      <p class="lead">${esc(st.opis)}</p>
+      <div class="wrap"><table>
+        <thead><tr><th>Styl</th><th>Auto stara ścisła</th><th>Auto nowa</th><th>Wzrok zgodne</th><th>Wzrok z+½ cz.</th></tr></thead>
+        <tbody>${rows}
+          <tr class="tot"><th scope="row">Razem</th>
+            ${scoreTd(r.auto_stara,cel)}${scoreTd(r.auto_nowa,cel)}${scoreTd(r.wzrok,cel)}
+            <td class="${r.wzrok_z_polowa>=cel?'ok':'warn'}">${fmtPct(r.wzrok_z_polowa)}</td>
+          </tr>
+        </tbody>
+      </table></div>
+      <p class="goal">Cel ${cel} % jeszcze nieosiągnięty (wymagane oba wyniki automatyczne i wzrokowe). Wzrokowo: ${r.zgodny} zgodnych, ${r.czesciowo} częściowo, ${r.niezgodny} niezgodnych z ${r.n} elementów. Trwa runda ${esc(st.trwa_nastepna_runda)}. Spacer 3D bez zmian w tej publikacji.</p>`;
+  }).catch(()=>{el.hidden=true;});
+}
+
 /* ---------- widok: style ---------- */
 function viewStyles(){
   app.innerHTML=`<h1>Wybierz styl wnętrz</h1>
@@ -138,7 +167,9 @@ function viewStyles(){
     <div class="b"><h3>${esc(s.name)}</h3><p>${esc(s.desc)}</p>
     <div class="sw" title="Paleta">${pal.map(([n,h])=>`<span style="background:${esc(h)}" title="${esc(n)} ${esc(h)}"></span>`).join('')}</div>
     <div class="meta"><span>Zakupy: <b>${zl(c?.total)}</b> + kuchnia</span><span class="btn">Zobacz</span></div></div></a>`;}).join('')}</div>
-  <p class="capt" style="padding:12px 0">Wizualizacje nastrojowe (AI), proporcje wg rzutów, nie 1:1.</p>`;
+  <div id="status-f14" class="card score"></div>
+  <p class="capt" style="padding:12px 0">Wizualizacje: rendery z modeli 3D albo wizualizacje nastrojowe (AI). Obie nie 1:1 — znak na zdjęciu. Spacer 3D oznaczony „(3D)”.</p>`;
+  fillStatus();
   S.styles.forEach(async s=>{
     const [cv,m]=await Promise.all([styleCover(s),loadManifest(s.slug)]);
     const el=app.querySelector(`[data-cover="${s.slug}"]`);if(!el)return;
@@ -207,7 +238,7 @@ async function viewRooms(){
   const st=styleBy(cur());
   const floors=[['parter','Parter'],['poddasze','Poddasze']];
   app.innerHTML=`<h1>${esc(st.name)}</h1><p class="lead">${esc(st.desc)}</p>
-   <p class="note" style="border-left-color:var(--acc2)">Wizualizacje nastrojowe (AI), proporcje wg rzutów, nie 1:1. Wymiary i rzut każdego pomieszczenia – pod zdjęciem. Dotknij zdjęcia, aby powiększyć.</p>
+   <p class="note" style="border-left-color:var(--acc2)">Wizualizacje: rendery z modeli 3D albo wizualizacje nastrojowe (AI) — obie nie 1:1 (znak na zdjęciu). Wymiary i rzut każdego pomieszczenia – pod zdjęciem. Dotknij zdjęcia, aby powiększyć.</p>
    ${floors.map(([f,l])=>{const rs=S.rooms.filter(r=>r.floor===f);return `<h2 class="floorh">${l} <small>${rs.length} pomieszczeń · ${rs.reduce((a,r)=>a+(+r.area||0),0).toFixed(1).replace('.',',')} m²</small></h2><div class="grid s3">${rs.map(roomCard).join('')}</div>`;}).join('')}
    <p style="margin-top:24px"><a class="btn" href="#/zakupy/${st.slug}">Lista zakupów – ${esc(st.name)} →</a></p>`;
   app.querySelectorAll('img.plan').forEach(im=>im.onclick=()=>openLB([{src:im.dataset.plan,cap:im.dataset.cap}],0));

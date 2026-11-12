@@ -1,74 +1,191 @@
 [
- {
-  "room": "1/01",
-  "file": "1-01.jpg",
-  "title_pl": "Wiatrołap",
-  "opis_pl": "Wiatrołap: drzwi wejściowe Inspiro Iguana ciemny orzech – gładkie skrzydło 100 z pionowym pasem szyby w czarnej ramce i czarną klamką, doświetle boczne 37 cm matowe (ok. 1:3 do skrzydła), sztukateria QUEST, szafa PAX FORSAND biała, posadzka Calacatta 60×120, downlighty.",
-  "odstepstwa_pl": "Drzwi EI30 do garażu za kamerą (niewidoczne); szafa widoczna tylko wąskim pasem. Proporcja doświetla dociągnięta korektą geometrii obrazu (zwężenie strefy doświetla do ok. 0,27–0,28 szerokości ramy; CSV: 0,247)."
- },
- {
-  "room": "1/02",
-  "w_przygotowaniu": "Poprzednia wizualizacja salonu nie zgadzała się z aktualną listą zakupów (zmieniona sofa lub stół jadalniany 160×90) i została wycofana. Aktualny układ – na rzucie oraz w spacerze 3D; nowa wizualizacja po weryfikacji."
- },
- {
-  "room": "1/03",
-  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała kuchnię sprzed zmian (wyspa, drzwi w słupie) i została wycofana. Aktualny układ (otwór 111 do sufitu bez drzwi, blat pod oknem ze zlewem i zmywarką, zabudowa wysoka z lodówką i piekarnikiem, półwysep 90×198 z płytą i okapem) – na rzucie oraz w spacerze 3D / modelu 3D."
- },
- {
-  "room": "1/06",
-  "file": "1-06.jpg",
-  "title_pl": "Przedpokój ze schodami",
-  "opis_pl": "Przedpokój: schody wzdłuż lewej ściany z dębową poręczą, Calacatta, boazeria, bez szaf, na końcu drzwi łazienki.",
-  "odstepstwa_pl": "Ukryte drzwi kuchni pokazane jako drzwi w boazerii z gałką."
- },
- {
-  "room": "1/07",
-  "w_przygotowaniu": "Poprzednia wizualizacja nie zgadzała się z listą zakupów (meble) i została wycofana. Aktualne wymiary – na rzucie; nowa wizualizacja po weryfikacji."
- },
- {
-  "room": "1/08",
-  "file": "1-08.jpg",
-  "title_pl": "Łazienka parter",
-  "opis_pl": "Łazienka 1,6×2,26: gres Calacatta 60×120, prysznic ze ścianką w złotym profilu, armatura i odpływ złoto szczotkowane, biała ryflowana szafka Furnidea 60 ze zintegrowaną umywalką-blatem FLOW, lustro Luna LED, kinkiet Nevada biały.",
-  "odstepstwa_pl": "Brak – szafka Furnidea FLOW 60 zgodna z blockoutem (60 cm)."
- },
- {
-  "room": "2/01",
-  "file": "2-01.jpg",
-  "title_pl": "Hol poddasza",
-  "opis_pl": "Korytarz poddasza: płaski sufit, wąski przebieg, drzwi balkonowe dwuskrzydłowe 180, sztukateria QUEST, białe drzwi Elegance ze złotymi klamkami, dębowa balustrada z tralkami, kinkiet MIRI złoty, jodełka.",
-  "odstepstwa_pl": "Brak istotnych."
- },
- {
-  "room": "2/02",
-  "w_przygotowaniu": "Poprzednia wizualizacja pokazywała inny kształt sufitu i okna szczytowego niż aktualny projekt (skosy od ścianek 110 do płaskiego pasa ok. 1 m na wys. ok. 3,00 m, okno szczytowe od podłogi) i została wycofana. Aktualny układ – na rzucie oraz w modelu 3D."
- },
- {
-  "room": "2/05",
-  "file": "2-05.jpg",
-  "title_pl": "Łazienka poddasze",
-  "opis_pl": "Łazienka poddasza: 2× szafka Furnidea 80 ryflowana z lustrami Luna, walk-in przy drzwiach, dalej wanna 170, Calacatta, złote baterie, czarny Sigma01.",
-  "odstepstwa_pl": "Umywalki nablatowe zamiast zintegrowanej FLOW."
- },
- {
-  "room": "2/06",
-  "file": "2-06.jpg",
-  "title_pl": "Pokój rodzinny – strefa TV i sofa",
-  "opis_pl": "Pokój dzienny: sofa 2-os. LANDSKRONA zamiast narożnika, KALLAX bielony, sztukateria, granatowe zasłony przy drzwiach 160, biały plafon.",
-  "odstepstwa_pl": "Rzut v4: sofa 110×85 vs CSV ~160 (konflikt)."
- },
- {
-  "room": "2/06",
-  "file": "2-06_b.jpg",
-  "title_pl": "Pokój rodzinny – biurko i gitary",
-  "opis_pl": "Wnęka biurowa: biurko TROTTEN 160 białe we wnęce, czerwony STYRSPEL, 5 gitar, sztukateria, jodełka.",
-  "odstepstwa_pl": "Brak istotnych."
- },
- {
-  "room": "2/07",
-  "file": "2-07.jpg",
-  "title_pl": "Pokój 2/07",
-  "opis_pl": "Pokój na poddaszu: drzwi balkonowe 160 (~45% ściany) z granatowymi zasłonami SANELA, sztukateria pod skosem, łóżko TARVA białe 140, biurko MICKE białe, jodełka.",
-  "odstepstwa_pl": "Plafon Yonnet poza kadrem."
- }
+    {
+        "room": "1-01",
+        "file": "1-01.jpg",
+        "title_pl": "Wiatrołap",
+        "opis_pl": "Wiatrołap: drzwi wejściowe Inspiro Iguana ciemny orzech – gładkie skrzydło 100 z pionowym pasem szyby w czarnej ramce i czarną klamką, doświetle boczne 37 cm matowe (ok. 1:3 do skrzydła), sztukateria QUEST, szafa PAX FORSAND biała, posadzka Calacatta 60×120, downlighty.",
+        "odstepstwa_pl": "Drzwi EI30 do garażu za kamerą (niewidoczne); szafa widoczna tylko wąskim pasem. Proporcja doświetla dociągnięta korektą geometrii obrazu (zwężenie strefy doświetla do ok. 0,27–0,28 szerokości ramy; CSV: 0,247)."
+    },
+    {
+        "room": "1-01",
+        "file": "1-01_b.jpg",
+        "title_pl": "Wiatrołap 1/01 – drugie ujęcie",
+        "opis_pl": "Ujęcie od drzwi wejściowych w głąb: drzwi EI30 do garażu po lewej, drzwi 90 do przedpokoju 1/06 na wprost, biała szafa PAX FORSAND na całej prawej ścianie. Sztukateria ścienna, drzwi EI30 jasnoszare, białe drzwi płycinowe.",
+        "odstepstwa_pl": "Fronty PAX pokazane jako ramowe z uchwytami zamiast gładkich FORSAND; roślina 1/01 poza kadrem."
+    },
+    {
+        "room": "1-02",
+        "file": "1-02.jpg",
+        "title_pl": "Salon – strefa TV i narożnik",
+        "opis_pl": "Salon: pas 3,46 m, narożnik EKTORP jasnobeżowy, kwadratowy kremowy stolik TONSTAD, biała szafka BESTÅ z ramowymi frontami, sztukateria na ścianie TV, jodełka, żyrandol MONTANA 5-ramienny.",
+        "odstepstwa_pl": "Stół ma czarne metalowe nogi (CLARA – drewniane)."
+    },
+    {
+        "room": "1-02",
+        "file": "1-02_b.jpg",
+        "title_pl": "Salon – jadalnia",
+        "opis_pl": "Jadalnia i wyspa: zabudowane schody dębowe, czytelny wkład kominkowy w słupie ze sztukaterią, wyspa z blatem Calacatta i płytą indukcyjną, hokery BERGMUND czarno-szare, żyrandol MONTANA.",
+        "odstepstwa_pl": "Nad wyspą okap zamiast kul Bollique; blat stołu jasny dąb, nie rustykalny."
+    },
+    {
+        "room": "1-03",
+        "file": "1-03.jpg",
+        "title_pl": "Kuchnia z wyspą",
+        "opis_pl": "Kuchnia 2,57 m: kremowe fronty ramowe, blat i fartuch Calacatta, okno 250 bez szprosów, wyspa z płytą indukcyjną i okapem wyspowym Franke Tale, 3 kule Bollique, jodełka.",
+        "odstepstwa_pl": "W tle jasne drewniane krzesła jadalni."
+    },
+    {
+        "room": "1-03",
+        "file": "1-03_b.jpg",
+        "title_pl": "Kuchnia 1/03 – drugie ujęcie",
+        "opis_pl": "Ujęcie z jadalni ku kuchni: białe fronty ramowe, lodówka w zabudowie, wyspa z płytą i 3 hokery BERGMUND, lampa Bollique, drzwi do spiżarki, blat pod oknem ze złotą baterią i zamiokulkasem w osłonce DAIDAI.",
+        "odstepstwa_pl": "Stół jadalni tylko krawędzią."
+    },
+    {
+        "room": "1-04",
+        "file": "1-04.jpg",
+        "title_pl": "Spiżarka 1/04",
+        "opis_pl": "Wąska spiżarka widziana od drzwi: po obu stronach regały OMAR ze stali ocynkowanej (wg CSV), słoje, kosze, butelki, puszki.",
+        "odstepstwa_pl": "Zawartość półek (słoje, kosze) dekoracyjna, nie w CSV; regały wizualnie nieco głębsze niż w blockoucie. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    },
+    {
+        "room": "1-06",
+        "file": "1-06.jpg",
+        "title_pl": "Przedpokój ze schodami",
+        "opis_pl": "Przedpokój: schody wzdłuż lewej ściany z dębową poręczą, Calacatta, boazeria, bez szaf, na końcu drzwi łazienki.",
+        "odstepstwa_pl": "Ukryte drzwi kuchni pokazane jako drzwi w boazerii z gałką."
+    },
+    {
+        "room": "1-06",
+        "file": "1-06_b.jpg",
+        "title_pl": "Przedpokój 1/06 – schody z innej strony",
+        "opis_pl": "Ujęcie z progu wiatrołapu: bieg schodów z dębowymi stopniami i podstopnicami wznosi się w lewo, ściana schodów na wprost, wejście do korytarza po prawej. Poręcz dębowa, 2 obrazy „dziewczyna z perłą”, złoty kinkiet MIRI, sztukateria.",
+        "odstepstwa_pl": "Biegi ~3–5% szersze niż w blockoucie."
+    },
+    {
+        "room": "1-07",
+        "file": "1-07.jpg",
+        "title_pl": "Pokój gościnny",
+        "opis_pl": "Pokój gościnny (ujęcie z narożnika przy drzwiach): po lewej okno francuskie 100/230 z balustradą francuską (poprzeczka ok. 100 cm), granatowa zasłona SANELA przy oknie, wąski pas białej szafy PAX/BERGSBO przy lewej krawędzi; po prawej sofa rozkładana NYHAMN Knisa (szaro-beżowa, pikowana) 200×97×90 (po rozłożeniu 200×140, spanie 140×200) oparciem do ściany E, bez podłokietników i wezgłowia; za jej prawym końcem uskok ściany i wnęka, w niej kremowy stolik TONSTAD z lampką ÅRSTID (nikiel/biały); beżowy dywan JÄRNVÄG z ornamentem; jodełka Barlinek Dąb Vintage na podłodze, białe ściany.",
+        "odstepstwa_pl": "Obraz wygenerowany (bez kompozytu i bez deformacji w obróbce), sprawdzony nakładką krawędzi blockoutu: okno, poprzeczka balustrady i sofa pokrywają się; przednia krawędź sofy jest nieco niżej/bliżej niż w blockoucie, a krawędź uskoku ściany ok. 2–3% szerokości kadru w lewo. Szafa widoczna tylko jako wąski pas – ramka frontów BERGSBO słabo czytelna. Plafon poza kadrem. Poduszki i pled to dekoracja spoza listy zakupów. Jodełka słabo czytelna przy tym kadrze."
+    },
+    {
+        "room": "1-07",
+        "file": "1-07_b.jpg",
+        "title_pl": "Pokój gościnny 1/07 – drugie ujęcie",
+        "opis_pl": "Ujęcie od strony okna: zabudowa szaf PAX na lewej ścianie, wąskie okno z zasłoną, dywan i rozkładana sofa NYHAMN (wg CSV) w dolnej części kadru.",
+        "odstepstwa_pl": "Sofa widoczna tylko fragmentem (bez podłokietnika); fronty PAX gładkie zamiast ramowych BERGSBO; widok za oknem orientacyjny. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    },
+    {
+        "room": "1-08",
+        "file": "1-08.jpg",
+        "title_pl": "Łazienka parter",
+        "opis_pl": "Łazienka 1,6×2,26: gres Calacatta 60×120, prysznic ze ścianką w złotym profilu, armatura i odpływ złoto szczotkowane, biała ryflowana szafka Furnidea 60 ze zintegrowaną umywalką-blatem FLOW, lustro Luna LED, kinkiet Nevada biały.",
+        "odstepstwa_pl": "Brak – szafka Furnidea FLOW 60 zgodna z blockoutem (60 cm)."
+    },
+    {
+        "room": "1-08",
+        "file": "1-08_b.jpg",
+        "title_pl": "Łazienka 1/08 – drugie ujęcie",
+        "opis_pl": "Ujęcie od drzwi: kabina walk-in ze szklaną ścianką, podwieszana szafka z umywalką, okrągłe podświetlane lustro, płytki 60×120 wg CSV.",
+        "odstepstwa_pl": "Ścianka walk-in nieco węższa niż w blockoucie; lustro okrągłe wg CSV zamiast prostokąta z blockoutu. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne). Uchwyty szafki czarne zamiast złotych."
+    },
+    {
+        "room": "2-01",
+        "file": "2-01.jpg",
+        "title_pl": "Hol poddasza",
+        "opis_pl": "Korytarz poddasza: płaski sufit, wąski przebieg, drzwi balkonowe dwuskrzydłowe 180, sztukateria QUEST, białe drzwi Elegance ze złotymi klamkami, dębowa balustrada z tralkami, kinkiet MIRI złoty, jodełka.",
+        "odstepstwa_pl": "Brak istotnych."
+    },
+    {
+        "room": "2-01",
+        "file": "2-01_b.jpg",
+        "title_pl": "Hol poddasza 2/01 – drugie ujęcie",
+        "opis_pl": "Ujęcie wzdłuż holu: drzwi do pokoi, chodnik, otwór schodów z balustradą.",
+        "odstepstwa_pl": "Chodnik nieco bliżej kamery niż w blockoucie. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    },
+    {
+        "room": "2-02",
+        "file": "2-02.jpg",
+        "title_pl": "Sypialnia główna",
+        "opis_pl": "Sypialnia na poddaszu: cały trójkąt szczytu przeszklony (3 tafle, czarne ramy) i w pełni odsłonięty do parapetu 80 cm, sztukateria QUEST pod oknem, okno dachowe na prawej połaci, łóżko tapicerowane, TONSTAD kremowy, kinkiet MIRI, plafon Yonnet, jodełka.",
+        "odstepstwa_pl": "Komoda GULLABERG 168 cm stoi przy drzwiach (x380–548 wg blockoutu), za kamerą – poza kadrem; brak granatowych zasłon SANELA."
+    },
+    {
+        "room": "2-02",
+        "file": "2-02_b.jpg",
+        "title_pl": "Sypialnia główna 2/02 – widok na szczyt",
+        "opis_pl": "Ujęcie spod drzwi ku przeszklonemu szczytowi; łóżko poza kadrem po prawej. Zasłony SANELA, duża roślina w białej osłonce.",
+        "odstepstwa_pl": "Zasłony szersze niż w blockoucie."
+    },
+    {
+        "room": "2-05",
+        "file": "2-05.jpg",
+        "title_pl": "Łazienka poddasze",
+        "opis_pl": "Łazienka poddasza: 2× szafka Furnidea 80 ryflowana z lustrami Luna, walk-in przy drzwiach, dalej wanna 170, Calacatta, złote baterie, czarny Sigma01.",
+        "odstepstwa_pl": "Umywalki nablatowe zamiast zintegrowanej FLOW."
+    },
+    {
+        "room": "2-05",
+        "file": "2-05_b.jpg",
+        "title_pl": "Łazienka 2/05 – widok na drzwi i umywalki",
+        "opis_pl": "Ujęcie spod ściany między wanną a WC ku drzwiom i umywalkom: drzwi 80 po lewej, okno dachowe w połaci. Ryflowana szafka Furnidea z 2 umywalkami, złote baterie, 2 lustra Luna, kinkiet Nevada, zamiokulkas w DAIDAI, dywanik ALMTJÄRN; płytki marmurowe.",
+        "odstepstwa_pl": "Pokazana jedna szeroka szafka zamiast 2 × 80 cm z CSV; wanna, WC, bidet i prysznic poza kadrem."
+    },
+    {
+        "room": "2-06",
+        "file": "2-06.jpg",
+        "title_pl": "Pokój rodzinny – strefa TV i sofa",
+        "opis_pl": "Pokój dzienny: sofa 2-os. LANDSKRONA zamiast narożnika, KALLAX bielony, sztukateria, granatowe zasłony przy drzwiach 160, biały plafon.",
+        "odstepstwa_pl": "Rzut v4: sofa 110×85 vs CSV ~160 (konflikt)."
+    },
+    {
+        "room": "2-06",
+        "file": "2-06_b.jpg",
+        "title_pl": "Pokój rodzinny – biurko i gitary",
+        "opis_pl": "Wnęka biurowa: biurko TROTTEN 160 białe we wnęce, czerwony STYRSPEL, 5 gitar, sztukateria, jodełka.",
+        "odstepstwa_pl": "Brak istotnych."
+    },
+    {
+        "room": "2-07",
+        "file": "2-07.jpg",
+        "title_pl": "Pokój 2/07",
+        "opis_pl": "Pokój na poddaszu: drzwi balkonowe 160 (~45% ściany) z granatowymi zasłonami SANELA, sztukateria pod skosem, łóżko TARVA białe 140, biurko MICKE białe, jodełka.",
+        "odstepstwa_pl": "Plafon Yonnet poza kadrem."
+    },
+    {
+        "room": "2-07",
+        "file": "2-07_b.jpg",
+        "title_pl": "Pokój 2/07 – widok na łóżko i drzwi",
+        "opis_pl": "Ujęcie spod drzwi balkonowych: drzwi z holu po lewej, skos z oknem dachowym, łóżko 140 ze stolikami nocnymi. Łóżko TARVA białe, 2 stoliki TONSTAD, poduszki SANELA, sztukateria.",
+        "odstepstwa_pl": "Zasłony SANELA, biurko, obraz i roślina poza kadrem."
+    },
+    {
+        "room": "2-08",
+        "file": "2-08.jpg",
+        "title_pl": "Pokój z lukarną 2/08",
+        "opis_pl": "Pokój z lukarną: lukarna z 2 oknami na prawie całą ścianę, gładki biały sufit, siedzisko z 2× BESTÅ 120 dąb bielony, sztukateria QUEST, dywan JÄRNVÄG, jodełka.",
+        "odstepstwa_pl": "Plafonu Yonnet (pozycja z listy zakupów) nie widać na wizualizacji – sufit prawie poza kadrem, lampy nie dorysowano (próby poprawki sufitu przebudowywały pokój); w realizacji plafon Yonnet wg listy zakupów."
+    },
+    {
+        "room": "2-08",
+        "file": "2-08_b.jpg",
+        "title_pl": "Pokój 2/08 – widok na łóżko i drzwi",
+        "opis_pl": "Ujęcie z lukarny: skos po lewej, łóżko wezgłowiem do ściany, stolik nocny z rośliną, drzwi z holu po prawej. Łóżko TARVA białe, stolik TONSTAD z zamiokulkasem w DAIDAI, obraz „dziewczyna z perłą”, dywan JÄRNVÄG.",
+        "odstepstwa_pl": "Ławka BESTÅ w lukarnie poza kadrem."
+    },
+    {
+        "room": "2-09",
+        "file": "2-09.jpg",
+        "title_pl": "Garderoba 2/09",
+        "opis_pl": "Przejście między szafami PAX FORSAND pod skosem.",
+        "odstepstwa_pl": "Skrzydło drzwi 2/09 nie pokazane. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    },
+    {
+        "room": "2-10",
+        "file": "2-10.jpg",
+        "title_pl": "Pralnia 2/10",
+        "opis_pl": "Pralka Bosch WAN2827LPL i suszarka Bosch WTH85V9FPL obok siebie, umywalka ENHET/TVÄLLEN z baterią SALJEN, otwarta rama ENHET (antracyt) nad urządzeniami, okno dachowe.",
+        "odstepstwa_pl": "Płytki podłogowe pralni nie są w CSV; pralka w rzucie opisana jako 1/09. Wariant stylu powstał przez edycję materiałów wizualizacji modern-organic (geometria/kamera identyczne)."
+    }
 ]

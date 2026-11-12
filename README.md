@@ -1,3 +1,3 @@
 # Dom – wybór stylu wnętrz
 
-Statyczna strona (HTML + CSS + JS). Wizualizacje AI są nastrojowe, nie 1:1; spacer 3D (3D) – wizualizacja poglądowa.
+Statyczna strona (HTML + CSS + JS). Wizualizacje to rendery z modeli 3D albo wizualizacje nastrojowe (AI) — obie nie 1:1; spacer 3D oznaczony „(3D)” – wizualizacja poglądowa.

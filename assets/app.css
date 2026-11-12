@@ -195,3 +195,15 @@ table.shop td.pn a{display:inline-block;padding:11px 0;margin:-11px 0}
 .lb-x{right:max(10px,env(safe-area-inset-right))}
 .opb.mid{color:#8a5800}.opb.ok{color:#256a40}
 .top{background:#F4EFE7}
+.score{margin:20px 0 8px;padding:16px 16px 14px}
+.score h2{margin:0 0 6px;font-size:1.05rem}
+.score .lead{margin:0 0 10px}
+.score .wrap{overflow-x:auto;margin:0 -4px}
+.score table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.86rem;min-width:36em}
+.score th,.score td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:right}
+.score th:first-child,.score td:first-child{text-align:left;white-space:nowrap}
+.score thead th{color:var(--mut);font-weight:500;font-size:.75rem}
+.score tr.tot{font-weight:600}
+.score .ok{color:var(--ok)}
+.score .warn{color:var(--warn)}
+.score .goal{margin:10px 0 0;font-size:.88rem;color:var(--mut)}
