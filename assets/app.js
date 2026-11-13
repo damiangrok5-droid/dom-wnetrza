@@ -111,14 +111,14 @@ const cur=()=>localStorage.getItem('styl')||S.styles[0]?.slug;
 function route(){
   const [,tab='',slug]=location.hash.split('/');
   if(slug&&S.styles.some(s=>s.slug===slug))localStorage.setItem('styl',slug);
-  const t=tab||'style';
+  const t=tab||'moj';
   document.querySelectorAll('#tabs a').forEach(a=>{a.classList.toggle('on',a.dataset.tab===t);
     if(['pokoje','zakupy'].includes(a.dataset.tab))a.href=`#/${a.dataset.tab}/${cur()}`;});
   const sb=$('#stylebar');sb.hidden=!['pokoje','zakupy'].includes(t);
   if(!sb.hidden)renderStylebar(t);
   document.documentElement.style.setProperty('--stick',($('.top').offsetHeight+(sb.hidden?0:sb.offsetHeight))+'px');
   window.scrollTo(0,0);
-  ({style:viewStyles,pokoje:viewRooms,zakupy:viewShop,porownanie:viewCompare}[t]||viewStyles)();
+  ({moj:viewMoj,style:()=>viewStyles(false),pokoje:viewRooms,zakupy:viewShop,porownanie:viewCompare}[t]||viewMoj)();
 }
 function renderStylebar(t){
   const c=cur();
@@ -157,9 +157,29 @@ function fillStatus(){
   }).catch(()=>{el.hidden=true;});
 }
 
+/* ---------- widok: Mój styl (główny) + archiwum stylów niżej ---------- */
+async function viewMoj(){
+  app.innerHTML='<p class="loading">Ładowanie…</p>';
+  let M;try{M=await getJSON('data/moj-styl.json');}catch(e){M=null;}
+  if(!M){viewStyles(false);return;}
+  const all=[];M.groups.forEach(g=>g.frames.forEach(f=>all.push({src:f.src,cap:`${g.id} ${g.name} – ${f.caption}`})));
+  let k=0;const pal=Object.entries(M.palette||{});
+  const n=all.length;
+  app.innerHTML=`<h1>${esc(M.name)}</h1><p class="lead">${esc(M.desc)}</p>
+   <div class="sw mojsw" title="Paleta">${pal.map(([nm,h])=>`<span style="background:${esc(h)}" title="${esc(nm)} ${esc(h)}"></span>`).join('')}</div>
+   <p class="note" style="border-left-color:var(--acc2)">${n} wizualizacji nastrojowych (AI), nie 1:1 – znak na każdym zdjęciu. Dotknij zdjęcia, aby powiększyć i przeglądać kolejne.</p>
+   ${['parter','poddasze'].map(fl=>{const gs=M.groups.filter(g=>g.floor===fl);return `<h2 class="floorh">${fl==='parter'?'Parter':'Poddasze'} <small>${gs.length} pomieszczeń</small></h2>
+    ${gs.map(g=>`<section class="mojroom"><div class="hd"><h3>${esc(g.name)}</h3><span class="area">${esc(g.id)}</span></div>
+     <div class="grid">${g.frames.map(f=>{const i=k++;return `<figure class="card mojfig"><button type="button" data-m="${i}" aria-label="Powiększ: ${esc(g.name)}"><img loading="${i<2?'eager':'lazy'}" decoding="async" src="${esc(f.src)}" alt="${esc(g.name+' – '+f.caption)}"></button><figcaption class="capt">${esc(f.caption)}</figcaption></figure>`;}).join('')}</div></section>`).join('')}`;}).join('')}
+   <div id="arch" class="archiwum"></div>`;
+  app.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>openLB(all,+b.dataset.m));
+  viewStyles(true);
+}
+
 /* ---------- widok: style ---------- */
-function viewStyles(){
-  app.innerHTML=`<h1>Wybierz styl wnętrz</h1>
+function viewStyles(arch){
+  const host=arch?app.querySelector('#arch'):app;
+  host.innerHTML=`${arch?'<h2 class="floorh">Archiwum – wcześniejsze style <small>6 kierunków</small></h2>':'<h1>Archiwum stylów</h1>'}
   <p class="lead">6 kierunków dla tego samego domu (rzut parteru i poddasza bez zmian). Po wyborze zobaczysz każde pomieszczenie w danym stylu i listę zakupów z cenami.</p>
   <div class="grid s3">${S.styles.map(s=>{const c=cmpBy(s.slug);const pal=Object.entries(s.palette);
     return `<a class="card style-card" href="#/pokoje/${s.slug}">

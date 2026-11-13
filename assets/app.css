@@ -207,3 +207,15 @@ table.shop td.pn a{display:inline-block;padding:11px 0;margin:-11px 0}
 .score .ok{color:var(--ok)}
 .score .warn{color:var(--warn)}
 .score .goal{margin:10px 0 0;font-size:.88rem;color:var(--mut)}
+
+/* Mój styl */
+.mojroom{margin:0 0 28px}
+.mojroom .hd{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin:0 0 10px}
+.mojroom h3{margin:0;font-size:1.1rem}
+.mojroom .area{color:var(--mut);font-size:.85rem}
+.mojfig{margin:0}
+.mojfig button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.mojfig img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.mojfig .capt{padding:8px 12px 10px}
+.mojsw{margin:0 0 14px}
+.archiwum{margin-top:44px;padding-top:12px;border-top:1px solid var(--line)}
