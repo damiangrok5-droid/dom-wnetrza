@@ -232,18 +232,18 @@
      ]
     },
     "premium": {
-     "prod": 277968.86,
-     "aux": 17594.32,
+     "prod": 276851.38,
+     "aux": 18337.1,
      "est": 24655.0,
-     "lab_min": 134031.42,
-     "lab_avg": 178724.76,
-     "lab_max": 223418.49,
+     "lab_min": 147455.57,
+     "lab_avg": 196898.51,
+     "lab_max": 246341.84,
      "k_min": 44182,
      "k_avg": 55395.0,
      "k_max": 66608,
-     "razem_min": 473776.6,
-     "razem_avg": 529682.94,
-     "razem_max": 585589.67,
+     "razem_min": 486826.05,
+     "razem_avg": 547481.99,
+     "razem_max": 608138.32,
      "kuchnia": "zabudowa na wymiar – fronty z forniru dębowego naturalnego (olej/lakier mat): 7,36 mb (blat pod oknem 3,19 + słupki 1,52 + półwysep 1,98 + panele przy spiżarni 0,67) × średnia z widełek laczynasdrewno 7 300–11 300 i makpol 4 706–6 800 zł/mb; front drzwi ukrytych spiżarni w tym samym fornirze dębowym",
      "plik": "zakupy/warianty/modern-organic_premium.csv",
      "ponad_limit_max": true,
@@ -418,18 +418,6 @@
        "dlaczego": "termostat podtynkowy Grohe SmartControl – stabilna temperatura, deszczownica 310 mm"
       },
       {
-       "typ": "zamiana",
-       "kat": "łazienki – umywalki",
-       "pom": "1/08 ×1, 2/05 ×2",
-       "z": "Umywalka nablatowa Roca Domus 55 x 39 cm biała",
-       "z_suma": 1554.0,
-       "na": "Villeroy & Boch Artis umywalka nablatowa 58×38,5 cm biała (417258R1)",
-       "na_suma": 4973.97,
-       "delta": 3419.97,
-       "url": "https://www.mlazienka.pl/umywalka-58x385-cm-prostokatna-nablatowa-biala-417258r1-villeroy-boch-artis-494677.html",
-       "dlaczego": "porcelana V&B – cieńsze krawędzie, trwałe szkliwo"
-      },
-      {
        "typ": "usunięcie",
        "kat": "płytki",
        "pom": "łazienki – ściany",
@@ -524,18 +512,6 @@
        "delta": 7300.0,
        "url": "https://www.westwing.pl/narozna-sofa-moduowa-boucle-lennon-156411.html",
        "dlaczego": "bouclé 100 000 cykli Martindale, 10 lat gwarancji, modułowa"
-      },
-      {
-       "typ": "zamiana",
-       "kat": "meble",
-       "pom": "1/02",
-       "z": "STOENSE Dywan z krótkim włosiem - kremowy 200x300 cm",
-       "z_suma": 399.0,
-       "na": "TORRONE dywan wełniany ręcznie tkany 200×300 cm, naturalna biel",
-       "na_suma": 1999.0,
-       "delta": 1600.0,
-       "url": "https://www.jotex.pl/torrone-dywan-welniany-200x300-cm/1652092-01",
-       "dlaczego": "100% wełna ręcznie tkana zamiast poliestru – trwalszy, naturalnie odporny na zabrudzenia"
       },
       {
        "typ": "zamiana",

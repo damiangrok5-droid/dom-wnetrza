@@ -115,7 +115,7 @@ body.sp main{max-width:1180px;padding:10px 12px 12px}
 const $ = s => document.querySelector(s);
 const st = { m: null, styles: [], styl: 'ms', war: 'podstawowy', pt: 'salon', mode: 'pano', yaw: 0, fl: 'parter' };
 const q = new URLSearchParams(location.search);
-const ROOMS = { '1/02': 'Salon i jadalnia', '1/03': 'Kuchnia', '2/01': 'Hol', '2/02': 'Sypialnia', '2/08': 'Pokój gościnny', '2/07': 'Pokój 2/07' };
+const ROOMS = { '1/02': 'Salon i jadalnia', '1/03': 'Kuchnia', '2/01': 'Hol', '2/02': 'Sypialnia', '2/04': 'Garderoba', '2/05': 'Łazienka', '2/06': 'Gabinet', '2/08': 'Pokój gościnny', '2/07': 'Pokój 2/07', '2/10': 'Pralnia' };
 let psv = null, markers = null, gyro = null, walk = null;
 document.documentElement.style.setProperty('--top', $('.top').offsetHeight + 'px');
 const fitStage = () => document.documentElement.style.setProperty('--st', Math.round($('#stage').getBoundingClientRect().top + scrollY) + 'px');
@@ -159,8 +159,8 @@ function buildControls() {
   document.querySelectorAll('#segFloor button').forEach(b => { b.classList.toggle('on', b.dataset.f === st.fl); b.disabled = b.dataset.f === 'poddasze' && !m.poddasze?.style[st.styl]; });
   $('#segFloor').onclick = e => { const b = e.target.closest('button'); if (b && !b.disabled && b.dataset.f !== st.fl) setFloor(b.dataset.f); };
   $('#selWar').onchange = e => { st.war = e.target.value; reload(); };
-  $('#segRoom').innerHTML = F().pokoje.map(r => `<button data-r="${r}" class="${PU()[st.pt]?.pokoj === r ? 'on' : ''}">${ROOMS[r] || r}</button>`).join('');
-  $('#segRoom').onclick = e => { const b = e.target.closest('button'); if (!b) return; const p = Object.entries(PU()).find(([, p]) => p.pokoj === b.dataset.r)[0]; goPoint(p, null); };
+  $('#segRoom').innerHTML = F().pokoje.filter(r => Object.entries(PU()).some(([k, p]) => p.pokoj === r && (!W()?.pano || W().pano[k]))).map(r => `<button data-r="${r}" class="${PU()[st.pt]?.pokoj === r ? 'on' : ''}">${ROOMS[r] || r}</button>`).join('');
+  $('#segRoom').onclick = e => { const b = e.target.closest('button'); if (!b) return; const p = Object.entries(PU()).find(([k, p]) => p.pokoj === b.dataset.r && (!W()?.pano || W().pano[k]))[0]; goPoint(p, null); };
   $('#segMode').onclick = e => { const b = e.target.closest('button'); if (b && !b.disabled) setMode(b.dataset.m); };
   $('#segMode [data-m=walk]').disabled = !W()?.materialy;
   $('#segMode [data-m=walk]').title = st.fl === 'poddasze' ? 'Spacer swobodny – na razie tylko parter' : '';
@@ -186,7 +186,7 @@ function drawPlan() {
   const rooms = r.pomieszczenia.map(p => `<polygon points="${p.pts.map(q => q.join(',')).join(' ')}" fill="#efe6d8" />`).join('');
   const walls = r.sciany.map(([a, b, c, d]) => `<rect x="${a}" y="${b}" width="${c - a}" height="${d - b}" fill="#5d544b"/>`).join('');
   const ops = r.otwory.map(o => { const [a, b, c, d] = o.r; const win = o.t !== 'door'; return `<rect x="${a}" y="${b}" width="${c - a}" height="${d - b}" fill="${win ? '#9cc7e0' : '#fffdf9'}" stroke="${win ? '#4c87a8' : '#b9a58c'}" stroke-width="3"/>`; }).join('');
-  const pts = Object.entries(PU()).map(([k, p]) => `<g class="pt" data-p="${k}"><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="38" fill="transparent"/><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="17" fill="#fffdf9" stroke="#8C6A43" stroke-width="7"/></g>`).join('');
+  const pts = Object.entries(PU()).filter(([k]) => !W()?.pano || W().pano[k]).map(([k, p]) => `<g class="pt" data-p="${k}"><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="38" fill="transparent"/><circle cx="${p.xy[0]}" cy="${p.xy[1]}" r="17" fill="#fffdf9" stroke="#8C6A43" stroke-width="7"/></g>`).join('');
   $('#plan').innerHTML = `<svg viewBox="${x0 - pad} ${y0 - pad} ${x1 - x0 + 2 * pad} ${y1 - y0 + 2 * pad}" role="img" aria-label="${st.fl === 'poddasze' ? 'Rzut poddasza' : 'Rzut strefy dziennej'} z punktem widzenia">
     ${rooms}${walls}${ops}${pts}
     <g id="me"><path id="cone" d="M0 0 L210 -95 A230 230 0 0 1 210 95 Z" fill="rgba(140,106,67,.35)"/><circle r="24" fill="#8C6A43" stroke="#fff" stroke-width="7"/></g></svg>`;
