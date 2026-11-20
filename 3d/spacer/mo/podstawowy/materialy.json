@@ -3,10 +3,10 @@
  "wariant": "podstawowy",
  "lightmap": {
   "url": "lightmap.webp",
-  "K": 6.3810173273086725,
+  "K": 9.98958322811118,
   "gamma": 2.2,
   "wb": [
-   0.92,
+   0.921,
    1.005,
    1.185
   ]
