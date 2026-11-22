@@ -203,7 +203,7 @@ async function startPano() {
   if (W()?.pano && !W().pano[st.pt]) { st.pt = panoPt(st.pt); syncRoomSeg(); syncUrl(); }
   if (!psv) {
     psv = new Viewer({ container: $('#pano'), panorama: W().pano[st.pt] ? W().pano[st.pt] : Object.values(W().pano)[0], navbar: false,
-      defaultYaw: st.yaw, defaultPitch: -0.08, defaultZoomLvl: zl(st.pt), minFov: 40, maxFov: 100, loadingTxt: '', mousewheelCtrlKey: false,
+      defaultYaw: st.yaw, defaultPitch: 0, defaultZoomLvl: zl(st.pt), minFov: 30, maxFov: 100, loadingTxt: '', mousewheelCtrlKey: false,
       touchmoveTwoFingers: false, moveInertia: true, lang: { loadError: 'Nie udało się wczytać panoramy' },
       plugins: [[MarkersPlugin, {}], [GyroscopePlugin, { touchmove: true, absolutePosition: false }]] });
     markers = psv.getPlugin(MarkersPlugin); gyro = psv.getPlugin(GyroscopePlugin);
@@ -214,7 +214,7 @@ async function startPano() {
     $('#bGyro').onclick = () => { gyro.toggle(); setTimeout(() => $('#bGyro').classList.toggle('on', gyro.isEnabled()), 400); };
   } else {
     const seq = ++goSeq;
-    try { await psv.setPanorama(W().pano[st.pt], { transition: false, position: { yaw: st.yaw, pitch: -0.08 }, zoom: zl(st.pt), showLoader: false }); }
+    try { await psv.setPanorama(W().pano[st.pt], { transition: false, position: { yaw: st.yaw, pitch: 0 }, zoom: zl(st.pt), showLoader: false }); }
     catch (e) { if (seq === goSeq) console.warn('pano', st.pt, e); return; }
     if (seq === goSeq) setMarkers();
   }
@@ -240,8 +240,12 @@ function panoPt(pt) {
   for (const k of Object.keys(P)) { const r = PU()[k]?.xy; if (!r) continue; const d = Math.hypot(r[0] - q[0], r[1] - q[1]); if (d < bd) { bd = d; best = k; } }
   return best;
 }
-// F1: punkt może mieć własne pionowe FOV (punkty.json 'fov'); minFov 40 / maxFov 100 -> poziom zoomu PSV
-const zl = pt => { const f = PU()[pt]?.fov; return f ? Math.round((100 - f) / 0.6) : 10; };
+// F12 (09.11): naturalna perspektywa – FOV poziomy ≤ HFOV_SPACER (°) w każdej orientacji ekranu (iPhone pionowo i poziomo), pion ≤ 90°;
+// PSV liczy FOV pionowe: minFov 30 / maxFov 100 -> poziom zoomu (100 - f) / 0.7. Punkt z własnym 'fov' (pionowe) może tylko zawęzić kadr.
+const HFOV_SPACER = 65;
+const vfovFor = (w, h) => Math.min(90, 2 * Math.atan(Math.tan(HFOV_SPACER * Math.PI / 360) / Math.max(w / Math.max(h, 1), 0.01)) * 180 / Math.PI);
+const zl = pt => { const el = $('#pano'); const vf = vfovFor(el?.clientWidth || innerWidth, el?.clientHeight || innerHeight);
+  const f = Math.max(30, Math.min(vf, PU()[pt]?.fov || 90)); return Math.max(0, Math.min(100, Math.round((100 - f) / 0.7))); };
 let goSeq = 0;
 async function goPoint(pt, yaw) {
   if (!PU()[pt]) return;
@@ -253,7 +257,7 @@ async function goPoint(pt, yaw) {
   markers.clearMarkers(); showLoad(true); const seq = ++goSeq;
   // F1e: szybkie przełączanie (piętro/pokój/hotspot) przerywa poprzednie ładowanie -> PSV odrzuca obietnicę (WebKit: ProgressEvent);
   // przerwane ładowanie wyciszamy, prawdziwy błąd sygnalizujemy podpowiedzią
-  try { await psv.setPanorama(W().pano[pt], { transition: 650, position: { yaw: st.yaw, pitch: -0.08 }, zoom: zl(pt), showLoader: false }); }
+  try { await psv.setPanorama(W().pano[pt], { transition: 650, position: { yaw: st.yaw, pitch: 0 }, zoom: zl(pt), showLoader: false }); }
   catch (e) { if (seq === goSeq) { console.warn('pano', pt, e); hint('Nie udało się wczytać panoramy – spróbuj ponownie.', 6000); } return; }
   finally { if (seq === goSeq) showLoad(false); }
   if (seq === goSeq) setMarkers();
@@ -302,7 +306,7 @@ async function createWalk(host, joyEl, M, cb) {
   const scene = new THREE.Scene();
   const cam = new THREE.PerspectiveCamera(72, 1, 0.05, 200); cam.rotation.order = 'YXZ';
   const EYE = (M.oko_cm || 160) / 100, R = 0.22, LO = 0.25, HI = 1.55;
-  const pos = new THREE.Vector3(10.4, 0, 6.9); let yaw = 0, pitch = -0.05;
+  const pos = new THREE.Vector3(10.4, 0, 6.9); let yaw = 0, pitch = 0;
   const keys = {}; const joy = { x: 0, y: 0 };
   let root = null, collider = null, running = false, raf = 0, curGlb = '', curMat = '', envTex = null, bgTex = null;
   const texL = new THREE.TextureLoader(), aniso = renderer.capabilities.getMaxAnisotropy();
@@ -312,7 +316,7 @@ async function createWalk(host, joyEl, M, cb) {
   }, undefined, rej));
   const noIblDiffuse = sh => { sh.fragmentShader = sh.fragmentShader.replace('#include <lights_fragment_maps>', '#include <lights_fragment_maps>\n\tiblIrradiance = vec3( 0.0 );'); };
 
-  function resize() { const w = host.clientWidth || 1, h = host.clientHeight || 1; renderer.setSize(w, h, false); cam.aspect = w / h; cam.fov = w < h ? Math.min(90, 2 * Math.atan(Math.tan(0.611) / cam.aspect) * 180 / Math.PI) : 72; cam.updateProjectionMatrix(); }
+  function resize() { const w = host.clientWidth || 1, h = host.clientHeight || 1; renderer.setSize(w, h, false); cam.aspect = w / h; cam.fov = vfovFor(w, h);   /* F12: FOV poziomy ≤ 65° (było 72° pionowo ≈ 104° poziomo na 16:9) */ cam.updateProjectionMatrix(); }
   resize();
 
   async function load(glbUrl, matUrl, tloUrl) {
@@ -421,7 +425,7 @@ async function createWalk(host, joyEl, M, cb) {
   }
   return {
     load: (glb, mat, tlo) => load(glb, mat, tlo),
-    teleport(xy, y) { pos.set(xy[0] / 100, 0, xy[1] / 100); if (y != null) yaw = y; pitch = -0.05; if (collider) collide(pos); },
+    teleport(xy, y) { pos.set(xy[0] / 100, 0, xy[1] / 100); if (y != null) yaw = y; pitch = 0; if (collider) collide(pos); },
     start() { if (running) return; running = true; resize(); clock.getDelta(); frame(); },
     stop() { running = false; cancelAnimationFrame(raf); if (document.pointerLockElement) document.exitPointerLock(); },
     resize, get state() { return { x: pos.x * 100, y: pos.z * 100, yaw, pitch }; }
