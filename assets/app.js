@@ -71,14 +71,18 @@ function normManifest(m,slug){
   return {rooms,cover,pending};
 }
 const imgOk=src=>new Promise(res=>{const i=new Image();i.onload=()=>res(i.naturalWidth>0);i.onerror=()=>res(false);i.src=src;});
+// F19 22.11: style bez palety (wpis 'moj-styl') mają wizualizacje w data/moj-styl.json – bez sond img/<styl>/… i plików danych stylu (unika 404)
+const bezPlikow=slug=>{const s=(S.styles||[]).find(x=>x.slug===slug);return !!s&&!(s.palette&&typeof s.palette==='object');};
 const manifests={};
 function loadManifest(slug){
+  if(bezPlikow(slug))return Promise.resolve(null);
   return manifests[slug]??=fetch(`img/${slug}/manifest.json`,{cache:'no-cache'})
     .then(r=>r.ok?r.json():null).then(m=>normManifest(m,slug)).catch(()=>null);
 }
 /* bez manifestu: sprawdzamy konwencję nazw img/<styl>/<pokój>.jpg, _b, _c… */
 const probes={};
 function probeRoom(slug,rk){
+  if(bezPlikow(slug))return Promise.resolve([]);
   return probes[slug+rk]??=(async()=>{
     const out=[];
     for(const suf of ['','_b','_c','_d','_e']){
@@ -122,7 +126,7 @@ function route(){
 }
 function renderStylebar(t){
   const c=cur();
-  $('#stylebar').innerHTML=S.styles.map(s=>`<a class="chip${s.slug===c?' on':''}" href="#/${t}/${s.slug}"><i style="background:${esc(Object.values(s.palette)[2]||'#ccc')}"></i>${esc(s.name)}</a>`).join('');
+  $('#stylebar').innerHTML=S.styles.map(s=>`<a class="chip${s.slug===c?' on':''}" href="#/${t}/${s.slug}"><i style="background:${esc(Object.values(s.palette||{})[2]||'#ccc')}"></i>${esc(s.name)}</a>`).join('');
   const on=$('#stylebar .on');if(on)on.scrollIntoView({inline:'center',block:'nearest'});
 }
 const styleBy=slug=>S.styles.find(s=>s.slug===slug)||S.styles[0];
@@ -177,11 +181,13 @@ async function viewMoj(){
 }
 
 /* ---------- widok: style ---------- */
+// F19 22.11: archiwum = style z paletą (wpis 'moj-styl' w styles.json nie ma palety -> Object.entries(undefined) przerywało render archiwum na stronie głównej)
+const archStyles=()=>(S.styles||[]).filter(s=>s&&s.palette&&typeof s.palette==='object');
 function viewStyles(arch){
   const host=arch?app.querySelector('#arch'):app;
   host.innerHTML=`${arch?'<h2 class="floorh">Archiwum – wcześniejsze style <small>6 kierunków</small></h2>':'<h1>Archiwum stylów</h1>'}
   <p class="lead">6 kierunków dla tego samego domu (rzut parteru i poddasza bez zmian). Po wyborze zobaczysz każde pomieszczenie w danym stylu i listę zakupów z cenami.</p>
-  <div class="grid s3">${S.styles.map(s=>{const c=cmpBy(s.slug);const pal=Object.entries(s.palette);
+  <div class="grid s3">${archStyles().map(s=>{const c=cmpBy(s.slug);const pal=Object.entries(s.palette||{});
     return `<a class="card style-card" href="#/pokoje/${s.slug}">
     <div class="cover" data-cover="${s.slug}" style="background-image:linear-gradient(135deg,${pal.slice(0,4).map(p=>esc(p[1])).join(',')})"><span class="tag" data-cnt="${s.slug}">wizualizacje: …</span></div>
     <div class="b"><h3>${esc(s.name)}</h3><p>${esc(s.desc)}</p>
@@ -190,7 +196,7 @@ function viewStyles(arch){
   <div id="status-f14" class="card score"></div>
   <p class="capt" style="padding:12px 0">Wizualizacje: rendery z modeli 3D albo wizualizacje nastrojowe (AI). Obie nie 1:1 — znak na zdjęciu. Spacer 3D oznaczony „(3D)”.</p>`;
   fillStatus();
-  S.styles.forEach(async s=>{
+  archStyles().forEach(async s=>{
     const [cv,m]=await Promise.all([styleCover(s),loadManifest(s.slug)]);
     const el=app.querySelector(`[data-cover="${s.slug}"]`);if(!el)return;
     if(cv)el.style.backgroundImage=`url("${cv}")`;
@@ -263,7 +269,7 @@ async function viewRooms(){
    <p style="margin-top:24px"><a class="btn" href="#/zakupy/${st.slug}">Lista zakupów – ${esc(st.name)} →</a></p>`;
   app.querySelectorAll('img.plan').forEach(im=>im.onclick=()=>openLB([{src:im.dataset.plan,cap:im.dataset.cap}],0));
   spacerLinks(st.slug);
-  const [m,W]=await Promise.all([loadManifest(st.slug),getJSON(`data/walidacja-${st.slug}.json`).catch(()=>null)]);
+  const [m,W]=await Promise.all([loadManifest(st.slug),(bezPlikow(st.slug)?Promise.resolve(null):getJSON(`data/walidacja-${st.slug}.json`).catch(()=>null))]);
   if(cur()!==st.slug)return;
   for(const r of S.rooms){
     const wrap=app.querySelector(`[data-room="${r.slug}"]`);if(!wrap)continue;
@@ -338,7 +344,7 @@ async function wariantyCard(slug){
 async function viewShop(){
   const st=styleBy(cur());
   app.innerHTML='<p class="loading">Ładowanie listy…</p>';
-  let d;try{d=await getJSON(`data/zakupy-${st.slug}.json`);}catch(e){app.innerHTML=`<div class="empty">Brak listy zakupów dla stylu ${esc(st.name)}.</div>`;return;}
+  let d;try{if(bezPlikow(st.slug))throw new Error('brak');d=await getJSON(`data/zakupy-${st.slug}.json`);}catch(e){app.innerHTML=`<div class="empty">Brak listy zakupów dla stylu ${esc(st.name)}.</div>`;return;}
   if(cur()!==st.slug)return;
   const [kMin,kMax]=d.kitchen_est,B=d.budget;
   const roomName=id=>S.rooms.find(r=>r.id===id)?.name||'';
@@ -390,6 +396,8 @@ async function viewShop(){
 /* ---------- widok: porównanie ---------- */
 function viewCompare(){
   const C=S.styles.map(s=>({s,c:cmpBy(s.slug)})).filter(x=>x.c);
+  // F19 22.11: tabela tylko dla stylów z danymi porównania ('moj-styl' nie ma wpisu w porownanie.json -> cmpBy(...).total rzucało TypeError)
+  const SS=S.styles.filter(s=>cmpBy(s.slug));
   const cats=Object.keys(CAT_COL).filter(k=>C.some(x=>x.c.by_cat[k]!=null));
   const min=k=>Math.min(...C.map(x=>k?x.c.by_cat[k]??Infinity:x.c.total));
   const B=C[0]?.c.budget||550000,[kMin,kMax]=C[0]?.c.kitchen_est||[0,0];
@@ -402,14 +410,14 @@ function viewCompare(){
     <small style="color:var(--mut);display:block">produkty ${zl(brk(c).p)} + materiały ${zl(brk(c).m)} + robocizna ${zl(brk(c).l)} + kuchnia ${rng(kMin,kMax)}</small>
     <small style="color:var(--mut)">= ${rng(c.total+kMin,c.total+kMax)} · ${Math.round((c.total+kMax)/B*100)}% budżetu (max) · ${left(B,c.total,kMin,kMax)}</small></a>`).join('')}</div>
   <div class="legend" style="margin-bottom:10px">${cats.map(k=>`<span><i style="background:${CAT_COL[k]}"></i>${esc(k)}</span>`).join('')}<span><i style="background:#B9805E"></i>kuchnia na wymiar (min.)</span></div>
-  <div class="scroll"><table class="cmp"><thead><tr><th>Kategoria</th>${S.styles.map(s=>`<th><a href="#/zakupy/${s.slug}">${esc(s.name)}</a></th>`).join('')}</tr></thead><tbody>
-  ${cats.map(k=>`<tr><td>${esc(k)}</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.by_cat[k];return `<td class="${v===min(k)?'best':''}">${zl(v)}</td>`;}).join('')}</tr>`).join('')}
-  <tr><td>w tym produkty</td>${S.styles.map(s=>`<td>${zl(brk(cmpBy(s.slug)).p)}</td>`).join('')}</tr>
-  <tr><td>Robocizna – widełki min–max</td>${S.styles.map(s=>{const x=brk(cmpBy(s.slug));return `<td>${x.lmin!=null?rng(x.lmin,x.lmax):'—'}</td>`;}).join('')}</tr>
-  <tr class="tot"><td>Razem produkty + materiały + robocizna</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.total;return `<td class="${v===min()?'best':''}">${zl(v)}</td>`;}).join('')}</tr>
-  <tr><td>+ kuchnia (zakres)</td>${S.styles.map(s=>{const v=cmpBy(s.slug)?.total;return `<td>${rng(v+kMin,v+kMax)}</td>`;}).join('')}</tr>
-  <tr><td>Zostaje z 400 tys. (min.; minus = przekroczenie)</td>${S.styles.map(s=>{const v=B-cmpBy(s.slug).total-kMax;return `<td style="color:var(${v<0?'--bad':'--ok'})">${zl(v)}</td>`;}).join('')}</tr>
-  <tr><td>Pozycje zweryf. / niezweryf.</td>${S.styles.map(s=>{const c=cmpBy(s.slug);return `<td>${c.verified} / ${c.unverified}</td>`;}).join('')}</tr>
+  <div class="scroll"><table class="cmp"><thead><tr><th>Kategoria</th>${SS.map(s=>`<th><a href="#/zakupy/${s.slug}">${esc(s.name)}</a></th>`).join('')}</tr></thead><tbody>
+  ${cats.map(k=>`<tr><td>${esc(k)}</td>${SS.map(s=>{const v=cmpBy(s.slug)?.by_cat[k];return `<td class="${v===min(k)?'best':''}">${zl(v)}</td>`;}).join('')}</tr>`).join('')}
+  <tr><td>w tym produkty</td>${SS.map(s=>`<td>${zl(brk(cmpBy(s.slug)).p)}</td>`).join('')}</tr>
+  <tr><td>Robocizna – widełki min–max</td>${SS.map(s=>{const x=brk(cmpBy(s.slug));return `<td>${x.lmin!=null?rng(x.lmin,x.lmax):'—'}</td>`;}).join('')}</tr>
+  <tr class="tot"><td>Razem produkty + materiały + robocizna</td>${SS.map(s=>{const v=cmpBy(s.slug)?.total;return `<td class="${v===min()?'best':''}">${zl(v)}</td>`;}).join('')}</tr>
+  <tr><td>+ kuchnia (zakres)</td>${SS.map(s=>{const v=cmpBy(s.slug)?.total;return `<td>${rng(v+kMin,v+kMax)}</td>`;}).join('')}</tr>
+  <tr><td>Zostaje z 400 tys. (min.; minus = przekroczenie)</td>${SS.map(s=>{const v=B-cmpBy(s.slug).total-kMax;return `<td style="color:var(${v<0?'--bad':'--ok'})">${zl(v)}</td>`;}).join('')}</tr>
+  <tr><td>Pozycje zweryf. / niezweryf.</td>${SS.map(s=>{const c=cmpBy(s.slug);return `<td>${c.verified} / ${c.unverified}</td>`;}).join('')}</tr>
   </tbody></table></div>
   <p class="capt" style="padding:8px 0">Najtańsza wartość w wierszu – na zielono. Robocizna to szacunek (średnia z cenników firm, Warszawa 2026) – źródła stawek przy każdej pozycji w zakładce „Zakupy”.</p>`;
 }
