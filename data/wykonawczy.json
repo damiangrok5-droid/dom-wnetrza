@@ -1,0 +1,750 @@
+{
+  "title": "Projekt wykonawczy wnętrz v2",
+  "style": "Mój styl",
+  "uwaga": "Rysunki robocze do wyceny i wykonania, wg oryginalnego projektu (lustro, wersja zmodyfikowana). Wymiary z modelu produkcyjnego; przed zamówieniem i cięciem – pomiar na budowie. Punkty Q1–Q5 pozostają do potwierdzenia (wartości nie są zgadywane). Rozmieszczenie opraw i podział na obwody = propozycja, do akceptacji z elektrykiem. Etap 2 (szczegółowa elektryka i hydraulika) wymaga projektów branżowych. Pieczątka „nie do publikacji” na arkuszach oznacza, że to dokument roboczy (nie projekt budowlany do urzędu), udostępniany na prywatnej stronie projektu.",
+  "sheets": [
+    {
+      "id": "W-00",
+      "stem": "W-00_strona_tytulowa",
+      "title": "Strona tytułowa, skorowidz, pytania Q1–Q5",
+      "q": [
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-00_strona_tytulowa.pdf",
+      "img": "wykonawczy/W-00_strona_tytulowa.webp",
+      "thumb": "wykonawczy/thumbs/W-00_strona_tytulowa.webp",
+      "pages": [
+        {
+          "file": "W-00_strona_tytulowa.webp",
+          "w": 2977,
+          "h": 2105,
+          "page": 1
+        }
+      ],
+      "w": 2977,
+      "h": 2105
+    },
+    {
+      "id": "W-01",
+      "stem": "W-01_parter_wymiary",
+      "title": "Rzut parteru – wymiary, otwory, osie",
+      "q": [
+        "Q2",
+        "Q3",
+        "Q4",
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-01_parter_wymiary.pdf",
+      "img": "wykonawczy/W-01_parter_wymiary.webp",
+      "thumb": "wykonawczy/thumbs/W-01_parter_wymiary.webp",
+      "pages": [
+        {
+          "file": "W-01_parter_wymiary.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-02",
+      "stem": "W-02_poddasze_wymiary",
+      "title": "Rzut poddasza – wymiary, otwory, wysokości pod skosem",
+      "q": [
+        "Q1",
+        "Q3",
+        "Q4",
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-02_poddasze_wymiary.pdf",
+      "img": "wykonawczy/W-02_poddasze_wymiary.webp",
+      "thumb": "wykonawczy/thumbs/W-02_poddasze_wymiary.webp",
+      "pages": [
+        {
+          "file": "W-02_poddasze_wymiary.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-03",
+      "stem": "W-03_uwagi_ustalenia",
+      "title": "Uwagi i ustalenia z weryfikacji",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-03_uwagi_ustalenia.pdf",
+      "img": "wykonawczy/W-03_uwagi_ustalenia.webp",
+      "thumb": "wykonawczy/thumbs/W-03_uwagi_ustalenia.webp",
+      "pages": [
+        {
+          "file": "W-03_uwagi_ustalenia.webp",
+          "w": 2977,
+          "h": 2105,
+          "page": 1
+        }
+      ],
+      "w": 2977,
+      "h": 2105
+    },
+    {
+      "id": "W-04",
+      "stem": "W-04_posadzki_parter",
+      "title": "Posadzki parteru – jodełka, deska, gres, profile",
+      "q": [
+        "Q2"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-04_posadzki_parter.pdf",
+      "img": "wykonawczy/W-04_posadzki_parter.webp",
+      "thumb": "wykonawczy/thumbs/W-04_posadzki_parter.webp",
+      "pages": [
+        {
+          "file": "W-04_posadzki_parter.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-05",
+      "stem": "W-05_posadzki_poddasze",
+      "title": "Posadzki poddasza – deska, gres, profile",
+      "q": [
+        "Q1",
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-05_posadzki_poddasze.pdf",
+      "img": "wykonawczy/W-05_posadzki_poddasze.webp",
+      "thumb": "wykonawczy/thumbs/W-05_posadzki_poddasze.webp",
+      "pages": [
+        {
+          "file": "W-05_posadzki_poddasze.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-06",
+      "stem": "W-06_jodelka_szczegoly",
+      "title": "Jodełka – szczegóły (start, kierunek, dylatacje, cokół)",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-06_jodelka_szczegoly.pdf",
+      "img": "wykonawczy/W-06_jodelka_szczegoly.webp",
+      "thumb": "wykonawczy/thumbs/W-06_jodelka_szczegoly.webp",
+      "pages": [
+        {
+          "file": "W-06_jodelka_szczegoly.webp",
+          "w": 2977,
+          "h": 2105,
+          "page": 1
+        }
+      ],
+      "w": 2977,
+      "h": 2105
+    },
+    {
+      "id": "W-07",
+      "stem": "W-07_1-08",
+      "title": "Łazienka 1/08 – rozkład płytek, odpływ, rozwinięcia ścian",
+      "q": [
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-07_1-08.pdf",
+      "img": "wykonawczy/W-07_1-08.webp",
+      "thumb": "wykonawczy/thumbs/W-07_1-08.webp",
+      "pages": [
+        {
+          "file": "W-07_1-08.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-08",
+      "stem": "W-08_2-05",
+      "title": "Łazienka 2/05 – rozkład płytek, odpływ, rozwinięcia ścian",
+      "q": [
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-08_2-05.pdf",
+      "img": "wykonawczy/W-08_2-05.webp",
+      "thumb": "wykonawczy/thumbs/W-08_2-05.webp",
+      "pages": [
+        {
+          "file": "W-08_2-05.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-09",
+      "stem": "W-09_2-10",
+      "title": "Pralnia 2/10 – rozkład płytek, rozwinięcia ścian",
+      "q": [
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-09_2-10.pdf",
+      "img": "wykonawczy/W-09_2-10.webp",
+      "thumb": "wykonawczy/thumbs/W-09_2-10.webp",
+      "pages": [
+        {
+          "file": "W-09_2-10.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-10",
+      "stem": "W-10_sufit_oswietlenie_parter",
+      "title": "Sufit i oświetlenie – parter (propozycja)",
+      "q": [
+        "Q4"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-10_sufit_oswietlenie_parter.pdf",
+      "img": "wykonawczy/W-10_sufit_oswietlenie_parter.webp",
+      "thumb": "wykonawczy/thumbs/W-10_sufit_oswietlenie_parter.webp",
+      "pages": [
+        {
+          "file": "W-10_sufit_oswietlenie_parter.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-11",
+      "stem": "W-11_sufit_oswietlenie_poddasze",
+      "title": "Sufit i oświetlenie – poddasze (propozycja)",
+      "q": [
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-11_sufit_oswietlenie_poddasze.pdf",
+      "img": "wykonawczy/W-11_sufit_oswietlenie_poddasze.webp",
+      "thumb": "wykonawczy/thumbs/W-11_sufit_oswietlenie_poddasze.webp",
+      "pages": [
+        {
+          "file": "W-11_sufit_oswietlenie_poddasze.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-12",
+      "stem": "W-12_brief_elektryk",
+      "title": "Brief dla elektryka – oprawy, obwody, łączniki",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-12_brief_elektryk.pdf",
+      "img": "wykonawczy/W-12_brief_elektryk.webp",
+      "thumb": "wykonawczy/thumbs/W-12_brief_elektryk.webp",
+      "pages": [
+        {
+          "file": "W-12_brief_elektryk.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-13",
+      "stem": "W-13_rozwiniecia_parter_1",
+      "title": "Rozwinięcia ścian parteru (1/01, 1/02, 1/04, 1/05)",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-13_rozwiniecia_parter_1.pdf",
+      "img": "wykonawczy/W-13_rozwiniecia_parter_1.webp",
+      "thumb": "wykonawczy/thumbs/W-13_rozwiniecia_parter_1.webp",
+      "pages": [
+        {
+          "file": "W-13_rozwiniecia_parter_1.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-14",
+      "stem": "W-14_rozwiniecia_parter_2",
+      "title": "Rozwinięcia ścian parteru (1/03, 1/06, 1/07, 1/09, 1/10)",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-14_rozwiniecia_parter_2.pdf",
+      "img": "wykonawczy/W-14_rozwiniecia_parter_2.webp",
+      "thumb": "wykonawczy/thumbs/W-14_rozwiniecia_parter_2.webp",
+      "pages": [
+        {
+          "file": "W-14_rozwiniecia_parter_2.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-15",
+      "stem": "W-15_rozwiniecia_parter_3",
+      "title": "Rozwinięcia ścian parteru – ciąg dalszy",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-15_rozwiniecia_parter_3.pdf",
+      "img": "wykonawczy/W-15_rozwiniecia_parter_3.webp",
+      "thumb": "wykonawczy/thumbs/W-15_rozwiniecia_parter_3.webp",
+      "pages": [
+        {
+          "file": "W-15_rozwiniecia_parter_3.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-16",
+      "stem": "W-16_rozwiniecia_poddasze_1",
+      "title": "Rozwinięcia ścian poddasza (2/01–2/04, 2/09)",
+      "q": [
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-16_rozwiniecia_poddasze_1.pdf",
+      "img": "wykonawczy/W-16_rozwiniecia_poddasze_1.webp",
+      "thumb": "wykonawczy/thumbs/W-16_rozwiniecia_poddasze_1.webp",
+      "pages": [
+        {
+          "file": "W-16_rozwiniecia_poddasze_1.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-17",
+      "stem": "W-17_rozwiniecia_poddasze_2",
+      "title": "Rozwinięcia ścian poddasza (2/06, 2/07, 2/08)",
+      "q": [
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-17_rozwiniecia_poddasze_2.pdf",
+      "img": "wykonawczy/W-17_rozwiniecia_poddasze_2.webp",
+      "thumb": "wykonawczy/thumbs/W-17_rozwiniecia_poddasze_2.webp",
+      "pages": [
+        {
+          "file": "W-17_rozwiniecia_poddasze_2.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-18",
+      "stem": "W-18_zabudowy_1-07",
+      "title": "Zabudowa pokoju 1/07 – PAX 283, nisza",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-18_zabudowy_1-07.pdf",
+      "img": "wykonawczy/W-18_zabudowy_1-07.webp",
+      "thumb": "wykonawczy/thumbs/W-18_zabudowy_1-07.webp",
+      "pages": [
+        {
+          "file": "W-18_zabudowy_1-07.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-19",
+      "stem": "W-19_zabudowy_1-02_RTV",
+      "title": "Ściana RTV 1/02 – lamele, tynk, szafka, kominek",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-19_zabudowy_1-02_RTV.pdf",
+      "img": "wykonawczy/W-19_zabudowy_1-02_RTV.webp",
+      "thumb": "wykonawczy/thumbs/W-19_zabudowy_1-02_RTV.webp",
+      "pages": [
+        {
+          "file": "W-19_zabudowy_1-02_RTV.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-20",
+      "stem": "W-20_zabudowy_1-03_kuchnia",
+      "title": "Kuchnia 1/03 – zabudowa, blat, AGD",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-20_zabudowy_1-03_kuchnia.pdf",
+      "img": "wykonawczy/W-20_zabudowy_1-03_kuchnia.webp",
+      "thumb": "wykonawczy/thumbs/W-20_zabudowy_1-03_kuchnia.webp",
+      "pages": [
+        {
+          "file": "W-20_zabudowy_1-03_kuchnia.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-21",
+      "stem": "W-21_szafy_PAX",
+      "title": "Szafy PAX – 1/01, 2/03, 2/04, 2/09",
+      "q": [
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-21_szafy_PAX.pdf",
+      "img": "wykonawczy/W-21_szafy_PAX.webp",
+      "thumb": "wykonawczy/thumbs/W-21_szafy_PAX.webp",
+      "pages": [
+        {
+          "file": "W-21_szafy_PAX.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-22",
+      "stem": "W-22_gabaryty_produktow",
+      "title": "Gabaryty produktów z kart",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-22_gabaryty_produktow.pdf",
+      "img": "wykonawczy/W-22_gabaryty_produktow.webp",
+      "thumb": "wykonawczy/thumbs/W-22_gabaryty_produktow.webp",
+      "pages": [
+        {
+          "file": "W-22_gabaryty_produktow.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-23",
+      "stem": "W-23_osprzet_rozmieszczenie",
+      "title": "Osprzęt – rozmieszczenie (propozycja)",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-23_osprzet_rozmieszczenie.pdf",
+      "img": "wykonawczy/W-23_osprzet_rozmieszczenie.webp",
+      "thumb": "wykonawczy/thumbs/W-23_osprzet_rozmieszczenie.webp",
+      "pages": [
+        {
+          "file": "W-23_osprzet_rozmieszczenie.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-24",
+      "stem": "W-24_uwagi_etapu_2",
+      "title": "Uwagi etapu 2 i decyzje projektanta",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-24_uwagi_etapu_2.pdf",
+      "img": "wykonawczy/W-24_uwagi_etapu_2.webp",
+      "thumb": "wykonawczy/thumbs/W-24_uwagi_etapu_2.webp",
+      "pages": [
+        {
+          "file": "W-24_uwagi_etapu_2.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-25",
+      "stem": "W-25_led_strefy_lamele",
+      "title": "LED – strefy, wnęka sufitu, lamele 1/06 i 2/06",
+      "q": [],
+      "q_status": null,
+      "pdf": "wykonawczy/pdf/W-25_led_strefy_lamele.pdf",
+      "img": "wykonawczy/W-25_led_strefy_lamele.webp",
+      "thumb": "wykonawczy/thumbs/W-25_led_strefy_lamele.webp",
+      "pages": [
+        {
+          "file": "W-25_led_strefy_lamele.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-26",
+      "stem": "W-26_stolarka_drzwiowa",
+      "title": "Stolarka drzwiowa – zestawienie drzwi wewnętrznych",
+      "q": [
+        "Q2",
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-26_stolarka_drzwiowa.pdf",
+      "img": "wykonawczy/W-26_stolarka_drzwiowa.webp",
+      "thumb": "wykonawczy/thumbs/W-26_stolarka_drzwiowa.webp",
+      "pages": [
+        {
+          "file": "W-26_stolarka_drzwiowa.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-27",
+      "stem": "W-27_okna_parapety",
+      "title": "Okna i parapety wewnętrzne – okno narożne 1/02",
+      "q": [
+        "Q3"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-27_okna_parapety.pdf",
+      "img": "wykonawczy/W-27_okna_parapety.webp",
+      "thumb": "wykonawczy/thumbs/W-27_okna_parapety.webp",
+      "pages": [
+        {
+          "file": "W-27_okna_parapety.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-28",
+      "stem": "W-28_kuchnia_kuchniarz",
+      "title": "Kuchnia 1/03 dla kuchniarza – rzut, widoki, przyłącza, AGD",
+      "q": [
+        "Q3"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-28_kuchnia_kuchniarz.pdf",
+      "img": "wykonawczy/W-28_kuchnia_kuchniarz.webp",
+      "thumb": "wykonawczy/thumbs/W-28_kuchnia_kuchniarz.webp",
+      "pages": [
+        {
+          "file": "W-28_kuchnia_kuchniarz.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    },
+    {
+      "id": "W-29",
+      "stem": "W-29_schody_balustrada",
+      "title": "Schody i balustrada – źródła, brief dla stolarza",
+      "q": [
+        "Q4",
+        "Q5"
+      ],
+      "q_status": "do potwierdzenia",
+      "pdf": "wykonawczy/pdf/W-29_schody_balustrada.pdf",
+      "img": "wykonawczy/W-29_schody_balustrada.webp",
+      "thumb": "wykonawczy/thumbs/W-29_schody_balustrada.webp",
+      "pages": [
+        {
+          "file": "W-29_schody_balustrada.webp",
+          "w": 4210,
+          "h": 2977,
+          "page": 1
+        }
+      ],
+      "w": 4210,
+      "h": 2977
+    }
+  ],
+  "downloads": {
+    "projekt": "wykonawczy/pdf/projekt-wykonawczy-v2.pdf",
+    "harmonogram": "wykonawczy/pdf/harmonogram-prac-wykonczeniowych.pdf",
+    "instalacje": "wykonawczy/pdf/zestawienie-instalacje.pdf"
+  },
+  "harmonogram_pages": [
+    {
+      "file": "harmonogram-prac-wykonczeniowych_p1.webp",
+      "w": 2105,
+      "h": 1489,
+      "page": 1
+    },
+    {
+      "file": "harmonogram-prac-wykonczeniowych_p2.webp",
+      "w": 2105,
+      "h": 1489,
+      "page": 2
+    },
+    {
+      "file": "harmonogram-prac-wykonczeniowych_p3.webp",
+      "w": 2105,
+      "h": 1489,
+      "page": 3
+    },
+    {
+      "file": "harmonogram-prac-wykonczeniowych_p4.webp",
+      "w": 2105,
+      "h": 1489,
+      "page": 4
+    },
+    {
+      "file": "harmonogram-prac-wykonczeniowych_p5.webp",
+      "w": 2105,
+      "h": 1489,
+      "page": 5
+    }
+  ],
+  "instalacje_pages": [
+    {
+      "file": "zestawienie-instalacje_p1.webp",
+      "w": 1489,
+      "h": 2105,
+      "page": 1
+    },
+    {
+      "file": "zestawienie-instalacje_p2.webp",
+      "w": 1489,
+      "h": 2105,
+      "page": 2
+    },
+    {
+      "file": "zestawienie-instalacje_p3.webp",
+      "w": 1489,
+      "h": 2105,
+      "page": 3
+    },
+    {
+      "file": "zestawienie-instalacje_p4.webp",
+      "w": 1489,
+      "h": 2105,
+      "page": 4
+    },
+    {
+      "file": "zestawienie-instalacje_p5.webp",
+      "w": 1489,
+      "h": 2105,
+      "page": 5
+    }
+  ],
+  "pytania": [
+    {
+      "id": "Q1",
+      "temat": "Hol 2/01 i sypialnia 2/02 (poddasze) – rozbieżność powierzchni modelu i tabeli",
+      "status": "do potwierdzenia"
+    },
+    {
+      "id": "Q2",
+      "temat": "Koniec przedpokoju 1/06 (parter) – zasięg i powierzchnia",
+      "status": "do potwierdzenia"
+    },
+    {
+      "id": "Q3",
+      "temat": "Wysokości okien i HST od wschodu",
+      "status": "do potwierdzenia"
+    },
+    {
+      "id": "Q4",
+      "temat": "Schody 15 stopni × 27 cm – potwierdzić pomiarem",
+      "status": "do potwierdzenia"
+    },
+    {
+      "id": "Q5",
+      "temat": "Ściana 6 cm przy spiżarce 1/04 oraz wysokości poddasza",
+      "status": "do potwierdzenia"
+    }
+  ]
+}

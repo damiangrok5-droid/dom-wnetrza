@@ -1,244 +1,340 @@
 {
- "slug": "moj-styl",
- "name": "Mój styl",
- "desc": "Ciepła biel i tynk wapienny, jasny dąb, trawertyn, czarny mat, len i bouclé, juta i wiklina – spokojnie, jasno i naturalnie. Wizualizacje nastrojowe (AI) wg oryginalnego projektu: układ pomieszczeń, okna, drzwi, skosy i zabudowy zgodne z rzutami, wykończenie w kierunku z inspiracji.",
- "palette": {
-  "ciepła biel": "#F2EDE8",
-  "lime-wash": "#E2D8C8",
-  "jasny dąb": "#C9A77C",
-  "trawertyn": "#D8C7AE",
-  "len / bouclé": "#E6DCCD",
-  "czarny mat": "#1E1E1E"
- },
- "groups": [
-  {
-   "id": "1/01",
-   "slug": "1-01",
-   "name": "Wiatrołap",
-   "floor": "parter",
-   "frames": [
+  "slug": "moj-styl",
+  "name": "Mój styl",
+  "desc": "Ciepła biel i tynk wapienny, jasny dąb, trawertyn, czarny mat, len i bouclé, juta i wiklina – spokojnie, jasno i naturalnie. Wizualizacje nastrojowe (AI) wg oryginalnego projektu: układ pomieszczeń, okna, drzwi, skosy i zabudowy zgodne z rzutami, wykończenie w kierunku z inspiracji.",
+  "palette": {
+    "ciepła biel": "#F2EDE8",
+    "lime-wash": "#E2D8C8",
+    "jasny dąb": "#C9A77C",
+    "trawertyn": "#D8C7AE",
+    "len / bouclé": "#E6DCCD",
+    "czarny mat": "#1E1E1E"
+  },
+  "groups": [
     {
-     "file": "1-01_hol_a.jpg",
-     "caption": "Patrząc na południe z północnej strony wiatrołapu",
-     "src": "img/moj-styl/1-01_hol_a.jpg"
+      "id": "1/01",
+      "slug": "1-01",
+      "name": "Wiatrołap",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-01_hol_a.jpg",
+          "caption": "Patrząc na południe z północnej strony wiatrołapu",
+          "src": "img/moj-styl/1-01_hol_a.jpg"
+        },
+        {
+          "file": "1-01_hol_b.jpg",
+          "caption": "Patrząc na południowy wschód",
+          "src": "img/moj-styl/1-01_hol_b.jpg"
+        }
+      ]
     },
     {
-     "file": "1-01_hol_b.jpg",
-     "caption": "Patrząc na południowy wschód",
-     "src": "img/moj-styl/1-01_hol_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1/02",
-   "slug": "1-02",
-   "name": "Salon + jadalnia",
-   "floor": "parter",
-   "frames": [
-    {
-     "file": "1-02_jadalnia_kuchnia.jpg",
-     "caption": "Jadalnia i kuchnia – widok na wyspę",
-     "src": "img/moj-styl/1-02_jadalnia_kuchnia.jpg"
+      "id": "1/02",
+      "slug": "1-02",
+      "name": "Salon + jadalnia",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-02_jadalnia_okap.jpg",
+          "caption": "Jadalnia i kuchnia – widok na wyspę i okap nad półwyspem",
+          "src": "img/moj-styl/1-02_jadalnia_okap.jpg"
+        },
+        {
+          "file": "1-02_salon_RTV.jpg",
+          "caption": "Salon – ściana RTV z lamelami, wnęka sufitowa z LED i sofa",
+          "src": "img/moj-styl/1-02_salon_RTV.jpg"
+        }
+      ]
     },
     {
-     "file": "1-02_salon_rtv.jpg",
-     "caption": "Salon – ściana RTV z lamelami, sofa i okno",
-     "src": "img/moj-styl/1-02_salon_rtv.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1/03",
-   "slug": "1-03",
-   "name": "Kuchnia",
-   "floor": "parter",
-   "frames": [
-    {
-     "file": "1-03_kuchnia_polwysep.jpg",
-     "caption": "Kuchnia – półwysep",
-     "src": "img/moj-styl/1-03_kuchnia_polwysep.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1/07",
-   "slug": "1-07",
-   "name": "Pokój gościnny",
-   "floor": "parter",
-   "frames": [
-    {
-     "file": "1-07_pokoj_a.jpg",
-     "caption": "Patrząc na północ",
-     "src": "img/moj-styl/1-07_pokoj_a.jpg"
+      "id": "1/03",
+      "slug": "1-03",
+      "name": "Kuchnia",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-03_kuchnia_polwysep.jpg",
+          "caption": "Kuchnia – półwysep",
+          "src": "img/moj-styl/1-03_kuchnia_polwysep.jpg"
+        }
+      ]
     },
     {
-     "file": "1-07_pokoj_b.jpg",
-     "caption": "Patrząc na północ-północny wschód, z południowej części pokoju",
-     "src": "img/moj-styl/1-07_pokoj_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "1/08",
-   "slug": "1-08",
-   "name": "Łazienka parter",
-   "floor": "parter",
-   "frames": [
-    {
-     "file": "1-08_lazienka_a.jpg",
-     "caption": "Patrząc na północ z południowej strony pokoju",
-     "src": "img/moj-styl/1-08_lazienka_a.jpg"
+      "id": "1/04",
+      "slug": "1-04",
+      "name": "Spiżarka",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-04_spizarka_a.jpg",
+          "caption": "Z kuchni, przez drzwi w zabudowie, na regały OMAR",
+          "src": "img/moj-styl/1-04_spizarka_a.jpg"
+        }
+      ]
     },
     {
-     "file": "1-08_lazienka_b.jpg",
-     "caption": "Patrząc na zachód od drzwi (ściana E)",
-     "src": "img/moj-styl/1-08_lazienka_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "2/01",
-   "slug": "2-01",
-   "name": "Hol poddasza",
-   "floor": "poddasze",
-   "frames": [
-    {
-     "file": "2-01_hol_a.jpg",
-     "caption": "Patrząc na wschód wzdłuż holu",
-     "src": "img/moj-styl/2-01_hol_a.jpg"
+      "id": "1/05",
+      "slug": "1-05",
+      "name": "Schody",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-05_schody_a.jpg",
+          "caption": "Z dołu biegu, patrząc na zachód w górę schodów",
+          "src": "img/moj-styl/1-05_schody_a.jpg"
+        }
+      ]
     },
     {
-     "file": "2-01_hol_b.jpg",
-     "caption": "Patrząc na zachód, od wschodniego końca holu",
-     "src": "img/moj-styl/2-01_hol_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "2/02",
-   "slug": "2-02",
-   "name": "Sypialnia główna",
-   "floor": "poddasze",
-   "frames": [
-    {
-     "file": "2-02_sypialnia_a.jpg",
-     "caption": "Patrząc na północny wschód od południowo-zachodniego narożnika",
-     "src": "img/moj-styl/2-02_sypialnia_a.jpg"
+      "id": "1/06",
+      "slug": "1-06",
+      "name": "Przedpokój",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-06_przedpokoj_lamele.jpg",
+          "caption": "Przedpokój – lamele ścienne z LED, widok na salon",
+          "src": "img/moj-styl/1-06_przedpokoj_lamele.jpg"
+        }
+      ]
     },
     {
-     "file": "2-02_sypialnia_b.jpg",
-     "caption": "Patrząc na południowy wschód",
-     "src": "img/moj-styl/2-02_sypialnia_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "2/04",
-   "slug": "2-04",
-   "name": "Garderoba",
-   "floor": "poddasze",
-   "frames": [
-    {
-     "file": "2-04_garderoba_a.jpg",
-     "caption": "Patrząc na wschód",
-     "src": "img/moj-styl/2-04_garderoba_a.jpg"
+      "id": "1/07",
+      "slug": "1-07",
+      "name": "Pokój gościnny",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-07_pokoj_a.jpg",
+          "caption": "Patrząc na północ",
+          "src": "img/moj-styl/1-07_pokoj_a.jpg"
+        },
+        {
+          "file": "1-07_pokoj_b.jpg",
+          "caption": "Patrząc na północ-północny wschód, z południowej części pokoju",
+          "src": "img/moj-styl/1-07_pokoj_b.jpg"
+        },
+        {
+          "file": "1-07_pokoj_maskownica.jpg",
+          "caption": "Szafa PAX na pełną szerokość z maskownicą GK, okno po prawej",
+          "src": "img/moj-styl/1-07_pokoj_maskownica.jpg"
+        }
+      ]
     },
     {
-     "file": "2-04_garderoba_b.jpg",
-     "caption": "Patrząc na północny zachód",
-     "src": "img/moj-styl/2-04_garderoba_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "2/05",
-   "slug": "2-05",
-   "name": "Łazienka poddasze",
-   "floor": "poddasze",
-   "frames": [
-    {
-     "file": "2-05_lazienka_a.jpg",
-     "caption": "Patrząc na południe z północnej strony",
-     "src": "img/moj-styl/2-05_lazienka_a.jpg"
+      "id": "1/08",
+      "slug": "1-08",
+      "name": "Łazienka parter",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-08_lazienka_a.jpg",
+          "caption": "Patrząc na północ z południowej strony pokoju",
+          "src": "img/moj-styl/1-08_lazienka_a.jpg"
+        },
+        {
+          "file": "1-08_lazienka_b.jpg",
+          "caption": "Patrząc na zachód od drzwi (ściana E)",
+          "src": "img/moj-styl/1-08_lazienka_b.jpg"
+        }
+      ]
     },
     {
-     "file": "2-05_lazienka_b.jpg",
-     "caption": "Patrząc na północny zachód od południowo-wschodniego narożnika",
-     "src": "img/moj-styl/2-05_lazienka_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "2/06",
-   "slug": "2-06",
-   "name": "Pokój (biuro, gitary, sofa i TV)",
-   "floor": "poddasze",
-   "frames": [
-    {
-     "file": "2-06_gabinet_a.jpg",
-     "caption": "Patrząc na południowy zachód od wschodniej części pokoju",
-     "src": "img/moj-styl/2-06_gabinet_a.jpg"
+      "id": "1/09",
+      "slug": "1-09",
+      "name": "Kotłownia",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-09_kotlownia_a.jpg",
+          "caption": "Z południowego ramienia kotłowni ku przeszkleniu od północy",
+          "src": "img/moj-styl/1-09_kotlownia_a.jpg"
+        }
+      ]
     },
     {
-     "file": "2-06_gabinet_b.jpg",
-     "caption": "Patrząc na północny wschód",
-     "src": "img/moj-styl/2-06_gabinet_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "2/07",
-   "slug": "2-07",
-   "name": "Pokój",
-   "floor": "poddasze",
-   "frames": [
-    {
-     "file": "2-07_sypialnia_a.jpg",
-     "caption": "Patrząc na północ",
-     "src": "img/moj-styl/2-07_sypialnia_a.jpg"
+      "id": "1/10",
+      "slug": "1-10",
+      "name": "Garaż",
+      "floor": "parter",
+      "frames": [
+        {
+          "file": "1-10_garaz_a.jpg",
+          "caption": "Od drzwi do domu, ku bramie w elewacji południowej",
+          "src": "img/moj-styl/1-10_garaz_a.jpg"
+        }
+      ]
     },
     {
-     "file": "2-07_sypialnia_b.jpg",
-     "caption": "Patrząc na wschód / północny wschód",
-     "src": "img/moj-styl/2-07_sypialnia_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "2/08",
-   "slug": "2-08",
-   "name": "Pokój gościnny",
-   "floor": "poddasze",
-   "frames": [
-    {
-     "file": "2-08_pokoj_gosc_a.jpg",
-     "caption": "Patrząc na zachód",
-     "src": "img/moj-styl/2-08_pokoj_gosc_a.jpg"
+      "id": "2/01",
+      "slug": "2-01",
+      "name": "Hol poddasza",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-01_hol_a.jpg",
+          "caption": "Patrząc na wschód wzdłuż holu",
+          "src": "img/moj-styl/2-01_hol_a.jpg"
+        },
+        {
+          "file": "2-01_hol_b.jpg",
+          "caption": "Patrząc na zachód, od wschodniego końca holu",
+          "src": "img/moj-styl/2-01_hol_b.jpg"
+        }
+      ]
     },
     {
-     "file": "2-08_pokoj_gosc_b.jpg",
-     "caption": "Patrząc na południowy zachód od wnęki N",
-     "src": "img/moj-styl/2-08_pokoj_gosc_b.jpg"
-    }
-   ]
-  },
-  {
-   "id": "2/10",
-   "slug": "2-10",
-   "name": "Pralnia",
-   "floor": "poddasze",
-   "frames": [
-    {
-     "file": "2-10_pralnia_a.jpg",
-     "caption": "Patrząc na północny zachód",
-     "src": "img/moj-styl/2-10_pralnia_a.jpg"
+      "id": "2/02",
+      "slug": "2-02",
+      "name": "Sypialnia główna",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-02_sypialnia_a.jpg",
+          "caption": "Patrząc na północny wschód od południowo-zachodniego narożnika",
+          "src": "img/moj-styl/2-02_sypialnia_a.jpg"
+        },
+        {
+          "file": "2-02_sypialnia_b.jpg",
+          "caption": "Patrząc na południowy wschód",
+          "src": "img/moj-styl/2-02_sypialnia_b.jpg"
+        }
+      ]
     },
     {
-     "file": "2-10_pralnia_b.jpg",
-     "caption": "Patrząc na południowy zachód z północnego końca",
-     "src": "img/moj-styl/2-10_pralnia_b.jpg"
+      "id": "2/03",
+      "slug": "2-03",
+      "name": "Garderoba",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-03_garderoba_a.jpg",
+          "caption": "Od drzwi, szafa PAX przy ścianie zachodniej i lustro stojące",
+          "src": "img/moj-styl/2-03_garderoba_a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2/04",
+      "slug": "2-04",
+      "name": "Garderoba",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-04_garderoba_a.jpg",
+          "caption": "Patrząc na wschód",
+          "src": "img/moj-styl/2-04_garderoba_a.jpg"
+        },
+        {
+          "file": "2-04_garderoba_b.jpg",
+          "caption": "Patrząc na północny zachód",
+          "src": "img/moj-styl/2-04_garderoba_b.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2/05",
+      "slug": "2-05",
+      "name": "Łazienka poddasze",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-05_lazienka_a.jpg",
+          "caption": "Patrząc na południe z północnej strony",
+          "src": "img/moj-styl/2-05_lazienka_a.jpg"
+        },
+        {
+          "file": "2-05_lazienka_b.jpg",
+          "caption": "Patrząc na północny zachód od południowo-wschodniego narożnika",
+          "src": "img/moj-styl/2-05_lazienka_b.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2/06",
+      "slug": "2-06",
+      "name": "Pokój (biuro, gitary, sofa i TV)",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-06_gabinet_a.jpg",
+          "caption": "Patrząc na południowy zachód od wschodniej części pokoju",
+          "src": "img/moj-styl/2-06_gabinet_a.jpg"
+        },
+        {
+          "file": "2-06_gabinet_b.jpg",
+          "caption": "Patrząc na północny wschód",
+          "src": "img/moj-styl/2-06_gabinet_b.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2/07",
+      "slug": "2-07",
+      "name": "Pokój",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-07_sypialnia_a.jpg",
+          "caption": "Patrząc na północ",
+          "src": "img/moj-styl/2-07_sypialnia_a.jpg"
+        },
+        {
+          "file": "2-07_sypialnia_b.jpg",
+          "caption": "Patrząc na wschód / północny wschód",
+          "src": "img/moj-styl/2-07_sypialnia_b.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2/08",
+      "slug": "2-08",
+      "name": "Pokój gościnny",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-08_pokoj_gosc_a.jpg",
+          "caption": "Patrząc na zachód",
+          "src": "img/moj-styl/2-08_pokoj_gosc_a.jpg"
+        },
+        {
+          "file": "2-08_pokoj_gosc_b.jpg",
+          "caption": "Patrząc na południowy zachód od wnęki N",
+          "src": "img/moj-styl/2-08_pokoj_gosc_b.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2/09",
+      "slug": "2-09",
+      "name": "Garderoba",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-09_garderoba.jpg",
+          "caption": "Garderoba – szafa pod skosem, cztery fronty",
+          "src": "img/moj-styl/2-09_garderoba.jpg"
+        }
+      ]
+    },
+    {
+      "id": "2/10",
+      "slug": "2-10",
+      "name": "Pralnia",
+      "floor": "poddasze",
+      "frames": [
+        {
+          "file": "2-10_pralnia_a.jpg",
+          "caption": "Patrząc na północny zachód",
+          "src": "img/moj-styl/2-10_pralnia_a.jpg"
+        },
+        {
+          "file": "2-10_pralnia_b.jpg",
+          "caption": "Patrząc na południowy zachód z północnego końca",
+          "src": "img/moj-styl/2-10_pralnia_b.jpg"
+        }
+      ]
     }
-   ]
-  }
- ]
+  ]
 }

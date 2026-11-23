@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4EFE7">
+<meta name="robots" content="noindex">
+<title>Dom – projekt wykonawczy v2</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html#/">Dom <span>· wnętrza</span></a>
+  <nav class="tabs" id="tabs" aria-label="Sekcje">
+    <a href="index.html#/">Style</a>
+    <a href="index.html#/pokoje">Pokoje</a>
+    <a href="index.html#/zakupy">Zakupy</a>
+    <a href="index.html#/porownanie">Porównanie</a>
+    <a href="wykonawczy.html" class="on" aria-current="page">Projekt</a>
+    <a href="harmonogram.html">Harmonogram</a>
+    <a href="3d.html">3D</a>
+    <a href="spacer.html">Spacer</a>
+  </nav>
+</header>
+<main id="app">
+  <p class="loading">Ładowanie rysunków…</p>
+</main>
+<footer class="foot">
+  <p>Rysunki robocze do wyceny i wykonania, wg oryginalnego projektu (lustro, wersja zmodyfikowana). Wymiary z modelu produkcyjnego; przed zamówieniem i cięciem – pomiar na budowie. Punkty Q1–Q5 pozostają do potwierdzenia.</p>
+</footer>
+
+<div class="sv" id="sv" hidden role="dialog" aria-modal="true" aria-label="Podgląd arkusza">
+  <div class="sv-bar">
+    <button type="button" class="sv-x" data-sv="close" aria-label="Zamknij">×</button>
+    <p class="sv-title" id="sv-title"></p>
+    <div class="sv-tools">
+      <button type="button" data-sv="prev" aria-label="Poprzedni arkusz">‹</button>
+      <button type="button" data-sv="minus" aria-label="Pomniejsz">−</button>
+      <button type="button" data-sv="reset" aria-label="Dopasuj do ekranu">1×</button>
+      <button type="button" data-sv="plus" aria-label="Powiększ">+</button>
+      <button type="button" data-sv="next" aria-label="Następny arkusz">›</button>
+    </div>
+    <a class="sv-dl" id="sv-dl" href="#" download>PDF</a>
+  </div>
+  <div class="sv-stage" id="sv-stage">
+    <img id="sv-img" alt="">
+  </div>
+  <p class="sv-hint">Na telefonie zbliż dwoma palcami albo użyj „+”. Przesuwaj arkusz, gdy jest powiększony.</p>
+</div>
+
+<script>
+(() => {
+'use strict';
+const $ = s => document.querySelector(s);
+const app = $('#app');
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+function render(D) {
+  const qBadge = qs => (qs && qs.length)
+    ? `<span class="qbadge" title="Do potwierdzenia">${qs.map(esc).join(' ')} · do potwierdzenia</span>`
+    : '';
+  const cards = D.sheets.map((s, i) => `
+    <button type="button" class="wcard" data-i="${i}" aria-label="${esc(s.id + ' ' + s.title)}">
+      <span class="wthumb">${s.thumb ? `<img loading="lazy" decoding="async" src="${esc(s.thumb)}" alt="">` : ''}</span>
+      <span class="wmeta"><b>${esc(s.id)}</b> ${esc(s.title)}${qBadge(s.q)}</span>
+    </button>`).join('');
+  const qlist = (D.pytania || []).map(q =>
+    `<li><b>${esc(q.id)}</b> – ${esc(q.temat)} <i>do potwierdzenia</i></li>`).join('');
+  const dl = D.downloads || {};
+  const pages = (arr, title) => !arr || !arr.length ? '' : `
+    <h2 class="floorh">${esc(title)}</h2>
+    <div class="wgrid">${arr.map((p, i) => `
+      <a class="wcard" href="wykonawczy/${title.includes('Harmonogram') ? 'harmonogram-prac-wykonczeniowych' : 'zestawienie-instalacje'}/${esc(p.file)}" target="_blank" rel="noopener">
+        <span class="wthumb"><img loading="lazy" decoding="async" src="wykonawczy/${title.includes('Harmonogram') ? 'harmonogram-prac-wykonczeniowych' : 'zestawienie-instalacje'}/thumbs/${esc(p.file)}" alt="${esc(title)} – strona ${p.page}"></span>
+        <span class="wmeta"><b>s. ${p.page}</b></span>
+      </a>`).join('')}</div>`;
+
+  app.innerHTML = `
+    <h1>Projekt wykonawczy v2</h1>
+    <p class="lead">${esc(D.uwaga)}</p>
+    <div class="kpis">
+      <div class="kpi"><small>Arkusze</small><b>W-00–W-29</b></div>
+      <div class="kpi"><small>Styl</small><b>${esc(D.style || 'Mój styl')}</b></div>
+      <div class="kpi"><small>Pytania Q1–Q5</small><b>do potwierdzenia</b></div>
+      <div class="kpi"><small>Przed zamówieniem</small><b>pomiar na budowie</b></div>
+    </div>
+    <p class="wdl">
+      ${dl.projekt ? `<a class="btn" href="${esc(dl.projekt)}" download>Pobierz cały projekt (PDF)</a>` : ''}
+      ${dl.harmonogram ? `<a class="btn alt" href="${esc(dl.harmonogram)}" download>Harmonogram prac (PDF)</a>` : ''}
+      ${dl.instalacje ? `<a class="btn alt" href="${esc(dl.instalacje)}" download>Zestawienie instalacji (PDF)</a>` : ''}
+    </p>
+    <div class="note" style="border-left-color:var(--warn)">
+      <b>Q1–Q5 pozostają do potwierdzenia</b> – wartości nie są zgadywane. Pomarańczowy znacznik na rysunkach oznacza to samo.
+      <ul>${qlist}</ul>
+    </div>
+    <h2 class="floorh">Arkusze <small>dotknij, aby powiększyć</small></h2>
+    <div class="wgrid">${cards}</div>
+    ${pages(D.harmonogram_pages, 'Harmonogram prac wykończeniowych')}
+    ${pages(D.instalacje_pages, 'Zestawienie instalacji')}
+  `;
+  app.querySelectorAll('.wgrid .wcard[data-i]').forEach(b => b.addEventListener('click', () => openSV(D.sheets, +b.dataset.i)));
+}
+
+/* ---- podgląd z zoomem (przyciski + native pinch na iPhonie) ---- */
+const SV = {list: [], i: 0, z: 1};
+function openSV(list, i) {
+  SV.list = list; SV.i = i; SV.z = 1;
+  $('#sv').hidden = false;
+  document.body.style.overflow = 'hidden';
+  showSV();
+}
+function showSV() {
+  const s = SV.list[SV.i]; if (!s) return;
+  const img = $('#sv-img');
+  img.src = s.img;
+  img.alt = s.id + ' ' + s.title;
+  $('#sv-title').textContent = s.id + '  ' + s.title + (s.q && s.q.length ? '  ·  ' + s.q.join(' ') + ' do potwierdzenia' : '');
+  const a = $('#sv-dl'); a.href = s.pdf; a.setAttribute('download', '');
+  applyZ();
+  $('#sv-stage').scrollTop = 0; $('#sv-stage').scrollLeft = 0;
+}
+function applyZ() {
+  const img = $('#sv-img');
+  SV.z = Math.min(5, Math.max(1, Math.round(SV.z * 20) / 20));
+  img.style.width = (SV.z * 100) + '%';
+  $('#sv [data-sv=reset]').textContent = (Math.round(SV.z * 10) / 10).toString().replace('.', ',') + '×';
+}
+function closeSV() {
+  $('#sv').hidden = true;
+  document.body.style.overflow = '';
+  $('#sv-img').removeAttribute('src');
+}
+function step(d) {
+  if (SV.list.length < 2) return;
+  SV.i = (SV.i + d + SV.list.length) % SV.list.length;
+  SV.z = 1; showSV();
+}
+$('#sv').addEventListener('click', e => {
+  const a = e.target.dataset && e.target.dataset.sv;
+  if (a === 'close') closeSV();
+  else if (a === 'prev') step(-1);
+  else if (a === 'next') step(1);
+  else if (a === 'plus') { SV.z = Math.min(5, SV.z + 0.5); applyZ(); }
+  else if (a === 'minus') { SV.z = Math.max(1, SV.z - 0.5); applyZ(); }
+  else if (a === 'reset') { SV.z = 1; applyZ(); }
+});
+document.addEventListener('keydown', e => {
+  if ($('#sv').hidden) return;
+  if (e.key === 'Escape') closeSV();
+  if (e.key === 'ArrowLeft') step(-1);
+  if (e.key === 'ArrowRight') step(1);
+  if (e.key === '+' || e.key === '=') { SV.z = Math.min(5, SV.z + 0.5); applyZ(); }
+  if (e.key === '-') { SV.z = Math.max(1, SV.z - 0.5); applyZ(); }
+});
+const stage = $('#sv-stage');
+stage.addEventListener('wheel', e => {
+  if ($('#sv').hidden) return;
+  if (e.ctrlKey || e.metaKey) {
+    e.preventDefault();
+    SV.z = e.deltaY < 0 ? Math.min(5, SV.z + 0.2) : Math.max(1, SV.z - 0.2);
+    applyZ();
+  }
+}, {passive: false});
+
+fetch('data/wykonawczy.json', {cache: 'no-cache'})
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(render)
+  .catch(e => { app.innerHTML = `<div class="empty">Nie udało się wczytać rysunków (${esc(e.message)}).</div>`; });
+
+document.querySelector('#tabs a.on')?.scrollIntoView({inline: 'center', block: 'nearest'});
+})();
+</script>
+</body>
+</html>

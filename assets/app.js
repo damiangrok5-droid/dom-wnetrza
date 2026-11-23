@@ -73,6 +73,13 @@ function normManifest(m,slug){
 const imgOk=src=>new Promise(res=>{const i=new Image();i.onload=()=>res(i.naturalWidth>0);i.onerror=()=>res(false);i.src=src;});
 // F19 22.11: style bez palety (wpis 'moj-styl') mają wizualizacje w data/moj-styl.json – bez sond img/<styl>/… i plików danych stylu (unika 404)
 const bezPlikow=slug=>{const s=(S.styles||[]).find(x=>x.slug===slug);return !!s&&!(s.palette&&typeof s.palette==='object');};
+async function loadMojManifest(){
+  const M=await getJSON('data/moj-styl.json');
+  const rooms={};
+  (M.groups||[]).forEach(g=>{rooms[g.slug]=(g.frames||[]).map(f=>({src:f.src,cap:f.caption}));});
+  return {rooms,cover:null,pending:{}};
+}
+
 const manifests={};
 function loadManifest(slug){
   if(bezPlikow(slug))return Promise.resolve(null);
@@ -171,6 +178,16 @@ async function viewMoj(){
   const n=all.length;
   app.innerHTML=`<h1>${esc(M.name)}</h1><p class="lead">${esc(M.desc)}</p>
    <div class="sw mojsw" title="Paleta">${pal.map(([nm,h])=>`<span style="background:${esc(h)}" title="${esc(nm)} ${esc(h)}"></span>`).join('')}</div>
+   <section class="card v1card" aria-label="Status wersji 1.0">
+     <h2>Wersja 1.0</h2>
+     <p class="lead" style="margin:0">Zestaw do wyceny i realizacji wykończenia w stylu „Mój styl”.</p>
+     <ul>
+       <li><b>Gotowe:</b> projekt wykonawczy v2 (arkusze W-00–W-29, harmonogram prac, zestawienie instalacji), lista zakupów i kosztorys z cenami ze sklepów (data przy pozycji), wizualizacje nastrojowe, spacer 3D, model i rzuty 2D.</li>
+       <li><b>Wymaga pomiarów na budowie:</b> punkty Q1–Q5 (powierzchnie poddasza, zasięg przedpokoju, wysokości okien i HST, schody, ściana 6 cm przy spiżarce) – na rysunkach oznaczone „do potwierdzenia”, wartości nie są zgadywane. Przed zamówieniem i cięciem – pomiar z natury.</li>
+       <li><b>Wymaga projektów branżowych:</b> szczegółowa elektryka i hydraulika (etap 2) z elektrykiem i instalatorem; wycena kuchni na wymiar od kuchniarza; schody i balustrada po pomiarze.</li>
+     </ul>
+     <p class="v1act"><a class="btn" href="wykonawczy.html">Projekt wykonawczy →</a><a class="btn alt" href="#/zakupy/moj-styl">Lista zakupów i kosztorys →</a></p>
+   </section>
    <p class="note" style="border-left-color:var(--acc2)">${n} wizualizacji nastrojowych (AI), nie 1:1 – znak na każdym zdjęciu. Dotknij zdjęcia, aby powiększyć i przeglądać kolejne.</p>
    ${['parter','poddasze'].map(fl=>{const gs=M.groups.filter(g=>g.floor===fl);return `<h2 class="floorh">${fl==='parter'?'Parter':'Poddasze'} <small>${gs.length} pomieszczeń</small></h2>
     ${gs.map(g=>`<section class="mojroom"><div class="hd"><h3>${esc(g.name)}</h3><span class="area">${esc(g.id)}</span></div>
@@ -269,7 +286,7 @@ async function viewRooms(){
    <p style="margin-top:24px"><a class="btn" href="#/zakupy/${st.slug}">Lista zakupów – ${esc(st.name)} →</a></p>`;
   app.querySelectorAll('img.plan').forEach(im=>im.onclick=()=>openLB([{src:im.dataset.plan,cap:im.dataset.cap}],0));
   spacerLinks(st.slug);
-  const [m,W]=await Promise.all([loadManifest(st.slug),(bezPlikow(st.slug)?Promise.resolve(null):getJSON(`data/walidacja-${st.slug}.json`).catch(()=>null))]);
+  const [m,W]=await Promise.all([st.slug==='moj-styl'?loadMojManifest():loadManifest(st.slug),(bezPlikow(st.slug)?Promise.resolve(null):getJSON(`data/walidacja-${st.slug}.json`).catch(()=>null))]);
   if(cur()!==st.slug)return;
   for(const r of S.rooms){
     const wrap=app.querySelector(`[data-room="${r.slug}"]`);if(!wrap)continue;
@@ -344,7 +361,7 @@ async function wariantyCard(slug){
 async function viewShop(){
   const st=styleBy(cur());
   app.innerHTML='<p class="loading">Ładowanie listy…</p>';
-  let d;try{if(bezPlikow(st.slug))throw new Error('brak');d=await getJSON(`data/zakupy-${st.slug}.json`);}catch(e){app.innerHTML=`<div class="empty">Brak listy zakupów dla stylu ${esc(st.name)}.</div>`;return;}
+  let d;try{if(bezPlikow(st.slug)&&st.slug!=='moj-styl')throw new Error('brak');d=await getJSON(`data/zakupy-${st.slug}.json`);}catch(e){app.innerHTML=`<div class="empty">Brak listy zakupów dla stylu ${esc(st.name)}.</div>`;return;}
   if(cur()!==st.slug)return;
   const [kMin,kMax]=d.kitchen_est,B=d.budget;
   const roomName=id=>S.rooms.find(r=>r.id===id)?.name||'';
@@ -356,7 +373,7 @@ async function viewShop(){
    <div class="kpi"><small>Produkty + materiały + robocizna (${d.verified} poz.)</small><b>${zl(d.total)}</b></div>
    <div class="kpi"><small>+ kuchnia na wymiar (szacunek)</small><b>${rng(kMin,kMax)}</b></div>
    <div class="kpi"><small>Razem z kuchnią</small><b>${rng(d.total+kMin,d.total+kMax)}</b></div>
-   <div class="kpi"><small>Budżet 400 tys.</small>${left(B,d.total,kMin,kMax)}</div>
+   <div class="kpi"><small>Budżet ${zl(B)}</small>${left(B,d.total,kMin,kMax)}</div>
   </div>
   ${sumCard(d,kMin,kMax,B)}
   <div id="warianty"></div>
@@ -390,8 +407,23 @@ async function viewShop(){
   };
   ['f-room','f-grp','f-q'].forEach(id=>$('#'+id).addEventListener('input',draw));
   draw();
-  wariantyCard(st.slug);
+  if(st.slug==='moj-styl' && d.razem_avg!=null){
+    const box=$('#warianty');
+    if(box){
+      const zost=d.budget-d.razem_avg;
+      box.innerHTML=`<div class="wcard"><h2>Kosztorys – scenariusz średni</h2>
+        <div class="sumcard">
+          <div class="sr tot"><span>= Razem z kuchnią (średnia ${zl(d.kitchen_avg||50000)})</span><b>${zl(d.razem_avg)}</b></div>
+          <div class="sr"><span>Zakres min–max ${rng(d.razem_min,d.razem_max)}</span><b style="color:var(--ok)">w limicie ${zl(d.budget)} (zostaje ${zl(zost)})</b></div>
+        </div>
+        <p class="capt">${esc(d.uwaga||'Ceny ze sklepów – data przy każdej pozycji. Kuchnia na wymiar i robocizna to szacunek.')}</p>
+      </div>`;
+    }
+  } else {
+    wariantyCard(st.slug);
+  }
 }
+
 
 /* ---------- widok: porównanie ---------- */
 function viewCompare(){

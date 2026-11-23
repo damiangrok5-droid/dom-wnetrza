@@ -28,6 +28,7 @@ model-viewer{display:block;width:100%;height:min(72vh,640px);height:min(72svh,64
     <a href="index.html#/pokoje">Pokoje</a>
     <a href="index.html#/zakupy">Zakupy</a>
     <a href="index.html#/porownanie">Porównanie</a>
+    <a href="wykonawczy.html">Projekt</a>
     <a href="harmonogram.html">Harmonogram</a>
     <a href="3d.html" class="on" aria-current="page">3D</a>
     <a href="spacer.html">Spacer</a>
@@ -56,6 +57,9 @@ model-viewer{display:block;width:100%;height:min(72vh,640px);height:min(72svh,64
 <footer class="foot"><p>Model poglądowy, nie dokumentacja wykonawcza.</p></footer>
 <script>
 const mv=document.getElementById('mv'),bs=document.querySelectorAll('[data-m]');
+// fix 2026-11-23: bez WebGL model-viewer (tryb AR webxr) rzuca TypeError null.supportsPresentation – wtedy bez webxr i z komunikatem
+const hasGL=(()=>{try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl'));}catch(e){return false;}})();
+if(!hasGL){mv.setAttribute('ar-modes','quick-look scene-viewer');mv.querySelector('.mv-poster').insertAdjacentHTML('beforeend','<p class="small" id="mvNoGL">Ta przeglądarka nie udostępnia WebGL, więc podgląd 3D może się nie wyświetlić. Pliki modelu są do pobrania poniżej.</p>');}
 // hotfix 2026-10-26: model ładowany leniwie (reveal=manual) – dopiero po kliknięciu „Wczytaj model 3D” albo przycisku kondygnacji
 const SZ={parter:'4,2 MB',poddasze:'4,6 MB'},show=()=>mv.dismissPoster();
 document.getElementById('mvLoad').addEventListener('click',show);

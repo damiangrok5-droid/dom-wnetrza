@@ -3,12 +3,12 @@
  "wariant": "wyzszy",
  "lightmap": {
   "url": "lightmap.webp",
-  "K": 5.921671919822629,
+  "K": 4.417571754455569,
   "gamma": 2.2,
   "wb": [
-   0.926,
-   1.005,
-   1.167
+   0.917,
+   1.007,
+   1.178
   ]
  },
  "uwaga": "mapa światła wypieczona dla wariantu wyzszy (Cycles, odbicia światła zależą od kolorów wariantu)",

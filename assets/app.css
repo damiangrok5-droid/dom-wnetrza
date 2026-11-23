@@ -219,3 +219,30 @@ table.shop td.pn a{display:inline-block;padding:11px 0;margin:-11px 0}
 .mojfig .capt{padding:8px 12px 10px}
 .mojsw{margin:0 0 14px}
 .archiwum{margin-top:44px;padding-top:12px;border-top:1px solid var(--line)}
+
+/* v10 – status wersji 1.0 i projekt wykonawczy */
+.v1card{padding:16px 18px;margin:0 0 22px}
+.v1card h2{margin:0 0 .4em;font-size:1.25rem}
+.v1card ul{margin:.4em 0 0;padding-left:1.15em}
+.v1card li{margin:3px 0}
+.v1card .v1act{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.wgrid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);margin:0 0 28px}
+@media(min-width:700px){.wgrid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1100px){.wgrid{grid-template-columns:repeat(4,1fr)}}
+button.wcard,a.wcard{display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid var(--line);border-radius:var(--r);background:var(--card);color:inherit;text-decoration:none;box-shadow:var(--sh);overflow:hidden;cursor:zoom-in;font:inherit}
+.wthumb{display:block;aspect-ratio:1.414/1;background:#EAE3D8;overflow:hidden}
+.wthumb img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.wmeta{display:block;padding:8px 10px 10px;font-size:.82rem;color:var(--ink)}
+.wmeta b{display:block;font-size:.95rem;margin:0 0 2px}
+.qbadge{display:inline-block;margin-top:4px;font-size:.7rem;font-weight:600;color:var(--warn);background:#F6E3D8;border-radius:999px;padding:1px 8px}
+.wdl{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.sv{position:fixed;inset:0;z-index:60;background:#161412;display:flex;flex-direction:column}
+.sv[hidden]{display:none}
+.sv-bar{flex:0 0 auto;display:flex;align-items:center;gap:8px;padding:calc(env(safe-area-inset-top) + 6px) 8px 6px;background:#161412;color:#f4efe7}
+.sv-title{flex:1;margin:0;font-size:.88rem;line-height:1.3;max-height:2.6em;overflow:hidden}
+.sv-tools{display:flex;gap:4px}
+.sv-bar button,.sv-dl{background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:999px;min-width:40px;height:40px;font-size:1.15rem;line-height:1;padding:0 10px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
+.sv-dl{font-size:.8rem;font-weight:600}
+.sv-stage{flex:1;overflow:auto;touch-action:pan-x pan-y pinch-zoom;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;background:#111}
+.sv-stage img{display:block;width:100%;height:auto;transform-origin:top left}
+.sv-hint{flex:0 0 auto;margin:0;padding:6px 12px calc(8px + env(safe-area-inset-bottom));color:#b8b0a6;font-size:.75rem;text-align:center}

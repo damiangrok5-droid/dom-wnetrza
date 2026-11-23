@@ -81,6 +81,7 @@ body.sp main{max-width:1180px;padding:10px 12px 12px}
     <a href="index.html#/pokoje">Pokoje</a>
     <a href="index.html#/zakupy">Zakupy</a>
     <a href="index.html#/porownanie">Porównanie</a>
+    <a href="wykonawczy.html">Projekt</a>
     <a href="harmonogram.html">Harmonogram</a>
     <a href="3d.html">3D</a>
     <a href="spacer.html" class="on" aria-current="page">Spacer</a>
@@ -196,12 +197,15 @@ function drawPlan() {
 function setMe(x, y, yaw) { const g = $('#me'); if (g) g.setAttribute('transform', `translate(${x} ${y}) rotate(${yaw * 180 / Math.PI})`); }
 
 /* ---------- panorama (Photo Sphere Viewer) ---------- */
+function hasWebGL2() { try { return !!document.createElement('canvas').getContext('webgl2'); } catch (e) { return false; } }
 async function startPano() {
   const { Viewer } = await import('@photo-sphere-viewer/core');
   const { MarkersPlugin } = await import('@photo-sphere-viewer/markers-plugin');
   const { GyroscopePlugin } = await import('@photo-sphere-viewer/gyroscope-plugin');
   if (W()?.pano && !W().pano[st.pt]) { st.pt = panoPt(st.pt); syncRoomSeg(); syncUrl(); }
   if (!psv) {
+    // fix 2026-11-23: bez WebGL 2 PSV nie tworzy pluginów (markers=undefined -> TypeError addEventListener) – komunikat zamiast błędu
+    if (!hasWebGL2()) { if (!$('#noGL')) $('#stage').insertAdjacentHTML('beforeend', '<div class="err g" id="noGL">Ta przeglądarka nie udostępnia WebGL 2, więc panorama 360° nie może się wyświetlić. Spróbuj w innej przeglądarce lub włącz akcelerację sprzętową.</div>'); return; }
     psv = new Viewer({ container: $('#pano'), panorama: W().pano[st.pt] ? W().pano[st.pt] : Object.values(W().pano)[0], navbar: false,
       defaultYaw: st.yaw, defaultPitch: 0, defaultZoomLvl: zl(st.pt), minFov: 30, maxFov: 100, loadingTxt: '', mousewheelCtrlKey: false,
       touchmoveTwoFingers: false, moveInertia: true, lang: { loadError: 'Nie udało się wczytać panoramy' },
